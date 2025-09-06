@@ -1,0 +1,9861 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass mbcaos
+\begin_preamble
+\batchmode
+\makeatletter
+\def\input@path{{lib}{styles/}{sections/}{pdf/}{chapters}}
+\makeatother
+\usepackage{listings}
+\usepackage{mathrsfs}
+\graphicspath{{fig-pdf/}{pdf/}{image/}{sections/figures/}{figures/}{images/}}
+\usepackage{float}
+\usepackage{subfigure}
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+%\let\checkmark\relax
+%\definecolor{bleu}{cmyk}{0.59,0.11,0,0.59}
+%\definecolor{vert}{cmyk}{0.78,0,0.74,0.45}
+%\definecolor{caper}{cmyk}{0.21,0.00,0.51,0.54}
+%\definecolor{doc}{cmyk}{1.00,0.45,0.00,0.57}
+%\definecolor{rhodo}{cmyk}{0.78,0,0.74,0.45}
+%\definecolor{azulrey}{cmyk}{0.91,0.34,0.00,0.55}
+%\definecolor{saddlebrown}{cmyk}{0.00,0.46,0.85,0.50}
+%\definecolor{milktea}{cmyk}{0.00,0.18,0.43,0.22}
+%\definecolor{naranja}{cmyk}{0,0.5,1,0}
+%\definecolor{olivegreen}{cmyk}{0.64,0,0.95,0.40}
+%\definecolor{bgpage}{cmyk}{.20,.30,.64,.19}
+%\definecolor{mesh}{cmyk}{0,0.04,0.17,0.03}
+\usepackage{pagecolor}
+\usepackage{zahlen}
+%\pagecolor{mesh}
+\pagecolor{fondpaille}  
+\lstset{
+	numbers=left, 
+	numberstyle=\tiny, 
+	stepnumber=1, 
+	numbersep=3pt, 
+	language=[LaTeX]TeX, 
+	backgroundcolor=\color{bleu!20},
+	frame=shadowbox,
+	rulesepcolor=\color{bleu},
+	rulecolor=\color{bleu},
+	framexleftmargin=10pt,
+	keywordstyle=\color{vert}\bfseries,
+	basicstyle=\listfont,
+    columns=flexible,
+    keepspaces=true,
+    upquote=true,
+    literate=
+    {á}{{\'a}}{1}
+    {é}{{\'e}}{1}
+    {í}{{\'i}}{1}
+    {ó}{{\'o}}{1}
+    {ú}{{\'u}}{1}
+    {Á}{{\'A}}{1}
+    {É}{{\'E}}{1}
+    {Í}{{\'I}}{1}
+    {Ó}{{\'O}}{1}
+    {Ú}{{\'U}}{1}
+    {ñ}{{\~n}}{1}
+    {Ñ}{{\~N}}{1}
+    {ü}{{\"e}}{1}
+    {Ü}{{\"U}}{1}%
+    %frances
+    {è}{{\`e}}{1}%
+    {à}{{\`a}}{1}%
+    {â}{{\^a}}{1}%%%
+    {ç}{{\c{c}}}{1}%
+    {?}{{\oe}}{1}%
+    {ù}{{\`u}}{1}%
+    {È}{{\`E}}{1}%
+    {À}{{\`A}}{1}%
+    {Ç}{{\c{C}}}{1}%
+    {?}{{\OE}}{1}%
+    {Ê}{{\^E}}{1}%
+    {ê}{{\^e}}{1}%
+    {î}{{\^i}}{1}%
+    {ï}{{\"i}}{1}%%%
+    {ô}{{\^o}}{1}%
+    {û}{{\^u}}{1}%
+    ,
+    commentstyle=\color{gray},
+    morekeywords={redefineColor,dfrac,setlength,cellspacetoplimit, cellspacebottomlimit,firstline,text,intro,introauthor,chapter, itemclass,exostart,corrstart,PagCorregidos,columnbreak,titlepic, nbcolindex,indexname,printindex,makeindex,activites, DefineNewBoxLikeRem,BreakCorr}
+}
+\usepackage{lipsum-es}
+\usepackage{wasysym}
+\makeatletter 
+\newenvironment{proof}[1][Prueba]{\textcolor{dem@line@color}{\textbf{#1.\phantom{--}} }}{\hfill\phantom{--}\hfill\ \ \textcolor{dem@line@color}{\rule{0.5em}{0.5em}}}
+\newenvironment{exam}[1][Ejercicio]{\textbf{#1.}\ }{\hfill\ \rule{0.5em}{0.5em}}
+\newenvironment{sol}[1][Soluci\'on]{\textcolor{dem@line@color}{\textbf{#1.\phantom{--}}}}{\hfill\phantom{--}\hfill\ \textcolor{dem@line@color}{\checked}}
+
+\RequirePackage[colorlinks=true,linkcolor=corref@color]{hyperref}
+\redefineColor{thmtitle@bg@color}{0.66,0.24,0.74,0.71}
+\redefineColor{thm@bg@color}{0.11,0,0.09,0.09}
+\redefineColor{proptitle@bg@color}{0.66,0.24,0.74,0.71}
+\redefineColor{prop@bg@color}{0.11,0,0.09,0.09}
+\redefineColor{firstpagebottom@bg@color}{1,1,0.00,0.55}
+\redefineColor{subsection@title@color}{.19,.74,.100,.68}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Vdots{\vbox{\baselineskip4\p@ \lineskiplimit\z@
+    \kern6\p@\hbox{.}\hbox{.}\hbox{.}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatother
+%\selectspanish
+\title{C\'alculo diferencial\\ \normalsize Con ejercicios resueltos.}
+\author{Antalcides Olivo}
+\titlepic[0.3]{image/puente1.jpg}
+\logopic[1]{image/logo-caos-1.png}
+%\titlepic[0.5]{fractal.jpg}
+\date{\dia}
+
+\makeindex
+\end_preamble
+\use_default_options true
+\master ../calculod-mbcaos.lyx
+\maintain_unincluded_children false
+\language spanish-mexico
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 1
+\bibtex_command bibtex
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Aplicaciones de la derivada
+\end_layout
+
+\begin_layout Standard
+En el capítulo anterior se interpretó el valor de la derivada de una función
+ en un punto, como la pendiente de la recta tangente a la gráfica de la
+ función en dicho punto.
+ No es extraño entonces acudir a la derivada para analizar la gráfica de
+ una función en un intervalo dado.
+ En el presente capítulo se usará la derivada como instrumento para dicho
+ análisis.
+ Además se abordarán aplicaciones que tienen importancia en ingenierias
+ como las razones relacionadas y los problemas de optimización.
+\end_layout
+
+\begin_layout Section
+Máximos y mínimos
+\end_layout
+
+\begin_layout Standard
+A continuación, presentaremos uno de los puntos centrales de este capítulo
+ el cual corresponde al análisis de la existencia de valores máximos y mínimos
+ de una función.
+ El sustento de todas las ideas, que nos permitirán cumplir nuestro objetivo
+ se basan en el teorema del valor medio, el cual presentaremos más adelante.
+ Se iniciará con la presentación de las definiciones básicas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\series bold
+Máximo relativo:
+\series default
+ 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Máximo!– relativo
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $f:\left]a,b\right[\rightarrow\rz.$
+\end_inset
+
+ Si 
+\begin_inset Formula $c\in\left]a,b\right[,$
+\end_inset
+
+ se dice que 
+\begin_inset Formula $x=c$
+\end_inset
+
+ es máximo relativo de la función 
+\begin_inset Formula $f,$
+\end_inset
+
+ si y sólo si existe un número real positivo 
+\begin_inset Formula $r,$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left]c-r,c+r\right[\subseteq\operatorname*{Dom}$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ ,y
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(c\right)\geq f\left(x\right)$
+\end_inset
+
+ para todo 
+\begin_inset Formula $x\in\left]c-r,c+r\right[.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En forma análoga,
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Mínimo relativo: 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Mínimo!– relativo
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $f:\left]a,b\right[\rightarrow\rz.$
+\end_inset
+
+ Si 
+\begin_inset Formula $c\in\left]a,b\right[,$
+\end_inset
+
+ se dice que 
+\begin_inset Formula $x=c$
+\end_inset
+
+ es mínimo relativo de la función 
+\begin_inset Formula $f,$
+\end_inset
+
+ si y sólo si existe un número real positivo 
+\begin_inset Formula $r,$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left]c-r,c+r\right[\subseteq\operatorname*{Dom}$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ y,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(c\right)\leq f\left(x\right)$
+\end_inset
+
+ para todo 
+\begin_inset Formula $x\in\left]c-r,c+r\right[.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En general, si 
+\begin_inset Formula $x=c$
+\end_inset
+
+ es máximo relativo o mínimo relativo, entonces 
+\begin_inset Formula $x=c$
+\end_inset
+
+ se denomina
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Valor extremo|textbf
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+valor extremo
+\shape default
+ o 
+\shape italic
+extremo de 
+\shape default
+
+\begin_inset Formula $f.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $c\in A,$
+\end_inset
+
+ 
+\begin_inset Formula $A\subseteq\operatorname*{Dom}\left(f\right);$
+\end_inset
+
+ Note que las definiciones anteriores sólo valen para puntos interiores
+ 
+\begin_inset Formula $A.$
+\end_inset
+
+ En el caso que 
+\begin_inset Formula $x=c$
+\end_inset
+
+ sea un punto de frontera de 
+\begin_inset Formula $A,$
+\end_inset
+
+ bastara con considerar la existencia de una vecindad lateral.
+\end_layout
+
+\begin_layout Standard
+Dado 
+\begin_inset Formula $A\subseteq\operatorname*{Dom}\left(f\right)$
+\end_inset
+
+, con 
+\begin_inset Formula $c\in A,$
+\end_inset
+
+ en el caso que 
+\begin_inset Formula $f\left(c\right)\geq f\left(x\right),$
+\end_inset
+
+ para toda 
+\begin_inset Formula $x\in A,$
+\end_inset
+
+ 
+\begin_inset Formula $x=c$
+\end_inset
+
+ se llamará
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Máximo!– absoluto
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Mínimo!– absoluto
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+máximo absoluto de 
+\shape default
+
+\begin_inset Formula $f$
+\end_inset
+
+
+\shape italic
+ en 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+ y si 
+\begin_inset Formula $f\left(c\right)\leq f\left(x\right)$
+\end_inset
+
+ para toda 
+\begin_inset Formula $x\in A,$
+\end_inset
+
+ 
+\begin_inset Formula $x=c$
+\end_inset
+
+ se dirá 
+\shape italic
+mínimo absoluto de 
+\shape default
+
+\begin_inset Formula $f$
+\end_inset
+
+
+\shape italic
+ en 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A modo de ilustración, consideremos la función
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{ccc}
+x^{4}-1 & \text{si} & x\leq-1\\
+1-x^{2} & \text{si} & -1<x\leq0\\
+2x-1 & \text{si} & 0<x\leq1\\
+-\left(x-1\right)\left(x-2\right) & \text{si} & 1<x
+\end{array}\right.
+\]
+
+\end_inset
+
+cuya gráfica se presenta en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "grafdefmaxmin"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-4-1.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Máximos y mínimos de una función
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "grafdefmaxmin"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sobre la función se puede afirmar que:
+\end_layout
+
+\begin_layout Enumerate
+En 
+\begin_inset Formula $x=0,x=1$
+\end_inset
+
+ y 
+\begin_inset Formula $x=\frac{3}{2},$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene valores máximos relativos.
+\end_layout
+
+\begin_layout Enumerate
+En 
+\begin_inset Formula $\left]-\infty,+\infty\right[,$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ no posee máximos absolutos.
+ Si consideramos la restricción de 
+\begin_inset Formula $f$
+\end_inset
+
+ al intervalo 
+\begin_inset Formula $\left[-1,+\infty\right[$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula $\left.f\right\vert _{\left[-1,+\infty\right[}$
+\end_inset
+
+ tiene en 
+\begin_inset Formula $x=0$
+\end_inset
+
+ y en 
+\begin_inset Formula $x=1$
+\end_inset
+
+ máximos absolutos y en 
+\begin_inset Formula $x=\frac{3}{2}$
+\end_inset
+
+ un máximo relativo.
+\end_layout
+
+\begin_layout Enumerate
+En 
+\begin_inset Formula $x=-1,$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene un valor mínimo relativo.
+\end_layout
+
+\begin_layout Enumerate
+En 
+\begin_inset Formula $\left]-\infty,+\infty\right[,$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ no posee mínimos absolutos.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left.f\right\vert _{\left[-1,+\infty\right[}$
+\end_inset
+
+ no tiene mínimo absolutos, pero 
+\begin_inset Formula $\left.f\right\vert _{\left]-\infty,-1\right]}$
+\end_inset
+
+ si posee un mínimo absoluto en 
+\begin_inset Formula $x=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+En 
+\begin_inset Formula $\left[-1,1\right]$
+\end_inset
+
+ la función posee valores máximos absolutos en 
+\begin_inset Formula $x=0$
+\end_inset
+
+ y en 
+\begin_inset Formula $x=1,$
+\end_inset
+
+ con 
+\begin_inset Formula $f\left(0\right)=f\left(1\right)=1.$
+\end_inset
+
+ Tiene un mínimo relativo en 
+\begin_inset Formula $x=-1.$
+\end_inset
+
+ La función 
+\begin_inset Formula $\left.f\right\vert _{\left[-1,1\right]}$
+\end_inset
+
+ no tiene mínimo absoluto.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x=-2$
+\end_inset
+
+ es un máximo absoluto de la función en 
+\begin_inset Formula $\left[-2,1\right],$
+\end_inset
+
+ pero no es un extremo relativo de la función en 
+\begin_inset Formula $\left]-\infty,+\infty\right[.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Con el ejemplo anterior, debe quedar presente que la existencia o carencia
+ de máximos o mínimos relativos ( o absolutos) , depende tanto de la función
+ como del intervalo que escojamos para analizar la existencia de valores
+ extremos.
+ Observe que en general 
+\begin_inset Formula $x=c$
+\end_inset
+
+ puede ser un valor extremo aun cuando la función no sea continua en dicho
+ punto 
+\begin_inset Formula $\left(\text{ Por Ejemplo, }x=0\right)$
+\end_inset
+
+, o no sea derivable 
+\begin_inset Formula $\left(\text{ Por Ejemplo, }x=-1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El resultado siguiente nos muestra porque nos interesa considerar hipótesis
+ de derivabilidad en el interior de un intervalo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "valorexteint"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ derivable en 
+\begin_inset Formula $\left]a,b\right[\subseteq\operatorname*{Dom}\left(f\right).$
+\end_inset
+
+ Si 
+\begin_inset Formula $f$
+\end_inset
+
+ posee un valor extremo relativo en 
+\begin_inset Formula $x=c\in\left]a,b\right[,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f^{\prime}\left(c\right)=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como consecuencia del teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "valorexteint"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, al analizar la existencia de valores extremos de una función en un intervalo
+ 
+\begin_inset Formula $I$
+\end_inset
+
+, se consideran las siguientes posibilidades:
+\end_layout
+
+\begin_layout Enumerate
+Los valores extremos estan en los puntos interiores de 
+\begin_inset Formula $I$
+\end_inset
+
+ donde 
+\begin_inset Formula $f^{\prime}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Los valores extremos estan en sus extremos (en el caso que los extremos
+ esten contenidos en 
+\begin_inset Formula $I$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Los valores extremos estan en los puntos de 
+\begin_inset Formula $I$
+\end_inset
+
+ donde 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ no este definida.
+ 
+\end_layout
+
+\begin_layout Standard
+Esto se recoje en la siguiente definición.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Punto crítico: 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Puntos críticos|textbf
+\end_layout
+
+\end_inset
+
+Un punto interior del dominio de una función 
+\begin_inset Formula $f,$
+\end_inset
+
+ donde 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ sea cero o no esté definida se llama punto crítico de 
+\begin_inset Formula $f.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En virtud a la definición anterior, el resultado siguiente es inmediato.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Si 
+\begin_inset Formula $x=c$
+\end_inset
+
+ es un valor extremo relativo de 
+\begin_inset Formula $f.$
+\end_inset
+
+ Entonces 
+\begin_inset Formula $x=c$
+\end_inset
+
+ es un punto crítico.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Debe ser claro que el recíproco de la afirmación anterior es falso.
+ Consideremos la función 
+\begin_inset Formula $f\left(x\right)=x^{3}$
+\end_inset
+
+.
+ La derivada 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ esta dada por 
+\begin_inset Formula $f^{\prime}\left(x\right)=3x^{2},$
+\end_inset
+
+ lo que implica que 
+\begin_inset Formula $x=0$
+\end_inset
+
+ es un punto crítico.
+ Pero 
+\begin_inset Formula $x=0$
+\end_inset
+
+ no es un valor extremo, ya que siempre existen 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ en cualquier vecindad de 
+\begin_inset Formula $x=0$
+\end_inset
+
+ tales que 
+\begin_inset Formula 
+\[
+f\left(x_{1}\right)>0\wedge f\left(x_{2}\right)<0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para
+\begin_inset Formula 
+\[
+g(x)=\left\{ \begin{array}{ccc}
+-2x+e^{x}, & \text{si} & x\leq0\\
+x+1, & \text{si} & 0<x<2\\
+3-x & \text{si} & x\geq2
+\end{array}\right.,
+\]
+
+\end_inset
+
+los puntos críticos son
+\end_layout
+
+\begin_layout Enumerate
+El punto de discontinuidad 
+\begin_inset Formula $x=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+El punto 
+\begin_inset Formula $x=0$
+\end_inset
+
+, donde la función es continua pero la derivada no existe, y
+\end_layout
+
+\begin_layout Enumerate
+Aquellos puntos 
+\begin_inset Formula $x$
+\end_inset
+
+, si existen, donde 
+\begin_inset Formula $f^{\prime}(x)=0$
+\end_inset
+
+.
+ Nótese que estos últimos son las soluciones de 
+\begin_inset Formula $-2+e^{x}=0,x<0$
+\end_inset
+
+.
+ Por ser 
+\begin_inset Formula $exp$
+\end_inset
+
+ uno-a-uno, la única solución de 
+\begin_inset Formula $e^{x}=2$
+\end_inset
+
+ es 
+\begin_inset Formula $x=\ln(2)$
+\end_inset
+
+, el cual es positivo.
+ De esa manera 
+\begin_inset Formula $g^{\prime}(x)$
+\end_inset
+
+ no es nula.
+ 
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, los únicos puntos críticos de 
+\begin_inset Formula $g$
+\end_inset
+
+ son 
+\begin_inset Formula $x=0$
+\end_inset
+
+ y 
+\begin_inset Formula $x=2$
+\end_inset
+
+.
+ La figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ejeexrel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ muestra que en 
+\begin_inset Formula $x=0$
+\end_inset
+
+ hay un mínimo relativo (
+\begin_inset Formula $g(0)=1$
+\end_inset
+
+), y en 
+\begin_inset Formula $x=2$
+\end_inset
+
+, por el contrario, no se alcanza un extremo relativo.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-4-2.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Valores extremos relativos de 
+\begin_inset Formula $g.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ejeexrel"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teorema del valor medio.
+\end_layout
+
+\begin_layout Standard
+En el capítulo 2, se mostró como una consecuencia importante de una función
+ continua en un intervalo cerrado, el que la función presenta valores máximos
+ y mínimos absolutos.
+ El resultado es el siguiente (Para su prueba Consultar 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lang"
+literal "false"
+
+\end_inset
+
+,
+\begin_inset CommandInset citation
+LatexCommand cite
+key "A"
+literal "false"
+
+\end_inset
+
+ o 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rudin"
+literal "false"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Teorema!– de los valores extremos
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tvex"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "teoremavalorextremo"
+
+\end_inset
+
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en un intervalo cerrado 
+\begin_inset Formula $\left[a,b\right],$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ presenta un máximo absoluto y un mínimo absoluto en 
+\begin_inset Formula $\left[a,b\right].$
+\end_inset
+
+ Es decir, existen 
+\begin_inset Formula $x_{1},x_{2}\in\left[a,b\right]$
+\end_inset
+
+ tales que para toda 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x_{2}\right)\leq f\left(x\right)\leq f\left(x_{1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La continuidad de 
+\begin_inset Formula $f$
+\end_inset
+
+ es determinante para que se verifique el teorema de los valores extremos.
+ Por ejemplo, considere la función
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{ccc}
+\left(x+2\right)^{2} & \text{si} & -1\leq x<0\\
+2 & \text{si} & x=0\\
+x & \text{si} & 0<x\leq1
+\end{array}\right.
+\]
+
+\end_inset
+
+cuya gráfica se presenta a continuación.
+ Es claro que 
+\begin_inset Formula $f$
+\end_inset
+
+ es discontinua en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ Observe que 
+\begin_inset Formula $f$
+\end_inset
+
+ no posee máximo, ni mínimo en 
+\begin_inset Formula $\left[-1,1\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-4-3.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "conteorvalextr"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observación
+status open
+
+\begin_layout Plain Layout
+El teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "teoremavalorextremo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\series bold
+sólo
+\series default
+ afirma la existencia de valores extremos absolutos de una función continua
+ en un intervalo cerrado.
+ Pero no nos dice nada sobre donde estan dichos valores.
+\begin_inset Newline newline
+\end_inset
+
+En caso de que una función 
+\begin_inset Formula $f$
+\end_inset
+
+ tenga valores extremos en un intervalo cerrado 
+\begin_inset Formula $\left[a,b\right],$
+\end_inset
+
+ estos valores extremos sólo pueden pertenecer al conjunto formado por la
+ unión del conjunto de los puntos críticos de 
+\begin_inset Formula $f$
+\end_inset
+
+ que esten en 
+\begin_inset Formula $\left[a,b\right],$
+\end_inset
+
+ y el conjunto 
+\begin_inset Formula $\left\{ a,b\right\} .$
+\end_inset
+
+Una evaluación de estos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+candidatos a valores extremos
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ en 
+\begin_inset Formula $f$
+\end_inset
+
+ nos dirá que valores son máximos y cuales són mínimos.
+ Para ilustración se presenta el siguiente ejemplo
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "ejemploprimero"
+
+\end_inset
+
+Considérese la función 
+\begin_inset Formula $f$
+\end_inset
+
+ definida por 
+\begin_inset Formula 
+\[
+f(x)=4x^{3}-3x^{2}-6x+1.
+\]
+
+\end_inset
+
+Puesto que 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en todo real 
+\begin_inset Formula $x$
+\end_inset
+
+, los puntos críticos de 
+\begin_inset Formula $f$
+\end_inset
+
+ son aquellos valores de 
+\begin_inset Formula $x$
+\end_inset
+
+ para los cuales 
+\begin_inset Formula 
+\[
+f^{\prime}(x)=12x^{2}-6x-6=6(2x^{2}-x-1)=6(2x+1)(x-1)=0.
+\]
+
+\end_inset
+
+Es decir, los puntos críticos son 
+\begin_inset Formula $x=-\frac{1}{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+ Así, si 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene extremos relativos, estos se alcanzan en tales puntos críticos.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-4-4.pdf
+	lyxscale 40
+	scale 40
+	draft
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de 
+\begin_inset Formula $f(x)=4x^{3}-3x^{2}-6x+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "extremorelejemplo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una gráfica de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ se muestra en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "extremorelejemplo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ en la cual se puede notar que un máximo relativo está en 
+\begin_inset Formula $x=-\frac{1}{2}$
+\end_inset
+
+ y un mínimo relativo se alcanza en 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+ Los valores extremos (absolutos) de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el intervalo 
+\begin_inset Formula $[0,2]$
+\end_inset
+
+, los cuales existen por el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "teoremavalorextremo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se localizan entonces ya sea en los extremos 
+\begin_inset Formula $x=0,x=2$
+\end_inset
+
+ o en el punto crítico 
+\begin_inset Formula $x=1$
+\end_inset
+
+ (Note que se excluye 
+\begin_inset Formula $x=-\frac{1}{2}$
+\end_inset
+
+) .
+ Evaluando (u observando la gráfica) se tienen: 
+\begin_inset Formula 
+\[
+\begin{tabular}{lcl}
+ \ensuremath{f(0)}  &  \ensuremath{=}  &  \ensuremath{1}\\
+ \ensuremath{f(1)}  &  \ensuremath{=}  &  \ensuremath{-4}\\
+ \ensuremath{f(2)}  &  \ensuremath{=}  &  \ensuremath{11} 
+\end{tabular}\ 
+\]
+
+\end_inset
+
+de donde el máximo absoluto de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $[0,2]$
+\end_inset
+
+ es 
+\begin_inset Formula $11$
+\end_inset
+
+ y se alcanza en 
+\begin_inset Formula $x=2$
+\end_inset
+
+.
+ El mínimo absoluto en el intervalo considerado se alcanza en el punto interior
+ 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al discutir la existencia de valores extremos en un intervalo 
+\begin_inset Formula $I,$
+\end_inset
+
+ es primordial determinar los valores donde la derivada de una función se
+ anule en el interior de 
+\begin_inset Formula $I,$
+\end_inset
+
+ esto consecuencia del teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "valorexteint"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Un caso particular donde se asegura la existencia de puntos donde se anule
+ la derivada esta dado por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Teorema!– de Rolle
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función continua en el intervalo cerrado 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ y derivable en 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+ Supongamos tambien que 
+\begin_inset Formula $f\left(a\right)=f\left(b\right).$
+\end_inset
+
+ Entonces existe por lo menos un punto 
+\begin_inset Formula $c$
+\end_inset
+
+ en 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f^{\prime}\left(c\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Geométricamente se puede inferir, previa comprobación de las hipótesis del
+ Teorema de Rolle; la existencia de rectas horizontales, tangentes a la
+ gráfica de 
+\begin_inset Formula $f.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-4-5.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ Teorema de Rolle 
+\end_layout
+
+\begin_layout Standard
+La versión 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+oblicua
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ del teorema anterior da como resultado el teorema del valor medio que se
+ enuncia a continuación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Teorema!– del valor medio para derivadas
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función continua en el intervalo cerrado 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ y derivable en 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+Entonces existe por lo menos un punto 
+\begin_inset Formula $c\in\left]a,b\right[$
+\end_inset
+
+ en el cual 
+\begin_inset Formula 
+\[
+\frac{f\left(b\right)-f\left(a\right)}{b-a}=f^{\prime}\left(c\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-4-6.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Teorema del valor medio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note que como consecuencia del teorema del valor medio, se puede inferir
+ la existencia de una recta tangente a la gráfica de la función 
+\begin_inset Formula $f,$
+\end_inset
+
+ paralela a la secante, a la gráfica de 
+\begin_inset Formula $f,$
+\end_inset
+
+ que pasa por los puntos 
+\begin_inset Formula $\left(a,f\left(a\right)\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(b,f\left(b\right)\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La importancia del teorema del valor medio radica en que en virtud a él
+ se pueden probar afirmaciones, que conducen en forma directa a los denominados
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+criterio de primera derivada 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+criterio de segunda derivada
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+, herramientas utiles para los objetivos del presente capítulo que se enunciaran
+ en la siguiente sección.
+\end_layout
+
+\begin_layout Section
+Funciones monótonas
+\end_layout
+
+\begin_layout Subsection
+Funciones crecientes y decrecientes
+\end_layout
+
+\begin_layout Standard
+Consideremos la gráfica de una función 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+.
+ De manera intuitiva se puede mostrar en que puntos 
+\begin_inset Quotes eld
+\end_inset
+
+crece
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+decrece
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+, donde 
+\begin_inset Quotes eld
+\end_inset
+
+toma el mayor valor
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+y donde 
+\begin_inset Quotes eld
+\end_inset
+
+toma el menor valor
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+la gráfica de la función 
+\begin_inset Formula $f$
+\end_inset
+
+ .
+ Debe notarse que en general estas 
+\begin_inset Quotes eld
+\end_inset
+
+caracteristicas
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+dependen tanto de la función como del intervalo que elijamos.
+ Nuestro interes consistirá en determinar, en forma analítica, en que intervalos
+ la gráfica presenta dichos comportamientos.
+ Para ello iniciamos con el concepto de funciones monótonas.
+\end_layout
+
+\begin_layout Standard
+Inicialmente diremos que una función 
+\begin_inset Formula $f$
+\end_inset
+
+ es creciente en un intervalo abierto 
+\begin_inset Formula $I,$
+\end_inset
+
+ si y sólo si para cualquier par 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ en 
+\begin_inset Formula $I$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{tabular}{lll}
+ \ensuremath{x_{1}>x_{2}}  &  implica  &  \ensuremath{f\left(x_{1}\right)\geq f\left(x_{2}\right)}\end{tabular}
+\]
+
+\end_inset
+
+en el caso que 
+\begin_inset Formula $f\left(x_{1}\right)>f\left(x_{2}\right)$
+\end_inset
+
+ para todo 
+\begin_inset Formula $x_{1}>x_{2}$
+\end_inset
+
+ en 
+\begin_inset Formula $I$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ se dice estrictamente creciente.
+\end_layout
+
+\begin_layout Standard
+En forma análoga, 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– creciente
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– decreciente
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ se dice decreciente en un intervalo abierto 
+\begin_inset Formula $I,$
+\end_inset
+
+ si y sólo si para cualquier par 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ en 
+\begin_inset Formula $I$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{tabular}{lll}
+ \ensuremath{x_{1}>x_{2}}  &  implica  &  \ensuremath{f\left(x_{1}\right)\leq f\left(x_{2}\right)}\end{tabular}\ \ \ \ 
+\]
+
+\end_inset
+
+en el caso que 
+\begin_inset Formula $f\left(x_{1}\right)<f\left(x_{2}\right)$
+\end_inset
+
+ para todo 
+\begin_inset Formula $x_{1}>x_{2}$
+\end_inset
+
+ en 
+\begin_inset Formula $I,$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ se dice estrictamente decreciente.
+ Tenemos entonces
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Función monótona: 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– monótona
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ se dice monótona en el intervalo 
+\begin_inset Formula $I$
+\end_inset
+
+ si, y sólo si 
+\begin_inset Formula $f$
+\end_inset
+
+ es creciente (estrictamente creciente) ó decreciente (estrictamente decreciente
+) en 
+\begin_inset Formula $I.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "ex1"
+
+\end_inset
+
+Sea la función 
+\begin_inset Formula $f\left(x\right):=x^{3},$
+\end_inset
+
+ (ver fígura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ) probar que 
+\begin_inset Formula $f$
+\end_inset
+
+ es creciente en 
+\begin_inset Formula $\left(-\infty,+\infty\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-4-7.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de 
+\begin_inset Formula $f\left(x\right)=x^{3}.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Para 
+\begin_inset Formula $x_{1},x_{2}\in\rz$
+\end_inset
+
+ supongamos que 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $f\left(x_{1}\right)\geq f\left(x_{2}\right),$
+\end_inset
+
+ es decir 
+\begin_inset Formula $x_{1}-x_{2}<0$
+\end_inset
+
+ y 
+\begin_inset Formula $x_{1}^{3}\geq x_{2}^{3}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Como 
+\begin_inset Formula $x_{1}^{3}\geq x_{2}^{3}$
+\end_inset
+
+ equivale a 
+\begin_inset Formula $\left(x_{1}-x_{2}\right)\left(x_{1}^{2}+x_{1}x_{2}+x_{2}^{2}\right)\geq0$
+\end_inset
+
+ y ya que 
+\begin_inset Formula $x_{1}^{2}+x_{1}x_{2}+x_{2}^{2}\geq0$
+\end_inset
+
+ para cualquier par 
+\begin_inset Formula $x_{1},x_{2}\in\rz$
+\end_inset
+
+ (¿Por qué?), se tiene que 
+\begin_inset Formula $x_{1}-x_{2}\geq0$
+\end_inset
+
+, lo anterior contradice el hecho de que 
+\begin_inset Formula $x_{1}-x_{2}<0.$
+\end_inset
+
+ Por lo tanto, se cumple para 
+\begin_inset Formula $x_{1},x_{2}\in\rz,$
+\end_inset
+
+ que 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+ implica 
+\begin_inset Formula $f\left(x_{1}\right)<f\left(x_{2}\right)$
+\end_inset
+
+.
+ Es decir 
+\begin_inset Formula $f\left(x\right)=x^{3}$
+\end_inset
+
+ es creciente en 
+\begin_inset Formula $\left(-\infty,+\infty\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Debe ser claro que una función no necesariamente es monótona en todo su
+ dominio.
+ Por ejemplo, al analizar la gráfica 
+\begin_inset space \space{}
+\end_inset
+
+de la función 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+ (figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), se puede identificar que la función es estrictamente decreciente en 
+\begin_inset Formula $\left]-\infty,0\right[$
+\end_inset
+
+ y estrictamente creciente en 
+\begin_inset Formula $\left]0,+\infty\right[.$
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-4-8.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de 
+\begin_inset Formula $f\left(x\right)=x^{2}.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Usualmente se divide el dominio de una función en un número finito de intervalos
+ abiertos, tal que en cada uno de los cuales la función sea monótona, cada
+ uno de estos intervalos reciben el nombre de 
+\shape italic
+intervalos de monotonía
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Intervalos!– de monotonía
+\end_layout
+
+\end_inset
+
+
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-4-9.pdf
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ Intervalos de monotonía.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "figmon"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por ejemplo, en la gráfica mostrada en la fígura anterior.
+ La función es decreciente en los intervalos 
+\begin_inset Formula $I_{1},I_{5}$
+\end_inset
+
+ y creciente en los intervalos 
+\begin_inset Formula $I_{2},I_{3},I_{4},I_{6}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al analizar la relación entre la gráfica de una función monótona en un intervalo
+ y la gráfica de sus rectas tangentes, se observa que si la función es creciente
+ en un intervalo, las rectas tangentes (en caso de existir) poseen pendientes
+ positivas.
+ de igual forma se observa que si la función es decreciente, las rectas
+ tangentes (en caso de existir) poseen pendientes negativas.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-4-10.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este aproximación intuitiva se apoya en el teorema, consecuencia directa
+ del teorema del valor medio, que se presenta a continuación, que nos permitirá
+ identificar los intervalos de monotonía de una función dada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "th1"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función continua en cada punto del intervalo abierto 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+ y diferenciable en el intervalo abierto 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime}\left(x\right)>0$
+\end_inset
+
+ para toda 
+\begin_inset Formula $x\in\left]a,b\right[,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es creciente en 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime}\left(x\right)<0$
+\end_inset
+
+ para toda 
+\begin_inset Formula $x\in\left]a,b\right[,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es decreciente en 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime}\left(x\right)=0$
+\end_inset
+
+ para toda 
+\begin_inset Formula $x\in\left]a,b\right[,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es constante en 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Sea la función 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+, determine los intervalos de monotonía de la función.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Ya que 
+\begin_inset Formula $f\left(x\right)=x^{2},$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $f^{\prime}\left(x\right)=2x.$
+\end_inset
+
+ Utilizando el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "th1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se puede concluir que la función es creciente en el conjunto 
+\begin_inset Formula $\left\{ x\mid2x>0\right\} =\left]0,+\infty\right[.$
+\end_inset
+
+ Para determinar donde es decreciente se debe resolver la desigualdad 
+\begin_inset Formula $2x<0,$
+\end_inset
+
+ por lo tanto la función es decreciente en 
+\begin_inset Formula $\left]-\infty,0\right[.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "th1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nos permite afirmar que la función 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+ es creciente en 
+\begin_inset Formula $\left]0,+\infty\right[,$
+\end_inset
+
+ y decreciente en 
+\begin_inset Formula $\left]-\infty,0\right[.$
+\end_inset
+
+ Pero debe ser claro que la función es creciente en cualquier intervalo
+ de la forma 
+\begin_inset Formula $\left[a,0\right]$
+\end_inset
+
+ o 
+\begin_inset Formula $\left]a,0\right],$
+\end_inset
+
+ 
+\begin_inset Formula $a\in\rz^{\ast},$
+\end_inset
+
+ y decreciente en cualquier intervalo de la forma 
+\begin_inset Formula $\left[0,b\right]$
+\end_inset
+
+o 
+\begin_inset Formula $\left[0,b\right[,$
+\end_inset
+
+ 
+\begin_inset Formula $b\in\rz^{\ast}.$
+\end_inset
+
+ Para extender el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "th1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ a otros tipos de intervalos basta con exigir continuidad lateral, de esta
+ forma se tiene el siguiente resultado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "th1def2"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función continua en cada punto del intervalo cerrado 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ y diferenciable en el intervalo abierto 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime}\left(x\right)>0$
+\end_inset
+
+ para toda 
+\begin_inset Formula $x\in\left]a,b\right[,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es creciente en 
+\begin_inset Formula $\left[a,b\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime}\left(x\right)<0$
+\end_inset
+
+ para toda 
+\begin_inset Formula $x\in\left]a,b\right[,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es decreciente en 
+\begin_inset Formula $\left[a,b\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime}\left(x\right)=0$
+\end_inset
+
+ para toda 
+\begin_inset Formula $x\in\left]a,b\right[,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es constante en 
+\begin_inset Formula $\left[a,b\right].$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como consecuencia inmediata del teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "th1def2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se tiene el criterio de primera derivada para valores extremos locales.
+\end_layout
+
+\begin_layout Subsection
+Criterio de la primera derivada
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!Criterio de la primera –
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $f$
+\end_inset
+
+ continua en un intervalo 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+ y 
+\begin_inset Formula $c\in\left]a,b\right[$
+\end_inset
+
+ un punto crítico de 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ cambia de positiva a negativa en 
+\begin_inset Formula $c$
+\end_inset
+
+, es decir: 
+\begin_inset Formula $f^{\prime}>0$
+\end_inset
+
+ para 
+\begin_inset Formula $x<c$
+\end_inset
+
+ y 
+\begin_inset Formula $f^{\prime}<0$
+\end_inset
+
+ para 
+\begin_inset Formula $x>c$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ posee un valor máximo local en 
+\begin_inset Formula $c.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ cambia de negativa a positiva en 
+\begin_inset Formula $c$
+\end_inset
+
+, es decir: 
+\begin_inset Formula $f^{\prime}<0$
+\end_inset
+
+ para 
+\begin_inset Formula $x<c$
+\end_inset
+
+ y 
+\begin_inset Formula $f^{\prime}>0$
+\end_inset
+
+ para 
+\begin_inset Formula $x>c$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ posee un valor mínimo local en 
+\begin_inset Formula $c.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ no cambia de signo en 
+\begin_inset Formula $c,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $c$
+\end_inset
+
+ no es valor extremo de 
+\begin_inset Formula $f.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Concavidad
+\end_layout
+
+\begin_layout Subsection
+Concavidad hacia arriba y hacia abajo
+\end_layout
+
+\begin_layout Definition
+Concava hacia arriba: 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– concava!hacia arriba|textit
+\end_layout
+
+\end_inset
+
+Se dice que la gráfica de una función 
+\begin_inset Formula $f$
+\end_inset
+
+ es cóncava hacia arriba en el punto 
+\begin_inset Formula $\left(c,f\left(c\right)\right),$
+\end_inset
+
+ si existen 
+\begin_inset Formula $f^{\prime}\left(c\right)$
+\end_inset
+
+ y un entorno de 
+\begin_inset Formula $x=c$
+\end_inset
+
+ tal que para todos los puntos 
+\begin_inset Formula $x$
+\end_inset
+
+ del entorno distintos de 
+\begin_inset Formula $c$
+\end_inset
+
+, el punto 
+\begin_inset Formula $\left(x,f\left(x\right)\right)$
+\end_inset
+
+ en la gráfica está arriba de la recta tangente a la gráfica en 
+\begin_inset Formula $\left(c,f\left(c\right)\right)$
+\end_inset
+
+.
+ De otra parte, diremos que la gráfica de una función 
+\begin_inset Formula $f$
+\end_inset
+
+ es cóncava hacia arriba en el intervalo 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+ si 
+\begin_inset Formula $f$
+\end_inset
+
+ es cóncava hacia arriba en cada punto de 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Concava hacia abajo: 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– concava!hacia abajo|textit
+\end_layout
+
+\end_inset
+
+Se dice que la gráfica de una función 
+\begin_inset Formula $f$
+\end_inset
+
+ es cóncava hacia abajo en el punto 
+\begin_inset Formula $\left(c,f\left(c\right)\right),$
+\end_inset
+
+ si existen 
+\begin_inset Formula $f^{\prime}\left(c\right)$
+\end_inset
+
+ y un entorno de 
+\begin_inset Formula $x=c$
+\end_inset
+
+ tal que para todos los puntos 
+\begin_inset Formula $x$
+\end_inset
+
+ del entorno distintos de 
+\begin_inset Formula $c$
+\end_inset
+
+, el punto 
+\begin_inset Formula $\left(x,f\left(x\right)\right)$
+\end_inset
+
+ en la gráfica está debajo de la recta tangente a la gráfica en 
+\begin_inset Formula $\left(c,f\left(c\right)\right)$
+\end_inset
+
+.
+ De otra parte, diremos que la gráfica de una función 
+\begin_inset Formula $f$
+\end_inset
+
+ es cóncava hacia arriba en el intervalo 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+ si 
+\begin_inset Formula $f$
+\end_inset
+
+ es cóncava hacia arriba en cada punto de 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+ 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los puntos donde la gráfica de la función cambia de concavidad, se llaman
+ puntos de inflexión.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Puntos de inflexión|textbf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/concavidad.pdf
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En virtud a la definición se tiene que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función diferenciable en el intervalo abierto 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+La gráfica de una función es concava hacia arriba si, y sólo si 
+\begin_inset Formula $f^{\prime}\left(x\right)$
+\end_inset
+
+ es creciente en 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+La gráfica de una función es concava hacia abajo si, y sólo si 
+\begin_inset Formula $f^{\prime}\left(x\right)$
+\end_inset
+
+ es decreciente en 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como consecuencia del teorema anterior y del teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "th1def2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se tiene:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función dos veces diferenciable en el intervalo abierto 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+La gráfica de una función es concava hacia arriba, si y sólo si 
+\begin_inset Formula $f^{\prime\prime}\left(x\right)>0$
+\end_inset
+
+ para todo 
+\begin_inset Formula $x\in\left]a,b\right[.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+La gráfica de una función es concava hacia abajo, si y sólo si 
+\begin_inset Formula $f^{\prime\prime}\left(x\right)<0$
+\end_inset
+
+ para todo 
+\begin_inset Formula $x\in\left]a,b\right[.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por último concluimos con el criterio de segunda derivada para valores extremos
+ locales.
+\end_layout
+
+\begin_layout Subsection
+Criterio de la segunda derivada
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!Criterio de la segunda –
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $f$
+\end_inset
+
+ continua en un intervalo 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+ y 
+\begin_inset Formula $c\in\left]a,b\right[$
+\end_inset
+
+ un punto crítico de 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime\prime}\left(c\right)<0$
+\end_inset
+
+, entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ posee un valor máximo local en 
+\begin_inset Formula $c.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime\prime}\left(c\right)>0$
+\end_inset
+
+, entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ posee un valor mínimo local en 
+\begin_inset Formula $c.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f^{\prime\prime}\left(c\right)=0$
+\end_inset
+
+, el criterio no decide nada.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejemplos resueltos
+\end_layout
+
+\begin_layout Subsection
+Ejemplos varios
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "gtr"
+
+\end_inset
+
+Sea la función 
+\begin_inset Formula $f\left(x\right):=x^{3}+3x^{2}-1$
+\end_inset
+
+.
+ Determine los intervalos de monotonía de la función.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Ya que 
+\begin_inset Formula $f\left(x\right):=x^{3}+3x^{2}-1,$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $f^{\prime}\left(x\right)=3x^{2}+6x=3x\left(x+2\right).$
+\end_inset
+
+ Para determinar los intervalos donde la función es creciente o decreciente
+ basta con determinar donde 
+\begin_inset Formula $f^{\prime}\left(x\right)=3x\left(x+2\right)>0$
+\end_inset
+
+ y donde 
+\begin_inset Formula $f^{\prime}\left(x\right)=3x\left(x+2\right)<0$
+\end_inset
+
+, respectivamente.
+\end_layout
+
+\begin_layout Standard
+Se resolverá la desigualdad mediante la tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "t1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, teniendo en cuenta que 
+\begin_inset Formula $f^{\prime}\left(x\right)=0$
+\end_inset
+
+ cuando 
+\begin_inset Formula $x=0$
+\end_inset
+
+ o 
+\begin_inset Formula $x=-2.$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{tabular}{|c|c|c|c|}
+\hline  Intervalos  &  \emph{V.P}  &  Signo de \ensuremath{f^{\prime}\left(x\right)}  &  Comportamiento\\
+\hline\hline  \ensuremath{\left(-\infty,-2\right)}  &  \ensuremath{-3}  &  \ensuremath{+}  &  \ensuremath{\nearrow}\\
+\hline  \ensuremath{\left(-2,0\right)}  &  \ensuremath{-1}  &  \ensuremath{-}  &  \ensuremath{\searrow}\\
+\hline  \ensuremath{\left(0,+\infty\right)}  &  \ensuremath{1}  &  \ensuremath{+}  &  \ensuremath{\nearrow} 
+\\\hline \end{tabular}\ 
+\]
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "t1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+es decir, la función es creciente 
+\begin_inset Formula $\left(-\infty,-2\right)\cup\left(0,+\infty\right),$
+\end_inset
+
+ y decreciente en 
+\begin_inset Formula $\left(-2,0\right),$
+\end_inset
+
+ esto coincide con el comportamiento de la gráfica de la función mostrada
+ en la figura de abajo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-1.pdf
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ Figura del ejemplo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gtr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Determine los puntos críticos de la función definida por 
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{tabular}{lll}
+ \ensuremath{3x^{2}+1}  &  \ensuremath{\text{, si}}  &  \ensuremath{x\leq1}\\
+ \ensuremath{6x}  &  , si  &  \ensuremath{x>1} 
+\end{tabular}\ \right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Analizemos la derivada de 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ en 
+\begin_inset Formula $x=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La derivada lateral izquierda 
+\begin_inset Formula $f_{-}^{\prime}\left(1\right)$
+\end_inset
+
+ viene dada por 
+\begin_inset Formula 
+\[
+f_{-}^{\prime}\left(1\right)=\lim_{x\rightarrow1^{-}}\frac{f\left(x\right)-f\left(1\right)}{x-1}=\lim_{x\rightarrow1^{-}}\frac{3x^{2}+1-4}{x-1}=\lim_{x\rightarrow1^{-}}3x+3=6
+\]
+
+\end_inset
+
+Pero la derivada lateral derecha 
+\begin_inset Formula $f_{+}^{\prime}\left(1\right)$
+\end_inset
+
+ no esta definida ya que 
+\begin_inset Formula 
+\[
+f_{+}^{\prime}\left(1\right)=\lim_{x\rightarrow1^{+}}\frac{f\left(x\right)-f\left(1\right)}{x-1}=\lim_{x\rightarrow1^{+}}\frac{6x-4}{x-1}=+\infty
+\]
+
+\end_inset
+
+Por lo tanto
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=\left\{ \begin{tabular}{lll}
+ \ensuremath{6x}  &  \ensuremath{\text{, si}}  &  \ensuremath{x<1}\\
+ No esta definida  &  \ensuremath{\text{, si}}  &  \ensuremath{x=1}\\
+ \ensuremath{6}  &  , si  &  \ensuremath{x>1} 
+\end{tabular}\ \right..
+\]
+
+\end_inset
+
+Entonces los puntos críticos de la función forman el conjunto 
+\begin_inset Formula $\left\{ 0,1\right\} .$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note que la función no es continua en 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset space \hspace*{}
+\length -4cm
+\end_inset
+
+(a)
+\begin_inset space \hspace{}
+\length 7cm
+\end_inset
+
+ (b)
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-4-2.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 3cm
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-4-2b.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "1"
+
+\end_inset
+
+Determine los puntos críticos y los intervalos de monotonía de la función
+ definida por 
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(8x-x^{2}\right)^{\frac{2}{3}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Es claro que el dominio de 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ son todos los reales.
+ La primera derivada 
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=\frac{2}{3}\left(8x-x^{2}\right)^{\frac{2}{3}-1}\left(8x-x^{2}\right)^{\prime}=-\frac{4}{3}\frac{x-4}{\sqrt[3]{8x-x^{2}}}
+\]
+
+\end_inset
+
+se anula en 
+\begin_inset Formula $x=4$
+\end_inset
+
+ y no está definida si 
+\begin_inset Formula $8x-x^{2}=0,$
+\end_inset
+
+ es decir cuando 
+\begin_inset Formula $x=0$
+\end_inset
+
+ o 
+\begin_inset Formula $x=8.$
+\end_inset
+
+ Por lo tanto, el conjunto de puntos críticos determinan el conjunto 
+\begin_inset Formula $\left\{ 0,4,8\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Los resultados del método de valores de prueba para resolver las desigualdades
+ 
+\begin_inset Formula $f^{\prime}>0$
+\end_inset
+
+ y 
+\begin_inset Formula $f^{\prime}<0$
+\end_inset
+
+ se recojen en la tabla siguiente: 
+\begin_inset Formula 
+\[
+\begin{tabular}{|c|c|c|c|}
+\hline  Intervalos  &  \ensuremath{k}  &  Signo de \ensuremath{f^{\prime}\left(x\right)}  &  Comportamiento\\
+\hline\hline  \ensuremath{\left(-\infty,0\right)}  &  \ensuremath{-1}  &  \ensuremath{-}  &  \ensuremath{\searrow}\\
+\hline  \ensuremath{\left(0,4\right)}  &  \ensuremath{2}  &  \ensuremath{+}  &  \ensuremath{\nearrow}\\
+\hline  \ensuremath{\left(4,8\right)}  &  \ensuremath{5}  &  \ensuremath{-}  &  \ensuremath{\searrow}\\
+\hline  \ensuremath{\left(8,+\infty\right)}  &  \ensuremath{9}  &  \ensuremath{+}  &  \ensuremath{\nearrow} 
+\\\hline \end{tabular}\ \ \ .
+\]
+
+\end_inset
+
+Por lo anterior, la función es decreciente en 
+\begin_inset Formula $\left(-\infty,0\right)\cup\left(4,8\right)$
+\end_inset
+
+ y creciente en 
+\begin_inset Formula $\left(0,4\right)\cup\left(8,+\infty\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Compare el resultado con la gráfica de la fun\SpecialChar softhyphen
+ción presentada a con\SpecialChar softhyphen
+ti\SpecialChar softhyphen
+nua\SpecialChar softhyphen
+ción
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-4-3.pdf
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Determine los valores extremos de la función 
+\begin_inset Formula $f\left(x\right)=xe^{-\frac{x^{2}}{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Ya que los valores extremos son puntos críticos, calculemos donde 
+\begin_inset Formula $f^{\prime}\left(x\right)=0$
+\end_inset
+
+ o 
+\begin_inset Formula $f^{\prime}\left(x\right)$
+\end_inset
+
+ no está definida.
+ Como 
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=\allowbreak e^{-\frac{1}{4}x^{2}}-\frac{1}{2}x^{2}e^{-\frac{1}{4}x^{2}}=\allowbreak-\frac{1}{2}e^{-\frac{1}{4}x^{2}}\left(-2+x^{2}\right)
+\]
+
+\end_inset
+
+se tiene que no hay valor real para el cual 
+\begin_inset Formula $f^{\prime}\left(x\right)$
+\end_inset
+
+ no esté definida, pero el conjunto 
+\begin_inset Formula $\left\{ x\mid f^{\prime}\left(x\right)=-\frac{1}{2}e^{-\frac{1}{4}x^{2}}\left(-2+x^{2}\right)=0\right\} =\left\{ \sqrt{2},-\sqrt{2}\right\} .$
+\end_inset
+
+ Entonces los posibles valores extremos son 
+\begin_inset Formula $\left\{ \sqrt{2},-\sqrt{2}\right\} .$
+\end_inset
+
+ A continuación, usaremos el criterio de la segunda derivada para determinar
+ si son valores extremos y en tal caso clasificarlos.
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula 
+\[
+f^{\prime\prime}\left(x\right)=-\frac{3}{2}xe^{-\frac{1}{4}x^{2}}+\frac{1}{4}x^{3}e^{-\frac{1}{4}x^{2}}=\allowbreak\frac{1}{4}xe^{-\frac{1}{4}x^{2}}\left(-6+x^{2}\right)
+\]
+
+\end_inset
+
+se tiene que 
+\begin_inset Formula 
+\[
+\begin{tabular}{lll}
+ \ensuremath{f^{\prime\prime}\left(\sqrt{2}\right)=-\sqrt{2}e^{-\frac{1}{2}}<0}  &  y  &  \ensuremath{f^{\prime\prime}\left(-\sqrt{2}\right)=\sqrt{2}e^{-\frac{1}{2}}>0}\end{tabular}
+\]
+
+\end_inset
+
+por lo tanto 
+\begin_inset Formula $x=-\sqrt{2}$
+\end_inset
+
+ es un mínimo de 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, mientras que 
+\begin_inset Formula $x=\sqrt{2}$
+\end_inset
+
+ es un máximo de 
+\begin_inset Formula $f\left(x\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Determine los valores extremos de la función definida por 
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{tabular}{lll}
+ \ensuremath{xe^{-\frac{x^{2}}{4}}}  &  \ensuremath{\text{, si}}  &  \ensuremath{x\leq0}\\
+ \ensuremath{\frac{x^{2}}{2}-x}  &  , si  &  \ensuremath{x>0.} 
+\end{tabular}\ \right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Analizemos la derivada de 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La derivada lateral izquierda 
+\begin_inset Formula $f_{-}^{\prime}\left(0\right)$
+\end_inset
+
+ viene dada por 
+\begin_inset Formula 
+\[
+f_{-}^{\prime}\left(0\right)=\lim_{x\rightarrow0^{-}}\frac{f\left(x\right)-f\left(0\right)}{x-0}=\lim_{x\rightarrow0^{-}}\frac{xe^{-\frac{x^{2}}{4}}-0}{x}=\lim_{x\rightarrow0^{-}}e^{-\frac{x^{2}}{4}}=1
+\]
+
+\end_inset
+
+De otra parte la derivada lateral derecha 
+\begin_inset Formula $f_{+}^{\prime}\left(0\right)$
+\end_inset
+
+ esta dada por
+\begin_inset Formula 
+\[
+f_{+}^{\prime}\left(0\right)=\lim_{x\rightarrow0^{+}}\frac{f\left(x\right)-f\left(0\right)}{x-0}=\lim_{x\rightarrow0^{+}}\frac{\frac{x^{2}}{2}-x-0}{x}=-1
+\]
+
+\end_inset
+
+Por lo tanto,
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=\left\{ \begin{tabular}{lll}
+ \ensuremath{-\frac{1}{2}e^{-\frac{1}{4}x^{2}}\left(-2+x^{2}\right)}  &  \ensuremath{\text{, si}}  &  \ensuremath{x<0}\\
+ No esta definida  &  \ensuremath{\text{, si}}  &  \ensuremath{x=0}\\
+ \ensuremath{x-1}  &  , si  &  \ensuremath{x>0} 
+\end{tabular}\ \ \ \right..
+\]
+
+\end_inset
+
+Entonces los puntos críticos de la función forman el conjunto 
+\begin_inset Formula $\left\{ -\sqrt{2},0,1\right\} .$
+\end_inset
+
+ A continuación usaremos el criterio de la primera derivada para determinar
+ si son valores extremos y en cuyo caso clasificarlos.
+\begin_inset Formula 
+\[
+\begin{tabular}{cc|c|c}
+ \cline{3-3}  &   &  Signos  &  \\
+\hline \multicolumn{1}{|c}{ } & \multicolumn{1}{|c|}{\ensuremath{k} } &  \ensuremath{f^{\prime}\left(x\right)}  & \multicolumn{1}{|c|}{Comportamiento}\\
+\hline\hline \multicolumn{1}{|c}{\ensuremath{\left(-\infty,-\sqrt{2}\right)} } & \multicolumn{1}{|c|}{\ensuremath{-2} } &  \ensuremath{-}  & \multicolumn{1}{|c|}{\ensuremath{\searrow}}\\
+\hline \multicolumn{1}{|c}{\ensuremath{\left(-\sqrt{2},0\right)} } & \multicolumn{1}{|c|}{\ensuremath{-1} } &  \ensuremath{+}  & \multicolumn{1}{|c|}{\ensuremath{\nearrow}}\\
+\hline \multicolumn{1}{|c}{\ensuremath{\left(0,1\right)} } & \multicolumn{1}{|c|}{\ensuremath{\frac{1}{2}} } &  \ensuremath{-}  & \multicolumn{1}{|c|}{\ensuremath{\searrow}}\\
+\hline \multicolumn{1}{|c}{\ensuremath{\left(1,+\infty\right)} } & \multicolumn{1}{|c|}{\ensuremath{2} } &  \ensuremath{+}  & \multicolumn{1}{|c|}{\ensuremath{\nearrow} }
+\\\hline \end{tabular}\ \ .
+\]
+
+\end_inset
+
+Ya que la función cambia su monotonía de decreciente a creciente alrededor
+ de 
+\begin_inset Formula $x=-\sqrt{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $x=1,$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $x=-\sqrt{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $x=1$
+\end_inset
+
+ son mínimos de 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ y como el cambio de monotonía alrededor de 
+\begin_inset Formula $x=0$
+\end_inset
+
+ fue de de creciente a decreciente, entonces 
+\begin_inset Formula $x=0$
+\end_inset
+
+ es máximo de 
+\begin_inset Formula $f\left(x\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La gráfica de esta función viene dada a continuación
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-4-5.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Sea 
+\begin_inset Formula 
+\[
+g\left(x\right)=e^{-\frac{1}{2}x}\left(x^{2}+bx+c\right)
+\]
+
+\end_inset
+
+Obtenga valores para 
+\begin_inset Formula $b$
+\end_inset
+
+ y 
+\begin_inset Formula $c$
+\end_inset
+
+ tales que 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ tenga un mínimo en 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ y un punto de inflexión en 
+\begin_inset Formula $x=2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+El calculo de la primera y segunda derivada de 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ da como resultado:
+\begin_inset Formula 
+\begin{align*}
+g^{\prime}\left(x\right) & =-\frac{1}{2}e^{-\frac{1}{2}x}\left(x^{2}+x\left(b-4\right)+c-2b\right)\\
+g^{\prime\prime}\left(x\right) & =\frac{1}{4}e^{-\frac{1}{2}x}\left(x^{2}+x\left(b-8\right)+c-4b+8\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como las funciones 
+\begin_inset Formula $e^{\alpha x}$
+\end_inset
+
+ y 
+\begin_inset Formula $x^{2}+\beta x+\kappa$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\alpha,\beta,\kappa\in\rz\right),$
+\end_inset
+
+ son continuas y diferenciables en todos los reales, 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ es mínimo de 
+\begin_inset Formula $g\left(x\right),$
+\end_inset
+
+ implica que 
+\begin_inset Formula $g^{\prime}\left(1\right)=0,$
+\end_inset
+
+ es decir 
+\begin_inset Formula $-\frac{1}{2}e^{\frac{1}{2}}\left(5-3b+c\right)=0;$
+\end_inset
+
+ de donde
+\begin_inset Formula 
+\begin{equation}
+c-3b=-5.\label{bc1}
+\end{equation}
+
+\end_inset
+
+De otra parte si 
+\begin_inset Formula $x=2$
+\end_inset
+
+ es punto de inflexión de 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+, se cumple que 
+\begin_inset Formula $g^{\prime\prime}\left(2\right)=0,$
+\end_inset
+
+ es decir
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{4}e^{-1}\left(-4-2b+c\right)=0;$
+\end_inset
+
+ de donde
+\begin_inset Formula 
+\begin{equation}
+c-2b=4.\label{bc2}
+\end{equation}
+
+\end_inset
+
+De (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "bc1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "bc2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) se forma el sistema
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+c-3b=-5\\
+c-2b=4
+\end{array}\right.
+\]
+
+\end_inset
+
+cuya solución está dada por 
+\begin_inset Formula $c=22$
+\end_inset
+
+ y 
+\begin_inset Formula $b=9.$
+\end_inset
+
+ Entonces la función está dada por 
+\begin_inset Formula 
+\[
+g\left(x\right)=e^{-\frac{1}{2}x}\left(x^{2}+9x+22\right).
+\]
+
+\end_inset
+
+La gráfica de esta función se presenta a continuación
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-4-6.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Realice un bosquejo de la gráfica de la función 
+\begin_inset Formula $f\left(x\right)=x^{3}\ln x^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Dominio: 
+\begin_inset Formula $Dom_{f}=\rz-\left\{ 0\right\} \smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intersecciones con el eje 
+\begin_inset Formula $x:$
+\end_inset
+
+ No tiene.
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intersecciones con el eje 
+\begin_inset Formula $y:$
+\end_inset
+
+ No tiene.
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asíntota vertical: No tiene.
+ (Observe que 
+\begin_inset Formula $\lim\limits _{x\rightarrow0}x^{3}\ln x^{2}=0$
+\end_inset
+
+).
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asíntota horizontal: No tiene.
+ (¿Por qué?).
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asíntota oblicua: No tiene.
+ (¿Por qué?).
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Primera derivada: 
+\begin_inset Formula $f^{\prime}\left(x\right)=\allowbreak3x^{2}\ln x^{2}+2x^{2}=\allowbreak x^{2}\left(3\ln x^{2}+2=0\right).\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Segunda derivada: 
+\begin_inset Formula $f^{\prime\prime}\left(x\right)=\allowbreak6x\ln x^{2}+10x=\allowbreak2x\left(3\ln x^{2}+5\right).\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puntos críticos: 
+\begin_inset Formula $\pm e^{-\frac{1}{3}}\smallskip\left(\approx\pm0.716\,53\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posibles puntos de Inflexión: 
+\begin_inset Formula $\pm e^{-\frac{5}{6}}\left(\approx\pm0.434\,60\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Signos 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f^{\prime}\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f^{\prime\prime}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comportamiento
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-\infty,-e^{-\frac{1}{3}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nearrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbf{\curvearrowright}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=-e^{-\frac{1}{3}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{3}e^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Máximo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-e^{-\frac{1}{3}},-e^{-\frac{5}{6}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\searrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbf{\curvearrowright}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=-e^{-\frac{5}{6}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{5}{3}e^{-\frac{5}{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Punto de inflexión
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-e^{-\frac{5}{6}},0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\searrow$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N.D.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0,e^{-\frac{5}{6}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\searrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbf{\curvearrowright}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=e^{-\frac{5}{6}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{5}{3}e^{-\frac{5}{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Punto de inflexión
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(e^{-\frac{5}{6}},e^{-\frac{1}{3}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\searrow$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=e^{-\frac{1}{3}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{2}{3}e^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mínimo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(e^{-\frac{1}{3}},+\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nearrow$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La gráfica se presenta a continuación
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-4-7a.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Realice un bosquejo de la gráfica de la función 
+\begin_inset Formula $f\left(x\right)=\dfrac{x^{3}}{1-x^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Dominio: 
+\begin_inset Formula $Dom_{f}=\rz-\left\{ \pm1\right\} \smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intersecciones con el eje 
+\begin_inset Formula $x:$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ \left(0,0\right)\right\} $
+\end_inset
+
+.
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intersecciones con el eje 
+\begin_inset Formula $y:$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ \left(0,0\right)\right\} $
+\end_inset
+
+.
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asíntotas verticales: 
+\begin_inset Formula $x=1,x=-1.$
+\end_inset
+
+ (¿Por qué?).
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asíntota horizontal: No tiene.
+ (¿Por qué?).
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asíntota oblicua: 
+\begin_inset Formula $y=-x$
+\end_inset
+
+.
+ (¿Por qué?).
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Primera derivada: 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\dfrac{x^{2}\left(x^{2}-3\right)}{\left(1-x^{2}\right)^{2}}.\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Segunda derivada: 
+\begin_inset Formula $f^{\prime\prime}\left(x\right)=\dfrac{2x\left(3+x^{2}\right)}{\left(1-x^{2}\right)^{3}}.\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puntos críticos: 
+\begin_inset Formula $0,\pm\sqrt{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Posibles puntos de Inflexión: 
+\begin_inset Formula $\smallskip0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Signos 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f^{\prime}\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f^{\prime\prime}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comportamiento
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-\infty,-\sqrt{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\searrow$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=-\sqrt{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3}{2}\sqrt{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mínimo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-\sqrt{3},-1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{3}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nearrow$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N.D.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asintota vertical
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(-1,0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nearrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbf{\curvearrowright}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Punto de inflexión
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nearrow$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N.D.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asintota vertical
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1,\sqrt{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nearrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbf{\curvearrowright}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x=\sqrt{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{3}{2}\sqrt{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Máximo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\sqrt{3},+\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\searrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbf{\curvearrowright}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+la gráfica se presenta a continuación
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-4-7.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Razones relacionadas
+\end_layout
+
+\begin_layout Standard
+Es claro, de la regla de la cadena, que si 
+\begin_inset Formula $x=x\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula 
+\[
+\dfrac{dy}{dt}=\dfrac{dy}{dx}\dfrac{dx}{dt}.
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\dfrac{dy}{dt},\dfrac{dy}{dx}$
+\end_inset
+
+ y 
+\begin_inset Formula $\dfrac{dx}{dt}$
+\end_inset
+
+ son razones de cambio relacionadas por la ecuación anterior.
+\end_layout
+
+\begin_layout Standard
+En esta sección, se presentarán ejemplos para ilustrar la forma en que el
+ cálculo diferencial nos permite resolver problemas en los que nos piden
+ obtener la razon de cambio de una variable en términos de la razon de cambio
+ de otra variable, usualmente las variables dependen del tiempo.
+\end_layout
+
+\begin_layout Standard
+
+\shape smallcaps
+Sugerencias para resolver problemas de Razones relacionadas.
+\end_layout
+
+\begin_layout Enumerate
+Lea y analice el problema.
+ Trate de traducir en forma eficaz las razones expresadas en el problema.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Razones relacionadas|textbf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Siempre que sea posible realice un dibujo y coloque etiquetas adecuadas.
+\end_layout
+
+\begin_layout Enumerate
+Haga una lista de las variables involucradas, de los datos y de las razones
+ dadas (generalmente derivadas respecto al tiempo).
+\end_layout
+
+\begin_layout Enumerate
+Escriba una ecuación que relaciones las variables que dependen de 
+\begin_inset Formula $t.$
+\end_inset
+
+ Tenga en cuenta que en estos problemas usualmente le piden calcular el
+ valor de una razón en un momento especifico, dando datos para ese caso.
+ Recuerde que estos datos sólo deben usarse cuando Ud.
+ obtenga una ecuación que al derivarla exprese la relación entre las razones
+ involucradas.
+\end_layout
+
+\begin_layout Enumerate
+Derive respecto a 
+\begin_inset Formula $t.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sustituya los valores que enumeró en el punto 3.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Un camión y una moto se encuentran sobre calles que son perpendiculares.
+ La moto se desplaza hacia el norte con una velocidad de 
+\begin_inset Formula $80\frac{km}{h},$
+\end_inset
+
+mientras el camión, que se desplaza hacia el oeste, presenta una velocidad
+ de 
+\begin_inset Formula $60\frac{km}{h}.$
+\end_inset
+
+ Si la moto pasa 10 minuto despues de que el camión cruza por la intersección.
+ ¿Qué tan rápido se separan 30 minutos despues de que la moto pasó por la
+ intersección?
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-5-9.pdf
+	lyxscale 40
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Sea 
+\begin_inset Formula $t>0$
+\end_inset
+
+ el tiempo transcurrido despues de que el motociclista cruza la intersección.
+ Sean 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ la distancias respectivas del camión y de la moto a la intersección, y
+ 
+\begin_inset Formula $s\left(t\right)$
+\end_inset
+
+ la distancia de separación entre el carro y la moto en un tiempo 
+\begin_inset Formula $t>0.$
+\end_inset
+
+ Se debe calcular 
+\begin_inset Formula $\dfrac{ds}{dt}$
+\end_inset
+
+ cuando 
+\begin_inset Formula $t=\frac{1}{2}h.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es dado en el problema que las velocidades del camión y de la moto, son
+ respectivamente 
+\begin_inset Formula $60\frac{km}{h}$
+\end_inset
+
+ y 
+\begin_inset Formula $80\frac{km}{h},$
+\end_inset
+
+ por lo cual 
+\begin_inset Formula $\dfrac{dx}{dt}=60\frac{km}{h}$
+\end_inset
+
+ y 
+\begin_inset Formula $\dfrac{dy}{dt}=80\frac{km}{h}.$
+\end_inset
+
+ Se debe entonces calcular una relación entre las variables 
+\begin_inset Formula $x,y,s.$
+\end_inset
+
+ De la fígura, como el triángulo es rectángulo, se tiene por Pitágoras que
+ 
+\begin_inset Formula 
+\begin{equation}
+s^{2}=y^{2}+x^{2}\label{syx}
+\end{equation}
+
+\end_inset
+
+derivando la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "syx"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) respecto a 
+\begin_inset Formula $t$
+\end_inset
+
+ se obtiene:
+\begin_inset Formula 
+\[
+\dfrac{ds}{dt}=\frac{x\dfrac{dx}{dt}+y\dfrac{dy}{dt}}{s}.
+\]
+
+\end_inset
+
+Para calcular 
+\begin_inset Formula $\dfrac{ds}{dt}$
+\end_inset
+
+ cuando 
+\begin_inset Formula $t=\frac{1}{2}h,$
+\end_inset
+
+ se necesita calcular los valores de 
+\begin_inset Formula $x,y$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ en ese instante, estos estan dados por:
+\begin_inset Formula 
+\begin{align*}
+x & =60\frac{km}{h}\left(\frac{1}{2}h+\frac{1}{6}h\right)=\allowbreak40km\\
+y & =80\frac{km}{h}\left(\frac{1}{2}h\right)=\allowbreak40km\\
+s & =\sqrt{x^{2}+y^{2}}=\sqrt{\left(40km\right)^{2}+\left(40km\right)^{2}}=40\sqrt{2}km
+\end{align*}
+
+\end_inset
+
+por lo tanto la variación de la distancia de separación entre los dos móviles,
+ media hora despues que el motociclista cruzara la intersección viene dada
+ por:
+\begin_inset Formula 
+\[
+\dfrac{ds}{dt}=\frac{40km60\frac{km}{h}+40km80\frac{km}{h}}{40\sqrt{2}km}=70\sqrt{2}\frac{km}{h}\approx99\frac{km}{h}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Se pretende llenar una alberca con forma de un prisma recto cuya base es
+ un trapecio isósceles, como se muestra en la fígura.
+ Por medio de una manguera se hace fluir agua, al interior de la alberca,
+ a razon de 
+\begin_inset Formula $1.6\frac{m^{3}}{\min}$
+\end_inset
+
+.
+ ¿Qué tan rápido sube el nivel del agua cuando ésta ha alcanzado 2 metros
+ de profundidad?
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-5-10.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-5-10a.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $V\left(t\right)$
+\end_inset
+
+ el volumen (en 
+\begin_inset Formula $m^{3}$
+\end_inset
+
+) de agua que hay en el tanque despues de 
+\begin_inset Formula $t$
+\end_inset
+
+ minutos, 
+\begin_inset Formula $h$
+\end_inset
+
+ la altura y 
+\begin_inset Formula $b_{1},b_{2}$
+\end_inset
+
+ las bases menor y mayor, respectivamente, del prisma formado por el volumen
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ de agua en el recipiente (recuerde: los fluidos toman la forma del recipiente
+ que los contiene).
+ Como 
+\begin_inset Formula 
+\[
+V\left(t\right)=\frac{1}{2}\left(b_{1}+b_{2}\right)\cdot h\cdot15
+\]
+
+\end_inset
+
+
+\begin_inset Formula $b_{1}=5$
+\end_inset
+
+ y 
+\begin_inset Formula $b_{2}=2x+5$
+\end_inset
+
+, tenemos que
+\begin_inset Formula 
+\[
+V\left(t\right)=\frac{15}{2}\left(5+2x+5\right)h=15\left(5+x\right)h.
+\]
+
+\end_inset
+
+Considerando la figura de la derecha, es claro, por semejanza de triángulos
+ que
+\begin_inset Formula 
+\[
+\frac{x}{3}=\frac{h}{4}
+\]
+
+\end_inset
+
+por lo cual 
+\begin_inset Formula 
+\begin{equation}
+V\left(t\right)=15\left(5+\frac{3}{4}h\right)h=75h+\frac{45}{4}h^{2}\label{alb}
+\end{equation}
+
+\end_inset
+
+derivando (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alb"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) respecto a 
+\begin_inset Formula $t$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula 
+\[
+\frac{d}{dt}V\left(t\right)=75\frac{dh}{dt}+\frac{45}{2}h\frac{dh}{dt}=\left(75+\frac{45}{2}h\right)\frac{dh}{dt}
+\]
+
+\end_inset
+
+por lo tanto 
+\begin_inset Formula 
+\[
+\frac{dh}{dt}=\frac{\frac{d}{dt}V\left(t\right)}{75+\frac{45}{2}h}.
+\]
+
+\end_inset
+
+Ahora, cuando 
+\begin_inset Formula $h=2m,$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{dh}{dt}=\frac{1.6}{75+\frac{45}{2}2}\approx1.333\,3\times10^{-2}\frac{m}{\min}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Optimización
+\end_layout
+
+\begin_layout Standard
+En esta sección se presentarán ejemplos para ilustrar la forma en que el
+ cálculo diferencial nos permite resolver problemas en las que se requiere
+ obtener un máximo o un mínimo.
+ La necesidad de optimizar se presenta con mucha frecuencia en ingenieria.
+\end_layout
+
+\begin_layout Standard
+
+\shape smallcaps
+Sugerencias para resolver problemas de optimización.
+\end_layout
+
+\begin_layout Enumerate
+Lea y analice el problema.
+ Trate de obtener respuestas a las preguntas ¿Qué se pide optimizar?, ¿Qué
+ información nos dan?.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Optimización|textbf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Siempre que sea posible realice un dibujo y coloque etiquetas adecuadas.
+\end_layout
+
+\begin_layout Enumerate
+Identifique todas las relaciones entre las variables presentes en el problema.
+\end_layout
+
+\begin_layout Enumerate
+Identifique la función a optimizar, expresandola como una función en una
+ variable.
+ En algunas ocasiones esta función puede expresarse inicialmente como una
+ función de dos o más variables, en este caso use las relaciones que obtuvo
+ en el punto 3 para reducir el problema a uno de una sola variable independiente.
+\end_layout
+
+\begin_layout Enumerate
+Calcule los máximos o los mínimos que presente la función.
+ Tenga en cuenta la estructura del problema para aplicar el método o criterio
+ más adecuado.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Obtenga los valores de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ tales que es valor de 
+\begin_inset Formula $2x-y^{2}$
+\end_inset
+
+ sea mínimo, si 
+\begin_inset Formula $x^{2}+3y^{2}=9.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+El problema consiste en minimizar la función 
+\begin_inset Formula 
+\begin{equation}
+f\left(x,y\right)=2x-y^{2},\label{ppop}
+\end{equation}
+
+\end_inset
+
+donde los valores 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ cumplen la relación 
+\begin_inset Formula 
+\begin{equation}
+x^{2}+3y^{2}=9.\label{ppop2}
+\end{equation}
+
+\end_inset
+
+Observe que la función dada en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ppop"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) es una función en dos variables, la idea es expresarla como una función
+ de una sola variable, utilizando la condición dada en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ppop2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Ahora, en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ppop2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), despejando 
+\begin_inset Formula $y^{2},$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $y^{2}=3-\dfrac{x^{2}}{3}$
+\end_inset
+
+.
+ Si reemplazamos lo anterior en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ppop"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), se obtiene:
+\begin_inset Formula 
+\begin{equation}
+f\left(x\right)=2x-\left(3-\dfrac{x^{2}}{3}\right)=2x-3+\frac{1}{3}x^{2}.\label{ppop3}
+\end{equation}
+
+\end_inset
+
+Derivando (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ppop3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), obtenemos que 
+\begin_inset Formula $f^{\prime}\left(x\right)=2+\frac{2}{3}x$
+\end_inset
+
+, por lo que (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ppop3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) posee un único punto crítico dado por 
+\begin_inset Formula $x=-3.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando el criterio de la segunda derivada, note que 
+\begin_inset Formula $f^{\prime\prime}\left(x\right)=\frac{2}{3}.$
+\end_inset
+
+ Evaluando 
+\begin_inset Formula $f^{\prime\prime}\left(x\right)$
+\end_inset
+
+ en el punto crítico 
+\begin_inset Formula $x=-3$
+\end_inset
+
+ se obtiene que 
+\begin_inset Formula 
+\[
+f^{\prime\prime}\left(-3\right)=\frac{2}{3}>0.
+\]
+
+\end_inset
+
+Es decir, 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ presenta valor mínimo cuando 
+\begin_inset Formula $x=-3.$
+\end_inset
+
+ Entonces (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ppop"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) presenta un mínimo cuando 
+\begin_inset Formula $x=-3$
+\end_inset
+
+ y 
+\begin_inset Formula $y=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "recu"
+
+\end_inset
+
+Probar que entre todos los rectángulos de igual perimetro el cuadrado es
+ el que posee mayor área.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Consideremos 
+\begin_inset Formula $P>0$
+\end_inset
+
+ el perimetro de los rectángulos a considerar.
+ En tal caso 
+\begin_inset Formula 
+\begin{equation}
+x+y=\frac{P}{2}\label{PO1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La función a optimizar es la función área de un rectángulo, es decir 
+\begin_inset Formula 
+\begin{equation}
+A=xy.\label{PO2}
+\end{equation}
+
+\end_inset
+
+Ahora de 
+\begin_inset Formula $\left(\ref{PO1}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(\ref{PO2}\right)$
+\end_inset
+
+se puede escribir la función área como
+\begin_inset Formula 
+\[
+A\left(x\right)=x\left(\frac{P}{2}-x\right)=\frac{1}{2}xP-x^{2}
+\]
+
+\end_inset
+
+Al derivar se obtiene
+\begin_inset Formula 
+\[
+A^{\prime}\left(x\right)=\frac{1}{2}P-2x
+\]
+
+\end_inset
+
+el punto critico viene dado por 
+\begin_inset Formula $x=\frac{1}{4}P.$
+\end_inset
+
+ Aplicando criterio de segunda derivada se tiene que 
+\begin_inset Formula $A^{\prime\prime}\left(x\right)=-2,$
+\end_inset
+
+ por lo cual 
+\begin_inset Formula $A^{\prime\prime}\left(\frac{1}{4}P\right)=-2<0.$
+\end_inset
+
+ Entonces en 
+\begin_inset Formula $x=\frac{1}{4}P$
+\end_inset
+
+ la función posee un máximo.
+ Es decir entre todos los rectángulos de igual perimetro el cuadrado es
+ el que posee mayor área.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Obtenga los puntos sobre la parábola 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+ cuya distancia al punto 
+\begin_inset Formula $A\left(0,5\right)$
+\end_inset
+
+ sea mínima.
+ Calcule esta distancia
+\begin_inset Formula $.$
+\end_inset
+
+ 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Ya que la distancia del punto 
+\begin_inset Formula $A\left(0,5\right)$
+\end_inset
+
+ a la parábola 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+ es la función a optimizar, se tiene que 
+\begin_inset Formula 
+\[
+d\left(x\right)=\sqrt{\left(x-0\right)^{2}+\left(x^{2}-5\right)^{2}}.
+\]
+
+\end_inset
+
+Calculando la derivada de 
+\begin_inset Formula $d\left(x\right)$
+\end_inset
+
+ se tiene que
+\begin_inset Formula 
+\[
+d^{\prime}\left(x\right)=\frac{x\left(2x^{2}-9\right)}{\sqrt{x^{4}-9x^{2}+25}}.
+\]
+
+\end_inset
+
+El conjunto de puntos críticos viene dados por 
+\begin_inset Formula 
+\[
+\left\{ x\mid x\left(2x^{2}-9\right)=0\right\} \cup\left\{ x\mid x^{4}-9x^{2}+25=0\right\} =\left\{ 0,\frac{3}{2}\sqrt{2},-\frac{3}{2}\sqrt{2}\right\} .
+\]
+
+\end_inset
+
+Aplicando criterio de primera derivada se construye la tabla siguiente:
+\begin_inset Formula 
+\[
+\begin{tabular}{cc|c|c}
+ \cline{3-3}  &   &  Signos  &  \\
+\multicolumn{1}{|c}{Intervalos } & \multicolumn{1}{|c|}{\ensuremath{k} } &  \ensuremath{d^{\prime}\left(x\right)}  & \multicolumn{1}{|c|}{Comportamiento}\\
+\hline\hline \multicolumn{1}{|c}{\ensuremath{\left(-\infty,-\frac{3}{2}\sqrt{2}\right)} } & \multicolumn{1}{|c|}{\ensuremath{-3} } &  \ensuremath{-}  & \multicolumn{1}{|c|}{\ensuremath{\searrow}}\\
+\hline \multicolumn{1}{|c}{\ensuremath{\left(-\frac{3}{2}\sqrt{2},0\right)} } & \multicolumn{1}{|c|}{\ensuremath{-1} } &  \ensuremath{+}  & \multicolumn{1}{|c|}{\ensuremath{\nearrow}}\\
+\hline \multicolumn{1}{|c}{\ensuremath{\left(0,\frac{3}{2}\sqrt{2}\right)} } & \multicolumn{1}{|c|}{\ensuremath{1} } &  \ensuremath{-}  & \multicolumn{1}{|c|}{\ensuremath{\searrow}}\\
+\hline \multicolumn{1}{|c}{\ensuremath{\left(\frac{3}{2}\sqrt{2},+\infty\right)} } & \multicolumn{1}{|c|}{\ensuremath{3} } &  \ensuremath{+}  & \multicolumn{1}{|c|}{\ensuremath{\nearrow} }
+\\\hline \end{tabular}\ \ 
+\]
+
+\end_inset
+
+por lo tanto los puntos sobre la parábola 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+ que tienen la menor distancia al punto 
+\begin_inset Formula $A\left(0,5\right)$
+\end_inset
+
+ son 
+\begin_inset Formula $B\left(-\frac{3}{2}\sqrt{2},\frac{9}{2}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $C\left(\frac{3}{2}\sqrt{2},\frac{9}{2}\right).$
+\end_inset
+
+ De otra parte la distancia esta dada por 
+\begin_inset Formula $d\left(\frac{3}{2}\sqrt{2}\right)=\frac{1}{2}\sqrt{19}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Se desea construir un trapecio isósceles con las dimensiones que se muestran.
+ Si sólo se puede variar el ángulo.
+ ¿Cuál es el valor del ángulo con el que se obtiene el área máxima del trapecio?
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-5-14.pdf
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La función a optimizar es el área del trapecio, la cual viene dada por 
+\begin_inset Formula 
+\begin{equation}
+A=\frac{1}{2}\left(b_{1}+b_{2}\right)h.\label{Proal1}
+\end{equation}
+
+\end_inset
+
+La idea es expresar (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Proal1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) en términos del ángulo 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ De las figuras 
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $b_{1}=2a,b_{2}=2a+2a\cos\theta$
+\end_inset
+
+ y 
+\begin_inset Formula $h=a\operatorname{sen}\theta$
+\end_inset
+
+ por lo que (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Proal1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) puede expresarse como
+\begin_inset Formula 
+\begin{align*}
+A\left(\theta\right) & =\frac{1}{2}\left(2a+2a+2a\cos\theta\right)a\operatorname{sen}\theta\\
+A\left(\theta\right) & =2a^{2}\operatorname{sen}\theta+a^{2}\operatorname{sen}\theta\cos\theta.
+\end{align*}
+
+\end_inset
+
+La derivada viene dada por
+\begin_inset Formula 
+\[
+A^{\prime}\left(\theta\right)=2a^{2}\cos\theta+2a^{2}\cos^{2}\theta-a^{2}
+\]
+
+\end_inset
+
+El punto crítico ocurren cuando 
+\begin_inset Formula $\cos\theta=\dfrac{-1+\sqrt{3}}{2},$
+\end_inset
+
+ es decir 
+\begin_inset Formula $\theta=\arccos\left(\dfrac{-1+\sqrt{3}}{2}\right).$
+\end_inset
+
+ Aplicando criterio de segunda derivada se tiene que 
+\begin_inset Formula 
+\[
+A^{\prime\prime}\left(\theta\right)=-2a^{2}\sin\theta-4a^{2}\sin\theta\cos\theta
+\]
+
+\end_inset
+
+por lo tanto 
+\begin_inset Formula 
+\[
+A^{\prime\prime}\left(\arccos\left(\dfrac{-1+\sqrt{3}}{2}\right)\right)=-a^{2}\sqrt{2}3^{\frac{3}{4}}<0
+\]
+
+\end_inset
+
+por lo tanto, cuando 
+\begin_inset Formula $\theta=\arccos\left(\dfrac{-1+\sqrt{3}}{2}\right)$
+\end_inset
+
+ el área del trapecio es máxima.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Se planea utilizar un alambre de 
+\begin_inset Formula $100m$
+\end_inset
+
+ de longitud en la construcción de una circunferencia y un rectángulo, de
+ tal forma que el área combinada sea máxima.
+ ¿Cómo debe distribuirse el alambre?
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Sea 
+\begin_inset Formula $x$
+\end_inset
+
+ es la cantidad de alambre que se utilizará en la construcción de la circunferen
+cia, note que 
+\begin_inset Formula $x\in\left[0,100\right].$
+\end_inset
+
+ Además, por el ejemplo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "recu"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, el resto del alambre se usará en la construcción de un cuadrado, lo anterior
+ se ilustra en la fígura siguiente
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-5-15.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ya que el perímetro del cuadrado es 
+\begin_inset Formula $4l$
+\end_inset
+
+ y el de la circunferencia 
+\begin_inset Formula $2\pi r,$
+\end_inset
+
+ se obtiene que 
+\begin_inset Formula $l=\dfrac{100-x}{4}$
+\end_inset
+
+ y 
+\begin_inset Formula $r=\dfrac{x}{2\pi}.$
+\end_inset
+
+Por lo tanto, el área combinada de las fíguras, dada por la función 
+\begin_inset Formula $A=\pi r^{2}+l^{2}$
+\end_inset
+
+ toma la forma
+\begin_inset Formula 
+\[
+A\left(x\right)=\pi\left(\dfrac{x}{2\pi}\right)^{2}+\left(\dfrac{100-x}{4}\right)^{2}=\dfrac{x^{2}}{4\pi}+\frac{1}{16}\left(100-x\right)^{2}
+\]
+
+\end_inset
+
+Derivando 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+ respecto a 
+\begin_inset Formula $x$
+\end_inset
+
+ se obtiene
+\begin_inset Formula 
+\begin{equation}
+A^{\prime}\left(x\right)=\frac{1}{8}\frac{4x-100\pi+x\pi}{\pi}.\label{Apc}
+\end{equation}
+
+\end_inset
+
+De 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Apc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, es obvio que 
+\begin_inset Formula $x=\dfrac{100\pi}{4+\pi}$
+\end_inset
+
+ es el único punto crítico de la función 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+ es continua en el intervalo 
+\begin_inset Formula $\left[0,100\right]$
+\end_inset
+
+, el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tvex"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nos asegura la existencia de un máximo y un mínimo para la función en el
+ intervalo.
+ Para el cálculo de estos valores consideraremos la tabla siguiente 
+\begin_inset Formula 
+\[
+\begin{tabular}{|c|c|}
+\hline\hline  \ensuremath{x}  &  \ensuremath{A\left(x\right)}\\
+\hline\hline  \ensuremath{0}  &  \ensuremath{625}\\
+\hline  \ensuremath{\dfrac{100\pi}{4+\pi}}  &  \ensuremath{\frac{2500}{4+\pi}\approx350.06}\\
+\hline  \ensuremath{100}  &  \ensuremath{\frac{2500}{\pi}\approx795.77} 
+\\\hline \end{tabular}\ \ 
+\]
+
+\end_inset
+
+Entonces 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+ toma su mayor valor cuando 
+\begin_inset Formula $x=100.$
+\end_inset
+
+ Es decir, para tener área máxima se debe destinar los 100 m de alambre
+ a la construcción de la circunferencia.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "lacaja"
+
+\end_inset
+
+De una pieza rectangular de cartón se construye una caja de base rectangular,
+ sin tapa, recortando cuadrados en sus esquinas y doblando los lados (ver
+ figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lacaja2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Si las dimensiones de la pieza a utilizar son 
+\begin_inset Formula $80\ cm\times60\ cm$
+\end_inset
+
+ ¿
+\begin_inset space \space{}
+\end_inset
+
+Cuál debe ser la longitud de los lados de los cuadrados recortados para
+ que la caja construida tenga el máximo volumen posible? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-5-16.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lacaja"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lacaja2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Supongamos que 
+\begin_inset Formula $x$
+\end_inset
+
+ centímetros es la longitud de los cuadrados a recortar.
+ Las dimensiones, en 
+\begin_inset Formula $cm$
+\end_inset
+
+, de la caja a construir son entonces: 
+\begin_inset Formula 
+\begin{align*}
+\mbox{Largo:} & 80-2x\\
+\mbox{Ancho:} & 60-2x\\
+\mbox{Alto:} & x
+\end{align*}
+
+\end_inset
+
+Por lo que el volumen de la caja,en 
+\begin_inset Formula $cm^{3}$
+\end_inset
+
+, expresado en función de 
+\begin_inset Formula $x$
+\end_inset
+
+ es: 
+\begin_inset Formula 
+\[
+V(x)=x(80-2x)(60-2x)=2x(x-40)(x-30)=2x^{3}-140x^{2}+2400x
+\]
+
+\end_inset
+
+donde el dominio 
+\begin_inset Quotes eld
+\end_inset
+
+práctico
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ de la función es 
+\begin_inset Formula $(0,30)$
+\end_inset
+
+ (¿Por qué?).
+ Si consideramos la función en el cerrado 
+\begin_inset Formula $[0,30]$
+\end_inset
+
+, en el cual es continua, estamos interesados en el valor máximo (positivo)
+ de 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Es claro que tal máximo se alcanza en el abierto pues en los extremos 
+\begin_inset Formula $V(x)=0$
+\end_inset
+
+.
+ Derivando tenemos 
+\begin_inset Formula 
+\[
+V^{\prime}(x)=6x^{2}-280x+2400,
+\]
+
+\end_inset
+
+de modo que la derivada es nula en 
+\begin_inset Formula 
+\begin{align*}
+\frac{10}{3}\left(7-\sqrt{13}\right) & \approx11.3148\\
+\frac{10}{3}\left(7+\sqrt{13}\right) & \approx35.3518
+\end{align*}
+
+\end_inset
+
+de los cuales nos interesa solo 
+\begin_inset Formula $11.3148$
+\end_inset
+
+, donde hay un máximo relativo.
+ Es para este valor aproximado que se alcanza el máximo volumen deseado.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+De una lámina circular de radio 
+\begin_inset Formula $R$
+\end_inset
+
+ se recorta un sector circular, como el de la fígura, para fabricar un cono
+ circular recto.
+ Determinar el ángulo 
+\begin_inset Formula $\theta$
+\end_inset
+
+ para el cual el cono tenga un volumen máximo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-5-17.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+El volumen del cono viene dado por 
+\begin_inset Formula 
+\begin{equation}
+V=\frac{1}{3}\pi r^{2}h\label{Esc}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $h$
+\end_inset
+
+ son el radio y la altura del cono como se muestra en la fígura.
+ Note ademas que 
+\begin_inset Formula 
+\begin{align}
+h & =\sqrt{R^{2}-r^{2}}\label{Esc1}\\
+r & =\dfrac{R\theta}{2\pi}.\label{Esc2}
+\end{align}
+
+\end_inset
+
+De (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Esc1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Esc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) se tiene que:
+\begin_inset Formula 
+\begin{equation}
+V=\frac{1}{3}\pi r^{2}\sqrt{R^{2}-r^{2}}\label{Esc3}
+\end{equation}
+
+\end_inset
+
+reemplazando finalmente (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Esc2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Esc3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), obtenemos 
+\begin_inset Formula $V=V\left(\theta\right),$
+\end_inset
+
+ donde 
+\begin_inset Formula 
+\begin{align*}
+V\left(\theta\right) & =\frac{1}{3}\pi\left(\dfrac{R\theta}{2\pi}\right)^{2}\sqrt{R^{2}-\left(\dfrac{R\theta}{2\pi}\right)^{2}}\\
+V\left(\theta\right) & =\frac{1}{24\pi^{2}}R^{3}\theta^{2}\sqrt{4\pi^{2}-\theta^{2}}
+\end{align*}
+
+\end_inset
+
+Derivando 
+\begin_inset Formula $V\left(\theta\right)$
+\end_inset
+
+ se obtiene:
+\begin_inset Formula 
+\[
+\frac{dV\left(\theta\right)}{d\theta}=\frac{1}{24}R^{3}\theta\frac{8\pi^{2}-3\theta^{2}}{\pi^{2}\sqrt{\left(4\pi^{2}-\theta^{2}\right)}}
+\]
+
+\end_inset
+
+Por lo tanto, los puntos críticos vienen dados por 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+ y 
+\begin_inset Formula $\theta=\frac{2\pi}{3}\sqrt{6}$
+\end_inset
+
+.
+ Como 
+\begin_inset Formula $V\left(\theta\right)$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $0\leq\theta\leq2\pi$
+\end_inset
+
+, el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tvex"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nos asegura la existencia de un máximo y un mínimo para la función en el
+ intervalo.
+ Para el cálculo de estos valores consideraremos la tabla siguiente 
+\begin_inset Formula 
+\[
+\begin{tabular}{|c|c|}
+\hline\hline  \ensuremath{x}  &  \ensuremath{V\left(\theta\right)}\\
+\hline\hline  \ensuremath{0}  &  \ensuremath{0}\\
+\hline  \ensuremath{\frac{2\pi}{3}\sqrt{6}}  &  \ensuremath{V\left(\frac{2\pi}{3}\sqrt{6}\right)=\frac{2}{27}\pi R^{3}\sqrt{3}}\\
+\hline  \ensuremath{2\pi}  &  \ensuremath{0} 
+\\\hline \end{tabular}\ 
+\]
+
+\end_inset
+
+Entonces 
+\begin_inset Formula $V\left(\theta\right)$
+\end_inset
+
+ toma su mayor valor cuando 
+\begin_inset Formula $\theta=\frac{2\pi}{3}\sqrt{6}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Hallar las dimensiones del cilindro circular recto de máximo volumen que
+ puede incribirse en un cono circular recto de radio 
+\begin_inset Formula $R$
+\end_inset
+
+ y altura 
+\begin_inset Formula $H.$
+\end_inset
+
+ 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-4-5-18.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+En la gráfica se muestra una sección plana que contiene al eje del cono.
+ Sean 
+\begin_inset Formula $V$
+\end_inset
+
+ el volumen, 
+\begin_inset Formula $h$
+\end_inset
+
+ la altura y 
+\begin_inset Formula $r$
+\end_inset
+
+ el radio de la base del cilindro.
+ El volumen 
+\begin_inset Formula $V$
+\end_inset
+
+ en función a la altura 
+\begin_inset Formula $h$
+\end_inset
+
+ y el radio 
+\begin_inset Formula $r$
+\end_inset
+
+ viene dado por:
+\begin_inset Formula 
+\[
+V=\pi r^{2}h\text{ },
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+como el volumen está en función de las 2 variables, es necesario encontrar
+ una relación entre 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $h.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notese que 
+\begin_inset Formula $r\in\left[0,R\right].$
+\end_inset
+
+ En el caso que 
+\begin_inset Formula $r=0$
+\end_inset
+
+ o 
+\begin_inset Formula $r=R$
+\end_inset
+
+, se tiene un cilindro 
+\begin_inset Quotes eld
+\end_inset
+
+degenerado
+\begin_inset Quotes erd
+\end_inset
+
+, es decir un cilindro con volumen nulo.
+ Este mismo resultado se puede obtener para 
+\begin_inset Formula $h\in\left[0,H\right]$
+\end_inset
+
+ cuando 
+\begin_inset Formula $h=0$
+\end_inset
+
+ y 
+\begin_inset Formula $h=H.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De la gráfica de la derecha es clara la semejanza entre triángulos que permite
+ obtener la relación
+\begin_inset Formula 
+\[
+\frac{H-h}{r}=\frac{H}{R}
+\]
+
+\end_inset
+
+de donde 
+\begin_inset Formula $h=-H\left(\dfrac{r-R}{R}\right),$
+\end_inset
+
+ por lo cual 
+\begin_inset Formula 
+\begin{equation}
+V\left(r\right)=-\pi r^{2}H\left(\dfrac{r-R}{R}\right).\label{vcilpco}
+\end{equation}
+
+\end_inset
+
+Derivando (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "vcilpco"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) se tiene
+\begin_inset Formula 
+\[
+V^{\prime}\left(r\right)=-\pi rH\frac{3r-2R}{R},
+\]
+
+\end_inset
+
+por lo que los puntos críticos vienen dados por 
+\begin_inset Formula $r=0$
+\end_inset
+
+ y 
+\begin_inset Formula $r=\frac{2}{3}R.$
+\end_inset
+
+ Como 
+\begin_inset Formula $V\left(r\right)$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $\left[0,R\right],$
+\end_inset
+
+el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tvex"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nos asegura la existencia de un máximo y un mínimo para la función
+\begin_inset Formula $V$
+\end_inset
+
+ en el intervalo.
+ Para el cálculo de estos valores consideraremos la tabla siguiente 
+\begin_inset Formula 
+\[
+\begin{tabular}{|c|c|}
+\hline\hline  \ensuremath{r}  &  \ensuremath{V\left(r\right)}\\
+\hline\hline  \ensuremath{0}  &  \ensuremath{0}\\
+\hline  \ensuremath{\frac{2}{3}R}  &  \ensuremath{\frac{4}{27}\pi R^{2}H}\\
+\hline  \ensuremath{R}  &  \ensuremath{0} 
+\\\hline \end{tabular}\ \ 
+\]
+
+\end_inset
+
+Entonces 
+\begin_inset Formula $V\left(r\right)$
+\end_inset
+
+ toma su mayor valor cuando 
+\begin_inset Formula $r=\frac{2}{3}R.$
+\end_inset
+
+ Es decir, las dimensiones del cilindro de mayor volumen que se puede incribir
+ en un cono de radio 
+\begin_inset Formula $R$
+\end_inset
+
+ y altura 
+\begin_inset Formula $H$
+\end_inset
+
+ viene dado por 
+\begin_inset Formula $r=\frac{2}{3}R$
+\end_inset
+
+ y 
+\begin_inset Formula $h=\frac{1}{3}H.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejercicios propuestos
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape smallcaps
+I.
+ Monotonía, Concavidad, máximos y mínimos.
+
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Determine (en caso de existir) para cada una de las funciones dadas a continuaci
+ón : puntos críticos, máximos, mínimos, e intervalos de monotonía.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x-\dfrac{24}{x+1}-5\ln\left(x+1\right)^{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=3x^{4}-44x^{3}+144x^{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{\frac{5}{3}}-5x^{\frac{2}{3}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{5x+16}{x+1}+2x.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{3}-4x^{2}-6x+3.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\left(x^{2}-9\right)^{3}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{9}{4\left(2x+1\right)}+\frac{9}{8}\ln\left(2x+1\right)^{2}-\ln\left(x+1\right)^{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=xe^{\frac{-x^{2}}{8}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{4}-3x^{3}+x^{2}-2.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine para cada una de las funciones a continuación los valores extremos
+ en el intervalo cerrado dado.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x-\frac{24}{x+1}-5\ln\left(x+1\right)^{2}$
+\end_inset
+
+, en 
+\begin_inset Formula $\left[0,3\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=3x^{4}-44x^{3}+144x^{2}$
+\end_inset
+
+, en 
+\begin_inset Formula $\left[-3,4\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{5x+16}{x+1}+2x$
+\end_inset
+
+, en 
+\begin_inset Formula $\left[-\frac{1}{2},2\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{3}-4x^{2}-6x+3$
+\end_inset
+
+, en 
+\begin_inset Formula $\left[-4,4\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\left(x^{2}-1\right)^{3}$
+\end_inset
+
+, en 
+\begin_inset Formula $\left[-2,1\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{9}{4\left(2x+1\right)}+\frac{9}{8}\ln\left(2x+1\right)^{2}-\ln\left(x+1\right)^{2}$
+\end_inset
+
+, en 
+\begin_inset Formula $\left[0,2\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{3}e^{-\frac{x}{4}}$
+\end_inset
+
+, en 
+\begin_inset Formula $\left[-3,4\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x+3\cos2x,$
+\end_inset
+
+ en 
+\begin_inset Formula $\left[0,\pi\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=e^{-\frac{1}{2}x}\left(x^{2}+5x-2\right)$
+\end_inset
+
+ en 
+\begin_inset Formula $\left[-1,2\right].$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine (en caso de existir) para cada una de las funciones dadas a continuaci
+ón : puntos críticos, puntos de inflexión, máximos y mínimos, intervalos
+ de concavidad e intervalos de monotonía.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{x}{2}+\cos x$
+\end_inset
+
+, 
+\begin_inset Formula $x\in\left[-\frac{3}{2}\pi,\frac{3}{2}\pi\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=xe^{-\frac{x^{2}}{2}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\frac{3}{4}\left(x^{2}-1\right)^{\frac{2}{3}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=5x^{\frac{2}{3}}-2x.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=1-9x-6x^{2}-x^{3}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=2\cos x+\sin^{2}x,$
+\end_inset
+
+ 
+\begin_inset Formula $x\in\left[-2\pi,2\pi\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\left(x^{2}-4\right)^{3}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{2}e^{\frac{-x^{2}}{4}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x\ln x^{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\frac{1}{4}x^{4}-\frac{7}{2}x^{2}+6x.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=e^{-\frac{1}{2}x}\left(x^{2}+5x-2\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sqrt[3]{\left(-x+1\right)^{2}}\left(2x-1\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=-\dfrac{1}{\sqrt{2\pi}}e^{-\frac{x^{2}}{2}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{3}e^{-x^{2}}.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Realice el bosquejo de la gráfica de cada una de las funciones del ejercicio
+ 3.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Para las siguientes funciones determine
+\end_layout
+
+\begin_layout Description
+(i) Intervalos de monotonía
+\end_layout
+
+\begin_layout Description
+(ii) Intervalos de Concavidad
+\end_layout
+
+\begin_layout Description
+(iii) Puntos críticos
+\end_layout
+
+\begin_layout Description
+(iv) Puntos de Inflexión
+\end_layout
+
+\begin_layout Description
+(v) Valores extremos
+\end_layout
+
+\begin_layout Description
+(vi) Dominio
+\end_layout
+
+\begin_layout Description
+(vii) Interceptos con los ejes
+\end_layout
+
+\begin_layout Description
+(viii) Asintotas 
+\end_layout
+
+\begin_layout Standard
+Construya con esta información la gráfica de la función citada y comparela
+ con la gráfica dada
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{x}{2}+\cos x,\!I=\left[-\frac{3}{2}\pi,\frac{3}{2}\pi\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-4a.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=xe^{-\frac{x^{2}}{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-4b.pdf
+	lyxscale 40
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=5x^{\frac{2}{3}}-2x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-4c.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=1-9x-6x^{2}-x^{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-4d.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\left(x\left(8-x\right)\right)^{\frac{2}{3}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-4e.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=2\cos x+\sin^{2}x,I=\left[-2\pi,2\pi\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-4f.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\left(x^{2}-4\right)^{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-4g.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{2}e^{\frac{-x^{2}}{4}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-4h.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x\ln x^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-4i.pdf
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%TODO  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f\left(x\right)=\frac{1}{4}x^{4}-\frac{7}{2}x^{2}+6x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-4j.pdf
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula 
+\[
+g\left(x\right)=x^{3}+bx^{2}+cx+d
+\]
+
+\end_inset
+
+Obtenga valores para 
+\begin_inset Formula $b,c$
+\end_inset
+
+ y 
+\begin_inset Formula $d$
+\end_inset
+
+ tal que se cumplan las siguientes tres condiciones:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+i.
+\end_layout
+
+\end_inset
+
+La grafica de la función 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ contenga al punto 
+\begin_inset Formula $A(2,2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+ii
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ tenga un valor extremo en 
+\begin_inset Formula $x=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+ii.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ tenga un punto de inflexión en 
+\begin_inset Formula $x=2.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+
+\shape smallcaps
+II.
+ Razones relacionadas
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $2\operatorname{sen}x+4\tan y=3$
+\end_inset
+
+ y 
+\begin_inset Formula $\dfrac{dy}{dt}=3,$
+\end_inset
+
+ halle 
+\begin_inset Formula $\dfrac{dx}{dt}$
+\end_inset
+
+ en 
+\begin_inset Formula $\left(\frac{1}{6}\pi,\frac{1}{3}\pi\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $y\left(\operatorname{sen}x+1\right)=4$
+\end_inset
+
+ y 
+\begin_inset Formula $\dfrac{dy}{dt}=-4,$
+\end_inset
+
+ obtenga 
+\begin_inset Formula $\dfrac{dx}{dt}$
+\end_inset
+
+ en 
+\begin_inset Formula $x=-\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $s^{2}=x^{2}+y^{2}+3xy,s^{3}=7y^{2}-2x^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $\dfrac{dy}{dt}=-2$
+\end_inset
+
+.
+ Obtenga 
+\begin_inset Formula $\dfrac{ds}{dt}$
+\end_inset
+
+ y 
+\begin_inset Formula $\dfrac{dx}{dt}$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\left(x,y\right)=\left(1,1\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $s^{2}=x\sin\theta,x^{2}+\cos^{2}\theta=2\theta,$
+\end_inset
+
+ y 
+\begin_inset Formula $\dfrac{dx}{d\theta}=\dfrac{1}{4}.$
+\end_inset
+
+ Entonces calcule 
+\begin_inset Formula $\dfrac{ds}{d\theta}$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\theta=\frac{\pi}{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Un punto 
+\begin_inset Formula $P$
+\end_inset
+
+ se mueve, en sentido antihorario, sobre la circunferencia 
+\begin_inset Formula $x^{2}+y^{2}=25.$
+\end_inset
+
+ La distancia del punto a 
+\begin_inset Formula $\left(-7,-7\right)$
+\end_inset
+
+ varia a razón de 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ unidad por segundo.
+ Determine la razón a la cual varian las coordenadas 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\left(x,y\right)=\left(-3,4\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Un punto 
+\begin_inset Formula $P$
+\end_inset
+
+ se mueve, en sentido horario, sobre la parábola 
+\begin_inset Formula $\left(x-2\right)^{2}=-16\left(y+5\right).$
+\end_inset
+
+ La distancia del punto a 
+\begin_inset Formula $\left(0,-1\right)$
+\end_inset
+
+ varia a razón de 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+ unidad por segundo.
+ Determine la razón a la cual varian las coordenadas 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\left(x,y\right)=\left(1,-\frac{81}{16}\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "cap4prob7"
+
+\end_inset
+
+Una vía de ferrocarril cruza una carretera formandose un ángulo de 
+\begin_inset Formula $60^{0}$
+\end_inset
+
+, como lo muestra la figura
+\begin_inset Formula $.$
+\end_inset
+
+ Una locomotora a 
+\begin_inset Formula $500$
+\end_inset
+
+ metros de la intersección se aleja de ella a razón de 
+\begin_inset Formula $100\dfrac{km}{h}.$
+\end_inset
+
+ Un automovil a 
+\begin_inset Formula $200$
+\end_inset
+
+ metros de la intersección se acerca a ella a razón de 
+\begin_inset Formula $80\dfrac{km}{h}$
+\end_inset
+
+ ¿Cuál es la variación de la distancia entre la locomotora y el automovil?
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-7.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap4prob7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "problematren"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "cap4prob8"
+
+\end_inset
+
+Cierta cantidad de aceite fluye hacia el interior de un deposito en forma
+ de cono invertido a razón de 
+\begin_inset Formula $0.1\pi\,\frac{m^{3}}{\min}.$
+\end_inset
+
+ El deposito tiene un radio de 2.5 m en su parte superior y una profundidad
+ de 10 m.
+ Si el deposito inicialmente tenia una pequeña cantidad de aceite, ¿Qué
+ tan rapido cambia la altura del líquido, cuando esté alcanza una altura
+ de 
+\begin_inset Formula $8m$
+\end_inset
+
+ en en interior del deposito?.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-8op.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap4prob8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "figuraej8"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Una piedra es arrojada a un estanque tranquilo.
+ Una serie de anillos circulares concéntricos se extienden por el estanque
+ y el radio de la región perturbada aumenta a razón de 
+\begin_inset Formula $4\dfrac{cm}{s}$
+\end_inset
+
+.
+ ¿Con qué rapidez aumenta dicha área cuando el radio es de 4 cm?
+\end_layout
+
+\begin_layout Enumerate
+Una escalera de 6 metros de longitud está recargada sobre una rampa que
+ esta inclinada 
+\begin_inset Formula $60^{0}$
+\end_inset
+
+ respecto de la horizontal.
+ Si la base de la escalera se esta resbalando a razón de 
+\begin_inset Formula $\frac{1}{20}\dfrac{m}{s},$
+\end_inset
+
+ ¿Con qué rapidez se desplazará la parte superior de la escalera cuando
+ su base esté a 3 metros de la rampa?
+\end_layout
+
+\begin_layout Enumerate
+Una antena de radar está instalada en un barco situado a 7 kilometros de
+ una costa recta, y gira a 32 rpm.
+ ¿Con qué rapidez se desplaza el haz del radar a lo largo de la línea costera
+ cuando dicho haz forma un ángulo de 
+\begin_inset Formula $45^{0}$
+\end_inset
+
+ con la citada línea?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "cap4prob12"
+
+\end_inset
+
+Un hombre de 1.80 m de estatura camina hacia un edificio a una velocidad
+ de 
+\begin_inset Formula $\frac{2}{3}\dfrac{m}{s}$
+\end_inset
+
+.
+ Si hay una luz en el piso, que ilumina la fachada, localizada a 10 metros
+ del edificio ¿Con qué rapidez se acorta la sombra de la persona proyectada
+ sobre la fachada cuando se encuentra a 4 metros de la edificación?.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-12.pdf
+	scale 250
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap4prob12"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ejemplo12"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Una escalera de 
+\begin_inset Formula $3m$
+\end_inset
+
+ de largo resbala sobre una pared vertical.
+ Si su base se aleja de la pared a razón constante de 
+\begin_inset Formula $2m$
+\end_inset
+
+ por segundo, ¿a qué velocidad resbala el extremo superior de la escalera
+ sobre la pared cuando la distancia de la base de la escalera a la pared
+ es de 
+\begin_inset Formula $1m$
+\end_inset
+
+ ?
+\end_layout
+
+\begin_layout Enumerate
+Una partícula móvil se desplaza en el plano siguiendo una trayectoria circular
+ de ecuación 
+\begin_inset Formula $x^{2}+y^{2}=1$
+\end_inset
+
+.
+ Si la abscisa cambia a una razón de 
+\begin_inset Formula $2x$
+\end_inset
+
+ unidades por segundo ¿cómo varía su ordenada cuando la partícula está en
+ el punto 
+\begin_inset Formula $(\frac{1}{2},\frac{\sqrt{3}}{2})$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+El área de un cuadrado decrece a razón de 
+\begin_inset Formula $1.5cm^{2}$
+\end_inset
+
+ por segundo.
+ Encuentre la razón de cambio de la longitud de los lados cuando el área
+ es de 
+\begin_inset Formula $100cm^{2}$
+\end_inset
+
+.
+ ¿Cómo está cambiando, en ese momento el área con relación a la longitud
+ de los lados?
+\end_layout
+
+\begin_layout Enumerate
+Un balón esférico pierde volumen, sin perder su forma esférica, a razón
+ constante de 
+\begin_inset Formula $10\ cm^{3}$
+\end_inset
+
+ por minuto.
+ ¿Cómo disminuye su radio? ¿Cuál es la razón de cambio del mismo cuando
+ el volumen es de 
+\begin_inset Formula $60cm^{3}$
+\end_inset
+
+?.
+\end_layout
+
+\begin_layout Enumerate
+Un perro se encuentra entrenando sobre una pista parábolica de ecuación
+ 
+\begin_inset Formula 
+\[
+y=3x^{2}-2x-2.
+\]
+
+\end_inset
+
+Su amo se encuentra, en una caseta de observación, en la posición 
+\begin_inset Formula $\left(2,10\right)$
+\end_inset
+
+ y quiere determinar si su perro puede seguir en las carreras o se convierte
+ en la mascota de sus hijos.
+ La prueba consiste en medir la rapidez vertical del perro en el punto final
+ de la pista.
+ La rapidez vertical mínima exigida es de 
+\begin_inset Formula $1.3\frac{m}{s}.$
+\end_inset
+
+ Si el recorrido se inicia en la posición 
+\begin_inset Formula $\left(-3,31\right)$
+\end_inset
+
+ y termina en la posición 
+\begin_inset Formula $\left(2,6\right)$
+\end_inset
+
+, y durante todo el recorrido la distancia a su dueño tiene una variación
+ constante de 
+\begin_inset Formula $1.4\frac{m}{s}.$
+\end_inset
+
+ ¿El perro pasa la prueba?.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-17.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Un deposito de agua con forma de prisma recto con secciones transversales
+ triángulos isósceles ,como el de la figura, es alimentado por una manguera
+ de la cual fluye agua a razón de 
+\begin_inset Formula $1.8\frac{m^{3}}{\min}$
+\end_inset
+
+.
+ El deposito tambien presenta un escape del cual fluye agua a razón de 
+\begin_inset Formula $0.22\frac{m^{3}}{\min}.$
+\end_inset
+
+ ¿Qué tan rapido aumenta el nivel del agua (en 
+\begin_inset Formula $\frac{m}{\min}$
+\end_inset
+
+),en el instante en que la altura del agua es 
+\begin_inset Formula $2$
+\end_inset
+
+ 
+\begin_inset Formula $m$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-5-18op.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+
+\shape smallcaps
+III.
+ Optimización.
+
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\Delta ABC$
+\end_inset
+
+ isósceles con 
+\begin_inset Formula $AB=AC.$
+\end_inset
+
+ Si 
+\begin_inset Formula $m\measuredangle BAC=\alpha,$
+\end_inset
+
+ obtenga el valor del ángulo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ tal que el área del 
+\begin_inset Formula $\Delta ABC$
+\end_inset
+
+ sea máxima.
+\end_layout
+
+\begin_layout Enumerate
+Determine dos números positivos cuya suma sea 
+\begin_inset Formula $100$
+\end_inset
+
+ y cuyo producto sea máximo.
+\end_layout
+
+\begin_layout Enumerate
+Una isla está ubicada en el punto 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $4\,km$
+\end_inset
+
+ mar adentro del punto más cercano 
+\begin_inset Formula $B$
+\end_inset
+
+ de una playa recta.
+ Una atleta, en la isla desea ir al punto 
+\begin_inset Formula $C$
+\end_inset
+
+, a 
+\begin_inset Formula $6$
+\end_inset
+
+ 
+\begin_inset Formula $km$
+\end_inset
+
+ de 
+\begin_inset Formula $B$
+\end_inset
+
+ playa abajo.
+ La mujer puede dirigirse hacia el punto 
+\begin_inset Formula $P$
+\end_inset
+
+, entre 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $C$
+\end_inset
+
+, en un bote de remos a 
+\begin_inset Formula $3.5\dfrac{km}{h}$
+\end_inset
+
+ y despúes caminar en forma recta de 
+\begin_inset Formula $P$
+\end_inset
+
+ a 
+\begin_inset Formula $C$
+\end_inset
+
+ a 
+\begin_inset Formula $6\dfrac{km}{h}.$
+\end_inset
+
+ ¿Donde debe estar el punto 
+\begin_inset Formula $P$
+\end_inset
+
+ (respecto a 
+\begin_inset Formula $B$
+\end_inset
+
+) para que la mujer se desplace en el menor tiempo posible? 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-3op.pdf
+	lyxscale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine el área del rectángulo más grande que tenga dos vértices en el
+ eje 
+\begin_inset Formula $x$
+\end_inset
+
+ y los otros dos en la parábola 
+\begin_inset Formula $y=16-x^{2},$
+\end_inset
+
+ por arriba del eje 
+\begin_inset Formula $x.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Determine la distancia mínima desde el punto 
+\begin_inset Formula $P\left(1,0\right)$
+\end_inset
+
+ a un punto de la curva 
+\begin_inset Formula $y^{2}-x^{2}=9,$
+\end_inset
+
+ y encuentre el punto de la curva más cercano a 
+\begin_inset Formula $P.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Pruebe que la distancia mínima desde el punto 
+\begin_inset Formula $P_{1}\left(x_{1},y_{1}\right)$
+\end_inset
+
+ a la recta 
+\begin_inset Formula $l$
+\end_inset
+
+ que tiene la ecuación 
+\begin_inset Formula 
+\[
+Ax+By+C=0
+\]
+
+\end_inset
+
+esta dada por 
+\begin_inset Formula 
+\[
+\dfrac{\left\vert Ax_{1}+By_{1}+C\right\vert }{\sqrt{A^{2}+B^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Determine las dimensiones del cilindro con mayor volumen que pueda inscribirse
+ en un cono circular recto que tiene radio 
+\begin_inset Formula $R$
+\end_inset
+
+ y altura 
+\begin_inset Formula $H.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Un trozo de alambre de 80 centimetros de longitud se dobla en forma de rectángul
+o.
+ Determine las dimensiones del rectángulo de mayor área posible.
+\end_layout
+
+\begin_layout Enumerate
+Una página debe contener 150 centimetros cuadrados de material impreso con
+ 4 centimetros de margen superior e inferior y 2 centimetros de margen derecho
+ e izquierdo ¿Qué dimensiones debe tener la página para que gaste menos
+ papel?
+\end_layout
+
+\begin_layout Enumerate
+Si se corta un alambre de 10 metros de longitud y se quiere formar un rectangulo
+ y una circunferencia ¿Donde debe cortarse el alambre para que el área de
+ las figuras combinadas sea máxima.
+\end_layout
+
+\begin_layout Enumerate
+Hay que construir una pileta de las dimensiones que se muestran.
+ Sólo se puede variar el ángulo 
+\begin_inset Formula $\theta$
+\end_inset
+
+ .
+ ¿Con qué ángulo se obtendrá el volumen máximo de la pileta?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-5-11op.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dos lados de un triángulo tienen 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ de largo, y el ángulo entre ellos es 
+\begin_inset Formula $\theta.$
+\end_inset
+
+ ¿Que valor de 
+\begin_inset Formula $\theta$
+\end_inset
+
+ maximizará el área del triángulo?
+\end_layout
+
+\begin_layout Enumerate
+Un granjero desea cercar tres terrenos rectangulares adyacentes identicos,
+ cada uno de ellos de 1800 pies cuadrados de área, incluyendo cerca en medio
+ de ellos.
+ ¿Cuáles serían las dimensiones de los terrenos para emplear la menor cantidad
+ de cerca posible?
+\end_layout
+
+\begin_layout Enumerate
+Dada una esfera de radio 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Calcular en función de 
+\begin_inset Formula $R$
+\end_inset
+
+, el radio 
+\begin_inset Formula $r$
+\end_inset
+
+ y la altura 
+\begin_inset Formula $h$
+\end_inset
+
+ del cono circular recto de mayor volumen que puede inscribirse en la esfera.
+\end_layout
+
+\begin_layout Enumerate
+Obtenga una ecuación de la recta tangente a la curva 
+\begin_inset Formula 
+\[
+y=\frac{1}{3}x^{3}+2x^{2}+5x-2
+\]
+
+\end_inset
+
+cuya pendiente sea mínima
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ son los catetos de un triángulo rectángulo cuya hipotenusa es 
+\begin_inset Formula $4$
+\end_inset
+
+, hallar el mayor valor de 
+\begin_inset Formula $a^{2}+3b^{2}-5a+2.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Dos fábricas están situadas en las coordenadas 
+\begin_inset Formula $\left(-3,0\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(3,0\right)$
+\end_inset
+
+ y su central de suministro de energía en el punto 
+\begin_inset Formula $\left(0,8\right).$
+\end_inset
+
+ Determine donde debe colocarse el punto 
+\begin_inset Formula $A$
+\end_inset
+
+, tal que la longitud de conducción de la energía a las dos fábricas sea
+ mínima.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-4-6-17op.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Una ventana tiene forma de rectángulo terminado por un semicirculo de diámetro
+ igual a la base del rectángulo.
+ La parte circular ha de ser de cristal transparente y la parte rectangular
+ ha de ser de cristales de color que admite solo dos tercios de la luz por
+ metro cuadrado que el cristal transparente.
+ El perimetro total de la ventana ha de tener longitud fija 
+\begin_inset Formula $25$
+\end_inset
+
+ m.
+ Hallar las dimensiones de la ventana que deja pasar la mayor cantidad posible
+ de luz.
+\end_layout
+
+\begin_layout Enumerate
+Hallar la menor distancia de 
+\begin_inset Formula $\left(0,6\right)$
+\end_inset
+
+ del eje 
+\begin_inset Formula $Y$
+\end_inset
+
+ a la parábola 
+\begin_inset Formula $x^{2}=4y.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Considere la circunferencia de ecuación 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}-2x+2y+1=0.
+\]
+
+\end_inset
+
+Encuentre los puntos de la misma que están más cerca y más lejos del origen
+ del sistema de coordenadas.
+\end_layout
+
+\begin_layout Enumerate
+Una caja cerrada de base cuadrada debe tener un volumen de 
+\begin_inset Formula $1000$
+\end_inset
+
+ 
+\begin_inset Formula $cm^{3}.$
+\end_inset
+
+ El material del fondo de la tapa de la caja tiene un costo de 0.3 euros
+ por 
+\begin_inset Formula $cm^{2}$
+\end_inset
+
+ y el material de los laterales cuesta 
+\begin_inset Formula $0.15$
+\end_inset
+
+ euros por 
+\begin_inset Formula $cm^{2}.$
+\end_inset
+
+ Determine las dimensiones de la caja para que el costo total sea mínimo.
+\end_layout
+
+\begin_layout Enumerate
+Se dobla la esquina superior izquierda de un trozo de papel de 8 pulgadas
+ de ancho por 12 pulgadas de largo para llevarla hasta el borde de la derecha,
+ como en la figura.
+ ¿Comó se doblaría de modo que se minimice la longitud de doblez?.
+ En otras palabras ¿Como elegiría 
+\begin_inset Formula $x$
+\end_inset
+
+ para minimizar 
+\begin_inset Formula $y$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/pagina-doblada.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

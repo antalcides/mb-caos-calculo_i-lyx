@@ -1,0 +1,43 @@
+[\tikzset{fontscale/.style = {font=\relsize{#1}}
+    }
+\begin{tikzpicture}[scale=0.8,
+fontscale=0.5,
+    ultra thick,
+    >=stealth',
+    dot/.style = {
+      draw,
+      fill = blue,
+      circle,
+      inner sep = 0pt,
+      minimum size = 6pt
+    }
+  ]
+\coordinate (H) at (7,7);
+\coordinate (D) at (6.5,5);
+ \draw[->] (0,0) -- (16.5,0) coordinate[label = {below:$x$}] (xmax);
+  \draw[->] (0,0) -- (0,7) coordinate[label = {above:$f(x)$}] (ymax);
+%\draw [help lines, step=1cm] (0,0) grid (16,10);
+\draw[color=gray,dashed,-latex]           (D)node[,
+                               label = {below:$$}] {} -- (H)node[above=-1pt] {Punto de inflexi\'on};
+% \draw [color=red]  plot[smooth, tension=2]coordinates {(0,5) (5,9) (8,5) (12,1) (16,5)};
+
+\draw [color=red,latex-latex]  (0,5 ) .. controls (7,12) and (8,-5) .. (16,5);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \draw[color=blue]           (2,6.5)node[dot,
+                               label = {below:$A$}] {};
+%  \draw[color=blue]           (3.2,6.8)node[dot,
+%                                label = {below:$B$}] {};
+ \draw[color=blue]           (6.5,5)node[dot,
+                               label = {below:$D$}] {};
+%  \draw[color=blue]           (5,6.25)node[dot,
+%                                label = {below:$C$}] {};
+%  \draw[color=blue]           (8,3.5)node[dot,
+%                                label = {below:$E$}] {};
+ \draw[color=blue]           (15,3.8)node[dot,
+                               label = {below:$G$}] {};
+%  \draw[color=blue]           (11.2,1.7)node[dot,
+%                                label = {below:$F$}] {};
+\draw[dashed] (2,6.5) -- (15,3.8);
+\draw[color=blue]           (8.5,-0.2)node[below
+                              ] {\Large Estudio de la concavidad};
+\end{tikzpicture}

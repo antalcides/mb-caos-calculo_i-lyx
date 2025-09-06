@@ -1,0 +1,92 @@
+
+%%% Definición de las longitudes definidas para la clase.
+%%%%%%%%%%%%% Profundidad de la numeración: capítulo.sección.subsección(1.1.1)
+\setcounter{secnumdepth}{3}
+
+% Para controlar el espacio inferior de \breakbox
+\newlength\spacebottom
+
+% Espacios dentro de las celdas en las tablas
+\setlength{\cellspacetoplimit}{3pt}
+\setlength{\cellspacebottomlimit}{3pt}
+
+% Sin sangría
+\setlength{\parindent}{0pt}
+
+% Desplazamientos de número de sección para los títulos de secciones
+\newlength\decalnumsec
+\newlength\decalnumsubsec
+\newlength\decalnumsubsubsec
+\setlength{\decalnumsec}{-0.5em}
+\setlength{\decalnumsubsec}{-0.5em}
+\setlength{\decalnumsubsubsec}{-0.5em}
+
+% Espacio entre el número de sección y su título
+\newlength\spacetitlesec
+\newlength\spacetitlesubsec
+\newlength\spacetitlesubsubsec
+\setlength{\spacetitlesec}{0.5em}
+\setlength{\spacetitlesubsec}{0.2em}
+\setlength{\spacetitlesubsubsec}{0.2em}
+
+% Cambio del espacio horintal de cada título 
+
+\newlength\decalxtitlesubsec
+\newlength\decalxtitlesubsubsec
+\setlength{\decalxtitlesubsec}{0pt}
+\setlength{\decalxtitlesubsubsec}{0pt}
+
+% Espacio vertical antes de cada entorno
+\newlength\spacebeforerem
+\newlength\spacebeforemeth
+\newlength\spacebeforedef
+\newlength\spacebeforeprop
+\newlength\spacebeforethm
+\newlength\spacebeforeex
+\newlength\spacebeforedem
+\newlength\spacebeforeact
+\newlength\spacebeforeexo
+\newlength\spacebeforenew
+\setlength{\spacebeforerem}{1em}
+\setlength{\spacebeforemeth}{1em}
+\setlength{\spacebeforedef}{1em}
+\setlength{\spacebeforeprop}{1em}
+\setlength{\spacebeforethm}{1em}
+\setlength{\spacebeforeex}{1em}
+\setlength{\spacebeforedem}{1em}
+\setlength{\spacebeforeact}{1em}
+\setlength{\spacebeforeexo}{1em}
+\setlength{\spacebeforenew}{1em}
+
+% Espacio entre la última línea y el marco en el entorno "comentario(remark)"
+\newlength\spacebottomrem
+\newlength\spacebottommeth
+\newlength\spacebottomnew
+\setlength{\spacebottomrem}{1em}
+\setlength{\spacebottommeth}{1em}
+\setlength{\spacebottomnew}{1em}
+
+% Márgenes de los entornos "definition", "theorems", ...
+\newlength\marginleft
+\setlength{\marginleft}{6em}
+
+% Portada
+
+\newlength\margintoptitle
+\newlength\marginlefttitle
+\newlength\margintopauthor
+\newlength\marginbottompic
+\newlength\marginrightpic
+\newlength\marginrightdate
+\newlength\marginbottomdate
+\setlength{\margintoptitle}{4em}
+\setlength{\marginlefttitle}{4em}
+\setlength{\marginbottompic}{4em}
+\setlength{\margintopauthor}{20em}
+\setlength{\marginrightpic}{4em}
+\setlength{\marginrightdate}{4em}
+\setlength{\marginbottomdate}{0em}
+
+% Resumen
+\newlength\controltoctitle
+\setlength{\controltoctitle}{0.25cm}

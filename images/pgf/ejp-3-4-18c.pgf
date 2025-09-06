@@ -1,0 +1,18 @@
+\begin{tikzpicture}[scale=1]
+\tkzInit[xmin=-4.3,xmax=4.3,ymin=-3,ymax=3]
+\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+%\tkzGrid
+\tkzDrawX[trig=2,label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelX[draw=fondpaille,orig=false]
+\tkzLabelX[trig=2,text=blue,below = 8pt]
+\tkzDrawY[label={\textit{f(x)}},below= -18pt,Maroon,ultra thick,color=Maroon]
+\tkzLabelY[draw=fondpaille]
+% \tkzVLine[color =blue,
+% style = dashed,
+% line width = 1pt]{2}
+\tkzText[draw,color= red,fill =red!20,draw=red](2,3.5){$f(x)=3\sen(2x)$}
+%\tkzText[draw,color= blue,fill = blue!20,draw=blue](2,2.25){$x= 2$}
+
+%\tkzAxeXY[ultra thick]
+\tkzFct[color=red,ultra thick,domain=-4:4,latex-latex]{3*sin(2*x)}
+\end{tikzpicture}

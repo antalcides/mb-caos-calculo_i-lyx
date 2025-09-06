@@ -1,0 +1,40 @@
+\begin{tikzpicture}%[fixed point arithmetic]
+\pgfmathsetmacro{\d}{1.87529 * 4}
+\pgfmathsetmacro{\Ly}{sqrt(3) * 2}
+\pgfmathsetmacro{\Lx}{\d / 2}
+\pgfmathsetmacro{\per}{1707 / 6378 * 4}
+
+\coordinate (E) at (0, 0);
+\coordinate (M) at (\d, 0);
+\coordinate (L4) at (\Lx, \Ly);
+
+\draw (E) -- (M);
+\draw (E) -- (L4);
+\draw (M) -- (L4) node[font = \scriptsize, above] {\(L_4\)};;
+\draw[-latex] (E) -- (-45:2cm) node[below = .1cm, font = \scriptsize]
+{\(v_r\)} coordinate (P1);
+\filldraw[blue, opacity = .7] (E) circle (1cm);
+\filldraw[gray, opacity = .7] (M) circle (.3cm);
+\filldraw[green] (.7 * \per, 0) circle (.075cm);
+\node[font = \scriptsize] at (\Lx + 2, \Ly)
+{\((187529, 332900.1652, 0)\)};
+\draw[dashed, thick] (E) circle (1.2cm);
+\draw[dashed, thick, red] ([shift = (E)] -45:1.2cm) .. controls (3, 1)
+and (-4, 5) .. (L4);
+
+\draw let
+  \p0 = (E),
+  \p1 = (P1),
+  \p2 = (M),
+  \n1 = {atan2(\x1 - \x0, \y1 - \y0)},
+  \n2 = {atan2(\x2 - \x0, \y2 - \y0)},
+  \n3 = {2cm},
+  \n4 = {(\n1 + \n2) / 2}
+in (E) + (\n1:\n3) arc[radius = \n3, start angle = \n1, end angle = \n2]
+node[fill = white, inner sep = 0cm, font = \scriptsize] at ([shift = (E)]
+\n4:\n3) {\(\nu = -\frac{\pi}{4}\)};
+\draw 
+  (current bounding box.north west) 
+  rectangle 
+  (current bounding box.south east) ;
+\end{tikzpicture}

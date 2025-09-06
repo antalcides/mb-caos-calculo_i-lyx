@@ -1,0 +1,27 @@
+ \begin{tikzpicture}[scale=1]
+% \coordinate (O) at (0,0);
+%   \draw[->] (-0.5,0.5) -- (2.5,0.5) coordinate[label = {below:$x$}] (xmax);
+%   \draw[->] (-0.5,0.5) -- (-0.5,2.5) coordinate[label = {right:$f(x)$}] (ymax);
+ \draw[-latex] (-2.5,-2.5) -- (2.5,-2.5) node[right] {$x$};
+\tkzDefSetOfPoints{-2.5/-2.5,-2/-2.5,-1.5/-2.5,-1/-2.5,-0.5/-2.5,0/-2.5,%
+.5/-2.5,1/-2.5,1.5/-2.5,2/-2.5}
+\tkzDrawSetOfPoints[mark=|, mark size=1.5pt]
+\tkzJoinSetOfPoints[thick, color=Maroon]
+\draw[-latex](-2.3,-3) -- (-2.3,2.5) node[above] {$f(x)$};
+\tkzDefSetOfPoints{-2.3/-3,-2.3/-2.5,-2.3/-2,-2.3/-1.5,-2.3/-1,%
+-2.3/-0.5,-2.3/0,-2.3/0.5,-2.3/1,-2.3/1.5,-2.3/2}
+\tkzDrawSetOfPoints[mark=-, mark size=1.5pt]
+\tkzJoinSetOfPoints[thick, color=Maroon]
+\tkzDefPoint(0,0){O}
+\tkzDefPoint(1.5,1.5){P}
+\tkzDrawCircle[red](O,P)
+% \draw [red, thick](0,2) .. controls (1,1) .. (2,2);
+% \draw [orange, thin,dashed](1,2)-- (1,1);
+%  \draw [blue, thin,dashed,-latex](-0.1,1.98)-- node[ left=4pt,dashed] {\tiny $f'(x)<0$} (0.92,1);
+%  \draw [blue, thin,dashed,-latex](1.08,1)--node[ right=4pt,dashed] {\tiny $f'(x)>0$} (2.2,2);
+% \draw (1,0.9)  node[white!30!black] {$\tiny x=c$};
+% %\draw (1,1.27) node[circle,fill=red] {};
+% \fill[red](1,1.25) circle (1.5pt) node[above] {} ;
+
+
+\end{tikzpicture}

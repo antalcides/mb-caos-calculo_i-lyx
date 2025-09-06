@@ -1,0 +1,15 @@
+ \begin{tikzpicture}[scale=2]
+% \coordinate (O) at (0,0);
+%   \draw[->] (-0.5,0.5) -- (2.5,0.5) coordinate[label = {below:$x$}] (xmax);
+%   \draw[->] (-0.5,0.5) -- (-0.5,2.5) coordinate[label = {right:$f(x)$}] (ymax);
+ \draw[-latex] (-0.5,0.5) -- (2.5,0.5) node[right] {$x$};
+      \draw[-latex](-0.5,0.5) -- (-0.5,2.5) node[above] {$f(x)$};
+\draw [red, thick](0,2) .. controls (1,1) .. (2,2);
+\draw [orange, thin,dashed](1,2)-- (1,1);
+\draw [blue, thin,dashed,-latex](-0.1,1.98)-- node[ left=4pt,dashed] {\tiny $f'(x)<0$} (0.92,1);
+\draw [blue, thin,dashed,-latex](1.08,1)--node[ right=4pt,dashed] {\tiny $f'(x)>0$} (2.2,2);
+\draw (1,0.9)  node[white!30!black] {$\tiny x=c$};
+%\draw (1,1.27) node[circle,fill=red] {};
+\fill[red](1,1.25) circle (1.5pt) node[above] {} ;
+
+\end{tikzpicture}

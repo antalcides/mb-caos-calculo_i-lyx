@@ -1,0 +1,132 @@
+\usepackage[spanish,es-tabla]{babel} % colocarla
+\usepackage{color}  %Para utilizar los colores% tikz lo carga no es necesario.
+\usepackage{xcolor} 
+\usepackage{graphicx}
+\graphicspath{{ps/}{logo/}{img/}{sections/figures/}{figures/}{images/}}
+\usepackage{paralist}
+%\usepackage[explicit]{titlesec}
+\usepackage{fancyhdr}     %Estilo de encabezado y pie de paginas
+\RequirePackage{emptypage}%p\'agina en blanco al terminar cap\'itulo
+\RequirePackage[toctitles,newparttoc,explicit,calcwidth]{titlesec}
+\usepackage{titletoc}
+%\usepackage{minitoc}  %Produce,UN TOC al comienzo de cada
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Partialtoc%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\PartialToc}{\vspace*{2pc}\linea\\%
+\startcontents[chapters]\vbox{\bf\Large \textcolor{red!50!black}{\chaptername\,\thechapter}}
+\printcontents[chapters]{}{1}{\setlength{\parskip}{0em}\small}\vspace*{1pc}\linea}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathdots}
+\usepackage{amssymb}  
+\usepackage{marvosym}
+\usepackage{latexsym}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float}
+\usepackage{caption}% para usar \captionof{}{}
+%\usepackage{background}
+%%%%%%%%%%%%%%%%% tikz %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{tikzpagenodes}
+%%%%%%%%%%%%% librerias tikz %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usetikzlibrary{babel}
+\usetikzlibrary{mindmap,trees}
+\usetikzlibrary{shadows,fadings}
+%\usetikzlibrary{shadows.blur}
+\usetikzlibrary{decorations.pathmorphing,calc,shadows.blur,shadings}
+\usetikzlibrary{shadings,intersections}
+\usetikzlibrary{calc,patterns,angles,quotes}
+%\usetikzlibrary{shapes.emoticon}
+\usetikzlibrary{bending}
+\usetikzlibrary{rulercompass}
+%\usetikzlibrary{calc}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{graphs,graphs.standard,quotes}
+\usetikzlibrary{shapes.symbols}
+%\usetikzlibrary{external}
+%\tikzexternalize
+%%%%%%%%%%%%%%%----------Paquetes adicionales---------------%%%%%%%%%%%%%%%%%%%
+\usepackage{tkz-fct}
+\usepackage{tkz-tab,tkz-euclide}
+\usepackage{tikz-dimline}
+%\usetkzobj{all}
+\usepackage{bm}
+\usepackage{textcomp}
+\usepackage{mathpazo}
+\usepackage{titlecaps}
+\usepackage{xargs}    
+\usepackage{todonotes}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[most,many]{tcolorbox}
+\tcbuselibrary{breakable,skins}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[os=win]{menukeys}
+%\usepackage[pdf]{pstricks}
+\usepackage{pstricks-add}
+\usepackage{pst-plot}
+\usepackage{pst-grad}
+\usepackage{pst-math}
+\usepackage{pst-node}
+%\usepackage{psfrag}
+\usepackage{makeidx}
+\usepackage{colortbl}
+\usepackage{wrapfig}	
+\usepackage{subfigure}
+\usepackage{upref}
+\usepackage{psboxit}
+%\usepackage{trees} % quita la raiz
+\usepackage{ecltree} 
+\usepackage{wrapfig}
+\usepackage{enumerate}
+\usepackage{multicol}  %Unew
+\usepackage{multirow}    %Para jugar con las tablas% Une y divide celas
+%\usepackage[document]{ragged2e}
+%\usepackage{sectsty}
+\usepackage{indentfirst}
+%\usepackage[ps2pdf]{hyperref}
+\usepackage[pages=some]{background}
+%\usepackage{lscape}
+%\usepackage{pdflscape}
+\usepackage{marginnote}
+%\usepackage[table,xcdraw]{xcolor}
+\usepackage{lscape}
+\usepackage{scalefnt} % para escalar las fuentes
+\usepackage{geometry}
+\geometry{
+  paper=letterpaper,
+  %showframe,
+  %landscape,
+  left=2.5cm,
+  right=5cm,
+  top=2.5cm,
+  bottom=2cm,
+  asymmetric% <- added
+}
+%%%%%%%%%%%%%%% para usar pdflatex
+\usepackage{ifpdf}
+ \usepackage[runs=2,crop=off]{auto-pst-pdf}
+ \ifpdf\else\usepackage{pstricks}\fi
+
+%%%%%%%%%%%%%%%%%%%Escoger el fromato de la grafica adecuada%%%%%%%%%%%%%
+\ifpdf
+  \DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\else
+  \DeclareGraphicsExtensions{.eps, .ps}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[latin1]{inputenc} 
+%\usepackage[utf8]{inputenc}
+%\usepackage{background}
+%\usepackage[top=3cm, bottom=3cm, outer=3cm, inner=3cm]{geometry}
+%\usepackage{geometry}
+
+%\usepackage{graphicx}
+%\usepackage{verbatim}
+%BeginExpansion
+%
+%EndExpansion

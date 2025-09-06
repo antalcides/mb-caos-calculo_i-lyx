@@ -1,0 +1,82 @@
+\newcommand*{\PhM}{\phantom{-}}%
+
+\newcommand{\pLabel}{%
+\color{blue}
+$f'(x) = \begin{cases}
+6x,  & \mbox{si} \PhM  x \leq -1  \\[0.8ex]
+N.D,  & \mbox{si} \PhM  x =1  \\[0.8ex]
+  6 ,  & \mbox{si} \PhM   x> 1
+ \end{cases}
+$
+}
+\begin{tikzpicture}[scale=1,xscale=1,yscale=1,
+    thick,
+   % >=stealth',
+dotf/.style = {xscale=1,yscale=1,
+      draw=red,
+      red,
+      fill = red,%blue!40!black,
+      circle,
+      inner sep = 0pt,
+      minimum size = 2pt
+    },
+    dot/.style = {xscale=1,yscale=1,
+      draw=red,
+      fill = white,
+      circle,
+      inner sep = 0pt,
+      minimum size = 4pt
+    }]
+%%%% inicio %%%%%%%%%%%%%%%%%%
+%%%%% definiendo Puntos %%%%%%%%%%%%%%%%
+\tkzDefPoint[](-3,0){A}
+\tkzDefPoint[](-2.5,0){B}
+\tkzDefPoint[](-2,0){C}
+\tkzDefPoint[](-1.5,0){D}
+\tkzDefPoint[](-1,0){E}
+\tkzDefPoint[](-0.5,0){F}
+\tkzDefPoint[](0,0){O}
+\tkzDefPoint[](0,-0.5){O1}
+\tkzDefPoint[](0.5,0){G}
+\tkzDefPoint[](1,0){H}
+\tkzDefPoint[](1,-0.5){H1}
+\tkzDefPoint[](1.5,0){I}
+\tkzDefPoint[](2,0){J}
+\tkzDefPoint[](2.5,0){K}
+\tkzDefPoint[](3,0){L}
+\tkzDefPoint[](-4,0){In}
+\tkzDefPoint[](4,0){Fi}
+%%%%%% definiendo segemto %%%%%%%%%
+\tkzDrawSegment[blue,ultra thick,latex-latex](In,Fi)
+\tkzDrawSegment[gray, thick,dashed](O,O1)
+\tkzDrawSegment[gray,thick,dashed](H,H1)
+\tkzDrawSegment[gray,thick,latex-latex](H1,O1)
+\tkzLabelSegment[below,blue ](H1,O1){$r$}
+%%%%% Graficando los puntos%%%%%%%%%%
+
+\filldraw[dot](A) circle (1.5pt);
+\tkzLabelPoint[above,red ](O){$c$}
+ \filldraw[dot](L) circle (1.5pt);
+\tkzLabelPoint[below,red ](G){$x$}
+\tkzLabelPoint[above,red ](H){$b$}
+\tkzLabelPoint[above,red ](E){$a$}
+
+\filldraw[dot](B) circle (1.5pt);
+ \filldraw[dot](K) circle (1.5pt);
+
+\filldraw[dot](C) circle (1.5pt);
+ \filldraw[dot](J) circle (1.5pt);
+
+\filldraw[dot](D) circle (1.5pt);
+ \filldraw[dot](I) circle (1.5pt);
+
+\filldraw[dot](E) circle (1.5pt);
+ \filldraw[dot](H) circle (1.5pt);
+
+ \filldraw[dotf,zanahoria](G) circle (1.5pt);
+%  \filldraw[dot](F) circle (1.5pt);
+
+\filldraw[dotf](O) circle (1.5pt);
+ \filldraw[dot](H) circle (1.5pt);
+
+\end{tikzpicture}

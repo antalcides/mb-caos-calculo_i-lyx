@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\draw[->] (-.5,0)--(4,0) node[below] {$x$};
+\draw[->] (0,-.5)--(0,4) node[left] {$y$};
+\def\rightpath{
+    (2,2) ..controls +(-70:.5) and +(-100:2)..  (3,2.5)
+}
+\draw[red,thick]\rightpath; 
+\draw[red,thick,rotate around={180:(2,2)}]\rightpath;
+\draw[dashed] (2,2)--(2,0) node[below]{$x_0$}
+node[below=3mm,red]{$f''(x_0)=0$};
+\fill (2,2) circle (2pt) node[above right] {$P$};
+\end{tikzpicture}

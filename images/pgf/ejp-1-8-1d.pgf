@@ -1,0 +1,15 @@
+\begin{tikzpicture}[scale=1.5]
+\tkzInit [xmin=-0.5,xmax=0.5,
+ymin=-0.5,ymax=0.5,
+xstep=0.1,ystep=.1]
+\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+%\tkzGrid
+\tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelX[draw=fondpaille,orig=false]
+\tkzLabelX[text=blue,below = 8pt]
+\tkzDrawY[label={\textit{f(x)}},below= -12pt,Maroon,ultra thick,color=Maroon]
+\tkzLabelY[draw=fondpaille,text=blue]
+%\node [right,fill=red!20!,draw=blue] at ( 1,5) {$f(x)=5x^{\frac{2}{3}}-2x$};
+%\tkzFct[color=red,ultra thick,domain=-2.:10,latex-latex]{abs(8*x-x**2)**(2./3)}
+\tkzFctPolar[color=red,ultra thick,domain=-2*pi:2*pi]{cos(t)*sin(t)}
+\end{tikzpicture}

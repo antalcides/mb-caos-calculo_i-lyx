@@ -1,0 +1,90 @@
+%\usetikzlibrary{fixedpointarithmetic}
+\usetkzobj{all}
+\begin{tikzpicture}%[fixed point arithmetic]
+\tkzInit[xmin=0,xmax= 8,xstep=1,
+ymax=6,ymin=0,ystep=1]
+\tkzDrawX[label={\textit{x}},below= -18pt]
+%\tkzLabelX
+%\tkzAxeY
+\tkzDrawY[label={\textit{f(x)}},below= -18pt]
+%\tkzLabelY
+
+\coordinate(P) at (2,2.24);
+\coordinate(Q) at (7,5.48);
+\coordinate(Q2) at (6.9,5.43);
+\coordinate(Q3) at (6.5,5.24);
+\coordinate(Q4) at (6,5);
+\coordinate(Q5) at (5.5,4.79);
+\coordinate(Q6) at (5,4.47);
+\coordinate(A) at (2,0);
+\coordinate(B) at (7,0);
+\coordinate(B2) at (6.9,0);
+\coordinate(C) at (0,2.24);
+\coordinate(D) at (0,5.48);
+\coordinate(D2) at (0,5.43);
+\coordinate(E) at (2,-1);
+\coordinate(F) at (7,-1);
+\coordinate(F2) at (6.9,-1);
+\coordinate(G) at (-1,2.24);
+\coordinate(H) at (-1,5.48);
+\coordinate(H2) at (-1,5.43);
+\tkzFillPolygon[color =blue!20!,opacity=.6](A,B2,Q2,P)
+\tkzFillPolygon[color =blue!20!,opacity=.6](C,P,Q2,D2)
+
+ \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.66*x+0.93)}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.67*x+0.9)}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.69*x+0.85)}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.72*x+0.8)}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.75*x+0.75)}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.78*x+0.68}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.82*x+0.6}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.87*x+0.5}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.93*x+0.38}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{1.01*x+0.23}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{1.04*x+0.15}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{1.07*x+0.1}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{1.09*x+0.05}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{1.1*x+0.03}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{1.11*x+0.02}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.95*x+0.33}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.97*x+0.29}
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{0.86*x+0.52}
+
+\filldraw[black](P) circle (2pt);
+\tkzLabelPoint[above left](P){$P$}
+\filldraw[black](Q) circle (2pt);
+\tkzLabelPoint[below right](Q){$Q$}
+\filldraw[black](A) circle (1.5pt);
+\tkzLabelPoint[below left = 1pt](A){$A$}
+\filldraw[black](B) circle (1.5pt);
+\tkzLabelPoint[below = 10pt](B){$B$}
+\filldraw[black](B2) circle (1.5pt);
+\tkzLabelPoint[below left= 1pt](B2){$B_{2}$}
+\filldraw[black](C) circle (1.5pt);
+\tkzLabelPoint[below left = 1pt](C){$C$}
+\filldraw[black](D) circle (1.5pt);
+\tkzLabelPoint[left = 10pt](D){$D$}
+\filldraw[black](D2) circle (1.5pt);
+\tkzLabelPoint[below left = 1pt](D2){$D_{2}$}
+\filldraw[black](Q2) circle (1.5pt);
+\tkzLabelPoint[above left= 1pt](Q2){$Q_{2}$}
+\draw[gray,dotted] (A)--(P);
+\draw[gray,dotted] (B)--(Q);
+\draw[gray,dotted] (B2)--(Q2);
+\draw[gray,dotted] (C)--(P);
+\draw[gray,dotted] (D)--(Q);
+\draw[gray,dotted] (D2)--(Q2);
+\draw[gray,zanahoria, ultra thick,latex-latex] (2,-1)--(7,-1)node[midway,below]{$\Delta x$};
+\draw[gray,blue, ultra thick,latex-latex] (E)--(F2)node[midway,above]{$\Delta x_{2}$};
+\tkzMarkSegment[pos=1,mark=|,color=red,ultra thick](E,F)
+\tkzMarkSegment[pos=0,mark=|,color=red,ultra thick](E,F)
+\tkzMarkSegment[pos=1,mark=|,color=blue,ultra thick](E,F2)
+\draw[gray,zanahoria, ultra thick,latex-latex] (G)--(H)node[midway,left]{$\Delta y$};
+\draw[gray,blue, ultra thick,latex-latex] (G)--(H2)node[midway,right]{$\Delta y_{2}$};
+\tkzMarkSegment[pos=1,mark=|,color=red,ultra thick](G,H)
+\tkzMarkSegment[pos=0,mark=|,color=red,ultra thick](G,H)
+\tkzMarkSegment[pos=1,mark=|,color=blue,ultra thick](G,H2)
+\tkzFct[domain = 0:9,blue,samples=200, smooth,ultra  thick]{sqrt(5*(x-1))}
+\tkzFct[domain =0:9,green,samples=200, smooth, ultra thick]{1.12*x)}
+ \tkzFct[domain =0:9,violet,samples=200, smooth, ultra thick]{0.65*x+0.94)}
+\end{tikzpicture}

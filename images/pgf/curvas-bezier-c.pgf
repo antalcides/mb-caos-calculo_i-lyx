@@ -1,0 +1,21 @@
+\begin{tikzpicture} 
+\begin{scope}[]
+\draw[help lines] (0,0) grid (8,3); 
+\draw  (1,0)  .. controls (4,2) ..  (7,0);  
+ \end{scope}  
+
+\begin{scope}[xshift=10cm]
+\draw[help lines] (0,0) grid (8,3);
+ \draw  (1,0)  .. controls (3,2) and (5,2) ..  (7,0);  
+ \end{scope}  
+
+\begin{scope}[yshift=5cm]
+ \draw[help lines] (0,0) grid (8,3); 
+\draw[overlay] (1,0)  .. controls (10,2) and (-2,2) ..  (7,0);  
+ \end{scope} 
+
+ \begin{scope}[xshift=10cm,yshift=6cm] 
+\draw[help lines] (0,-1) grid (8,1); 
+\draw (1,0) .. controls (3,2) and (5,-2) ..  (7,0);  
+\end{scope}
+ \end{tikzpicture}

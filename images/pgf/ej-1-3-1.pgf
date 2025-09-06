@@ -1,0 +1,113 @@
+\newcommand*{\PhM}{\phantom{-}}%
+
+\newcommand{\pLabel}{%
+\color{blue}
+$f'(x) = \begin{cases}
+6x,  & \mbox{si} \PhM  x \leq -1  \\[0.8ex]
+N.D,  & \mbox{si} \PhM  x =1  \\[0.8ex]
+  6 ,  & \mbox{si} \PhM   x> 1
+ \end{cases}
+$
+}
+\begin{tikzpicture}[scale=1,xscale=1,yscale=0.8,
+    thick,
+   % >=stealth',
+dotf/.style = {xscale=1,yscale=1,
+      draw,
+      red,
+      fill = red,%blue!40!black,
+      circle,
+      inner sep = 0pt,
+      minimum size = 2pt
+    },
+    dot/.style = {xscale=1,yscale=1,
+      draw,
+      fill = white,
+      circle,
+      inner sep = 0pt,
+      minimum size = 4pt
+    }]
+
+%% Primera
+\begin{scope}[]
+\tkzInit[xmin=-2, xmax=6.5,  ymin=-3, ymax=4.5]
+%\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+%\tkzGrid
+\tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelX[draw=fondpaille,orig=false]
+%\tkzLabelX[text=blue,below = 8pt]
+\tkzDrawY[label={\textit{f(x)}},below= -12pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelY[draw=fondpaille,text=blue]
+ \tkzDefPoint(2,-2){V}
+% \tkzDefPoint(1.5*pi,2.33){P}
+%  \tkzDefPoint(-1.5*pi,-2.33){Q}
+% \tkzDefPoint(1,4){C}
+% \tkzDefPoint(1,6){A}
+%\tkzDefPoint(0,6){B}
+%\tkzText[draw,color= red,fill =red!20,draw=red](2,3.5){\plabel}
+\tkzVLine[color = blue,style = dashed,line width = 1pt,latex-latex]{2}
+\node [right,fill=red!20!,draw=blue] at ( 0.5,5) {$f(x)=ax^2+bx+c,$  $\! a>0 $ y $b>0$};
+%\tkzFct[color=red,ultra thick,domain=-2.:10,latex-latex]{abs(8*x-x**2)**(2./3)}
+\tkzFct[color=red,ultra thick,domain=-1.4:5.4,latex-latex]{0.5*(x-2)**2-2}
+ \filldraw[dotf](V) circle (2pt);
+ \tkzLabelPoint[above left,blue ](V){$V$}
+\tkzText[draw,color = blue, fill = orange!20](2.8,3.5){$x=\frac{b}{2a}$}
+\end{scope}
+
+%% Segunda
+\begin{scope}[xshift=14cm ]
+\tkzInit[xmin=-6, xmax=2,  ymin=-2.5, ymax=4]
+%\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+%\tkzGrid
+\tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelX[draw=fondpaille,orig=false]
+%\tkzLabelX[text=blue,below = 8pt]
+\tkzDrawY[label={\textit{f(x)}},below= -12pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelY[draw=fondpaille,text=blue]
+ \tkzDefPoint(-2,-2){V}
+\tkzVLine[color = blue,style = dashed,line width = 1pt,latex-latex]{-2}
+\node [right,fill=red!20!,draw=blue] at ( -5.5,5) {$f(x)=ax^2+bx+c,$  $\! a>0 $ y $b<0$};
+\tkzFct[color=red,ultra thick,domain=-5.4:1.4,latex-latex]{0.5*(x+2)**2-2}
+\filldraw[dotf](V) circle (2pt);
+ \tkzLabelPoint[above left,blue ](V){$V$}
+\tkzText[draw,color = blue, fill = orange!20](-2.8,3.5){$x=\frac{b}{2a}$}
+\end{scope}
+
+%% Tercera
+\begin{scope}[yscale=0.8,yshift=-10cm]
+\tkzInit[xmin=-2, xmax=6,  ymin=-8, ymax=1]
+%\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+%\tkzGrid
+\tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelX[draw=fondpaille,orig=false]
+%\tkzLabelX[text=blue,below = 8pt]
+\tkzDrawY[label={\textit{f(x)}},below= -12pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelY[draw=fondpaille,text=blue]
+ \tkzDefPoint(2,-2){V}
+\tkzVLine[color = blue,style = dashed,line width = 1pt,latex-latex]{2}
+\node [right,fill=red!20!,draw=blue] at ( 0.5,1.5) {$f(x)=ax^2+bx+c,$  $\! a<0 $ y $b<0$};
+\tkzFct[color=red,ultra thick,domain=-1.4:5.4,latex-latex]{-0.5*(x-2)**2-2}
+\filldraw[dotf](V) circle (2pt);
+ \tkzLabelPoint[above left,blue ](V){$V$}
+\tkzText[draw,color = blue, fill = orange!20](2.8,-7){$x=\frac{b}{2a}$}
+\end{scope}
+
+%% Cuarta
+\begin{scope}[xshift=14cm,yscale=0.8,yshift=-10cm]
+\tkzInit[xmin=-6, xmax=2,  ymin=-8, ymax=1]
+%\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+%\tkzGrid
+\tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelX[draw=fondpaille,orig=false]
+%\tkzLabelX[text=blue,below = 8pt]
+\tkzDrawY[label={\textit{f(x)}},below= -12pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelY[draw=fondpaille,text=blue]
+\tkzDefPoint(-2,-2){V}
+\tkzVLine[color = blue,style = dashed,line width = 1pt,latex-latex]{-2}
+\node [right,fill=red!20!,draw=blue] at ( -5.5,1.8) {$f(x)=ax^2+bx+c,$  $\! a<0 $ y $b>0$};
+\tkzFct[color=red,ultra thick,domain=-5.4:1.4,latex-latex]{-0.5*(x+2)**2-2}
+\filldraw[dotf](V) circle (2pt);
+ \tkzLabelPoint[above left,blue ](V){$V$}
+\tkzText[draw,color = blue, fill = orange!20](-2.8,-7){$x=\frac{b}{2a}$}
+\end{scope}
+\end{tikzpicture}

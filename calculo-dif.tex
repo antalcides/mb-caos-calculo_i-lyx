@@ -1,0 +1,155 @@
+\batchmode
+\makeatletter
+\def\input@path{{lib}{styles/}{sections/}{pdf/}{chapters}}
+\makeatother
+\documentclass[ams,openany,10pt,presentation,latin1]{mathbook-main}
+\usepackage{listings}
+\usepackage{mathrsfs}
+\graphicspath{{fig-pdf/}{pdf/}{image/}{sections/figures/}{figures/}{images/}}
+\usepackage{float}
+\usepackage{subfigure}
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+%\let\checkmark\relax
+%\definecolor{bleu}{cmyk}{0.59,0.11,0,0.59}
+%\definecolor{vert}{cmyk}{0.78,0,0.74,0.45}
+%\definecolor{caper}{cmyk}{0.21,0.00,0.51,0.54}
+%\definecolor{doc}{cmyk}{1.00,0.45,0.00,0.57}
+%\definecolor{rhodo}{cmyk}{0.78,0,0.74,0.45}
+%\definecolor{azulrey}{cmyk}{0.91,0.34,0.00,0.55}
+%\definecolor{saddlebrown}{cmyk}{0.00,0.46,0.85,0.50}
+%\definecolor{milktea}{cmyk}{0.00,0.18,0.43,0.22}
+%\definecolor{naranja}{cmyk}{0,0.5,1,0}
+%\definecolor{olivegreen}{cmyk}{0.64,0,0.95,0.40}
+%\definecolor{bgpage}{cmyk}{.20,.30,.64,.19}
+%\definecolor{mesh}{cmyk}{0,0.04,0.17,0.03}
+\usepackage{pagecolor}
+\usepackage{zahlen}
+%\pagecolor{mesh}
+\pagecolor{fondpaille}  
+\lstset{
+	numbers=left, 
+	numberstyle=\tiny, 
+	stepnumber=1, 
+	numbersep=3pt, 
+	language=[LaTeX]TeX, 
+	backgroundcolor=\color{bleu!20},
+	frame=shadowbox,
+	rulesepcolor=\color{bleu},
+	rulecolor=\color{bleu},
+	framexleftmargin=10pt,
+	keywordstyle=\color{vert}\bfseries,
+	basicstyle=\listfont,
+    columns=flexible,
+    keepspaces=true,
+    upquote=true,
+    literate=
+    {á}{{\'a}}{1}
+    {é}{{\'e}}{1}
+    {í}{{\'i}}{1}
+    {ó}{{\'o}}{1}
+    {ú}{{\'u}}{1}
+    {Á}{{\'A}}{1}
+    {É}{{\'E}}{1}
+    {Í}{{\'I}}{1}
+    {Ó}{{\'O}}{1}
+    {Ú}{{\'U}}{1}
+    {ñ}{{\~n}}{1}
+    {Ñ}{{\~N}}{1}
+    {ü}{{\"e}}{1}
+    {Ü}{{\"U}}{1}%
+    %frances
+    {è}{{\`e}}{1}%
+    {à}{{\`a}}{1}%
+    {â}{{\^a}}{1}%%%
+    {ç}{{\c{c}}}{1}%
+    {?}{{\oe}}{1}%
+    {ù}{{\`u}}{1}%
+    {È}{{\`E}}{1}%
+    {À}{{\`A}}{1}%
+    {Ç}{{\c{C}}}{1}%
+    {?}{{\OE}}{1}%
+    {Ê}{{\^E}}{1}%
+    {ê}{{\^e}}{1}%
+    {î}{{\^i}}{1}%
+    {ï}{{\"i}}{1}%%%
+    {ô}{{\^o}}{1}%
+    {û}{{\^u}}{1}%
+    ,
+    commentstyle=\color{gray},
+    morekeywords={redefineColor,dfrac,setlength,cellspacetoplimit, cellspacebottomlimit,firstline,text,intro,introauthor,chapter, itemclass,exostart,corrstart,PagCorregidos,columnbreak,titlepic, nbcolindex,indexname,printindex,makeindex,activites, DefineNewBoxLikeRem,BreakCorr}
+}
+\usepackage{lipsum-es}
+\usepackage{wasysym}
+\makeatletter 
+\newenvironment{proof}[1][Prueba]{\textcolor{dem@line@color}{\textbf{#1.\phantom{--}} }}{\hfill\phantom{--}\hfill\ \ \textcolor{dem@line@color}{\rule{0.5em}{0.5em}}}
+\newenvironment{exam}[1][Ejercicio]{\textbf{#1.}\ }{\hfill\ \rule{0.5em}{0.5em}}
+\newenvironment{sol}[1][Soluci\'on]{\textcolor{dem@line@color}{\textbf{#1.\phantom{--}}}}{\hfill\phantom{--}\hfill\ \textcolor{dem@line@color}{\checked}}
+
+\RequirePackage[colorlinks=true,linkcolor=corref@color]{hyperref}
+\redefineColor{thmtitle@bg@color}{0.66,0.24,0.74,0.71}
+\redefineColor{thm@bg@color}{0.11,0,0.09,0.09}
+\redefineColor{proptitle@bg@color}{0.66,0.24,0.74,0.71}
+\redefineColor{prop@bg@color}{0.11,0,0.09,0.09}
+\redefineColor{firstpagebottom@bg@color}{1,1,0.00,0.55}
+\redefineColor{subsection@title@color}{.19,.74,.100,.68}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Vdots{\vbox{\baselineskip4\p@ \lineskiplimit\z@
+    \kern6\p@\hbox{.}\hbox{.}\hbox{.}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatother
+%\selectspanish
+\title{C\'alculo diferencial\\ \normalsize Con ejercicios resueltos.}
+\author{Antalcides Olivo}
+\titlepic[0.3]{image/puente1.jpg}
+\logopic[1]{image/logo-caos-1.png}
+%\titlepic[0.5]{fractal.jpg}
+\date{\dia}
+
+\makeindex
+%\usepackage[mathrm=sym]{unicode-math}
+%\setmathfont{Fira Math Regular}
+%\DeclareMathAlphabet{\mathcal}{OMS}{cmbrs}{m}{n}
+\defaultfontfeatures[FiraMath-Regular.otf]
+    { Path = {C:/texlive/texmf-local/fonts/opentype/public/firamath/} ,
+      Extension = .otf }
+ \begin{document}
+
+\frontmatter
+
+\maketitle
+
+{
+\makeatletter
+\sectiontitle@font
+\tableofcontents
+\makeatother
+}
+
+\mainmatter
+
+\intro{Nada se pierde, todo se transforma}
+\introauthor{Lavoisier}
+%%------------------------------------------------------------------------
+%%% Capítulo paquetes
+%%------------------------------------------------------------------------
+AAAA \\bbb
+%\input{sections/capitulo1}
+%\input{sections/capitulo2}
+%\input{sections/capitulo3}
+%\input{sections/capitulo4}
+
+Verá el resultado en la última página.
+%%------------------------------------------------------------------------
+%Capítulo Actualizaciones
+%%------------------------------------------------------------------------
+%\chapter{Actualizaciones}
+
+%\figcontenido
+
+\backmatter
+\input{sections/Bibliography.tex}
+
+\def\nbcolindex{2}
+\pagecolor{mesh}
+\printindex
+\end{document}

@@ -1,0 +1,77 @@
+%\usetikzlibrary{fixedpointarithmetic}
+\usetkzobj{all}
+\begin{tikzpicture}%[fixed point arithmetic]
+\tkzInit[xmin=0,xmax= 8,xstep=1,
+ymax=6,ymin=0,ystep=1]
+\tkzDrawX[label={\textit{x}},below= -18pt]
+%\tkzLabelX
+%\tkzAxeY
+\tkzDrawY[label={\textit{f(x)}},below= -18pt]
+%\tkzLabelY
+
+\coordinate(P) at (2,2.24);
+\coordinate(Q) at (7,5.48);
+\coordinate(Q1) at (1.9,2.12);
+\coordinate(A) at (2,0);
+\coordinate(B) at (7,0);
+\coordinate(B1) at (1.9,0);
+\coordinate(C) at (0,2.24);
+\coordinate(D) at (0,5.48);
+\coordinate(D1) at (0,2.12);
+\coordinate(E) at (2,-1);
+\coordinate(F) at (7,-1);
+\coordinate(F1) at (1.9,-1);
+\coordinate(G) at (-1,2.24);
+\coordinate(H) at (-1,5.48);
+\coordinate(H1) at (-1,2.12);
+\coordinate(J) at (7,2.24);
+\tkzFillPolygon[color =blue!20!,opacity=.6](A,B,Q,P)
+\tkzFillPolygon[color =blue!20!,opacity=.6](C,P,Q,D)
+
+% \tkzFct[domain =0:9,gray,samples=200, smooth, ultra thick,dotted]{1.15*x-0.06}
+
+
+\filldraw[black](P) circle (2pt);
+\tkzLabelPoint[above left](P){$P$}
+\filldraw[black](Q) circle (2pt);
+\tkzLabelPoint[below right](Q){$Q$}
+\filldraw[black](A) circle (1.5pt);
+\tkzLabelPoint[below ](A){$c$}
+\filldraw[black](B) circle (1.5pt);
+\tkzLabelPoint[below ](B){$c+k$}
+% \filldraw[black](B1) circle (1.5pt);
+% \tkzLabelPoint[below= 10pt](B1){$B_{11}$}
+\filldraw[black](C) circle (1.5pt);
+\tkzLabelPoint[ left = 1pt](C){$f(c)$}
+\filldraw[black](D) circle (1.5pt);
+\tkzLabelPoint[above left = 1pt](D){$f(c+k)$}
+% \filldraw[black](D1) circle (1.5pt);
+% \tkzLabelPoint[left = 5pt](D1){$D_{11}$}
+% \filldraw[black](Q1) circle (1.5pt);
+% \tkzLabelPoint[below right= 1pt](Q1){$Q_{11}$}
+\filldraw[black](J) circle (1.5pt);
+\draw[gray,dotted, ultra thick] (A)--(P);
+\draw[gray,dotted, ultra thick] (B)--(Q);
+%\draw[gray,dotted] (B1)--(Q1);
+\draw[gray,dotted, ultra thick] (C)--(P);
+\draw[gray,dotted, ultra thick] (D)--(Q);
+%\draw[gray,dotted] (D1)--(Q1);
+\draw[gray,zanahoria, ultra thick,latex-latex,dotted] (2,-1)--(7,-1)node[midway,below]{$\Delta x=k$};
+\draw[gray,blue, ultra thick,latex-latex,dotted] (P)--(J)node[midway,below]{$\Delta x = k$};
+\tkzMarkSegment[pos=1,mark=|,color=red,ultra thick](E,F)
+\tkzMarkSegment[pos=0,mark=|,color=red,ultra thick](E,F)
+%\tkzMarkSegment[pos=1,mark=|,color=blue,ultra thick](E,F1)
+\draw[gray,zanahoria, ultra thick,latex-latex,dotted] (G)--(H)node[midway,left]{$\Delta y$};
+\draw[gray,blue, ultra thick,latex-latex, ultra thick,dotted] (J)--(Q)node[midway,right]{$\Delta y = f(c+k)-f(c)$};
+\tkzMarkSegment[pos=1,mark=|,color=red,ultra thick](G,H)
+\tkzMarkSegment[pos=0,mark=|,color=red,ultra thick](G,H)
+%\tkzMarkSegment[pos=1,mark=|,color=blue,ultra thick](G,H1)
+\tkzFct[domain =1:9,blue,samples=200, smooth,ultra  thick]{sqrt(5*(x-1))}
+\tkzFct[domain =0:9,green,samples=200, smooth, ultra thick]{1.12*x)}
+ \tkzFct[domain =0:9,violet,samples=200, smooth, ultra thick]{0.65*x+0.94)}
+\tkzText[draw,color= blue,fill=blue!20](8.5,5.6){$f(x)$}
+\tkzText[draw,color= green,fill=green!20](5.5,6.4){$g(x)=f(c)+(x-c)f'(c)$}
+\tkzText[draw,color= violet,fill=violet!20](8.8,6.29){\scshape recta secante}
+
+ %\draw      (0.3,0.5) -- (6.7,4.7) node[pos=0.78, below right] {Recta Secante}; 
+\end{tikzpicture}

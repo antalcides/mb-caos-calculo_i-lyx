@@ -1,0 +1,114 @@
+\newcommand\DrawControl[3]{
+  node[#2,circle,fill=#2,inner sep=2pt,label={above:$#1$},label={[black]below:{\footnotesize#3}}] at #1 {}
+}
+\newcommand*{\PhM}{\phantom{-}}%
+
+\newcommand{\pLabel}{%
+\color{blue}
+$f'(x) = \begin{cases}
+6x,  & \mbox{si} \PhM  x \leq -1  \\[0.8ex]
+N.D,  & \mbox{si} \PhM  x =1  \\[0.8ex]
+  6 ,  & \mbox{si} \PhM   x> 1
+ \end{cases}
+$
+}
+\begin{tikzpicture}[scale=1,xscale=1,yscale=1,
+    thick,
+   % >=stealth',
+dotf/.style = {xscale=1,yscale=1,
+      draw,
+      red,
+      fill = red,%blue!40!black,
+      circle,
+      inner sep = 0pt,
+      minimum size = 2pt
+    },
+    dot/.style = {xscale=1,yscale=1,
+      draw=red,
+      fill = white,
+      circle,
+      inner sep = 0pt,
+      minimum size = 4pt
+    }]
+\tkzInit[xmin=-5.5, xmax=7.5,  ymin=-2.5, ymax=4.5]
+% \tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+% \tkzGrid[sub,color=gray!20!black]
+% \tkzGrid[color=gray]
+% \tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+% %\tkzLabelX[draw=fondpaille,orig=false]
+% \tkzLabelX[text=blue,below = 8pt]
+% \tkzDrawY[label={\textit{f(x)}},below= -12pt,Maroon,ultra thick,color=Maroon]
+% \tkzLabelY[draw=fondpaille,text=blue]
+\tkzDefPoint(2,-2){A}
+\tkzDefPoint(-3,-2){B}
+ \tkzDefPoint(6,-2){C}
+\tkzDefPoint(-3.5,1){D}
+\tkzDefPoint(-3.5,3){E}
+\tkzDefPoint(-3,1){O}
+\tkzDefPoint(2,3){P}
+ \tkzDefPoint(-3.5,-1){Q}
+\tkzDefPoint(6,-1){R}
+\tkzDefPoint(-3.5,-2){Oi}
+\tkzDefPoint(-4,-2){Oi}
+\tkzDefPoint(7,-2){Of}
+\tkzDefPoint(-3.5,-2.5){Yi}
+\tkzDefPoint(-3.5,4.){Yf}
+\tkzDefPoint(4.4,0){C1}
+\tkzDefPoint(0,1.67){C2}
+\tkzDefPoint(4.4,-2){C3}
+\tkzDefPoint(0,-2){C4}
+\tkzDefPoint(-3.5,0){M1}
+\tkzDefPoint(-3.5,1.67){M2}
+
+
+\tkzDrawSegments[ultra thick,zanahoria,dashed](E,P P,A)
+\tkzDrawSegments[ultra thick,gray,dashed](R,Q D,Q  O,B  O,D  R,C)
+\tkzDrawSegments[ultra thick,green,dashed](C1,M1 C1,C3  C2,M2  C4,C2)
+
+
+
+
+
+\tkzLabelPoint[below,red ](A){$k$}
+\tkzLabelPoint[below,red ](B){$a$}
+\tkzLabelPoint[below,red ](C){$b$}
+\tkzLabelPoint[left,red ](D){$f(a)$}
+\tkzLabelPoint[left,red ](E){B=$f(k)$}
+\tkzLabelPoint[left,red ](Q){$A=f(b)$}
+
+\tkzLabelPoint[below,green ](C3){$c$}
+\tkzLabelPoint[below,green](C4){$c'$}
+\tkzLabelPoint[left,green ](M1){m=$f(c)$}
+\tkzLabelPoint[left,green ](M2){$m'=f(c')$}
+
+\tkzDrawSegments[ultra thick,blue,latex-latex](Oi,Of Yi,Yf)
+
+
+\draw[ultra thick,red] 
+  (2,3)  .. controls (4,2.8)and (3,0) ..  (6,-1) %\DrawControl{(4,2.8)}{red}{1} \DrawControl{(3,0)}{red}{2}
+;  
+%%%%%%%%
+\draw[ultra thick,red]  (-3,1) .. controls (0,0) and (0,2.8) .. (2,3) 
+%\DrawControl{(0,0)}{blue}{1}\DrawControl{(0,3)}{blue}{2}
+;  
+\tkzText[blue](6.8,-1.7){\Large$x$}
+\tkzText[blue](-3.3,4.2){\Large$f(x)$}
+
+\filldraw[dotf](A) circle (1.5pt);
+\filldraw[dotf](B) circle (1.5pt);
+\filldraw[dotf](C) circle (1.5pt);
+\filldraw[dotf](D) circle (1.5pt);
+\filldraw[dotf](E) circle (1.5pt);
+\filldraw[dotf](P) circle (1.5pt);
+\filldraw[dotf](Q) circle (1.5pt);
+\filldraw[dotf](O) circle (1.5pt);
+\filldraw[dotf](R) circle (1.5pt);
+\filldraw[dotf,violet](C1) circle (1.5pt);
+\filldraw[dotf,violet](C2) circle (1.5pt);
+\filldraw[dotf,violet](C3) circle (1.5pt);
+\filldraw[dotf,violet](C4) circle (1.5pt);
+\filldraw[dotf,violet](M1) circle (1.5pt);
+\filldraw[dotf,violet](M2) circle (1.5pt);
+
+
+\end{tikzpicture}

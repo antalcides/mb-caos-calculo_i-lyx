@@ -1,0 +1,71 @@
+\usetkzobj{all}
+\begin{tikzpicture}[]
+\tkzInit[xmin=-0.5, xmax=10.5,  ymin=-0.5, ymax=4.5]
+\tkzDefPoint(2,2){A}
+%\tkzDefPoint(0,-1){A1}
+\tkzDefPoint(6,2){B}
+%\tkzDefPoint(6,-0.5){B1}
+% \tkzDefPoint(6,-1){B2}
+% \tkzDefPoint(7,0){B3}
+\tkzDefPoint(4,2){C}
+\tkzDefPoint(3,3.73){C1}
+%\tkzDefPoint(6.5,3){C2}
+\tkzDefPoint(7.02,3.72){D}
+\tkzDefPoint(5.02,3.74){D1}
+%\tkzDefPoint[shift={(0,0)}](30:3){A3}
+\tkzDefPoint(9,4){E}
+\tkzDefPoint(7.99,2.27){F}
+\tkzDefPoint(9.99,2.26){F1}
+\tkzDefPoint(9.01,2.27){G}
+\tkzDefPoint(9,1){H}
+\tkzDefPoint(8,1.8){H1}
+\tkzDefPoint(9.01,1.8){H2}
+%\tkzDefPoint[shift={(5,0)}](30:3){B5}
+%\tkzGrid
+\tkzFillAngle[size=2cm,fill=gray!40!,opacity=.7](C,A,C1)
+\tkzLabelAngle[pos = 2.3,blue](C,A,C1){$\theta R$}%
+\tkzLabelAngle[pos = 0.5,blue](C,A,C1){$\theta $}%
+%\tkzDrawCircle[blue,ultra thick](A,C)
+\tkzDrawPoints[color=red](A,B,C,C1,D,D1,F,F1,E,G)
+%\tkzLabelPoints[color=red](A,B,C)
+\tkzLabelPoint[left=2pt,color=blue](A){$A$}
+\tkzDrawSector[blue,ultra thick,dotted](A,C1)(C)
+\tkzDrawSector[red,ultra thick](A,C)(C1)
+\tkzLabelSegment[below=2pt,pos=.5,blue](A,C){$R$}
+\tkzMarkAngle[size = 1cm,arc=l, red,ultra thick](C,A,C1)
+
+\tkzFillAngle[size=2cm,fill=gray!40!,opacity=.7](F,E,F1)
+\tkzDrawArc[red,ultra thick](E,F)(F1)
+\tkzDrawSegments[color=red, thick](E,F)
+\tkzDrawSegments[color=red, thick](E,F1)
+\tkzDrawSegments[color=gray, ultra thick,dotted](E,G)
+\tkzDrawSegments[color=gray, ultra thick,dotted](F,G)
+\tkzMarkRightAngle[fill=red!20,size=.2](E,G,F)
+\tkzDrawArc[gray,ultra thick,dotted](H,F1)(F)
+\tkzLabelSegment[right,pos=.5,blue](E,G){$h$}
+% \tkzLabelAngle[pos = 2.3,blue](D,B,D1){$\theta R$}
+\tkzDrawSegments[color=red, thick,latex-latex](H1,H2)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=2pt,ultra thick](H1,H2)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=2pt,ultra thick](H1,H2)
+\tkzLabelSegment[below=2pt,pos=.5,blue](H1,H2){$r$}
+\tkzLabelPoint[above=2pt,blue](E){$A$}
+\tkzLabelPoint[right=2pt,blue](C){$C$}
+\tkzLabelPoint[right=2pt,blue](G){$B$}
+\tkzLabelPoint[left=2pt,blue](F){$C$}
+\tkzLabelPoint[right=2pt,blue](D){$C$}
+\tkzLabelPoint[below=2pt,blue](B){$A$}
+
+
+
+
+
+\tkzFillAngle[size=2cm,fill=gray!40!,opacity=.7](D,B,D1)
+\tkzLabelAngle[pos = 0.5,blue](D,B,D1){$\theta $}
+\tkzDrawArc[red,ultra thick](B,D)(D1)
+\tkzMarkAngle[size = 1cm,arc=l, red,ultra thick](D,B,D1)
+\tkzDrawSegments[color=red, thick](B,D)
+\tkzDrawSegments[color=red, thick](B,D1)
+\tkzLabelSegment[right=2pt,pos=.5,blue](B,D){$R$}
+\tkzLabelAngle[pos = 2.3,blue](D,B,D1){$\theta R$}
+
+\end{tikzpicture}

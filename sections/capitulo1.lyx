@@ -1,0 +1,9436 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass mbcaos
+\begin_preamble
+\batchmode
+\makeatletter
+\def\input@path{{lib}{styles/}{sections/}{pdf/}{chapters}}
+\makeatother
+\usepackage{listings}
+\usepackage{mathrsfs}
+\graphicspath{{fig-pdf/}{pdf/}{image/}{sections/figures/}{figures/}{images/}}
+\usepackage{float}
+\usepackage{subfigure}
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+%\let\checkmark\relax
+%\definecolor{bleu}{cmyk}{0.59,0.11,0,0.59}
+%\definecolor{vert}{cmyk}{0.78,0,0.74,0.45}
+%\definecolor{caper}{cmyk}{0.21,0.00,0.51,0.54}
+%\definecolor{doc}{cmyk}{1.00,0.45,0.00,0.57}
+%\definecolor{rhodo}{cmyk}{0.78,0,0.74,0.45}
+%\definecolor{azulrey}{cmyk}{0.91,0.34,0.00,0.55}
+%\definecolor{saddlebrown}{cmyk}{0.00,0.46,0.85,0.50}
+%\definecolor{milktea}{cmyk}{0.00,0.18,0.43,0.22}
+%\definecolor{naranja}{cmyk}{0,0.5,1,0}
+%\definecolor{olivegreen}{cmyk}{0.64,0,0.95,0.40}
+%\definecolor{bgpage}{cmyk}{.20,.30,.64,.19}
+%\definecolor{mesh}{cmyk}{0,0.04,0.17,0.03}
+\usepackage{pagecolor}
+\usepackage{zahlen}
+%\pagecolor{mesh}
+\pagecolor{fondpaille}  
+\lstset{
+	numbers=left, 
+	numberstyle=\tiny, 
+	stepnumber=1, 
+	numbersep=3pt, 
+	language=[LaTeX]TeX, 
+	backgroundcolor=\color{bleu!20},
+	frame=shadowbox,
+	rulesepcolor=\color{bleu},
+	rulecolor=\color{bleu},
+	framexleftmargin=10pt,
+	keywordstyle=\color{vert}\bfseries,
+	basicstyle=\listfont,
+    columns=flexible,
+    keepspaces=true,
+    upquote=true,
+    literate=
+    {á}{{\'a}}{1}
+    {é}{{\'e}}{1}
+    {í}{{\'i}}{1}
+    {ó}{{\'o}}{1}
+    {ú}{{\'u}}{1}
+    {Á}{{\'A}}{1}
+    {É}{{\'E}}{1}
+    {Í}{{\'I}}{1}
+    {Ó}{{\'O}}{1}
+    {Ú}{{\'U}}{1}
+    {ñ}{{\~n}}{1}
+    {Ñ}{{\~N}}{1}
+    {ü}{{\"e}}{1}
+    {Ü}{{\"U}}{1}%
+    %frances
+    {è}{{\`e}}{1}%
+    {à}{{\`a}}{1}%
+    {â}{{\^a}}{1}%%%
+    {ç}{{\c{c}}}{1}%
+    {?}{{\oe}}{1}%
+    {ù}{{\`u}}{1}%
+    {È}{{\`E}}{1}%
+    {À}{{\`A}}{1}%
+    {Ç}{{\c{C}}}{1}%
+    {?}{{\OE}}{1}%
+    {Ê}{{\^E}}{1}%
+    {ê}{{\^e}}{1}%
+    {î}{{\^i}}{1}%
+    {ï}{{\"i}}{1}%%%
+    {ô}{{\^o}}{1}%
+    {û}{{\^u}}{1}%
+    ,
+    commentstyle=\color{gray},
+    morekeywords={redefineColor,dfrac,setlength,cellspacetoplimit, cellspacebottomlimit,firstline,text,intro,introauthor,chapter, itemclass,exostart,corrstart,PagCorregidos,columnbreak,titlepic, nbcolindex,indexname,printindex,makeindex,activites, DefineNewBoxLikeRem,BreakCorr}
+}
+\usepackage{lipsum-es}
+\usepackage{wasysym}
+\makeatletter 
+\newenvironment{proof}[1][Prueba]{\textcolor{dem@line@color}{\textbf{#1.\phantom{--}} }}{\hfill\phantom{--}\hfill\ \ \textcolor{dem@line@color}{\rule{0.5em}{0.5em}}}
+\newenvironment{exam}[1][Ejercicio]{\textbf{#1.}\ }{\hfill\ \rule{0.5em}{0.5em}}
+\newenvironment{sol}[1][Soluci\'on]{\textcolor{dem@line@color}{\textbf{#1.\phantom{--}}}}{\hfill\phantom{--}\hfill\ \textcolor{dem@line@color}{\checked}}
+
+\RequirePackage[colorlinks=true,linkcolor=corref@color]{hyperref}
+\redefineColor{thmtitle@bg@color}{0.66,0.24,0.74,0.71}
+\redefineColor{thm@bg@color}{0.11,0,0.09,0.09}
+\redefineColor{proptitle@bg@color}{0.66,0.24,0.74,0.71}
+\redefineColor{prop@bg@color}{0.11,0,0.09,0.09}
+\redefineColor{firstpagebottom@bg@color}{1,1,0.00,0.55}
+\redefineColor{subsection@title@color}{.19,.74,.100,.68}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Vdots{\vbox{\baselineskip4\p@ \lineskiplimit\z@
+    \kern6\p@\hbox{.}\hbox{.}\hbox{.}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatother
+%\selectspanish
+\title{C\'alculo diferencial\\ \normalsize Con ejercicios resueltos.}
+\author{Antalcides Olivo}
+\titlepic[0.3]{image/puente1.jpg}
+\logopic[1]{image/logo-caos-1.png}
+%\titlepic[0.5]{fractal.jpg}
+\date{\dia}
+
+\makeindex
+\end_preamble
+\use_default_options true
+\master ../calculod-mbcaos.lyx
+\maintain_unincluded_children false
+\language spanish-mexico
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 1
+\bibtex_command bibtex
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagecolor{fondpaille}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Chapter
+Funciones reales de variable real
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Standard
+Este curso es sobre Cálculo diferencial de funciones reales de variable
+ real.
+ En ese sentido, los objetos sobre los cuales se trabajará son funciones
+ definidas en subconjuntos del conjunto de los números reales y con valores
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+imágenes
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+reales.
+ En este primer capítulo se presentan los principales tópicos relativos
+ a dichas funciones y los cuales son importantes para el desarrollo mismo
+ del curso.
+ Algunas de las definiciones que se presentan son también válidas para funciones
+ en general.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Standard
+Prerrequisitos importantes para el curso son:
+\end_layout
+
+\begin_layout Enumerate
+El Álgebra de reales.
+ Es decir, el conocimiento y manejo básico de la estructura de campo 
+\begin_inset Formula $(\rz,+,\cdot)$
+\end_inset
+
+, constituida por el conjunto de los números reales, 
+\begin_inset Formula $\rz$
+\end_inset
+
+, con las operaciones de adición y multiplicación.
+ Otras propiedades, topológicas (geométricas), necesarias se introducen
+ en el siguiente capítulo.
+\end_layout
+
+\begin_layout Enumerate
+Trigonometría básica.
+ En particular, manejo de las razones trigonométricas para ángulos cualesquiera
+ y las identidades fundamentales.
+ 
+\end_layout
+
+\begin_layout Standard
+Se supone un conocimiento de tales tópicos gracias a un curso previo de
+ Álgebra y Trigonometría.
+ Para consultas sobre estos temas se recomiendan 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Taylor"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vance"
+literal "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leh"
+literal "false"
+
+\end_inset
+
+, especialmente.
+ También textos de más reciente edición como 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lei"
+literal "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Swo"
+literal "false"
+
+\end_inset
+
+ pueden ser de utilidad.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Standard
+Utilizaremos las siguientes notaciones para los subconjuntos notables del
+ conjunto de los números reales: 
+\begin_inset Formula 
+\begin{align*}
+\nz & =\gz^{+}\\
+ & =\{1,2,3,\dots\}\ \mbox{(Naturales, Enteros positivos)}\\
+\nz_{0} & =\gz_{+}\\
+ & =\{0,1,2,\dots\}\ \mbox{(Cardinales, Enteros no negativos)}\\
+\gz & =\{\dots,-3,-2,-1,0,1,2,3,\dots\}\ \mbox{(Enteros)}\\
+\gz^{-} & =\{\dots,-3,-2,-1\}\ \mbox{(Enteros negativos)}\\
+\qz & =\left\{ \left.\frac{a}{b}\ \right\vert \ a,b\in\gz,b\neq0\right\} \ \mbox{(Racionales)}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\qz^{\prime}$
+\end_inset
+
+ denotará al conjunto de los números irracionales.
+\end_layout
+
+\begin_layout Section
+Definiciones básicas
+\end_layout
+
+\begin_layout Standard
+Dados conjuntos no vacíos 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $B$
+\end_inset
+
+, el producto cartesiano 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Producto cartesiano|textbf
+\end_layout
+
+\end_inset
+
+ de 
+\begin_inset Formula $A$
+\end_inset
+
+ por 
+\begin_inset Formula $B$
+\end_inset
+
+ es el conjunto 
+\begin_inset Formula 
+\begin{equation}
+A\times B=\{(a,b)\mid a\in A,b\in B\}
+\end{equation}
+
+\end_inset
+
+Un elemento 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ de 
+\begin_inset Formula $A\times B$
+\end_inset
+
+ es denominado un par ordenado.
+ El carácter de 
+\begin_inset Quotes eld
+\end_inset
+
+ordenado
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+viene dado por la definición siguiente para elementos 
+\begin_inset Formula $a,c\in A$
+\end_inset
+
+ y 
+\begin_inset Formula $b,d\in B$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+(a,b)=(c,d)\Longleftrightarrow a=c\wedge b=d
+\]
+
+\end_inset
+
+que establece así que el orden de las 
+\begin_inset Quotes eld
+\end_inset
+
+componentes
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+del par es importante.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Standard
+Una 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Relación|textbf
+\end_layout
+
+\end_inset
+
+ relación del conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ al conjunto 
+\begin_inset Formula $B$
+\end_inset
+
+ es un subconjunto cualquiera no vacío del producto cartesiano 
+\begin_inset Formula $A\times B$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relación y 
+\begin_inset Formula $(a,b)\in R$
+\end_inset
+
+ decimos que 
+\begin_inset Formula $b$
+\end_inset
+
+ es una imágen de 
+\begin_inset Formula $a$
+\end_inset
+
+ bajo 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "ejemplouno"
+
+\end_inset
+
+ Así, por ejemplo, si 
+\begin_inset Formula $A=\{a,b,c\},B=\{0,1,2,3\}$
+\end_inset
+
+, los si\SpecialChar softhyphen
+guientes conjuntos son relaciones de 
+\begin_inset Formula $A$
+\end_inset
+
+ a 
+\begin_inset Formula $B$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{align*}
+K & =\{(a,0),(b,0),(a,1),(b,2)\}\\
+S & =\{(a,0),(b,1),(c,2),(a,3)\}\\
+T & =A\times B\\
+F & =\{(a,0),(b,2),(c,1)\}\\
+G & =\{(a,1),(b,2),(c,3)\}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+Para una relación 
+\begin_inset Formula $R$
+\end_inset
+
+ de 
+\begin_inset Formula $A$
+\end_inset
+
+ a 
+\begin_inset Formula $B$
+\end_inset
+
+, el subconjunto de 
+\begin_inset Formula $A$
+\end_inset
+
+ formado por las primeras componentes de 
+\begin_inset Formula $R$
+\end_inset
+
+ es denominado
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Dominio|textbf
+\end_layout
+
+\end_inset
+
+ dominio de la relación 
+\begin_inset Formula $R$
+\end_inset
+
+ y se nota 
+\begin_inset Formula $\operatorname*{Dom}(R)$
+\end_inset
+
+.
+ El conjunto de las segundas componentes, subconjunto de 
+\begin_inset Formula $B$
+\end_inset
+
+, se denomina rango
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Rango|textbf
+\end_layout
+
+\end_inset
+
+ de 
+\begin_inset Formula $R$
+\end_inset
+
+ y se nota 
+\begin_inset Formula $\operatorname*{Ran}(R)$
+\end_inset
+
+.
+ Es claro que un elemento del dominio de una relación puede tener más de
+ una imágen.
+ En el ejemplo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ejemplouno"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se tienen:
+\begin_inset Formula 
+\[
+\begin{tabular}{lll}
+ \ensuremath{\operatorname*{Dom}(K)=\{a,b\}}  &   &  \ensuremath{\operatorname*{Ran}(K)=\{0,1,2\}}\\
+ \ensuremath{\operatorname*{Dom}(S)=\{a,b,c\}=A}  &   &  \ensuremath{\operatorname*{Ran}(S)=\{0,1,2,3\}=B}\\
+ \ensuremath{\operatorname*{Dom}(T)=A}  &   &  \ensuremath{\operatorname*{Ran}(T)=B}\\
+ \ensuremath{\operatorname*{Dom}(F)=\{a,b,c\}}  &   &  \ensuremath{\operatorname*{Ran}(F)=\{0,1,2\}}\\
+ \ensuremath{\operatorname*{Dom}(G)=A}  &   &  \ensuremath{\operatorname*{Ran}(G)=\{1,2,3\}} 
+\end{tabular}\ \ \ 
+\]
+
+\end_inset
+
+Nótese que en 
+\begin_inset Formula $F$
+\end_inset
+
+ y 
+\begin_inset Formula $G$
+\end_inset
+
+ el dominio es 
+\begin_inset Formula $A$
+\end_inset
+
+ y que cada elemento del dominio tiene una imágen única.
+ Una relación 
+\begin_inset Formula $R$
+\end_inset
+
+ de 
+\begin_inset Formula $A$
+\end_inset
+
+ a 
+\begin_inset Formula $B$
+\end_inset
+
+ es denominada una
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función|textbf
+\end_layout
+
+\end_inset
+
+ función si 
+\begin_inset Formula $\operatorname*{Dom}(R)=A$
+\end_inset
+
+ y cada elemento del dominio tiene una imágen única.
+ Es decir, no existen dos pares ordenados distintos con la misma primera
+ componente.
+ Por lo tanto, 
+\begin_inset Formula $F$
+\end_inset
+
+ y 
+\begin_inset Formula $G$
+\end_inset
+
+ son las únicas funciones de 
+\begin_inset Formula $A$
+\end_inset
+
+ a 
+\begin_inset Formula $B$
+\end_inset
+
+ en el ejemplo conside\SpecialChar softhyphen
+rado.
+ En lo que sigue utilizaremos letras como 
+\begin_inset Formula $f,g,$
+\end_inset
+
+ etc o letras griegas (
+\begin_inset Formula $\varphi,\psi,$
+\end_inset
+
+ etc) para denotar funciones.
+ Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función de 
+\begin_inset Formula $A$
+\end_inset
+
+ a 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, denotaremos por 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ a la 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Imagen|textbf
+\end_layout
+
+\end_inset
+
+imágen (única) de 
+\begin_inset Formula $x$
+\end_inset
+
+ bajo 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Se acostumbra también a escribir 
+\begin_inset Formula 
+\[
+f:A\longrightarrow B
+\]
+
+\end_inset
+
+para referirse a una función 
+\begin_inset Formula $f$
+\end_inset
+
+ cuyo dominio es el conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ y cuyo conjunto de llegada, o recorrido, es 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Standard
+A menudo es muy útil ver una función como una transformación, en el sentido
+ de que toma cada elemento del dominio, 
+\begin_inset Formula $A$
+\end_inset
+
+, y lo transforma en un elemento del conjunto 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ El esquema siguiente ilustra tal situación.
+ En el mismo consideramos a 
+\begin_inset Formula $f$
+\end_inset
+
+ como una 
+\begin_inset Quotes eld
+\end_inset
+
+máquina
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+que toma su materia prima del dominio y produce o arroja resultados (las
+ imágenes) en el conjunto de llegada.
+ 
+\begin_inset Formula 
+\[
+x\in A\longrightarrow\ensuremath{\text{\framebox[2cm][]{\ensuremath{f}}}}\mapsto f(x)\in B
+\]
+
+\end_inset
+
+ También es usual el esquema 
+\begin_inset Formula 
+\[
+\begin{tabular}{cccc}
+ \ensuremath{f:}  &  \ensuremath{A}  &  \ensuremath{\longrightarrow}  &  \ensuremath{B}\\
+  &  \ensuremath{x}  &  \ensuremath{\longmapsto}  &  \ensuremath{f(x)} 
+\end{tabular}\ \ \ 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%$$
+\backslash
+matrix{f:&A&
+\backslash
+longrightarrow &B
+\backslash
+cr &x&
+\backslash
+longmapsto& f(x)}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nótese que si 
+\begin_inset Formula $f:A\longrightarrow B,g:A\longrightarrow B$
+\end_inset
+
+ , entonces 
+\begin_inset Formula 
+\begin{equation}
+f=g\ \Longleftrightarrow\ f(x)=g(x)\ \mbox{ \ para todo \ }x\in A.\label{igualdadfunciones}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Standard
+La función 
+\begin_inset Formula $f:A\longrightarrow B$
+\end_inset
+
+ se denomina 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– sobreyectiva
+\end_layout
+
+\end_inset
+
+sobreyectiva, o simplemente sobre, si se cumple que 
+\begin_inset Formula $\operatorname*{Ran}(f)=B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ se 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– inyectiva
+\end_layout
+
+\end_inset
+
+denomina inyectiva o uno-a-uno si cada elemento del rango es imágen de un
+ único elemento del dominio.
+ Se tiene así:
+\end_layout
+
+\begin_layout Description
+i.
+ 
+\begin_inset Formula $f:A\longrightarrow B$
+\end_inset
+
+ es sobre si, y solo si para todo 
+\begin_inset Formula $y\in B$
+\end_inset
+
+, existe 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ tal que 
+\begin_inset Formula $y=f(x).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+ii.
+ 
+\begin_inset Formula $f:A\longrightarrow B$
+\end_inset
+
+ es uno-a-uno si, y solo si para todo 
+\begin_inset Formula $x,u\in A$
+\end_inset
+
+ se cumple que 
+\begin_inset Formula 
+\[
+f(x)=f(u)\Longrightarrow x=u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La segunda proposición es equivalente a :
+\end_layout
+
+\begin_layout Quotation
+\noindent
+\begin_inset Formula $f:A\longrightarrow B$
+\end_inset
+
+ 
+\begin_inset space \space{}
+\end_inset
+
+es 
+\begin_inset space \space{}
+\end_inset
+
+uno-a-uno 
+\begin_inset space \space{}
+\end_inset
+
+si, y solo si 
+\begin_inset space \space{}
+\end_inset
+
+para todo 
+\begin_inset Formula $y\in\operatorname*{Ran}(f)$
+\end_inset
+
+ la ecuación (en 
+\begin_inset Formula $x$
+\end_inset
+
+) 
+\begin_inset Formula $f(x)=y$
+\end_inset
+
+ tiene solución única.
+ 
+\end_layout
+
+\begin_layout Standard
+Nuestro objeto de estudio son funciones
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– de valor real
+\end_layout
+
+\end_inset
+
+ reales de variable real.
+ Una tal función es una función de la forma 
+\begin_inset Formula 
+\[
+f:A\longrightarrow\rz,
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $A$
+\end_inset
+
+ es un subconjunto cualquiera de 
+\begin_inset Formula $\rz$
+\end_inset
+
+.
+ En general, la 
+\begin_inset Quotes eld
+\end_inset
+
+naturaleza
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+de la variable la da el dominio de la función y la de la función la da el
+ rango o el conjunto de llegada.
+ Así, al hablar de funciones reales de variable real queremos indicar que
+ la función transforma reales en reales.
+ Son tales funciones las que consideraremos en este curso.
+\end_layout
+
+\begin_layout Standard
+Es muy común definir una función como las consideradas indicando la manera
+ como las imágenes se obtienen a partir de los elementos del dominio, sin
+ indicar específicamente éste último, el cuál en todo caso es un subconjunto
+ de los reales.
+ En tales casos, el dominio se entenderá como el mayor subconjunto posible
+ de los reales para el cual las imágenes están definidas; es decir, para
+ el cual las imágenes son números reales.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Considérese, por ejemplo, la función 
+\begin_inset Formula $f$
+\end_inset
+
+ tal que para un 
+\begin_inset Formula $x$
+\end_inset
+
+ cualquiera en su dominio se tiene 
+\begin_inset Formula 
+\[
+f(x)=\sqrt{x^{2}+3x+2}.
+\]
+
+\end_inset
+
+En este caso, el dominio de 
+\begin_inset Formula $f$
+\end_inset
+
+ es el conjunto de todas los reales 
+\begin_inset Formula $x$
+\end_inset
+
+ para los cuales 
+\begin_inset Formula 
+\[
+x^{2}+3x+2\geq0.
+\]
+
+\end_inset
+
+Resolviendo la inecuación anterior se obtiene 
+\begin_inset Formula 
+\begin{align*}
+ & x^{2}+3x+2\geq0\\
+\Longleftrightarrow & (x+2)(x+1)\geq0\\
+\Longleftrightarrow & x\leq-2\vee x\geq-1\\
+\Longleftrightarrow & x\in\left]-\infty,-2\right]\cup\left[-1,+\infty\right[
+\end{align*}
+
+\end_inset
+
+Así, se tiene entonces 
+\begin_inset Formula $\operatorname*{Dom}(f)=\left]-\infty,-2\right]\cup\left[-1,+\infty\right[$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Esta notación se acostumbra a utilizar para evitar confusiones con el 
+\begin_inset Quotes eld
+\end_inset
+
+par ordenado
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ Para la función 
+\begin_inset Formula $g$
+\end_inset
+
+ definida por 
+\begin_inset Formula $g(x)=\dfrac{x+3}{x^{2}-5x-6},$
+\end_inset
+
+ se tiene 
+\begin_inset Formula 
+\begin{align*}
+g(x)\in\rz & \Longleftrightarrow x^{2}-5x-6\neq0\\
+ & \Longleftrightarrow(x-6)(x+1)\neq0\\
+ & \Longleftrightarrow x\neq6\wedge x\neq-1,
+\end{align*}
+
+\end_inset
+
+de donde se obtiene que 
+\begin_inset Formula $\operatorname*{Dom}(g)=\rz-\{-1,6\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Standard
+Dada una función 
+\begin_inset Formula $f:A\longrightarrow B$
+\end_inset
+
+, si 
+\begin_inset Formula $C$
+\end_inset
+
+ es un subconjunto no vacío de 
+\begin_inset Formula $A$
+\end_inset
+
+, la restricción de
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!Restricción de una –
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ a 
+\begin_inset Formula $C$
+\end_inset
+
+, es la función 
+\begin_inset Formula $f|_{C}$
+\end_inset
+
+, definida por 
+\begin_inset Formula 
+\begin{equation}
+f|_{C}(x)=f(x),\ \mbox{ \ para todo \ }x\in C.\label{restriccion}
+\end{equation}
+
+\end_inset
+
+Así, sobre 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ coincide con su restricción.
+ Se acostumbra también decir que 
+\begin_inset Formula $f$
+\end_inset
+
+ es una extensión de 
+\begin_inset Formula $f|_{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Gráficas de funciones reales de variable real
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Relación!Gráfica de una –
+\end_layout
+
+\end_inset
+
+Notaremos mediante 
+\begin_inset Formula $\rz^{2}$
+\end_inset
+
+ al conjunto de todos los pares ordenados de números reales.
+ Es decir: 
+\begin_inset Formula 
+\[
+\rz^{2}=\rz\times\rz=\{(x,y)\mid x,y\in\rz\}.
+\]
+
+\end_inset
+
+Cada par de reales puede identificarse con un punto del plano euclidiano,
+ introduciendo un sistema rectangular de coordenadas en el mismo.
+ Fijado el sistema de coordenadas, la correspondencia entre puntos del plano
+ y pares ordenados de reales es biunívoca.
+ Dado un par ordenado 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+, el mismo puede representarse como el punto del plano cuyas distancias
+ dirigidas (coordenadas) a los ejes de coordenadas (
+\begin_inset Formula $X$
+\end_inset
+
+ e 
+\begin_inset Formula $Y$
+\end_inset
+
+) son 
+\begin_inset Formula $y$
+\end_inset
+
+ y 
+\begin_inset Formula $x$
+\end_inset
+
+, respectivamente, como seguramente conoce el lector.
+ La notación 
+\begin_inset Formula $P(x,y)$
+\end_inset
+
+ se referirá a un punto 
+\begin_inset Formula $P$
+\end_inset
+
+ del plano cuyas coordenadas cartesianas son 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ En tal sentido, una relación real (esto es, un subconjunto de 
+\begin_inset Formula $\rz^{2}$
+\end_inset
+
+) puede representarse como un subconjunto de puntos del plano, al cual denominar
+emos la gráfica de la relación.
+ Así, si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relación real, tenemos que la gráfica de 
+\begin_inset Formula $R$
+\end_inset
+
+ es el conjunto 
+\begin_inset Formula 
+\[
+\operatorname*{graph}(R)=\{P(x,y)\mid(x,y)\in R\}.
+\]
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!Gráfica de una –
+\end_layout
+
+\end_inset
+
+Algunas funciones notables y sus gráficas se presentan a continuación,
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\series bold
+La función lineal:
+\begin_inset space \space{}
+\end_inset
+
+
+\series default
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– lineal
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ son reales cualesquiera, la función definida por 
+\begin_inset Formula 
+\begin{equation}
+f(x)=ax+b,\mbox{ \ para todo real \ }x,\label{deffuncionlineal}
+\end{equation}
+
+\end_inset
+
+se denomina función lineal.
+ Si 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, la ecuación (lineal) en 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+ax+b=y
+\]
+
+\end_inset
+
+tiene solución única para todo 
+\begin_inset Formula $y\in\rz$
+\end_inset
+
+.
+ Se tiene entonces que 
+\begin_inset Formula $f$
+\end_inset
+
+ es biyectiva (uno-a-uno y sobre) y su gráfica es una recta con pendiente
+ distinta de cero (no es paralela al eje 
+\begin_inset Formula $x$
+\end_inset
+
+).
+ Si 
+\begin_inset Formula $a=0$
+\end_inset
+
+, se tiene la función constante definida por 
+\begin_inset Formula $f(x)=b$
+\end_inset
+
+, cuya gráfica es una recta paralela al eje 
+\begin_inset Formula $x$
+\end_inset
+
+ (ver figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "flineal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ej-1-3-1.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Función lineal
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "flineal"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un caso particular importante de la función lineal es la función identidad
+ definida por 
+\begin_inset Formula 
+\begin{equation}
+I_{\rz}(x)=x\label{funcionidentidad}
+\end{equation}
+
+\end_inset
+
+que se obtiene para 
+\begin_inset Formula $a=1$
+\end_inset
+
+, 
+\begin_inset Formula $b=0$
+\end_inset
+
+ en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "deffuncionlineal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\series bold
+Función cuadrática:
+\series default
+ 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– cuadrática
+\end_layout
+
+\end_inset
+
+Una función definida por una expresión de la forma 
+\begin_inset Formula 
+\[
+f(x)=ax^{2}+bx+c,
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ son reales con 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, es denominada función cuadrática.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es claro que 
+\begin_inset Formula $\operatorname*{Dom}(f)=\rz$
+\end_inset
+
+.
+ Para determinar el rango, consideramos la ecuación cuadrática (en 
+\begin_inset Formula $x$
+\end_inset
+
+)
+\begin_inset Formula 
+\[
+ax^{2}+bx+c-y=0.
+\]
+
+\end_inset
+
+Tal ecuación tiene soluciones reales si, y solo si 
+\begin_inset Formula 
+\[
+b^{2}-4a(c-y)\geq0\Longleftrightarrow4ay\geq4ac-b^{2}
+\]
+
+\end_inset
+
+Tenemos entonces:
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $a>0$
+\end_inset
+
+, entonces 
+\begin_inset Formula $y\geq\frac{4ac-b^{2}}{4a}$
+\end_inset
+
+.
+ La función tiene así un valor mínimo 
+\begin_inset Formula $\frac{4ac-b^{2}}{4a}$
+\end_inset
+
+.
+ Su rango es el conjunto 
+\begin_inset Formula 
+\[
+\left[\left.\frac{4ac-b^{2}}{4a},+\infty\right.\right[.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $a<0$
+\end_inset
+
+, entonces 
+\begin_inset Formula $y\leq\frac{4ac-b^{2}}{4a}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ tiene un valor máximo 
+\begin_inset Formula $\frac{4ac-b^{2}}{4a}$
+\end_inset
+
+ y su rango es
+\begin_inset Formula 
+\[
+\left]-\infty,\left.\frac{4ac-b^{2}}{4a}\right.\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En ambos casos el valor máximo o mínimo se alcanza para 
+\begin_inset Formula $y=\frac{4ac-b^{2}}{4a}$
+\end_inset
+
+, es decir para 
+\begin_inset Formula $x=\frac{-b}{2a}$
+\end_inset
+
+.
+ El punto 
+\begin_inset Formula $V\left(\frac{-b}{2a},\frac{4ac-b^{2}}{4a}\right)$
+\end_inset
+
+ es denominado Vértice de la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ y corresponde al punto 
+\begin_inset Quotes eld
+\end_inset
+
+más bajo
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+o 
+\begin_inset Quotes eld
+\end_inset
+
+más alto
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+de la gráfica.
+\end_layout
+
+\begin_layout Standard
+Nótese que la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ es la gráfica de la ecuación en dos variables 
+\begin_inset Formula $y=ax^{2}+bx+c$
+\end_inset
+
+, la cual puede escribirse como 
+\begin_inset Formula 
+\begin{equation}
+y-\frac{4ac-b^{2}}{4a}=\left(x-\frac{-b}{2a}\right)^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Así, si 
+\begin_inset Formula $x\neq\frac{-b}{2a}$
+\end_inset
+
+, entonces para cada valor de 
+\begin_inset Formula $y$
+\end_inset
+
+ en el rango de 
+\begin_inset Formula $f$
+\end_inset
+
+, existen dos valores de 
+\begin_inset Formula $x$
+\end_inset
+
+ de los cuales 
+\begin_inset Formula $y$
+\end_inset
+
+ es imágen, a saber: 
+\begin_inset Formula 
+\[
+x=\frac{-b}{2a}\pm\sqrt{y-\frac{4ac-b^{2}}{4a}}
+\]
+
+\end_inset
+
+lo cual muestra que la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ es simétrica con relación a la recta de ecuación 
+\begin_inset Formula $x=\frac{-b}{2a}$
+\end_inset
+
+.
+ Tal recta es denominada eje de simetría de la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ La gráfica es una parábola
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Parábola|textbf
+\end_layout
+
+\end_inset
+
+ que 
+\begin_inset Quotes eld
+\end_inset
+
+abre
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+hacia arriba si 
+\begin_inset Formula $a>0$
+\end_inset
+
+, y hacia abajo si 
+\begin_inset Formula $a<0$
+\end_inset
+
+ (ver figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "parabolas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ej-1-3-2.pdf
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Función Cuadrática
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "parabolas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Funciones definidas implícitamente
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $F:A\longrightarrow\rz$
+\end_inset
+
+ es una función real, con 
+\begin_inset Formula $A\subseteq\rz^{2}$
+\end_inset
+
+, entonces el dominio de 
+\begin_inset Formula $F$
+\end_inset
+
+ es un conjunto de pares ordenados de reales.
+ Una tal función es denominada una 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– definida implicitamente
+\end_layout
+
+\end_inset
+
+función real en dos variables.
+ Para 
+\begin_inset Formula $(x,y)\in A$
+\end_inset
+
+, escribiremos, por comodidad, 
+\begin_inset Formula $F(x,y)$
+\end_inset
+
+, en lugar de 
+\begin_inset Formula $F((x,y))$
+\end_inset
+
+, para referirnos a la imágen del par 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ bajo la función 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Para un real 
+\begin_inset Formula $b$
+\end_inset
+
+ la ecuación 
+\begin_inset Formula $F(x,y)=b$
+\end_inset
+
+ es una ecuación en las variables 
+\begin_inset Formula $x,y$
+\end_inset
+
+.
+ Cada solución de dicha ecuación, si las tiene, es un par ordenado 
+\begin_inset Formula $(u,v)$
+\end_inset
+
+, en el dominio de 
+\begin_inset Formula $F$
+\end_inset
+
+, tal que la proposición 
+\begin_inset Formula 
+\[
+F(u,v)=b
+\]
+
+\end_inset
+
+es verdadera.
+ Es decir, la ecuación se satisface para el par de valores 
+\begin_inset Formula $x=u,y=v$
+\end_inset
+
+.
+ Los ejemplos de la función lineal y la función cuadrática muestran casos
+ particulares de funciones reales de variable real definidas por ecuaciones
+ en las variables 
+\begin_inset Formula $x,y$
+\end_inset
+
+.
+ Así, por ejemplo, la función lineal dada por 
+\begin_inset Formula $f(x)=2x+3$
+\end_inset
+
+ puede definirse como el conjunto de las soluciones de la ecuación 
+\begin_inset Formula $y=2x+3$
+\end_inset
+
+ o 
+\begin_inset Formula $y-2x=3$
+\end_inset
+
+.
+ Es decir, podemos escribir 
+\begin_inset Formula 
+\[
+f=\{(x,y)\in\rz^{2}\mid y-2x=3\}.
+\]
+
+\end_inset
+
+En general, decimos que una función 
+\begin_inset Formula $f$
+\end_inset
+
+ está definida implícitamente por la ecuación 
+\begin_inset Formula $F(x,y)=b$
+\end_inset
+
+ si para todo 
+\begin_inset Formula $u\in\operatorname*{Dom}(f)$
+\end_inset
+
+, el par 
+\begin_inset Formula $(u,f(u))$
+\end_inset
+
+ es solución de la ecuación dada; es decir si se cumple que 
+\begin_inset Formula $F(u,f(u))=b$
+\end_inset
+
+ es una proposición verdadera.
+ En otras palabras, la función (como conjunto de pares ordenados) está contenida
+ en el conjunto solución de la ecuación.
+ Sin embargo, el conjunto solución de la ecuación 
+\begin_inset Formula $F(x,y)=b$
+\end_inset
+
+ no necesariamente constituye una función real de variable real, aunque
+ sí es claro que es una relación real.
+\end_layout
+
+\begin_layout Standard
+Consideremos, por ejemplo, la ecuación en dos variables 
+\begin_inset Formula $x^{2}+y^{2}=1$
+\end_inset
+
+, cuya gráfica, como seguramente lo sabe el lector, es una circunferencia
+ con centro en el origen y radio 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Es claro que el conjunto solución de tal ecuación- es decir, el conjunto
+ cuya gráfica es la circunferencia- no es una función ya que un mismo elemento
+ del dominio (p.e, 
+\begin_inset Formula $x=0$
+\end_inset
+
+) puede tener más de una imágen (
+\begin_inset Formula $1$
+\end_inset
+
+ y 
+\begin_inset Formula $-1$
+\end_inset
+
+, en el caso indicado).
+ Sin embargo, cualquiera de las funciones definidas a continuación está
+ implícitamente definida por la ecuación dada.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=f(x)=\sqrt{1-x^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=g(x)=-\sqrt{1-x^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+y=h(x)=\begin{cases}
+\sqrt{1-x^{2}}, & \text{si \ensuremath{-1\leq x\leq0}}\\
+-\sqrt{1-x^{2}}, & \text{ si \ensuremath{0<x\leq1}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Álgebra de funciones
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Funciones!Algebra de –
+\end_layout
+
+\end_inset
+
+Dado que el conjunto de los números reales está dotado de una estructura
+ aditivo-multiplicativa, las imágenes bajo funciones reales pueden sumarse
+ y multiplicarse, así como restarse y dividirse, si dicha división está
+ definida.
+ Esto permite definir operaciones algebraicas entre funciones con valores
+ reales.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Sean 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $B$
+\end_inset
+
+ conjuntos tales que 
+\begin_inset Formula $A\cap B\neq\emptyset$
+\end_inset
+
+ y 
+\begin_inset Formula 
+\[
+f:A\longrightarrow\rz,g:B\longrightarrow\rz
+\]
+
+\end_inset
+
+funciones reales.
+ Definimos para 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{align}
+(f+g)(x) & =f(x)+g(x)\label{sumafuncion}\\
+(fg)(x) & =f(x)g(x)\label{productofuncion}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las funciones 
+\begin_inset Formula $f+g$
+\end_inset
+
+ y 
+\begin_inset Formula $fg$
+\end_inset
+
+ definidas en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sumafuncion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "productofuncion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) son, respectivamente, las funciones 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Funciones!Suma de –
+\end_layout
+
+\end_inset
+
+suma y producto
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Funciones!Producto de –
+\end_layout
+
+\end_inset
+
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Rigurosamente hablando, las funciones sumadas o multiplicadas son las restricci
+ones de 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ a la intersección de sus dominios.
+ Por supuesto, podemos también definir funciones 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Dominio!– de la función producto.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Dominio!– de la función cociente
+\end_layout
+
+\end_inset
+
+ diferencia
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Dominio!– de la función suma
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset Formula $f-g$
+\end_inset
+
+) y cociente (
+\begin_inset Formula $f/g$
+\end_inset
+
+), esta última en el conjunto de todos los 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+ para los cuales 
+\begin_inset Formula $g(x)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En particular, la suma de una función real con una función constante constituye,
+ geométricamente hablando, una traslación de la gráfica
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!Gráfica de una –!Traslación|textit
+\end_layout
+
+\end_inset
+
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ con relación al eje 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ La figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "traslacionejey1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ilustra la situación: la gráfica de 
+\begin_inset Formula $f+g$
+\end_inset
+
+, siendo 
+\begin_inset Formula $g(x)=k$
+\end_inset
+
+, para una constante 
+\begin_inset Formula $k$
+\end_inset
+
+ (positiva en el ejemplo mostrado), es un desplazamiento vertical de la
+ gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ej-1-3-3.pdf
+	lyxscale 30
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Suma de una función con una constante
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "traslacionejey1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por su parte, el producto de una función real 
+\begin_inset Formula $f$
+\end_inset
+
+ por una función constante positiva y diferente de 
+\begin_inset Formula $1$
+\end_inset
+
+ produce una 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!Gráfica de una –!Contracción |textit
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!Gráfica de una –!Dilatación|textit
+\end_layout
+
+\end_inset
+
+ contracción o una dilatación (
+\begin_inset Quotes eld
+\end_inset
+
+estiramiento vertical
+\begin_inset Quotes erd
+\end_inset
+
+) de la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ El producto de 
+\begin_inset Formula $f$
+\end_inset
+
+ por 
+\begin_inset Formula $-1$
+\end_inset
+
+ produce, por su parte una reflexión
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!Gráfica de una –!Reflexión|textit
+\end_layout
+
+\end_inset
+
+ de la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ con relación al eje 
+\begin_inset Formula $x$
+\end_inset
+
+ (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "contradilata1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ej-1-3-4.pdf
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Producto de una función por una constante
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "contradilata1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Standard
+Dado un conjunto no vacío 
+\begin_inset Formula $A$
+\end_inset
+
+, el conjunto de todas las funciones reales con dominio 
+\begin_inset Formula $A$
+\end_inset
+
+ puede dotarse de una 
+\begin_inset Quotes eld
+\end_inset
+
+estructura algebraica
+\begin_inset Quotes erd
+\end_inset
+
+, definiendo ope\SpecialChar softhyphen
+raciones entre sus elementos.
+ Si 
+\begin_inset Formula $\rz^{A}$
+\end_inset
+
+ es el conjunto de tales funciones, entonces para 
+\begin_inset Formula $f,g\in\rz^{A}$
+\end_inset
+
+, es claro que 
+\begin_inset Formula $f+g$
+\end_inset
+
+ y 
+\begin_inset Formula $fg$
+\end_inset
+
+ son elementos de 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+a@
+\begin_inset Formula $(\rz^{A},+,\cdot)$
+\end_inset
+
+|textbf
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\rz^{A}$
+\end_inset
+
+.
+ La estructura algebraica 
+\begin_inset Formula $(\rz^{A},+,\cdot)$
+\end_inset
+
+ goza de algunas propiedades similares a la de la estructura aditivo-multiplicat
+iva de los reales, algo que no es de extrañar, dada la forma como fueron
+ definidas las operaciones entre funciones.
+\end_layout
+
+\begin_layout Theorem
+Sean 
+\begin_inset Formula $f,g,h\in\rz^{A}$
+\end_inset
+
+.
+ Entonces:
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Leyes asociativas:
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $(f+g)+h=f+(g+h)$
+\end_inset
+
+ y 
+\begin_inset Formula $(fg)h=f(gh)$
+\end_inset
+
+.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+Leyes conmutativas:
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $f+g=g+f$
+\end_inset
+
+ y 
+\begin_inset Formula $fg=gf$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+Existencia de neutros:
+\end_layout
+
+\end_inset
+
+ Las funciones constantes 
+\begin_inset Formula $O,L\in\rz^{A}$
+\end_inset
+
+ definidas por 
+\begin_inset Formula 
+\begin{align}
+O(x) & =0\\
+L(x) & =1
+\end{align}
+
+\end_inset
+
+satisfacen 
+\begin_inset Formula $f+O=O+f=f$
+\end_inset
+
+ y 
+\begin_inset Formula $fL=Lf=f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+Existencia de inversos aditivos:
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $-f=(-1)f$
+\end_inset
+
+, entonces: 
+\begin_inset Formula 
+\[
+f+(-f)=-f+f=O.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Las propiedades anteriores son consecuencia de las correspondientes en la
+ estructura 
+\begin_inset Formula $(\rz,+,\cdot)$
+\end_inset
+
+.
+ Como ilustración probemos la asociatividad de la suma.
+\begin_inset Newline newline
+\end_inset
+
+Para 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula 
+\begin{align*}
+((f+g)+h)(x) & =(f+g)(x)+h(x)\\
+ & =(f(x)+g(x))+h(x)\\
+ & =f(x)+(g(x)+h(x))\\
+ & =f(x)+((g+h)(x))\\
+ & =(f+(g+h))(x)
+\end{align*}
+
+\end_inset
+
+de donde se tiene 
+\begin_inset Formula $(f+g)+h=f+(g+h)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La función 
+\begin_inset Formula $O$
+\end_inset
+
+ del teorema anterior es la función idénticamente
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– identicamente nula
+\end_layout
+
+\end_inset
+
+ nula.
+ Las propiedades listadas en el teorema anterior caracterizan a la estructura
+ 
+\begin_inset Formula $(\rz^{A},+\cdot)$
+\end_inset
+
+ como un anillo conmutativo con unidad .
+ Nos referiremos a el como el 
+\begin_inset Quotes eld
+\end_inset
+
+anillo de funciones reales sobre 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Composición de funciones
+\end_layout
+
+\begin_layout Standard
+Además de la combinación de funciones reales (o de funciones con rango con
+ alguna estructura algebraica) mediante operaciones como la adición y multiplica
+ción, podemos también 
+\begin_inset Quotes eld
+\end_inset
+
+conectar
+\begin_inset Quotes erd
+\end_inset
+
+, empalmar o 
+\begin_inset Quotes eld
+\end_inset
+
+componer
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+dos funciones tales que las imágenes de una pertenezcan al dominio de la
+ otra.
+ Para fijar ideas, consideremos funciones 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ y un elemento 
+\begin_inset Formula $x\in\operatorname*{Dom}(f)$
+\end_inset
+
+, tal que 
+\begin_inset Formula $f(x)\in\operatorname*{Dom}(g)$
+\end_inset
+
+, de modo que 
+\begin_inset Formula $g(f(x))$
+\end_inset
+
+ está definida.
+ Podemos entonces considerar 
+\begin_inset Formula $g(f(x))$
+\end_inset
+
+, resultado de las acciones consecutivas de 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ sobre 
+\begin_inset Formula $x$
+\end_inset
+
+, como el resultado de una función a la que denominaremos la 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– compuesta
+\end_layout
+
+\end_inset
+
+compuesta de 
+\begin_inset Formula $f$
+\end_inset
+
+ con 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Tal función será denotada por 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+.
+ El esquema siguiente ilustra la situación.
+ 
+\begin_inset Formula 
+\[
+x\longrightarrow\framebox[2cm][]{\ensuremath{f}}\longmapsto f(x)\longmapsto g\longmapsto(g\circ f)(x)=g(f(x))
+\]
+
+\end_inset
+
+Formalizamos la definición de la operación composición de funciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Sean 
+\begin_inset Formula $f:A\longrightarrow B,\ g:C\longrightarrow D$
+\end_inset
+
+, funciones tales que 
+\begin_inset Formula $\operatorname*{Ran}(f)\cap\operatorname*{Dom}(g)\neq\emptyset$
+\end_inset
+
+.
+ La función compuesta de 
+\begin_inset Formula $f$
+\end_inset
+
+ con 
+\begin_inset Formula $g$
+\end_inset
+
+ es la función definida por: 
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+\label{compuesta}g\circ f: & \{x\in\operatorname*{Dom}(f)\mid f(x)\in\operatorname*{Dom}(g)\} & \longrightarrow & D\\
+ & x & \longmapsto & g(f(x))
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+En la definición 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Dominio!– de la función compuesta
+\end_layout
+
+\end_inset
+
+anterior, 
+\begin_inset Formula $f$
+\end_inset
+
+ es denominada la 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– interna
+\end_layout
+
+\end_inset
+
+función interna de la compuesta 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+.
+ Por supuesto, 
+\begin_inset Formula $g$
+\end_inset
+
+ es la función
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– externa
+\end_layout
+
+\end_inset
+
+ externa de la compuesta 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+.
+ Nótese que si, en particular, 
+\begin_inset Formula $\operatorname*{Ran}(f)\subseteq\operatorname*{Dom}(g)=C$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\operatorname*{Dom}(g\circ f)=\operatorname*{Dom}(f)$
+\end_inset
+
+.
+ En general, sin embargo, la composición implica trabajar con restricciones
+ de las funciones que se componen.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Debe tenerse cautela al determinar el dominio de una compuesta.
+ Por ejemplo si 
+\begin_inset Formula $f(x)=x^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $g(x)=\sqrt{x}$
+\end_inset
+
+, para 
+\begin_inset Formula $x$
+\end_inset
+
+ en el dominio de 
+\begin_inset Formula $g$
+\end_inset
+
+ se tiene que
+\begin_inset Formula 
+\[
+f(g(x))=f(\sqrt{x})=(\sqrt{x})^{2}=x,
+\]
+
+\end_inset
+
+lo que podría llevar a pensar que la compuesta 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ es la función identidad definida por 
+\begin_inset Formula $I_{\rz}(x)=x$
+\end_inset
+
+, cuyo dominio es 
+\begin_inset Formula $\rz$
+\end_inset
+
+.
+ Es claro, sin embargo, que la compuesta es solo la restricción de la identidad
+ al conjunto de los reales no negativos, restricción impuesta por el dominio
+ de la función interna 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Por otra parte, se tiene que 
+\begin_inset Formula 
+\[
+(g\circ f)(x)=\sqrt{x^{2}}=|x|,\mbox{ \ para todo real \ }x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Observación
+status open
+
+\begin_layout Plain Layout
+Nótese que al componer dos funciones, realmente se consideran restricciones
+ adecuadas de las mismas.
+ Así, la compuesta de 
+\begin_inset Formula $f$
+\end_inset
+
+ con 
+\begin_inset Formula $g$
+\end_inset
+
+ coincide con la de las restricciones 
+\begin_inset Formula 
+\[
+f|_{\{x\in\operatorname*{Dom}(f)\mid f(x)\in\operatorname*{Dom}(g)\}},g|_{\operatorname*{Ran}(f)\cap\operatorname*{Dom}(g)}.
+\]
+
+\end_inset
+
+Por lo que, sin pérdida de generalidad, podemos suponer en la definición
+ de compuesta que 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ son funciones 
+\begin_inset Formula 
+\[
+f:X\longrightarrow Y,\ \ g:Y\longrightarrow Z
+\]
+
+\end_inset
+
+y que la compuesta de 
+\begin_inset Formula $f$
+\end_inset
+
+ con 
+\begin_inset Formula $g$
+\end_inset
+
+ está dada por 
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+g\circ f: & X & \longrightarrow & Z\\
+ & x & \longmapsto & g(f(x))
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Standard
+Para un conjunto cualquiera no vacío 
+\begin_inset Formula $X$
+\end_inset
+
+, denotamos por 
+\begin_inset Formula $I_{X}$
+\end_inset
+
+, a la función identidad
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– identidad
+\end_layout
+
+\end_inset
+
+ en 
+\begin_inset Formula $X$
+\end_inset
+
+, definida por 
+\begin_inset Formula 
+\begin{equation}
+I_{X}(x)=x,\mbox{ \ para todo \ }x\in X\label{identidadX}
+\end{equation}
+
+\end_inset
+
+El siguiente teorema muestra que la composición es una operación asociativa
+ y que existen elementos neutros 
+\begin_inset Quotes eld
+\end_inset
+
+unilaterales
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+para la misma operación.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "compuestaasociativa"
+
+\end_inset
+
+ Sean 
+\begin_inset Formula $f:X\longrightarrow Y,g:Y\longrightarrow Z,h:Z\longrightarrow W$
+\end_inset
+
+ funciones.
+ Entonces: 
+\begin_inset Formula 
+\begin{equation}
+h\circ(g\circ f)=(h\circ g)\circ f\label{asociacompuesta}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+f\circ I_{X}=I_{Y}\circ f=f\label{neutrocompuesta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfil
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, entonces: 
+\begin_inset Formula 
+\begin{align*}
+(h\circ(g\circ f))(x) & =h((g\circ f)(x))\\
+ & =h(g(f(x))\\
+ & =(h\circ g)(f(x))\\
+ & =((h\circ g)\circ f)(x)
+\end{align*}
+
+\end_inset
+
+Se tiene así que 
+\begin_inset Formula $h\circ(g\circ f)=(h\circ g)\circ f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Para 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula 
+\begin{align*}
+(f\circ I_{X})(x) & =f(I_{X}(x))\\
+ & =f(x)\\
+ & =I_{Y}(f(x))\\
+ & =(I_{Y}\circ f)(x)
+\end{align*}
+
+\end_inset
+
+lo que demuestra (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "neutrocompuesta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "asociacompuesta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ establece la asociatividad de la composición.
+ Por su parte (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "neutrocompuesta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) nos dice que 
+\begin_inset Formula $I_{X}$
+\end_inset
+
+ es un neutro 
+\begin_inset Quotes eld
+\end_inset
+
+a derecha
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+para funciones de 
+\begin_inset Formula $X$
+\end_inset
+
+ a 
+\begin_inset Formula $Y$
+\end_inset
+
+ y que 
+\begin_inset Formula $I_{Y}$
+\end_inset
+
+ es un neutro 
+\begin_inset Quotes eld
+\end_inset
+
+a izquierda
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+para las mismas funciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Consideremos la función real 
+\begin_inset Formula $f$
+\end_inset
+
+ definida por 
+\begin_inset Formula 
+\[
+f(x)=x^{2},\mbox{ \ para todo \ }x\in\rz.
+\]
+
+\end_inset
+
+Claramente, 
+\begin_inset Formula $f$
+\end_inset
+
+ no es una función uno-a-uno, pues para todo real positivo 
+\begin_inset Formula $y$
+\end_inset
+
+, la ecuación 
+\begin_inset Formula $f(x)=x^{2}=y$
+\end_inset
+
+ tiene dos soluciones distintas 
+\begin_inset Formula $-\sqrt{y}$
+\end_inset
+
+ y 
+\begin_inset Formula $\sqrt{y}$
+\end_inset
+
+.
+ Si consideramos la restricción 
+\begin_inset Formula $f|_{\left[0,+\infty\right[}$
+\end_inset
+
+, ésta resulta, en cambio, ser inyectiva.
+ La relación inversa 
+\begin_inset Formula 
+\[
+g=\{(y,x)\mid(x,y)\in{f\mid}_{\left[0,+\infty\right[}\}=\{(y,\sqrt{y})\mid y\in\left[0,+\infty\right[\}
+\]
+
+\end_inset
+
+es entonces una función, pues cada real no negativo 
+\begin_inset Formula $y$
+\end_inset
+
+ tiene una única imágen.
+ Tal función es entonces 
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+g: & \left[0,+\infty\right[ & \longrightarrow & \left[0,+\infty\right[\\
+ & x & \longmapsto & \sqrt{x}
+\end{array}
+\]
+
+\end_inset
+
+¿Cuál es la función compuesta de la restricción de 
+\begin_inset Formula $f$
+\end_inset
+
+ considerada con la función 
+\begin_inset Formula $g$
+\end_inset
+
+?
+\begin_inset Newline newline
+\end_inset
+
+Para un real no negativo 
+\begin_inset Formula $x$
+\end_inset
+
+ (es decir, en el dominio de la restricción) se tiene: 
+\begin_inset Formula 
+\begin{align*}
+(g\circ f)(x) & =g(f(x))\\
+ & =g(x^{2})\\
+ & =\sqrt{x^{2}}\\
+ & =|x|\\
+ & =x\\
+ & ={I}_{\left[0,+\infty\right[}(x)
+\end{align*}
+
+\end_inset
+
+De manera similar, se tiene para un 
+\begin_inset Formula $x$
+\end_inset
+
+ en el dominio de 
+\begin_inset Formula $g$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\begin{align*}
+(f\circ g)(x) & =f(g(x))\\
+ & =f(\sqrt{x})\\
+ & =\left(\sqrt{x}\right)^{2}\\
+ & =x\\
+ & =I_{[0,+\infty)}(x);
+\end{align*}
+
+\end_inset
+
+Tenemos así que 
+\begin_inset Formula 
+\[
+(g\circ f)(x)=(f\circ g)(x)=I(x),\mbox{ \ para todo \ }x\in\left[0,+\infty\right[,
+\]
+
+\end_inset
+
+es decir 
+\begin_inset Formula 
+\[
+f\circ g=g\circ f=I_{\left[0,+\infty\right[}
+\]
+
+\end_inset
+
+en el conjunto .
+ Decimos entonces que 
+\begin_inset Formula $g$
+\end_inset
+
+ es una inversa de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el conjunto 
+\begin_inset Formula $\left[0,+\infty\right[$
+\end_inset
+
+.
+ A continuación formalizamos las definiciones de función invertible y de
+ función inversa.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "relacioninversa"
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $R$
+\end_inset
+
+ una relación, la 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Relación!– inversa
+\end_layout
+
+\end_inset
+
+relación inversa (o dual) de 
+\begin_inset Formula $R$
+\end_inset
+
+ es la relación 
+\begin_inset Formula 
+\begin{equation}
+R^{\ast}=\{(x,y)\mid(y,x)\in R\}\label{ecrelacioninversa}
+\end{equation}
+
+\end_inset
+
+Una función 
+\begin_inset Formula $f:A\longrightarrow B$
+\end_inset
+
+ se denomina invertible
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– invertible
+\end_layout
+
+\end_inset
+
+ si, y solo si la relación inversa 
+\begin_inset Formula $f^{\ast}$
+\end_inset
+
+ es también una función.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se siguen dela definición
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "caracterizainversa"
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $f:A\longrightarrow B$
+\end_inset
+
+ una función.
+ Son equivalentes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ es invertible.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ es uno-a-uno.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– inyectiva
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Existe una función 
+\begin_inset Formula $g:\operatorname*{Ran}(f)\longrightarrow A$
+\end_inset
+
+, tal que 
+\begin_inset Formula 
+\begin{equation}
+g\circ f=I_{A},f\circ g=I_{\operatorname*{Ran}(f)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Supongamos que 
+\begin_inset Formula $f$
+\end_inset
+
+ es invertible y demostremos que es uno-a-uno.
+ Te\SpecialChar softhyphen
+nemos que 
+\begin_inset Formula $f^{\ast}=\{(x,y)\mid(y,x)\in f\}$
+\end_inset
+
+ es una función, por lo que para todo 
+\begin_inset Formula $x\in\operatorname*{Ran}(f)$
+\end_inset
+
+, existe una única imagen 
+\begin_inset Formula $y=f^{\ast}(x)$
+\end_inset
+
+; es decir existe un único 
+\begin_inset Formula $y\in A$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f(y)=x$
+\end_inset
+
+.
+ Esto muestra que 
+\begin_inset Formula $f$
+\end_inset
+
+ es uno-a-uno.
+\end_layout
+
+\begin_layout Enumerate
+Recíprocamente, supongamos que 
+\begin_inset Formula $f$
+\end_inset
+
+ es uno-a-uno y demostremos ahora que la relación inversa 
+\begin_inset Formula $f^{\ast}$
+\end_inset
+
+ es una función.
+ Puesto que el dominio de 
+\begin_inset Formula $f^{\ast}$
+\end_inset
+
+ es el rango de 
+\begin_inset Formula $f$
+\end_inset
+
+, consideremos 
+\begin_inset Formula $x\in\operatorname*{Ran}(f)$
+\end_inset
+
+.
+ Por la inyectividad de 
+\begin_inset Formula $f$
+\end_inset
+
+ se sigue que 
+\begin_inset Formula $x$
+\end_inset
+
+ tiene una única preimagen 
+\begin_inset Formula $y$
+\end_inset
+
+, o sea 
+\begin_inset Formula $x=f(y)$
+\end_inset
+
+; así, existe un único 
+\begin_inset Formula $y\in A$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(x,y)\in f^{\ast}$
+\end_inset
+
+.
+ Tenemos así que cada elemento del dominio de 
+\begin_inset Formula $f^{\ast}$
+\end_inset
+
+ tiene imagen única y, por tanto, 
+\begin_inset Formula $f^{\ast}$
+\end_inset
+
+ es una función.
+ Tomando 
+\begin_inset Formula $g=f^{\ast}$
+\end_inset
+
+, entonces para 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ se tiene 
+\begin_inset Formula 
+\begin{align*}
+(x,f(x))\in f & \Longrightarrow(f(x),x)\in f^{\ast}\\
+ & \Longrightarrow f^{\ast}(f(x))=x\\
+ & \Longrightarrow(g\circ f)(x)=I_{A}(x)
+\end{align*}
+
+\end_inset
+
+De manera similar, para 
+\begin_inset Formula $x\in\operatorname*{Ran}(f)$
+\end_inset
+
+, existe 
+\begin_inset Formula $y\in A$
+\end_inset
+
+ tal que 
+\begin_inset Formula $x=f(y)$
+\end_inset
+
+, por lo que 
+\begin_inset Formula $(x,y)\in f^{\ast}$
+\end_inset
+
+.
+ Se tiene entonces 
+\begin_inset Formula 
+\begin{align*}
+x & =f(y)\\
+ & =f(f^{\ast}(x))\\
+ & =f(g(x))
+\end{align*}
+
+\end_inset
+
+de donde se sigue que 
+\begin_inset Formula $f\circ g=I_{\operatorname*{Ran}(f)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Para completar la demostración consideremos ahora que existe una función
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ con las condiciones dadas en el ítem 
+\begin_inset Formula $3$
+\end_inset
+
+ del teorema.
+ Mostremos entonces que la relación inversa 
+\begin_inset Formula $f^{\ast}$
+\end_inset
+
+, como conjunto de pares ordenados, es la misma función 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Consideremos un par ordenado 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+.
+ Entonces: 
+\begin_inset Formula 
+\begin{align*}
+(x,y)\in g & \Longrightarrow y=g(x)\\
+ & \Longrightarrow f(y)=f(g(x))=x\\
+ & \Longrightarrow(y,x)\in f\\
+ & \Longrightarrow(x,y)\in f^{\ast}
+\end{align*}
+
+\end_inset
+
+También se tiene 
+\begin_inset Formula 
+\begin{align*}
+(x,y)\in f^{\ast} & \Longrightarrow(y,x)\in f\\
+ & \Longrightarrow x=f(y)\\
+ & \Longrightarrow g(x)=g(f(y))=y\\
+ & \Longrightarrow(x,y)\in g
+\end{align*}
+
+\end_inset
+
+Como 
+\begin_inset Formula $f^{\ast}=g$
+\end_inset
+
+, se sigue que 
+\begin_inset Formula $f^{\ast}$
+\end_inset
+
+ es una función y que 
+\begin_inset Formula $f$
+\end_inset
+
+ es invertible.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f:A\longrightarrow B$
+\end_inset
+
+ es una función invertible, su inversa será simbolizada por 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+.
+ Consideremos un punto 
+\begin_inset Formula $P(x,f(x))$
+\end_inset
+
+ de la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Entonces se tiene que 
+\begin_inset Formula $Q(f(x),x)$
+\end_inset
+
+ es un punto de la gráfica de 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+.
+ La figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "simetriarectaidentidad"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, muestra que tales puntos son vértices opuestos de un cuadrado, con una
+ de sus diagonales sobre la recta de ecuación 
+\begin_inset Formula $y=x$
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-1-5.pdf
+	lyxscale 60
+	scale 150
+	draft
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simetría con relación a 
+\begin_inset Formula $y=x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "simetriarectaidentidad"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es decir, tales puntos son simétricos respecto de dicha diagonal.
+ Se sigue que las gráfica de 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ es la reflexión de la de 
+\begin_inset Formula $f$
+\end_inset
+
+ con relación a la recta de ecuación 
+\begin_inset Formula $y=x$
+\end_inset
+
+ (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "finversa1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-1-6.pdf
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Función inversa
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "finversa1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "caracterizainversa"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ establece que una función es invertible si, y solo si es 1-1.
+ Sin embargo, una función 
+\begin_inset Formula $f$
+\end_inset
+
+ que no sea inyectiva puede restringirse en su dominio
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Si, por ejemplo, para 
+\begin_inset Formula $y\in Ran(f)$
+\end_inset
+
+ existen más de una 
+\begin_inset Quotes eld
+\end_inset
+
+pre-imágen
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ de 
+\begin_inset Formula $y$
+\end_inset
+
+, podemos escoger una sola de estas y restringir el dominio de 
+\begin_inset Formula $f$
+\end_inset
+
+ escogiendo una sola preimágen de cada elemento del rango, de forma que
+ la restricción resultante sea inyectiva
+\end_layout
+
+\end_inset
+
+ de manera tal que la restricción escogida sea uno-a-uno.
+ Tal restricción será entonces invertible y diremos que su inversa es una
+ 
+\begin_inset Quotes eld
+\end_inset
+
+inversa de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el dominio de la restricción
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Sucesiones y series de números reales
+\end_layout
+
+\begin_layout Standard
+Un caso particular de funciones reales es de interés en esta sección.
+ Informalmente hablando, una 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Sucesión|textbf
+\end_layout
+
+\end_inset
+
+sucesión en un conjunto cualquiera no vacío 
+\begin_inset Formula $A$
+\end_inset
+
+ es una función con valores sobre ese conjunto y cuya variable recorre un
+ conjunto infinito de números enteros no negativos consecutivos.
+ Precisando el concepto, si 
+\begin_inset Formula $n_{o}$
+\end_inset
+
+ es un entero no negativo (un número natural) y 
+\begin_inset Formula $J=\{n\in\nz\mid n\geq n_{0}\}$
+\end_inset
+
+, entonces una función 
+\begin_inset Formula 
+\[
+\alpha:J\longrightarrow A
+\]
+
+\end_inset
+
+se denomina una sucesión en o sobre el conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $A=\rz$
+\end_inset
+
+, decimos que 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ es una sucesión de números reales o, más brevemente, una sucesión real.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Sean 
+\begin_inset Formula $n_{0}\in\nz_{0}$
+\end_inset
+
+.
+ Una función 
+\begin_inset Formula 
+\[
+\alpha:J=\{n\in\nz\mid n\geq n_{0}\}\longrightarrow\rz
+\]
+
+\end_inset
+
+es denominada sucesión real.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En las condiciones de la definición anterior, la sucesión 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ será descrita generalmente por sus imágenes.
+ En ese sentido, la notación 
+\begin_inset Formula $\{\alpha(n)\}_{n=n_{0}}^{\infty}$
+\end_inset
+
+ o 
+\begin_inset Formula $\{\alpha(n)\}_{n\in J}$
+\end_inset
+
+ se utilizará para referirse a la sucesión 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ El rango de la sucesión, es decir el conjunto 
+\begin_inset Formula 
+\[
+\{\alpha(n_{0}),\alpha(n_{0}+1),\alpha(n_{0}+2),\dots\},
+\]
+
+\end_inset
+
+puede ser un conjunto finito o infinito.
+ En todo caso, si bien formalmente hablando la sucesión es la función 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, nuestro interés estará centrado en dicho rango, puesto de relieve por
+ la notación.
+ Se acostumbra a decir que cada imagen 
+\begin_inset Formula $\alpha(n)$
+\end_inset
+
+ es un término de la sucesión 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+La sucesión real 
+\begin_inset Formula $\alpha:\nz\longrightarrow\rz$
+\end_inset
+
+, definida por 
+\begin_inset Formula 
+\[
+\alpha(n)=\frac{1}{n}
+\]
+
+\end_inset
+
+será notada como 
+\begin_inset Formula 
+\[
+\left\{ \frac{1}{n}\right\} _{n\in\nz}.
+\]
+
+\end_inset
+
+Así, la sucesión considerada toma los valores reales 
+\begin_inset Formula 
+\[
+\left\{ 1,\frac{1}{2},\frac{1}{3},\frac{1}{4},\dots\right\} .
+\]
+
+\end_inset
+
+Nótese que el mismo conjunto de valores es recorrido por las sucesiones
+ 
+\begin_inset Formula 
+\[
+\left\{ \frac{1}{n+1}\right\} _{n\in\nz_{0}},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \frac{1}{n-1}\right\} _{n=2}^{\infty},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ \frac{1}{n-5}\right\} _{n=6}^{\infty},
+\]
+
+\end_inset
+
+por lo que las sucesiones consideradas podrían considerarse iguales, en
+ el sentido que producen los mismos valores en el 
+\begin_inset Quotes eld
+\end_inset
+
+mismo orden
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Standard
+Precisando la idea del ejemplo anterior, dada una sucesión cualquiera 
+\begin_inset Formula $\{\alpha(n)\}_{n=n_{0}}^{\infty}$
+\end_inset
+
+, la función
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f:$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nz$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\longrightarrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $J=\{n\in\gz\mid n\geq n_{0}\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\longmapsto$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\longmapsto$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n_{0}+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\longmapsto$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n_{0}+2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\longmapsto$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n_{0}+(n-1)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+es biyectiva y para cada natural 
+\begin_inset Formula $n$
+\end_inset
+
+ se tiene que 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(\alpha\circ f)(1)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $=$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha(n_{0})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(\alpha\circ f)(2)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $=$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha(n_{0}+1)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(\alpha\circ f)(3)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $=$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha(n_{0}+2)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo que los valores de las sucesiones 
+\begin_inset Formula $\beta=\alpha\circ f$
+\end_inset
+
+ y 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ son los mismos, en el mismo orden.
+ Nótese que el primer término de la sucesión es 
+\begin_inset Formula $\alpha(n_{0})=\beta(1)$
+\end_inset
+
+.
+ Así, sin pérdida de generalidad, podríamos considerar solo sucesiones cuyo
+ dominio es el conjunto de los números naturales; es decir, sucesiones 
+\begin_inset Formula 
+\[
+\{x_{n}\}_{n\in\nz},
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $x_{n}=\alpha(n)$
+\end_inset
+
+ y 
+\begin_inset Formula $\alpha:\nz\longrightarrow\rz$
+\end_inset
+
+ es una función.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para la sucesión 
+\begin_inset Formula $\{\sqrt{n+5}\}_{n=4}^{\infty}$
+\end_inset
+
+, la función 
+\begin_inset Formula 
+\[
+f:\nz\ni n\longmapsto n+3\in\{n\in\nz\mid n\geq4\}
+\]
+
+\end_inset
+
+da origen a la sucesión 
+\begin_inset Formula 
+\[
+\beta(n)=\sqrt{f(n)}=\sqrt{n+8},\mbox{ \ para todo \ }n\in\nz
+\]
+
+\end_inset
+
+cuyo rango es el mismo de la sucesión dada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+La sucesión 
+\begin_inset Formula $\{(-1)^{n}\}_{n\in\nz}$
+\end_inset
+
+ tiene el rango finito 
+\begin_inset Formula $\{-1,1\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada una sucesión real 
+\begin_inset Formula $\{x_{n}\}_{n=n_{0}}^{\infty}$
+\end_inset
+
+, para 
+\begin_inset Formula $n\geq n_{0}$
+\end_inset
+
+, definimos la 
+\begin_inset Formula $n-$
+\end_inset
+
+ésima suma parcial 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Sucesión!a@
+\begin_inset Formula $n-$
+\end_inset
+
+ésima suma parcial
+\end_layout
+
+\end_inset
+
+de la sucesión dada por 
+\begin_inset Formula 
+\begin{equation}
+s_{n}=x_{n_{0}}+x_{n_{0}+1}+\dots+x_{n}=\sum_{i=n_{0}}^{n}x_{i}\label{sumaparcial}
+\end{equation}
+
+\end_inset
+
+la sucesión de sumas parciales 
+\begin_inset Formula 
+\begin{equation}
+\{s_{n}\}_{n=n_{0}}^{\infty}=\left\{ \sum_{i=n_{0}}^{n}x_{i}\right\} _{n=n_{0}}^{\infty}\label{serie}
+\end{equation}
+
+\end_inset
+
+es denominada una serie real
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Sucesión!Serie asociada a una –
+\end_layout
+
+\end_inset
+
+.
+ Diremos de ella que es la serie asociada a la sucesión dada.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Las series asociadas a las sucesiones 
+\begin_inset Formula 
+\[
+\{n+1\}_{n\in\nz},\ \left\{ \frac{1}{n}\right\} _{n\in\nz}\ \mbox{ \ y \ }\{(-1)^{n}\}_{n\in\nz_{0}}
+\]
+
+\end_inset
+
+son, respectivamente 
+\begin_inset Formula 
+\begin{align*}
+\left\{ \sum_{i=1}^{n}(i+1)\right\} _{n\in\nz} & =\{2,2+3,2+3+4,2+3+4+5,\dots\}\\
+ & =\{2,5,9,14,\dots\}\\
+\left\{ \sum_{i=1}^{n}\frac{1}{i}\right\} _{n\in\nz} & =\left\{ 1,1+\frac{1}{2},1+\frac{1}{2}+\frac{1}{3},1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4},\dots\right\} \\
+ & =\left\{ 1,\frac{3}{2},\frac{11}{6},\frac{25}{12},\dots\right\} \\
+\left\{ \sum_{i=0}^{n}(-1)^{i}\right\} _{n\in\nz_{0}} & =\{1,1+(-1),1+(-1)+1,1+(-1)+1+(-1),\dots\}\\
+ & =\{1,0,1,0,\dots\}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para un real fijo 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ la sucesión 
+\begin_inset Formula $\{x^{n}\}_{n\in\nz_{0}}$
+\end_inset
+
+, da origen a la denominada serie geométrica 
+\begin_inset Formula 
+\begin{equation}
+\left\{ \sum_{i=n}^{n}x^{i}\right\} _{n\in\nz_{0}}=\{1,1+x,1+x+x^{2},\dots\}
+\end{equation}
+
+\end_inset
+
+Para 
+\begin_inset Formula $x=0$
+\end_inset
+
+, la serie geométrica está determinada por la sucesión 
+\begin_inset Formula 
+\[
+\alpha(n)=\begin{cases}
+1, & \text{si \ensuremath{n=0}}\\
+0^{n}=0, & \text{ si \ensuremath{n>0}}
+\end{cases}
+\]
+
+\end_inset
+
+Es decir, el recorrido de la serie geométrica es 
+\begin_inset Formula 
+\[
+\{1,1+0,1+0+0,\dots\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
+\begin_layout Standard
+Se acostumbra a escribir 
+\begin_inset Formula 
+\[
+\sum_{n=n_{0}}^{\infty}x_{n}
+\]
+
+\end_inset
+
+para la serie 
+\begin_inset Formula 
+\[
+\left\{ \sum_{i=n_{0}}^{n}x_{i}\right\} _{n=n_{0}}^{\infty}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejercicios resueltos
+\end_layout
+
+\begin_layout Example
+Sean 
+\begin_inset Formula $A=\left\{ 1,3,-2,5\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $B=\left\{ 0,3,2,-1,4\right\} $
+\end_inset
+
+ y las relaciones 
+\begin_inset Formula $R_{k}:A\longrightarrow B,$
+\end_inset
+
+ 
+\begin_inset Formula $k=1,\ldots,5,$
+\end_inset
+
+definidas por: 
+\begin_inset Formula 
+\begin{align*}
+R_{1} & =\left\{ \left(1,2\right),\left(3,3\right),\left(-2,4\right)\right\} \\
+R_{2} & =\left\{ \left(1,2\right),\left(3,0\right),\left(-2,-1\right),\left(5,4\right)\right\} \\
+R_{3} & =\left\{ \left(3,4\right),\left(-2,4\right),\left(1,4\right),\left(5,4\right)\right\} \\
+R_{4} & =\left\{ \left(-2,0\right),\left(5,3\right),\left(3,-1\right),\left(1,2\right),\left(3,4\right)\right\} \\
+R_{5} & =A\times B
+\end{align*}
+
+\end_inset
+
+Determine para cada caso el dominio y el rango, e indique si es función.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+El dominio y el rango en cada caso vienen dados por 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\operatorname*{Dom}\left(R_{1}\right)=\left\{ 1,3,-2\right\}  &  & \operatorname*{Ran}\left(R_{1}\right)=\left\{ 2,3,4\right\} \\
+\operatorname*{Dom}\left(R_{2}\right)=A &  & \operatorname*{Ran}\left(R_{2}\right)=\left\{ 4\right\} \\
+\operatorname*{Dom}\left(R_{3}\right)=A &  & \operatorname*{Ran}\left(R_{3}\right)=\left\{ 2,0,-1,4\right\} \\
+\operatorname*{Dom}\left(R_{4}\right)=A &  & \operatorname*{Ran}\left(R_{4}\right)=B\\
+\operatorname*{Dom}\left(R_{5}\right)=A &  & \operatorname*{Ran}\left(R_{5}\right)=B
+\end{array}
+\]
+
+\end_inset
+
+Analizando esta información se observa que sólo las relaciones 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+ son funciones, ya que tienen como dominio a 
+\begin_inset Formula $A$
+\end_inset
+
+ y cada elemento del dominio tiene imagen única.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ no es una función por que 
+\begin_inset Formula $\operatorname*{Dom}\left(R_{1}\right)\neq A.$
+\end_inset
+
+ 
+\begin_inset Formula $R_{4}$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{5}$
+\end_inset
+
+ no son funciones porque existen elementos del dominio que no tienen una
+ única imagen.
+ Por ejemplo 
+\begin_inset Formula $\left(3,-1\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(3,4\right)$
+\end_inset
+
+ en 
+\begin_inset Formula $R_{4},$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+ en 
+\begin_inset Formula $R_{5}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Consideremos las funciones 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ definidas a continuación: 
+\begin_inset Formula 
+\[
+\begin{array}{ccccccccc}
+f: & \rz & \longrightarrow & \rz & \,\,\, & g: & \rz & \longrightarrow & \rz\\
+ & x & \longmapsto & x^{2}+x+1 & \,\,\, &  & x & \longmapsto & 2x+3
+\end{array}.
+\]
+
+\end_inset
+
+Determine para cada una si son uno a uno o sobreyectiva.
+ Además calcule el Rango de las funciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Tenemos que 
+\begin_inset Formula $f(x)=x^{2}+x+1$
+\end_inset
+
+ para todo real 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ no es sobreyectiva, pues dado un real 
+\begin_inset Formula $y$
+\end_inset
+
+, la ecuación cuadrática 
+\begin_inset Formula 
+\[
+x^{2}+x+1=y,\ \mbox{ \ es decir, \ }x^{2}+x+(1-y)=0
+\]
+
+\end_inset
+
+solo tiene soluciones reales si, y solo si el discriminante 
+\begin_inset Formula $1-4(1)(1-y)=4y-3$
+\end_inset
+
+ es no negativo.
+ Ahora 
+\begin_inset Formula 
+\[
+4y-3\geq0\Longleftrightarrow y\geq\frac{3}{4},
+\]
+
+\end_inset
+
+lo que muestra que 
+\begin_inset Formula $\operatorname*{Ran}(f)=\left[\frac{3}{4},\infty\right[$
+\end_inset
+
+.
+ Así, por ejemplo, no existe un real 
+\begin_inset Formula $x$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f(x)=x^{2}+x+1=0$
+\end_inset
+
+.
+ Por otra parte para 
+\begin_inset Formula $y>\frac{3}{4}$
+\end_inset
+
+, la ecuación cuadrática considerada tiene dos soluciones distintas, por
+ lo que para un tal valor de 
+\begin_inset Formula $y$
+\end_inset
+
+ existen dos elementos distintos del dominio cuya imágen es la misma, 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Considere, como ilustración, 
+\begin_inset Formula $y=1$
+\end_inset
+
+; se tiene entonces 
+\begin_inset Formula 
+\[
+f(x)=x^{2}+x+1=1\Longleftrightarrow x=0\vee x=-1.
+\]
+
+\end_inset
+
+Esto muestra que 
+\begin_inset Formula $f$
+\end_inset
+
+ no es uno-a-uno.
+\end_layout
+
+\begin_layout Standard
+Para 
+\begin_inset Formula $g$
+\end_inset
+
+ tenemos que dado un real 
+\begin_inset Formula $y$
+\end_inset
+
+, la ecuación lineal 
+\begin_inset Formula 
+\[
+g(x)=2x+3=y
+\]
+
+\end_inset
+
+tiene siempre solución única 
+\begin_inset Formula $x=\frac{y-3}{2}$
+\end_inset
+
+.
+ La existencia de solución muestra que la función es sobre; es decir 
+\begin_inset Formula $\operatorname*{Ran}(g)=\rz$
+\end_inset
+
+.
+ El que la solución sea única indica que 
+\begin_inset Formula $g$
+\end_inset
+
+ es uno-a-uno.
+ Así, 
+\begin_inset Formula $g$
+\end_inset
+
+ es una función biyectiva.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Determine el vértice y el rango de 
+\begin_inset Formula $f(x)=x^{2}+3x+2$
+\end_inset
+
+.
+ Analice la gráfica de la función.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+La función cuadrática dada por 
+\begin_inset Formula $f(x)=x^{2}+3x+2$
+\end_inset
+
+, tiene una gráfica con vértice en 
+\begin_inset Formula 
+\[
+V\left(-\frac{3}{2},\frac{8-9}{4}\right)=V\left(-\frac{3}{2},-\frac{1}{4}\right),
+\]
+
+\end_inset
+
+por lo que su rango es 
+\begin_inset Formula $\left[-\frac{1}{4},+\infty\right[$
+\end_inset
+
+.
+ El eje de simetría es la recta de ecuación 
+\begin_inset Formula $x=-\frac{3}{2}$
+\end_inset
+
+.
+ Para trazar un esbozo a mano de la gráfica podemos considerar algunos valores
+ de 
+\begin_inset Formula $x$
+\end_inset
+
+ menores que 
+\begin_inset Formula $-\frac{3}{2}$
+\end_inset
+
+; puntos simétricos a cada punto con abscisa 
+\begin_inset Formula $x$
+\end_inset
+
+ tendrán abscisas con valor igual al de 
+\begin_inset Formula $x$
+\end_inset
+
+ más su distancia al eje de simetría.
+ Las ordenadas de puntos simétricos son las mismas.
+ Una tabla de algunos valores de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ para la gráfica se muestra a continuación.
+ 
+\begin_inset Formula 
+\[
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline  \ensuremath{x}  &  \ensuremath{-3/2}  &  \ensuremath{-5/2,-1/2}  &  \ensuremath{-7/2,1/2}  &  \ensuremath{-9/2,3/2}  &  \ensuremath{-11/2,5/2}\\
+\hline  \ensuremath{y=f(x)}  &  \ensuremath{-\frac{1}{4}}  &  \ensuremath{3/4}  &  \ensuremath{15/4}  &  \ensuremath{35/4}  &  \ensuremath{63/4} 
+\\\hline \end{tabular}\ \ \ \ \ \ \ 
+\]
+
+\end_inset
+
+Una gráfica con computador se muestra en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ejemplopa1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-1-7.pdf
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de 
+\begin_inset Formula $f(x)=x^{2}+2x+3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ejemplopa1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Sea la función 
+\begin_inset Formula $y=f(x)=-3\sqrt{4-x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hallar el dominio.
+\end_layout
+
+\begin_layout Enumerate
+Calcular el rango.
+\end_layout
+
+\begin_layout Enumerate
+Hallar 
+\begin_inset Formula $\dfrac{f\left(x+h\right)-f\left(x\right)}{h}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Para calcular el dominio de la función 
+\begin_inset Formula $f,$
+\end_inset
+
+ se tiene en cuenta que 
+\begin_inset Formula 
+\begin{align*}
+\operatorname*{Dom}f & =\left\{ x\in\rz\mid4-x^{2}\geq0\right\} \\
+ & =\left\{ x\in\rz\mid4\geq x^{2}\right\} \\
+ & =\left\{ x\in\rz\mid\left\vert x\right\vert =\sqrt{x^{2}}\leq\sqrt{4}\right\} \\
+ & =\left\{ x\in\rz\mid-2\leq x\leq2\right\} =\left[-2,2\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Para obtener el 
+\begin_inset space \space{}
+\end_inset
+
+rango, observe que para 
+\begin_inset Formula $x\in\left[-2,2\right],y=-3\sqrt{4-x^{2}}\leq0.$
+\end_inset
+
+ Es decir 
+\begin_inset Formula 
+\begin{equation}
+y\in\left]-\infty,0\right]\label{a2}
+\end{equation}
+
+\end_inset
+
+Resolviendo la ecuación anterior para 
+\begin_inset Formula $x$
+\end_inset
+
+ se tiene 
+\begin_inset Formula 
+\begin{equation}
+x=3\sqrt{4-\left(\frac{y}{-3}\right)^{2}}\implies4-\frac{y^{2}}{9}\geq0\ \implies y\in\left[-6,6\right]\label{a3}
+\end{equation}
+
+\end_inset
+
+De 
+\begin_inset Formula $\left(\ref{a2}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(\ref{a3}\right)$
+\end_inset
+
+ se tiene que el rango de la función es el intervalo 
+\begin_inset Formula $\left[-6,0\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ya que 
+\begin_inset Formula $f\left(x\right)=-3\sqrt{4-x^{2}},$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f\left(x+h\right)=-3\sqrt{4-\left(x+h\right)^{2}}.$
+\end_inset
+
+ Por lo cual,
+\begin_inset Formula 
+\[
+\dfrac{f\left(x+h\right)-f\left(x\right)}{h}=-3\left(\dfrac{\sqrt{4-\left(x+h\right)^{2}}-\sqrt{4-x^{2}}}{h}\right).
+\]
+
+\end_inset
+
+Racionalizando el numerador se tiene que 
+\begin_inset Formula 
+\begin{align*}
+\dfrac{f\left(x+h\right)-f\left(x\right)}{h} & =-3\left(\dfrac{4-\left(x+h\right)^{2}-\left(4-x^{2}\right)}{h\left(\sqrt{4-\left(x+h\right)^{2}}+\sqrt{4-x^{2}}\right)}\right)\\
+ & =-3\left(\dfrac{-h\left(2x+h\right)}{h\left(\sqrt{4-\left(x+h\right)^{2}}+\sqrt{4-x^{2}}\right)}\right)\\
+ & =3\left(\dfrac{2x+h}{\left(\sqrt{4-\left(x+h\right)^{2}}+\sqrt{4-x^{2}}\right)}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Sea 
+\begin_inset Formula $f(x)=\dfrac{x\sqrt{x^{2}-1}}{x^{2}-x-12}.$
+\end_inset
+
+ Determine el dominio de la función 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Definamos 
+\begin_inset Formula $g\left(x\right):=x\sqrt{x^{2}-1}$
+\end_inset
+
+ y 
+\begin_inset Formula $h\left(x\right):=x^{2}-x-12.$
+\end_inset
+
+ Entonces 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ se puede expresar como el cociente de estas dos funciones, es decir 
+\begin_inset Formula $f\left(x\right)=\dfrac{g\left(x\right)}{h\left(x\right)}$
+\end_inset
+
+, por lo tanto
+\begin_inset Formula 
+\begin{equation}
+\operatorname*{Dom}\left(f\right)=\operatorname*{Dom}\left(g\right)\cap\operatorname*{Dom}\left(h\right)-\left\{ x\mid h\left(x\right)=0\right\} .\label{fgh}
+\end{equation}
+
+\end_inset
+
+A continuación calculamos cada uno de los conjuntos dados en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fgh"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Como 
+\begin_inset Formula $g\left(x\right):=x\sqrt{x^{2}-1},$
+\end_inset
+
+entonces 
+\begin_inset Formula 
+\begin{align*}
+\operatorname*{Dom}g & =\left\{ x\in\rz\mid x^{2}-1\geq0\right\} \\
+ & =\left\{ x\in\rz\mid x^{2}\geq1\right\} \\
+ & =\left\{ x\in\rz\mid\left\vert x\right\vert =\sqrt{x^{2}}\geq1\right\} \\
+ & =\left\{ x\in\rz\mid x\leq-1\vee1\leq x\right\} \\
+ & =\left]-\infty,-1\right]\cup\left[1,+\infty\right[
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Como 
+\begin_inset Formula $h\left(x\right):=x^{2}-x-12$
+\end_inset
+
+ es un polinomio, es claro que 
+\begin_inset Formula $\operatorname*{Dom}h=\rz.$
+\end_inset
+
+ Además 
+\begin_inset Formula 
+\begin{align*}
+\left\{ x\in\rz\mid x^{2}-x-12=0\right\}  & =\left\{ x\in\rz\mid\left(x+3\right)\left(x-4\right)=0\right\} \\
+ & =\left\{ -3,4\right\} 
+\end{align*}
+
+\end_inset
+
+En conclusión, 
+\begin_inset Formula 
+\begin{align*}
+\operatorname*{Dom}\left(f\right) & =\left(-\infty,-1\right]\cup\left[1,+\infty\right)\cap\rz-\left\{ -3,4\right\} \\
+ & =\left(-\infty,-1\right]\cup\left[1,+\infty\right)-\left\{ -3,4\right\} \\
+ & =\left]-\infty,-3\right[\cup\left]-3,-1\right]\cup\left[1,4\right[\cup\left]4,+\infty\right[
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Sean las funciones 
+\begin_inset Formula 
+\begin{align*}
+f & =\left\{ \left(1,2\right),\left(a,3\right),\left(-1,3\right),\left(2,-2\right)\right\} \\
+g & =\left\{ \left(1,4\right),\left(a,0\right),\left(-2,-1\right),\left(3,-3\right),\left(2,a\right)\right\} 
+\end{align*}
+
+\end_inset
+
+Calcule el dominio y rango de 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g.$
+\end_inset
+
+ Obtenga además 
+\begin_inset Formula $f+g,fg,f/g,g/f,g\circ f,f\circ g$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+En virtud a la definición de 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\operatorname*{Dom}\left(f\right)=\left\{ 1,a,-1,2\right\}  &  & \operatorname*{Ran}\left(f\right)=\left\{ 2,3,-2\right\} \\
+\operatorname*{Dom}\left(g\right)=\left\{ 1,a,-2,3,2\right\}  &  & \operatorname*{Ran}\left(g\right)=\left\{ 4,0,-1,-3,a\right\} .
+\end{array}
+\]
+
+\end_inset
+
+En 
+\begin_inset Formula $\operatorname*{Dom}\left(f\right)\cap\operatorname*{Dom}\left(g\right)=\left\{ 1,a,2\right\} $
+\end_inset
+
+ se definen las funciones
+\begin_inset Formula 
+\begin{align*}
+f+g & =\left\{ \left(1,6\right),\left(a,3\right),\left(2,a-2\right)\right\} \\
+fg & =\left\{ \left(1,8\right),\left(a,0\right),\left(2,-2a\right)\right\} 
+\end{align*}
+
+\end_inset
+
+y en los conjuntos 
+\begin_inset Formula 
+\begin{align*}
+\operatorname*{Dom}\left(f\right)\cap\operatorname*{Dom}\left(g\right)-\left\{ x\in\operatorname*{Dom}\left(g\right)\mid g\left(x\right)=0\right\}  & =\left\{ 1,2\right\} \\
+\operatorname*{Dom}\left(f\right)\cap\operatorname*{Dom}\left(g\right)-\left\{ x\in\operatorname*{Dom}\left(f\right)\mid f\left(x\right)=0\right\}  & =\left\{ 1,a,2\right\} 
+\end{align*}
+
+\end_inset
+
+se definen respectivamente
+\begin_inset Formula 
+\begin{align*}
+f/g & =\left\{ \left(1,\frac{1}{2}\right),\left(2,-\frac{2}{a}\right)\right\} \\
+g/f & =\left\{ \left(1,2\right),\left(a,0\right),\left(2,-\frac{a}{2}\right)\right\} .
+\end{align*}
+
+\end_inset
+
+Ya que 
+\begin_inset Formula $\operatorname*{Ran}\left(g\right)\cap\operatorname*{Dom}\left(f\right)=\left\{ -1\right\} \neq\emptyset$
+\end_inset
+
+, y 
+\begin_inset Formula $\operatorname*{Ran}\left(f\right)\cap\operatorname*{Dom}\left(g\right)=\left\{ 2,3,-2\right\} \neq\emptyset,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ y 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ están bien definidas, y dadas por
+\begin_inset Formula 
+\begin{align*}
+f\circ g & =\left\{ \left(2,-3\right)\right\} \\
+g\circ f & =\left\{ \left(1,a\right),\left(a,-3\right),\left(-1,-3\right),\left(2,-1\right)\right\} .
+\end{align*}
+
+\end_inset
+
+De lo anterior es obvio que
+\begin_inset Formula 
+\begin{align*}
+\operatorname*{Dom}\left(f\circ g\right) & =\{x\in\operatorname*{Dom}(g)\mid g(x)\in\operatorname*{Dom}(f)\}=\left\{ 2\right\} \\
+\operatorname*{Dom}\left(g\circ f\right) & =\{x\in\operatorname*{Dom}(f)\mid f(x)\in\operatorname*{Dom}(g)\}=\left\{ 1,a,-1,2\right\} .
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Sea 
+\begin_inset Formula $f\left(x\right)=\dfrac{x^{2}+1}{x^{2}-3}$
+\end_inset
+
+, y 
+\begin_inset Formula $g\left(x\right)=-\sqrt{x^{2}-1}.$
+\end_inset
+
+ De una formula para 
+\begin_inset Formula $h(x)=\left(f\circ g\right)\left(x\right),$
+\end_inset
+
+ y calcule el dominio de 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Si consideramos la compuesta entre 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula 
+\begin{align*}
+\left(f\circ g\right)\left(x\right) & =\dfrac{\left(-\sqrt{x^{2}-1}\right)^{2}+1}{\left(-\sqrt{x^{2}-1}\right)^{2}-3}\overset{%TCIMACRO{\QATOP{x\in\operatorname*{Dom}g}{\downarrow}}%
+%BeginExpansion
+\genfrac{}{}{0pt}{}{x\in\operatorname*{Dom}g}{\downarrow}%EndExpansion
+}{=}\frac{x^{2}-1+1}{x^{2}-1-3}\\
+ & =\frac{x^{2}}{x^{2}-4}.
+\end{align*}
+
+\end_inset
+
+Como 
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+g: & \operatorname*{Dom}(g)=\left]-\infty,-1\right]\cup\left[1,+\infty\right[ & \longrightarrow & \rz^{-}\cup\left\{ 0\right\} \\
+\vspace{-0.2cm}\\
+ & x & \longmapsto & -\sqrt{x^{2}-1}
+\end{array}
+\]
+
+\end_inset
+
+y 
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+f: & \operatorname*{Dom}(f)=\rz-\left\{ \pm\sqrt{3}\right\}  & \longrightarrow & \left]-\infty,-\frac{1}{3}\right]\cup\left]1,+\infty\right[\\
+\vspace{-0.2cm}\\
+ & x & \longmapsto & \dfrac{x^{2}+1}{x^{2}-3},
+\end{array}
+\]
+
+\end_inset
+
+es claro que la compuesta 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ existe, y
+\begin_inset Formula 
+\[
+\operatorname*{Dom}\left(f\circ g\right)=\{x\in\operatorname*{Dom}(g)\mid g(x)\in\operatorname*{Dom}(f)\}.
+\]
+
+\end_inset
+
+Si 
+\begin_inset Formula $x\in\operatorname*{Dom}\left(f\circ g\right),$
+\end_inset
+
+ entonces
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in\left]-\infty,-1\right]\cup\left[1,+\infty\right[,$
+\end_inset
+
+ y
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g(x)\in\rz-\left\{ \pm\sqrt{3}\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+De la segunda condición se tiene que 
+\begin_inset Formula $-\sqrt{x^{2}-1}\neq\pm\sqrt{3}.$
+\end_inset
+
+ Es claro que 
+\begin_inset Formula $-\sqrt{x^{2}-1}\neq+\sqrt{3},$
+\end_inset
+
+ por lo tanto nos falta determinar el conjunto
+\begin_inset Formula 
+\[
+\left\{ x\in\operatorname*{Dom}(g)\mid-\sqrt{x^{2}-1}\neq-\sqrt{3}\right\} =\left]-\infty,-1\right]\cup\left[1,+\infty\right[-\left\{ x\mid-\sqrt{x^{2}-1}=-\sqrt{3}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pero 
+\begin_inset Formula $\left\{ x\mid-\sqrt{x^{2}-1}=-\sqrt{3}\right\} =\left\{ \pm2\right\} .$
+\end_inset
+
+ Por lo tanto
+\begin_inset Formula 
+\begin{align*}
+\operatorname*{Dom}\left(f\circ g\right) & =\{x\in\operatorname*{Dom}(g)\mid g(x)\in\operatorname*{Dom}(f)\}\\
+ & =\left(-\infty,-1\right]\cup\left[1,+\infty\right)-\left\{ \pm2\right\} \\
+ & =\left]-\infty,-2\right[\cup\left]-2,-1\right]\cup\left[1,2\right[\cup\left]2,+\infty\right[
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Consideremos las funciones reales definidas por 
+\begin_inset Formula 
+\[
+f(x)=\sqrt{2x+9},\ \ g(x)=\sqrt{x^{2}-x-6}.
+\]
+
+\end_inset
+
+Obtenga 
+\begin_inset Formula $\operatorname*{Dom}\left(f\right),\operatorname*{Dom}\left(g\right),f+g,fg,\frac{f}{g},\operatorname*{Dom}\left(f+g\right),\operatorname*{Dom}\left(fg\right),\operatorname*{Dom}\left(\frac{f}{g}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Se tiene que: 
+\begin_inset Formula 
+\begin{align*}
+\operatorname*{Dom}(f) & =\{x\in\rz\mid2x+9\geq0\}\\
+ & =\{x\in\rz\mid x\geq-9/2\}\\
+ & =\left[-\frac{9}{2},+\infty\right[\\
+\operatorname*{Dom}(g) & =\{x\in\rz\mid x^{2}-x-6=(x-3)(x+2)\geq0\}\\
+ & =\left]-\infty,-2\right]\cup\left[3,+\infty\right[
+\end{align*}
+
+\end_inset
+
+Se tiene así que 
+\begin_inset Formula 
+\[
+\operatorname*{Dom}(f)\cap\operatorname*{Dom}(g)=\left[-\frac{9}{2},-2\right]\cup\lbrack3,+\infty)
+\]
+
+\end_inset
+
+conjunto sobre el cual están definidas las funciones 
+\begin_inset Formula 
+\begin{align*}
+(f+g)(x) & =\sqrt{2x+9}+\sqrt{x^{2}-x-6}\\
+(f-g)(x) & =\sqrt{2x+9}-\sqrt{x^{2}-x-6}\\
+(fg)(x) & =\sqrt{2x^{3}+7x^{2}-21x-54}\\
+\left(\frac{f}{g}\right)\left(x\right) & =\frac{\sqrt{2x+9}}{\sqrt{x^{2}-x-6}}
+\end{align*}
+
+\end_inset
+
+¿Por qué 
+\begin_inset Formula $\left(fg\right)\left(x\right)=\sqrt{2x^{3}+7x^{2}-21x-54}$
+\end_inset
+
+ ?.
+\end_layout
+
+\begin_layout Standard
+Por su parte el cociente 
+\begin_inset Formula $f/g$
+\end_inset
+
+ está definido sobre 
+\begin_inset Formula 
+\[
+\left[-\frac{9}{2},-2\right[\cup\left]3,+\infty\right[
+\]
+
+\end_inset
+
+y 
+\begin_inset Formula $g/f$
+\end_inset
+
+ lo está sobre 
+\begin_inset Formula 
+\[
+\left]-\frac{9}{2},-2\right]\cup\left[3,+\infty\right[.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Consideremos las funciones finitas 
+\begin_inset Formula 
+\begin{align*}
+f & =\{(a,1),(b,0),(c,2)\}\\
+g & =\{(1,5),(0,3),(3,6)\}.
+\end{align*}
+
+\end_inset
+
+Determine si 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ o 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ están bien definidas.
+ En caso afirmativo determine la compuesta y el dominio respectivo.
+ En caso negativo justifique la respuesta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Ya que 
+\begin_inset Formula $\operatorname*{Ran}(f)\cap\operatorname*{Dom}(g)=\{1,0\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ está definida sobre el conjunto 
+\begin_inset Formula 
+\[
+\{x\in\operatorname*{Dom}(f)\mid f(x)\in\operatorname*{Dom}(g)\}=\{a,b\}.
+\]
+
+\end_inset
+
+Además, se tiene que 
+\begin_inset Formula 
+\[
+g\circ f=\{(a,5),(b,3)\}.
+\]
+
+\end_inset
+
+Puesto que 
+\begin_inset Formula $\operatorname*{Ran}(g)\cap\operatorname*{Dom}(f)=\emptyset$
+\end_inset
+
+ la compuesta 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ no está definida.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Para las funciones de variable real definidas por: 
+\begin_inset Formula 
+\[
+f(x)=x^{2}+x,\ g(x)=\sqrt{x},
+\]
+
+\end_inset
+
+determine 
+\begin_inset Formula $\operatorname*{Dom}\left(f\right),\operatorname*{Dom}\left(g\right),\operatorname*{Dom}\left(g\circ f\right),\operatorname*{Dom}\left(f\circ g\right).$
+\end_inset
+
+ ¿Las compuestas 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ y 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ son iguales? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $\operatorname*{Dom}(f)=\rz$
+\end_inset
+
+, 
+\begin_inset Formula $\operatorname*{Dom}(g)=\left[0,+\infty\right[$
+\end_inset
+
+.
+ Por lo que 
+\begin_inset Formula 
+\begin{align*}
+x\in\operatorname*{Dom}(g\circ f) & \Longleftrightarrow x\in\rz\ \wedge\ f(x)=x^{2}+x\geq0\\
+ & \Longleftrightarrow x(x+1)\geq0\\
+ & \Longleftrightarrow x\in\left]-\infty,-1\right]\cup\left[0,+\infty\right[
+\end{align*}
+
+\end_inset
+
+Tenemos así que 
+\begin_inset Formula $(g\circ f)(x)=g(x^{2}+x)=\sqrt{x^{2}+x}$
+\end_inset
+
+, para todo 
+\begin_inset Formula $x$
+\end_inset
+
+ en el conjunto 
+\begin_inset Formula $\left]-\infty,-1\right]\cup\left[0,+\infty\right[$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por otra parte: 
+\begin_inset Formula 
+\begin{align*}
+x\in\operatorname*{Dom}(f\circ g) & \Longleftrightarrow x\in\operatorname*{Dom}(g)\ \wedge\ g(x)=\sqrt{x}\in\operatorname*{Dom}(f)=\rz\\
+ & \Longleftrightarrow x\geq0
+\end{align*}
+
+\end_inset
+
+Se tiene así que 
+\begin_inset Formula 
+\[
+(f\circ g)(x)=f(g(x))=(\sqrt{x})^{2}+\sqrt{x}=x+\sqrt{x},\ \mbox{para todo \ }x\geq0.
+\]
+
+\end_inset
+
+Nótese que 
+\begin_inset Formula $\operatorname*{Ran}(g)\subseteq\operatorname*{Dom}(f)$
+\end_inset
+
+, por lo que 
+\begin_inset Formula $\operatorname*{Dom}(f\circ g)=\operatorname*{Dom}(g)$
+\end_inset
+
+.
+ Debe notarse también que 
+\begin_inset Formula $f\circ g\neq g\circ f$
+\end_inset
+
+ pues, por ejemplo: 
+\begin_inset Formula 
+\[
+(f\circ g)(1)=2\neq\sqrt{2}=(g\circ f)(1),
+\]
+
+\end_inset
+
+lo que muestra que, en general, la composición no es conmutativa.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Consideremos la función 
+\begin_inset Formula 
+\[
+f=\{(1,2),(2,3),(3,3),(4,1)\}
+\]
+
+\end_inset
+
+con dominio 
+\begin_inset Formula $A=\{1,2,3,4\}.$
+\end_inset
+
+ ¿
+\begin_inset Formula $f$
+\end_inset
+
+ es invertible?.
+ En caso afirmativo obtenga la función inversa.
+ En caso negativo determine restricciones de 
+\begin_inset Formula $f$
+\end_inset
+
+ para las cuales exista inversa.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Claramente 
+\begin_inset Formula $f$
+\end_inset
+
+ no es uno-a-uno y, por tanto, no es invertible, ya que como 
+\begin_inset Formula $3=f(2)=f(3)$
+\end_inset
+
+, la relación inversa 
+\begin_inset Formula 
+\[
+f^{\ast}=\{(2,1),(3,2),(3,3),(1,4)\}
+\]
+
+\end_inset
+
+no es una función pues 
+\begin_inset Formula $3$
+\end_inset
+
+ tiene dos imágenes distintas (
+\begin_inset Formula $2$
+\end_inset
+
+ y 
+\begin_inset Formula $3$
+\end_inset
+
+) bajo 
+\begin_inset Formula $f^{\ast}$
+\end_inset
+
+.
+ Si restringimos 
+\begin_inset Formula $f$
+\end_inset
+
+ al conjunto 
+\begin_inset Formula $\{1,2,4\}$
+\end_inset
+
+ (o a 
+\begin_inset Formula $\{1,3,4\}$
+\end_inset
+
+), la restricción resultante será uno-a-uno y, por lo tanto, invertible.
+ Así, una inversa de 
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\begin_inset Formula 
+\[
+g=\{(2,1),(3,2),(1,4)\}
+\]
+
+\end_inset
+
+en el conjunto 
+\begin_inset Formula $A_{1}=\{1,2,4\}$
+\end_inset
+
+.
+ También, la función 
+\begin_inset Formula $h=\{(2,1),(3,3),(1,4)\}$
+\end_inset
+
+ es una inversa de 
+\begin_inset Formula $f$
+\end_inset
+
+, ahora en 
+\begin_inset Formula $A_{2}=\{1,3,4\}$
+\end_inset
+
+.
+ Siendo formales, se tiene que: 
+\begin_inset Formula 
+\begin{align*}
+{f^{-1}\mid}_{A_{1}} & =g\\
+f^{-1}|_{A_{2}} & =h
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Determine si la función lineal 
+\begin_inset Formula $f$
+\end_inset
+
+, definida por 
+\begin_inset Formula 
+\[
+f(x)=2x+3
+\]
+
+\end_inset
+
+es invertible.
+ En tal caso calcule 
+\begin_inset Formula $f^{-1}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Claramente la función lineal 
+\begin_inset Formula $f$
+\end_inset
+
+ es uno-a-uno; por lo tanto es invertible.
+ Para determinar su inversa, tenemos en cuenta que 
+\begin_inset Formula 
+\[
+f=\{(x,y)\mid y=f(x)=2x+3,x\in\rz\}.
+\]
+
+\end_inset
+
+Por lo que 
+\begin_inset Formula 
+\begin{align*}
+f^{-1} & =f^{\ast}\\
+ & =\{(x,y)\mid(y,x)\in f\}\\
+ & =\{(x,y)\mid x=2y+3\}\\
+ & =\left\{ (x,y)\ \left\vert \ y=\frac{x-3}{2}\right.\right\} 
+\end{align*}
+
+\end_inset
+
+Se tiene así que para 
+\begin_inset Formula $x\in\rz$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+f^{-1}(x)=\frac{x-3}{2}.
+\]
+
+\end_inset
+
+En efecto, para 
+\begin_inset Formula $x\in\rz$
+\end_inset
+
+, se tiene 
+\begin_inset Formula 
+\begin{align*}
+f(f^{-1}(x)) & =f\left(\frac{x-3}{2}\right)\\
+ & =2\left(\frac{x-3}{2}\right)+3\\
+ & =x\\
+ & =I_{\rz}(x)\\
+f^{-1}(f(x)) & =f^{-1}\left(2x+3\right)\\
+ & =\frac{(2x+3)-3}{2}\\
+ & =x\\
+ & =I_{\rz}(x)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejercicios propuestos
+\end_layout
+
+\begin_layout Enumerate
+Determine en cada caso si la gráfica representa una función.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+subfigure[]{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../images/ejp-1-8-1g.png
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+subfigure[]{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-1-8-1h.pdf
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+subfigure[]{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-1-8-1c.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+subfigure[]{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-3-4-18e.pdf
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+subfigure[]{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-1-8-1f.pdf
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+subfigure[]{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-1-8-1j.pdf
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Un punto 
+\begin_inset Formula $P\left(x,y\right)$
+\end_inset
+
+ se mueve, en sentido horario, sobre la parábola 
+\begin_inset Formula 
+\[
+\left(x-2\right)^{2}+16\left(y+5\right)=0.
+\]
+
+\end_inset
+
+Exprese mediante una función de variable real la distancia del punto 
+\begin_inset Formula $P\left(x,y\right)$
+\end_inset
+
+ al punto 
+\begin_inset Formula $A\left(2,2\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "cap1prob3"
+
+\end_inset
+
+Una vía de ferrocarril cruza una carretera formándose un ángulo de 
+\begin_inset Formula $60^{0}$
+\end_inset
+
+, como lo muestra la figura 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-1-3.pdf
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una locomotora a 
+\begin_inset Formula $800$
+\end_inset
+
+ metros de la intersección se aleja de ella a razón de 
+\begin_inset Formula $100\dfrac{km}{h}.$
+\end_inset
+
+ Un automóvil a 
+\begin_inset Formula $800$
+\end_inset
+
+ metros de la intersección se acerca a ella a razón de 
+\begin_inset Formula $80\dfrac{km}{h}.$
+\end_inset
+
+ ¿Cuál es la distancia de separación entre el automóvil y la locomotora
+ en ese instante ?.
+ Exprese mediante una función de variable real, dependiente del tiempo 
+\begin_inset Formula $t$
+\end_inset
+
+, la distancia de separación entre la locomotora y el automóvil
+\begin_inset Formula $.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cierta cantidad de aceite fluye hacia el interior de un deposito en forma
+ de cono invertido a razón de 
+\begin_inset Formula $0.1\pi\,\frac{m^{3}}{\min}.$
+\end_inset
+
+ El deposito tiene un radio de 
+\begin_inset Formula $2.5m$
+\end_inset
+
+ en su parte superior y una profundidad de 
+\begin_inset Formula $10m$
+\end_inset
+
+.
+ Si el deposito inicialmente contiene 
+\begin_inset Formula $1.2m^{3}$
+\end_inset
+
+ de aceite.
+ Exprese mediante una función de variable real, dependiente de la altura
+ 
+\begin_inset Formula $h$
+\end_inset
+
+, la cantidad de aceite del recipiente.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-1-8-4.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\Delta ABC$
+\end_inset
+
+ isósceles con 
+\begin_inset Formula $AB=AC,$
+\end_inset
+
+ y 
+\begin_inset Formula $m\measuredangle BAC=\alpha.$
+\end_inset
+
+ Exprese mediante una función de variable real, dependiente del valor del
+ ángulo 
+\begin_inset Formula $\alpha,$
+\end_inset
+
+ el área del 
+\begin_inset Formula $\Delta ABC$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Una isla está ubicada en el punto 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $4\,km$
+\end_inset
+
+ mar adentro del punto más cercano 
+\begin_inset Formula $B$
+\end_inset
+
+ de una playa recta.
+ Una atleta, en la isla desea ir al punto 
+\begin_inset Formula $C$
+\end_inset
+
+, a 
+\begin_inset Formula $6$
+\end_inset
+
+ 
+\begin_inset Formula $km$
+\end_inset
+
+ de 
+\begin_inset Formula $B$
+\end_inset
+
+ playa abajo.
+ La mujer debe dirigirse hacia un punto 
+\begin_inset Formula $P$
+\end_inset
+
+, entre 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $C$
+\end_inset
+
+, en un bote de remos a 
+\begin_inset Formula $3.5\dfrac{km}{h}$
+\end_inset
+
+ y después caminar en forma recta de 
+\begin_inset Formula $P$
+\end_inset
+
+ a 
+\begin_inset Formula $C$
+\end_inset
+
+ a 
+\begin_inset Formula $6\dfrac{km}{h}.$
+\end_inset
+
+ Exprese mediante una función de variable real, dependiente de 
+\begin_inset Formula $x=BP,$
+\end_inset
+
+ el tiempo necesario para viajar desde 
+\begin_inset Formula $A$
+\end_inset
+
+ hacia 
+\begin_inset Formula $C,$
+\end_inset
+
+ pasando por el punto 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-1-6.pdf
+	lyxscale 20
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Exprese mediante una función de variable real, dependiente de 
+\begin_inset Formula $x,$
+\end_inset
+
+ el área del rectángulo que tiene dos vértices en el eje 
+\begin_inset Formula $x$
+\end_inset
+
+ y los otros dos en la parábola 
+\begin_inset Formula $y=16-x^{2},$
+\end_inset
+
+ por arriba del eje 
+\begin_inset Formula $x.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hay que construir una pileta de las dimensiones que se muestran.
+ Sólo se puede variar el ángulo 
+\begin_inset Formula $\theta$
+\end_inset
+
+ .
+ Exprese mediante una función de variable real, dependiente del ángulo 
+\begin_inset Formula $\theta,$
+\end_inset
+
+ el volumen de la pileta.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-1-8-8.pdf
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Un granjero desea cercar tres terrenos rectangulares adyacentes idénticos,
+ cada uno de ellos de 1800 pies cuadrados de área, incluyendo cerca en medio
+ de ellos.
+ Exprese mediante una función de variable real, dependiente de la profundidad
+ de los terrenos, el perímetro total para realizar está tarea.
+\end_layout
+
+\begin_layout Enumerate
+Dada una esfera de radio 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Exprese mediante una función de variable real, dependiente de 
+\begin_inset Formula $R$
+\end_inset
+
+, el volumen del cono circular recto de radio 
+\begin_inset Formula $r$
+\end_inset
+
+ y altura 
+\begin_inset Formula $h$
+\end_inset
+
+ que puede inscribirse en la esfera.
+\end_layout
+
+\begin_layout Enumerate
+Una partícula se mueve a lo largo de una línea recta, siendo su posición
+ 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ metros en todo tiempo 
+\begin_inset Formula $t>0$
+\end_inset
+
+ segundos 
+\begin_inset Formula 
+\[
+x\left(t\right)=\dfrac{5t+20}{t+1}+2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Completa la siguiente tabla:
+\begin_inset Formula 
+\[
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline  \ensuremath{t\left[s\right]}  &  \ensuremath{1}  &  \ensuremath{2}  &  \ensuremath{3}  &  \ensuremath{4}  &  \ensuremath{5}  &  \ensuremath{6}  &  \ensuremath{7}\\
+\hline  \ensuremath{x\left[m\right]}  &   &   &   &   &   &   &  
+\\\hline \end{tabular}\ \ 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Usa los resultados de la tabla para hacer un bosquejo de la gráfica de 
+\begin_inset Formula $x\left(t\right).$
+\end_inset
+
+ Con la ayuda de un software, gráfique 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $vs$
+\end_inset
+
+ 
+\begin_inset Formula $t.$
+\end_inset
+
+ Compare y analice las gráficas.
+\end_layout
+
+\begin_layout Enumerate
+¿En qué momento la partícula alcanza una posición de 
+\begin_inset Formula $3$
+\end_inset
+
+ metros? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Una hoja de papel de dimensiones 12 cm por 8 cm , se corta por las esquinas
+ en cuadrados de 
+\begin_inset Formula $x$
+\end_inset
+
+ cm de lado.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Muestre que el volumen que se puede construir a partir de la hoja viene
+ dado por 
+\begin_inset Formula $V(x)=4x(6-x)(4-x),0<x<4.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Complete la siguiente tabla:
+\begin_inset Formula 
+\[
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline  \ensuremath{x} \ensuremath{\left[cm\right]}  &  \ensuremath{0}  &  \ensuremath{1}  &  \ensuremath{2}  &  \ensuremath{3}  &  \ensuremath{4}\\
+\hline  \ensuremath{V} \ensuremath{\left[cm^{3}\right]}  &   &   &   &   &  
+\\\hline \end{tabular}\ .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Estime el máximo volumen que puede tener la caja ( Explique sus procedimientos)
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Una función está definida por 
+\begin_inset Formula $f(x)=3x+1,$
+\end_inset
+
+ 
+\begin_inset Formula $x\in R$
+\end_inset
+
+.
+ Determine el conjunto solución de la ecuación 
+\begin_inset Formula $f(2x)-f(x+1)=4.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Considere los conjuntos 
+\begin_inset Formula 
+\[
+A=\{x\in\nz\mid x<5\},B=\{x\in\nz\mid3\leq x\leq5\}.
+\]
+
+\end_inset
+
+Para cada una de las relaciones de 
+\begin_inset Formula $A$
+\end_inset
+
+ a 
+\begin_inset Formula $B$
+\end_inset
+
+ dadas a continuación determine su dominio y su rango.
+ Haga una gráfica de la relación e indique si la relación dada es una función.
+ En caso de serlo indique si es sobre, uno-a-uno o biyectiva.
+ Justifique todas sus respuestas.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\{(2,3),(3,5),(1,3),(4,4)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\{(1,3),(2,3),(3,4),(4,5)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T=\{(1,3),(1,4),(1,5)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $U=\{(1,3),(2,3),(3,3),(4,3)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $V=\{(1,4),(2,3)\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Considere, en cada caso, la función de variable real 
+\begin_inset Formula $f$
+\end_inset
+
+ definida por la fórmula dada.
+ Determine dominio y rango de la función e indique si es sobre, uno-a-uno
+ o biyectiva.
+ Haga una gráfica de la función.
+ Indique también, si los hay, los valores máximo y mínimo de la función.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=x^{2}+3x+2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=3x+7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=3x^{2}+x-4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=-x^{2}+x+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=2x^{2}-3x+5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=|x-2|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=|x^{2}+3x+2|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Para cada una de las funciones del ejercicio anterior determine las interseccion
+es de su gráfica con los ejes coordenados.
+ En cada caso determine el dominio de la función de variable real definida
+ por la fórmula dada.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sqrt{x^{2}+5x+6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\dfrac{2-x}{x^{2}+5x+6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\dfrac{\sqrt{2-x}}{x+3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\dfrac{x+1}{3x^{2}+x+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sqrt{|x|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sqrt{\dfrac{x-1}{2x+3}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sqrt{x^{2}+2x-15}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Considere la función definida por 
+\begin_inset Formula $g(x)=x^{3}+x^{2}+1$
+\end_inset
+
+.
+ ¿Está 
+\begin_inset Formula $3$
+\end_inset
+
+ en el rango de 
+\begin_inset Formula $g$
+\end_inset
+
+? ¿Es 
+\begin_inset Formula $g$
+\end_inset
+
+ una función uno-a-uno?
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ definida por 
+\begin_inset Formula $f(x)=\sqrt{2x+1}$
+\end_inset
+
+.
+ Encuentre los valores de 
+\begin_inset Formula $h$
+\end_inset
+
+ para los cuales 
+\begin_inset Formula $2+h$
+\end_inset
+
+ está en:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+El dominio de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+El rango de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+En cada caso indique si la relación real dada es una función.
+ En caso afirmativo indique el dominio de la misma.
+ En caso negativo, encuentre una función definida implícitamente por la
+ ecuación que define la relación.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\{(x,y)\mid x^{2}-y^{2}=1\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\{(x,y)\mid x^{2}+xy-3x=0\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T=\{(x,y)\mid x=1,x^{2}+x-y=0\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $U=\{(t,u)\mid t^{2}+u^{2}-2u=0\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $V=\{(t,s)\mid s^{3}+2s^{2}+s-t=0\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Considere la relación 
+\begin_inset Formula $R=\{(x,y)\mid Ax^{2}+Cy^{2}+Dx+Ey+F=0\}$
+\end_inset
+
+, donde 
+\begin_inset Formula $A,C,D,E$
+\end_inset
+
+ y 
+\begin_inset Formula $F$
+\end_inset
+
+ son reales dados.
+ Demuestre que:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A=C\neq0$
+\end_inset
+
+, la gráfica de 
+\begin_inset Formula $R$
+\end_inset
+
+ es una circunferencia, un punto o el conjunto vacío.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A=0$
+\end_inset
+
+ o 
+\begin_inset Formula $C=0$
+\end_inset
+
+, la gráfica de 
+\begin_inset Formula $R$
+\end_inset
+
+ es una parábola, dos rectas paralelas, una sola recta o el conjunto vacío.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "ejercicio1"
+
+\end_inset
+
+ En cada caso determine el dominio de 
+\begin_inset Formula $f+g,fg$
+\end_inset
+
+ y 
+\begin_inset Formula $f/g$
+\end_inset
+
+, para las funciones reales 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ definidas como se indica.
+ Encuentre además 
+\begin_inset Formula 
+\[
+(f+g)(x),(fg)(x),(f/g)(x)
+\]
+
+\end_inset
+
+para 
+\begin_inset Formula $x$
+\end_inset
+
+ en el dominio de la correspondiente función.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\dfrac{x}{x-2},\ g(x)=\sqrt{x^{2}-x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\dfrac{x-2}{x^{2}-3x+2},\ g(x)=\dfrac{2}{x+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sqrt{x^{2}+3x+2},\ g(x)=\dfrac{x}{x+2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sqrt{x+1},\ g(x)=\sqrt{x^{2}+x+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sqrt{\dfrac{x+1}{x-2}},\ g(x)=\sqrt{6+x-x^{2}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Como en el ejercicio anterior para las funciones 
+\begin_inset Formula 
+\[
+f=\{(a,0),(b,1),(c,-3),(d,-5)\},\ g=\{(a,3),(b,-5),(c,6),(e,9)\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ la función de variable real definida por 
+\begin_inset Formula $f(x)=5x+3$
+\end_inset
+
+.
+ Determine todos los valores de 
+\begin_inset Formula $x$
+\end_inset
+
+ para los cuales:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(2x)=2f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x+c)=f(x)+f(c)$
+\end_inset
+
+, si 
+\begin_inset Formula $c$
+\end_inset
+
+ es un real fijo dado.
+\begin_inset Newline newline
+\end_inset
+
+Haga lo mismo si 
+\begin_inset Formula $f(x)=5x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $f:\rz\longrightarrow\rz$
+\end_inset
+
+ una función.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ es una 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Aplicación lineal|textbf
+\end_layout
+
+\end_inset
+
+aplicación lineal si, y solo si para todo 
+\begin_inset Formula $x_{1},x_{2}\in\rz$
+\end_inset
+
+ se cumple que 
+\begin_inset Formula $f(x_{1}+x_{2})=f(x_{1})+f(x_{2})$
+\end_inset
+
+ y 
+\begin_inset Formula $f(x_{1}x_{2})=x_{1}f(x_{2})$
+\end_inset
+
+.
+ Demuestre que el conjunto de todas las aplicaciones lineales de 
+\begin_inset Formula $\rz$
+\end_inset
+
+ en 
+\begin_inset Formula $\rz$
+\end_inset
+
+, al cual notaremos 
+\begin_inset Formula $Lin(\rz,\rz)$
+\end_inset
+
+, es cerrado para las operaciones de adición de funciones y multiplicación
+ por funciones constantes.
+ Es decir, demuestre que si 
+\begin_inset Formula $f,g\in Lin(\rz,\rz)$
+\end_inset
+
+ y 
+\begin_inset Formula $k\in\rz$
+\end_inset
+
+ entonces: 
+\begin_inset Formula 
+\begin{align*}
+(f+g) & \in Lin(\rz,\rz)\\
+kf & \in Lin(\rz,\rz).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Demuestre que una función 
+\begin_inset Formula $f:\rz\longrightarrow\rz$
+\end_inset
+
+ es una aplicación lineal si, y solo si existe una constante 
+\begin_inset Formula $k\in\rz$
+\end_inset
+
+ tal que 
+\begin_inset Formula $f(x)=kx$
+\end_inset
+
+, para todo 
+\begin_inset Formula $x\in\rz$
+\end_inset
+
+.
+ Así, toda aplicación lineal es una función lineal.
+ ¿Es verdadero el recíproco?.
+\end_layout
+
+\begin_layout Enumerate
+En cada caso determine, si están definidas, las compuestas 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ y 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+, indicando sus dominios de definición.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f=\{(a,1),(2,-3),(c,d),(0,5)\},\ g=\{(1,3),(5,6),(a,4)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f=\{(3,2),(4,5),(6,7)\},\ g=\{(2,4),(5,6),(8,3)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ son funciones de variable real definidas por:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=2,\ g(x)=5x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=3,\ g(x)=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=x+1,\ g(x)=x-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=x^{2}+2x-3,\ g(x)=\sqrt{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sqrt{x-2},\ g(x)=x^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\dfrac{x}{x+3},g(x)=\sqrt{x+1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+En cada caso indique si la función dada es invertible.
+ En caso afirmativo, encuentre su inversa.
+ Si no es invertible, encuentre al menos dos restricciones de la función
+ dada que sean invertibles y halle las inversas de tales restricciones.
+ Utilice software adecuado para graficar la función (o una restricción de
+ la misma) y su inversa.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f=\{(1,3),(\pi,5),(\sqrt{2},3),(5,7)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g=\{(2,1),(3,5),(4,0),(6,1),(8,5)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+La función de variable real 
+\begin_inset Formula $f$
+\end_inset
+
+ definida por:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=5x-7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=ax+b$
+\end_inset
+
+, donde 
+\begin_inset Formula $a,b\in\rz$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=x^{2}-x-30$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=ax^{2}+bx+c$
+\end_inset
+
+, donde 
+\begin_inset Formula $a,b$
+\end_inset
+
+ y 
+\begin_inset Formula $c$
+\end_inset
+
+ son reales cualesquiera con 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sqrt{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=x^{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Una función 
+\begin_inset Formula $f:\rz\longrightarrow\rz$
+\end_inset
+
+ se denomina localmente invertible si existe un intervalo abierto 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+ tal que la restricción 
+\begin_inset Formula $f|_{\left]a,b\right[}$
+\end_inset
+
+ es invertible.
+ En tal caso 
+\begin_inset Formula $f|_{\left]a,b\right[}^{-1}$
+\end_inset
+
+ es una inversa local de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Encuentre al menos dos inversas locales para la función 
+\begin_inset Formula $f$
+\end_inset
+
+ definida por:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=x^{2}+3x+5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=x^{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función real invertible ¿Se puede afirmar que 
+\begin_inset Formula $f^{-1}=\dfrac{1}{f}$
+\end_inset
+
+? Justifique su respuesta.
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $a$
+\end_inset
+
+ un real positivo.
+ Una función 
+\begin_inset Formula $f:[-a,a]\longrightarrow\rz$
+\end_inset
+
+ se denomina
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– par
+\end_layout
+
+\end_inset
+
+ par si, y solo si 
+\begin_inset Formula 
+\[
+f(-x)=f(x)\ \mbox{para todo \ }x\in\lbrack-a,a].
+\]
+
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ es una función impar
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– impar
+\end_layout
+
+\end_inset
+
+ si, y solo si 
+\begin_inset Formula 
+\[
+f(-x)=-f(x)\ \mbox{para todo \ }x\in\lbrack-a,a].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Demuestre que si 
+\begin_inset Formula $f(x)=x^{2}+1$
+\end_inset
+
+, entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es par y que la función 
+\begin_inset Formula $g$
+\end_inset
+
+ definida por 
+\begin_inset Formula $g(x)=x^{3}+x$
+\end_inset
+
+ es impar.
+\end_layout
+
+\begin_layout Enumerate
+¿Es toda función constante una función par?
+\end_layout
+
+\begin_layout Enumerate
+Demuestre que una función lineal es par si, y solo si es constante e impar
+ si, y solo si es un múltiplo de la función idéntidad.
+ En particular, la función identidad es impar.
+\end_layout
+
+\begin_layout Enumerate
+Demuestre que la función cuadrática 
+\begin_inset Formula $f(x)=ax^{2}+bx+c$
+\end_inset
+
+ es una función par si, y solo si 
+\begin_inset Formula $b=0$
+\end_inset
+
+.
+ ¿Existen funciones cuadráticas impares?.
+\end_layout
+
+\begin_layout Enumerate
+Discuta la veracidad de la siguiente afirmación:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función par, su gráfica es simétrica respecto del eje 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+En cada caso indique si la proposición dada es Verdadera o falsa.
+ Justifique sus respuestas.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Toda función lineal es invertible.
+\end_layout
+
+\begin_layout Enumerate
+Una función lineal es invertible si, y solo si no es constante.
+\end_layout
+
+\begin_layout Enumerate
+Toda función lineal no constante es localmente invertible.
+\end_layout
+
+\begin_layout Enumerate
+Toda función cuadrática es invertible.
+\end_layout
+
+\begin_layout Enumerate
+Ninguna función cuadrática es invertible.
+\end_layout
+
+\begin_layout Enumerate
+Toda función cuadrática es localmente invertible.
+\end_layout
+
+\begin_layout Enumerate
+Una función real de variable real es invertible si, y solo si toda recta
+ paralela al eje 
+\begin_inset Formula $X$
+\end_inset
+
+ que intersecte su gráfica lo hace en un solo punto.
+\end_layout
+
+\begin_layout Enumerate
+Una función 
+\begin_inset Formula $f:\rz\longrightarrow\rz$
+\end_inset
+
+ es par si, y solo toda recta paralela al eje 
+\begin_inset Formula $X$
+\end_inset
+
+ que intersecte la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ lo hace en al menos dos puntos.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sea la función 
+\begin_inset Formula $f(x)=2x^{2}+x-3$
+\end_inset
+
+ y 
+\begin_inset Formula $g\left(x\right)=x^{3}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calcule 
+\begin_inset Formula $f+g,fg,\frac{f}{g}$
+\end_inset
+
+ y sus respectivos dominios.
+\end_layout
+
+\begin_layout Enumerate
+Calcule 
+\begin_inset Formula $\dfrac{f\left(3+h\right)-f\left(3\right)}{h}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Halle 
+\begin_inset Formula $\left(f\circ f\right)\left(x\right),\left(f\circ g\right)\left(x\right),\left(g\circ f\right)\left(x\right),\left(g\circ g\right)\left(x\right)$
+\end_inset
+
+ y sus respectivos dominios.
+\end_layout
+
+\begin_layout Enumerate
+Calcule 
+\begin_inset Formula $f\left(f\left(1\right)\right),\left(f\circ g\right)\left(0\right),\left(g\circ f\right)\left(-1\right),\left(g\circ g\right)\left(1\right).$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sean 
+\begin_inset Formula $f\left(x\right)=x^{4}+2x^{3}-3x^{2}-4x-5.$
+\end_inset
+
+ y 
+\begin_inset Formula $g\left(x\right)=3x^{4}+2x^{3}+7x-5.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hallar 
+\begin_inset Formula $h_{1}\left(x\right):=\dfrac{1}{2}\left[f\left(x\right)+g\left(x\right)\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hallar 
+\begin_inset Formula $h_{2}\left(x\right):=\dfrac{1}{2}\left[f\left(x\right)-g\left(x\right)\right].$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consideremos la función 
+\begin_inset Formula $f$
+\end_inset
+
+ definida por 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 
+\begin_inset Formula $=\dfrac{x^{2}-x+1}{x+2}$
+\end_inset
+
+ para 
+\begin_inset Formula $x\geq0.$
+\end_inset
+
+ ¿Existe algún valor
+\begin_inset Formula $\ a$
+\end_inset
+
+ del dominio de la función tal que 
+\begin_inset Formula $f(a)=a$
+\end_inset
+
+?
+\begin_inset Formula $.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "cap1prob35"
+
+\end_inset
+
+Sean las funciones: 
+\begin_inset Formula $f(x)=\dfrac{x^{2}-1}{x+1}$
+\end_inset
+
+ y 
+\begin_inset Formula $g(x)=$
+\end_inset
+
+ 
+\begin_inset Formula $-\sqrt{x^{2}-\frac{1}{4}}.$
+\end_inset
+
+ Hallar:
+\begin_inset VSpace -0.9in
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+multicolsep
+\end_layout
+
+\end_inset
+
+2.5 cm 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnsep
+\end_layout
+
+\end_inset
+
+1 cm
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\operatorname*{Dom}(f)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\operatorname*{Dom}(g)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(f+g\right)\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\operatorname*{Dom}(f+g)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(gf\right)\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\operatorname*{Dom}(gf)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(g\left(x\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(f\circ g\right)\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\operatorname*{Dom}(f\circ g)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(g\circ f\right)\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\operatorname*{Dom}(g\circ f)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\operatorname*{Dom}(f/g)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace -0.9in
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Realice el problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap1prob35"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, si:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{1+2x}{x^{2}}$
+\end_inset
+
+ y 
+\begin_inset Formula $g\left(x\right)=\sqrt{x-1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{x^{2}+9}{x^{4}-1}$
+\end_inset
+
+ y 
+\begin_inset Formula $g\left(x\right)=\sqrt{8-x^{2}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{1}{x^{4}-13x^{2}+36}$
+\end_inset
+
+ y 
+\begin_inset Formula $g\left(x\right)=\sqrt{x^{2}-1}.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Para cada una de las funciones 
+\begin_inset Formula $f,g,h$
+\end_inset
+
+ dadas a continuación halle el dominio, el rango, y con ayuda de un software,
+ elabore la gráfica.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{tabular}{cl}
+ \ensuremath{\dfrac{x^{2}-9}{x-3}}  &  , si \ensuremath{x\neq3}\\
+\multicolumn{1}{l}{\ensuremath{1} } &  , si \ensuremath{x=3.} 
+\end{tabular}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+g\left(x\right)=\left\{ \begin{tabular}{ll}
+ \ensuremath{\sqrt{x^{2}-4}}  &  , si \ensuremath{x<1}\\
+ \ensuremath{2x-1}  &  , si \ensuremath{x\geq1.} 
+\end{tabular}\ \ \right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+h\left(x\right)=\dfrac{\left\vert x\right\vert }{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Considerando las funciones del ejemplo anterior calcule 
+\begin_inset Formula $f+g,fg,h\circ g,g\circ f$
+\end_inset
+
+ y determine, para cada caso, el dominio respectivo.
+\end_layout
+
+\begin_layout Enumerate
+Sea la función
+\begin_inset Formula 
+\[
+g\left(x\right)=\left\{ \begin{tabular}{ll}
+ \ensuremath{x^{2}+3x-2}  &  , si \ensuremath{0<x<1}\\
+ \ensuremath{x-1}  &  , si \ensuremath{x\geq1.} 
+\end{tabular}\ \ \ \ \ \ \right.
+\]
+
+\end_inset
+
+Calcule el dominio de 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ ¿
+\begin_inset space \space{}
+\end_inset
+
+Las expresiones 
+\begin_inset Formula $g\left(1\right),g\left(-1\right),g\left(0\right),g\left(\dfrac{1}{2}\right)$
+\end_inset
+
+ están bien definidas?.
+ En caso afirmativo determine la imagen, en caso negativo, Justifique.
+\end_layout
+
+\begin_layout Enumerate
+Sea la función 
+\begin_inset Formula $f\left(x\right)=\left\vert 3x-2\right\vert +\left\vert x+1\right\vert $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Reescriba la función sin barras de valor absoluto .
+\end_layout
+
+\begin_layout Enumerate
+Elabore la gráfica.
+\end_layout
+
+\begin_layout Enumerate
+Calcule 
+\begin_inset Formula $f(\frac{2}{3}),f(\frac{3}{2}),f\left(2\right),f\left(3\right).$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine los dominios de cada una de las funciones dadas
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+h\left(x\right)=\sqrt{\allowbreak6x^{3}-5x^{2}-2x+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+g\left(u\right)=\dfrac{5u+1}{\allowbreak6u^{3}+11u^{2}-3u-2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(u\right)=\dfrac{\sqrt{\allowbreak6u^{3}-5u^{2}-2u+1}}{\allowbreak6u^{3}+11u^{2}-3u-2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+s\left(y\right)=\dfrac{\sqrt{3y^{3}+y^{2}-6y-2}}{2y^{2}+y-3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+g\left(t\right)=\sqrt{\dfrac{5t-2}{t^{2}-1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+g\left(x\right)=\sqrt{\dfrac{5x^{2}+2}{x^{2}-4}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\sqrt{\dfrac{x-2}{\left(x^{2}+x-1\right)\left(1-2x^{2}\right)}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+h\left(z\right)=\sqrt[3]{\dfrac{5z-2}{z^{2}-1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+s\left(x\right)=\sqrt[7]{\dfrac{x^{5}+2x^{2}+2}{x^{2}+7x-1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+t\left(y\right)=\dfrac{\sqrt{2y^{2}+y-1}}{\sqrt{7y-10y^{2}-1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $F(x)=\sqrt{(x-3)(x-1)}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Determine el dominio de 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Pruebe que 
+\begin_inset Formula $F(2-\sqrt{10})=3$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $g\left(x\right)=x^{2}+x-1$
+\end_inset
+
+, calcule:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\dfrac{g\left(x+h\right)-g\left(x\right)}{h}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dfrac{g\left(x+\dfrac{1}{h}\right)-g\left(\dfrac{1}{h}\right)}{x}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(2x\right)-g\left(3x\right).$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Pruebe que si 
+\begin_inset Formula $c\in\rz,\left\{ a_{i}\right\} _{i\in\nz}$
+\end_inset
+
+ y 
+\begin_inset Formula $\left\{ b_{i}\right\} _{i\in\nz}$
+\end_inset
+
+ sucesiones de números reales, entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}{c=cn.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}{ca_{i}=c}\sum_{i=1}^{n}{a_{i}.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}\left({a_{i}+b_{i}}\right){=}\sum_{i=1}^{n}{a_{i}+}\sum_{i=1}^{n}{b_{i}.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Pruebe, utilizando inducción matemática, que el término n-ésimo de la serie
+ asociada a la sucesión:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ i\right\} _{i\in\nz}$
+\end_inset
+
+ está dado por 
+\begin_inset Formula 
+\[
+\frac{n(n+1)}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ i^{2}\right\} _{i\in\nz}$
+\end_inset
+
+ está dado por 
+\begin_inset Formula 
+\[
+\frac{n(n+1)(2n+1)}{6}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ i^{3}\right\} _{i\in\nz}$
+\end_inset
+
+ está dado por 
+\begin_inset Formula 
+\[
+\frac{1}{4}n^{2}+\frac{1}{2}n^{3}+\frac{1}{4}n^{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcule:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\sum_{k=4}^{22}{(k-8)^{2}.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\sum_{n=1}^{5}\left(n+3\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\sum_{n=1}^{15}\left(2n-1\right)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\sum_{n=1}^{350}n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Encuentre una sucesión con dominio 
+\begin_inset Formula $\nz$
+\end_inset
+
+ cuyo rango sea el mismo de los conjuntos dados (los mismos términos en
+ el mismo orden).
+ Además para cada una de las sucesiones, determine sus cinco primeros términos.
+ Finalmente, determine los cinco primeros términos de la serie asociada
+ a la sucesión.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\{n^{2}\}_{n=0}^{\infty}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \frac{2n}{n-1}\right\} _{n=2}^{\infty}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \frac{n}{n+1}\right\} _{n=0}^{\infty}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \sqrt{n}\right\} _{n=0}^{\infty}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \frac{n}{\sqrt{n-3}}\right\} _{n=4}^{\infty}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Un subconjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ de 
+\begin_inset Formula $\rz$
+\end_inset
+
+ se denomina 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Conjunto!– enumerable
+\end_layout
+
+\end_inset
+
+contable o 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Conjunto!– contable
+\end_layout
+
+\end_inset
+
+enumerable si está contenido en el rango de una sucesión.
+ El conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ es finito, si es vacío o si existen un número natural 
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset space \space{}
+\end_inset
+
+y 
+\begin_inset space \space{}
+\end_inset
+
+una función biyectiva 
+\begin_inset Formula $f:\{x\in\nz\mid x\leq k\}\longrightarrow A$
+\end_inset
+
+.
+ Demuestre:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Todo conjunto finito de números reales es contable.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ es contable si, y solo si existen un subconjunto 
+\begin_inset Formula $J\subseteq\nz$
+\end_inset
+
+ y una función biyectiva 
+\begin_inset Formula $\beta:J\longrightarrow A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+los conjuntos 
+\begin_inset Formula $\nz,\gz$
+\end_inset
+
+ y 
+\begin_inset Formula $\qz$
+\end_inset
+
+ son contables.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cuales son los primeros 
+\begin_inset Formula $6$
+\end_inset
+
+ términos de cada una de las sucesiones que poseen el término n-ésimo dado.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\dfrac{n-2}{n}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\cos\left[\left(2n-1\right)\dfrac{\pi}{2}\right].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\dfrac{\left(-1\right)^{n-1}\sin\left(\pi n\right)}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\sqrt[n]{n}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\dfrac{3^{n}}{n!}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\dfrac{\cos\left(n\right)}{n}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}={\displaystyle \sum\limits _{k=1}^{n}}\dfrac{1}{k^{2}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}={\displaystyle \sum\limits _{k=1}^{n}}\dfrac{1}{k\left(k+1\right)}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}={\displaystyle \sum\limits _{k=0}^{n}}\left(\dfrac{2}{3}\right)^{k}.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcule la primeras 6 sumas parciales de las siguientes series.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \sum\limits _{n=1}^{\infty}}\dfrac{1}{n^{2}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \sum\limits _{n=1}^{\infty}}\dfrac{1}{\left(4n-3\right)\left(4n+1\right)}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \sum\limits _{n=1}^{\infty}}\dfrac{n}{n+1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \sum\limits _{n=1}^{\infty}}\left(\dfrac{2}{5}\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \sum\limits _{n=1}^{\infty}}\dfrac{1}{3^{n}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \sum\limits _{n=1}^{\infty}}\left(\dfrac{1}{n}-\dfrac{1}{n+1}\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \sum\limits _{n=0}^{\infty}}\dfrac{4^{n+1}}{5^{n}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \sum\limits _{n=1}^{\infty}}\dfrac{1}{e^{2n}}.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\end_layout
+
+\end_body
+\end_document

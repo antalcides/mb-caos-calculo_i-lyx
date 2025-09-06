@@ -1,0 +1,25 @@
+\begin{tikzpicture}[scale=1.5]
+  \begin{axis}[ thick,
+    width=6cm,
+    height=6cm,
+    axis lines=middle, 
+    xmin=-4, xmax=5.5,
+    ymin=-2.5, ymax=2.8]
+    \addplot +[no markers,
+      raw gnuplot,
+      thick,
+      empty line = jump % not strictly necessary, as this is the default behaviour in the development version of PGFPlots
+      ] gnuplot {
+      set contour base;
+      set cntrparam levels discrete 0.003;
+      unset surface;
+      set view map;
+      set isosamples 500;
+      set samples 500;
+      splot  2* (x^2  + y^2)^2 - 25*(x^2-y^2);
+    };
+\node [right,fill=blue!20!,draw=blue] at (axis cs: 0.1,1.6) {\tiny $ 2(x^2  + y^2)^2 = 25(x^2-y^2)$};
+\node [right] at (axis cs: 0,2.5) {$ f(x)$};
+\node [right] at (axis cs: 4.5,0.2) {$ x$};
+  \end{axis}
+\end{tikzpicture}

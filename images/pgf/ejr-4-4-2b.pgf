@@ -1,0 +1,59 @@
+\newcommand*{\PhM}{\phantom{-}}%
+
+\newcommand{\pLabel}{%
+\color{blue}
+$f'(x) = \begin{cases}
+6x,  & \mbox{si} \PhM  x \leq -1  \\[0.8ex]
+N.D,  & \mbox{si} \PhM  x =1  \\[0.8ex]
+  6 ,  & \mbox{si} \PhM   x> 1
+ \end{cases}
+$
+}
+\begin{tikzpicture}[scale=1,xscale=1,yscale=0.5,
+    thick,
+   % >=stealth',
+dotf/.style = {xscale=1,yscale=2,
+      draw,
+      fill = blue!40!black,
+      circle,
+      inner sep = 0pt,
+      minimum size = 4pt
+    },
+    dot/.style = {xscale=1,yscale=2,
+      draw,
+      fill = white,
+      circle,
+      inner sep = 0pt,
+      minimum size = 4pt
+    }]
+\tkzInit[xmin=-1.5, xmax=3.5,  ymin=-6.5, ymax=7]
+\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+%\tkzGrid
+\tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelX[draw=fondpaille,orig=false]
+\tkzLabelX[text=blue,below = 8pt]
+\tkzDrawY[label={\textit{f(x)}},below= -12pt,Maroon,ultra thick,color=Maroon]
+\tkzLabelY[draw=fondpaille]
+\tkzDefPoint(-1,0){O}
+\tkzDefPoint(0,1){P}
+\tkzDefPoint(0,-1){Q}
+\tkzDefPoint(1,4){C}
+\tkzDefPoint(1,6){A}
+%\tkzDefPoint(0,6){B}
+%\tkzText[draw,color= red,fill =red!20,draw=red](2,3.5){\plabel}
+\node [right,fill=blue!20!,draw=blue] at ( 0.5,8.3) {\small\pLabel};
+\tkzFct[color=red,ultra thick,domain=1:2.8,-latex]{6}
+\tkzFct[color=red,ultra thick,domain=-1:1,latex-]{6*x}
+% \tkzFct[color=red,ultra thick,domain=1:3,-latex]{-(x-1)*(x-2)}
+% \tkzFct[color=red,ultra thick,domain=-1.5:-1,latex-]{x**4-1}
+% \filldraw[dotf](P) circle (3pt);
+% \tkzLabelPoint[above ](P){}
+% \filldraw[dot](Q) circle (3pt);
+% \tkzLabelPoint[below ](Q){}
+% \filldraw[dotf](C) circle (3pt);
+% \tkzLabelPoint[above ](C){}
+% \filldraw[dotf](O) circle (3pt);
+% \tkzLabelPoint[above ](O){}
+\filldraw[dot](A) circle (3pt);
+\tkzLabelPoint[above ](A){}
+\end{tikzpicture}

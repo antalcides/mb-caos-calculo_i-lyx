@@ -1,0 +1,34 @@
+%\documentclass{article} 
+%\usepackage{tkz-euclide}
+%\usetkzobj{all}
+%\usepackage{tkz-fct}  
+%\usetikzlibrary{calc}
+%\usepackage[active,pdftex,tightpage]{preview}
+%\usetikzlibrary{positioning}
+%\PreviewEnvironment[]{tikzpicture}
+%\begin{document} 
+\tkzfctset{tan style/.style={-,>=latex,blue}}  
+
+\def\alpha{3} 
+
+\newcommand\derivative[4]{%
+    \tkzDefPointByFct[draw](#1) \tkzGetPoint{start}
+  \tkzDefPointByFct[draw](#2) \tkzGetPoint{end}
+  \draw[thin,|-|,yshift=-3pt] (start) -- node[black,fill=white,below] {#3}(start-|end);  
+  \draw[thin,|-|,xshift=3pt] (start-|end) -- node[black,fill=white,right] {#4}(end); 
+  \draw[thin] (start) --(end); 
+} 
+
+\begin{tikzpicture}[scale=2]     
+  \tkzInit[xmin=-3,xmax=2.5,ymax=3,ymin=-2]
+  %\tkzClip[space=1]
+  \tkzDrawX[label={\textit{x}}]
+\tkzDrawY[label={\textit{y}}]
+  \tkzFct[domain=-3:5,samples=200,id=ln,line width=0.5pt,color=blue,ultra thick]{exp(x)} 
+%     \tkzDrawTangentLine[kl=1,kr=5](1)
+%     \derivative{1}{4}{$\Delta x$}{$\Delta y$}    
+    \tkzText[draw=red,fill = red!20](1,1.5){$f(x)=a^x$}
+   % \tkzText[blue,draw,fill = blue!20](2.8,3.5){$g(x)=x$}  
+\end{tikzpicture} 
+
+%\end{document} 

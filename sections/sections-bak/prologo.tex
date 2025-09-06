@@ -1,0 +1,140 @@
+%% This document created by Scientific Word (R) Version 3.5
+%\usepackage[spanish]{babel}%
+%\addtolength{\headwidth}{\marginparsep}
+%\addtolength{\headwidth}{\marginparwidth}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+%\fancyhf{yj}
+%\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]%
+%{\markboth{\MakeUppercase{\thechapter.\ #1}}{}}
+
+\documentclass[12pt]{book}%
+\usepackage{amsbsy}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{zahlen}
+\usepackage[dvips]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\newcommand{\bigrule}{\titlerule[0.5mm]}
+\titleformat{\chapter}[display]
+{\sl\bfseries\Huge} { \sc\Large\chaptertitlename\ \\
+\bfseries\LARGE \textcolor{white}{.....}\thechapter}{1ex}
+{\titlerule \vspace{4mm} \filleft {\filcenter}} [\vspace{0.5mm}
+\bigrule]
+
+
+%
+\setcounter{MaxMatrixCols}{30}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.00.0.2570}
+%TCIDATA{CSTFile=book.cst}
+%TCIDATA{Created=Monday, August 04, 2003 08:59:00}
+%TCIDATA{LastRevised=Sunday, June 13, 2004 15:48:06}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\Blank Document">}
+%TCIDATA{PageSetup=72,72,72,72,0}
+%TCIDATA{AllPages=
+%F=36,\PARA{038<p type="texpara" tag="Body Text" >\hfill \thepage}
+%}
+\setlength{\textheight}{20 cm} \setlength{\textwidth}{14cm}
+\headheight-0.5cm \oddsidemargin+1.5 cm \evensidemargin+1.0 cm
+\topmargin+1.0 cm \headsep+1.0 cm \pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase {\chaptername \ \thechapter.\ #1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\MakeUppercase{\thesection.\ #1}}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\newcommand{\helv}{\fontfamily{phv}\fontseries{b}\fontsize{9}{11}\selectfont}
+\fancyhf{} \fancyhead[LE,RO]{\helv \thepage} \fancyhead[LO]{\helv
+\rightmark} \fancyhead[RE]{\helv \leftmark} \fancyfoot[LE,RO]{}
+\fancyfoot[RO,LE]{\helv Castañeda / Prato / Jiménez  }
+\fancyfoot[CO,RE]{}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{algorithm}{Algoritmo}[section]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{conjecture}[theorem]{Conjetura}
+\newtheorem{lemma}{Lema}[section]
+\newtheorem{proposition}{Proposici\'on}[section]
+\newtheorem{axiom}{Axioma}[section]
+\newtheorem{remark}{Observaci\'on}[section]
+\newtheorem{example}{Ejemplo}[section]
+\newtheorem{exercise}{Ejercicio}[section]
+\newtheorem{definition}{Definici\'on}[section]
+\newenvironment{proof}[1][Prueba]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\newenvironment{exam}[1][Ejercicio]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\newenvironment{sol}[1][Solución]{\textbf{#1.} }
+\clearpage
+\begin{document}
+\pagestyle{plain}
+
+\chapter*{Prólogo}
+ El presente texto es, en principio, sobre problemas y
+ejercicios de
+ C\'alculo diferencial de funciones reales de variable real; en el futuro,
+ sin embargo, pretende convertirse en un texto de C\'alculo diferencial. Por esa
+ raz\'on, m\'as que una simple enumeraci\'on de teoremas y resultados b\'asicos
+  que fundamenten las soluciones de los ejercicios y problemas presentados,
+   incluimos el desarrollo te\'orico de los primeros cap\'{\i}tulos. Estamos completamente
+    convencidos  de la necesidad, por parte del estudiante, de una fundamentaci\'on s\'olida
+     en los principios te\'oricos, como
+   condici\'on previa para obtener resultados cualitativos y cuantitativos \'optimos en los cursos
+   de c\'alculo.
+   \paragraph{}La denominaci\'on provisional del texto como ``Problemario"
+   no debe llevar a confundirlo con un simple ``recetario". A trav\'es de nuestra ya larga experiencia
+   en la ense\~nanza del C\'alculo, hemos sido testigos de la ``capacidad" del estudiante
+    promedio-e incluso de un buen n\'umero por debajo de ese promedio-  de repetir cabalmente
+    soluciones prefabricadas a ejercicios y problemas de "aplicaciones", casi de manera
+     autom\'atica, sin una consciencia clara de los, por lo general, realmente pocos principios
+     subyacentes en sus c\'alculos y procedimientos. Principios
+     que deben ser presentados con claridad y, en lo posible,
+     rigurosidad por el profesor, evitando a toda costa dar a los estudiantes la falsa y nefasta
+     impresi\'on de que el C\'alculo y, en general, las
+     Matem\'aticas, no son m\'as que un compendio de resultados
+     inertes que deben ser memorizados y aplicados los correspondientes en una
+     situaci\'on espec\'{\i}fica, de un n\'umero pr\'acticamente ilimitado posible de ellas.
+     \paragraph{}Dado que el texto es sobre C\'alculo
+     diferencial de {\em funciones reales de variable real}, los objetos sobre los cuales
+se trabajar\'a son funciones definidas en subconjuntos del
+conjunto de los n\'umeros reales y con valores o ``im\'agenes"
+reales. En el primer cap\'{\i}tulo se presentan los principales
+t\'opicos relativos a dichas funciones y los cuales son
+importantes para el desarrollo mismo del curso. Algunas de las
+definiciones que se presentan son tambi\'en v\'alidas para
+funciones en general. Si bien dicho primer cap\'{\i}tulo se supone
+conocido por un curso previo de {\em Algebra de reales}, lo hemos
+incluido para facilitar, por una parte, el tr\'ansito hacia el
+curso mismo de C\'alculo y, por otra, con fines diagn\'osticos.
+\paragraph{}Prerrequisitos importantes para el curso son:
+\begin{enumerate}
+\item El Algebra de reales. Es decir, el conocimiento y manejo
+b\'asico de la estructura de campo $(\rz,+,\cdot)$, constituida
+por el conjunto de los n\'umeros reales, $\rz$, con las
+operaciones de adici\'on y multiplicaci\'on. Otras propiedades,
+topol\'ogicas (geom\'etricas), necesarias se introducen en
+ el cap\'{\i}tulo 2. \item Trigonometr\'{\i}a b\'asica. En
+particular, manejo de las razones trigonom\'etricas para \'angulos
+cualesquiera y las identidades fundamentales.
+\end{enumerate}
+Se supone un conocimiento de tales t\'opicos gracias a un curso
+previo de Algebra y Trigonometr\'{\i}a. Para consultas sobre estos
+temas se recomiendan \cite{Taylor}, \cite{Vance} y \cite{leh},
+especialmente. Tambi\'en textos de m\'as reciente edici\'on como
+\cite{Lei} y \cite{Swo} pueden ser de utilidad.
+\paragraph{}Se ha buscado presentar ilustraciones de los conceptos centrales con
+ ejercicios y problemas modelos resueltos, proponiendo luego ejrcicios que buscan fomentar
+ las capacidades de observaci\'on, an\'alisis, interpretaci\'on y s\'{\i}tesis de los
+ estudiantes. Estamos abiertos a las sugerencias y cr\'{\i}ticas tanto de estudiantes como de
+ colegas, convencidos de que a trav\'es de ellas nuestro proyecto recibir\'a la retroalimentaci\'on
+  necesaria para mejorar y crecer.
+
+  \vskip0.5cm
+  Los autores.
+
+\input{Biblio}
+\end{document}

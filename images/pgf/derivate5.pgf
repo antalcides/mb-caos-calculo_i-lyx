@@ -1,0 +1,24 @@
+% \documentclass[]{scrartcl}
+% \usepackage{tkz-fct}
+% \thispagestyle{empty}        
+% \usepackage[active,pdftex,tightpage]{preview}
+% \usetikzlibrary{positioning}
+% \PreviewEnvironment[]{tikzpicture}
+% \begin{document} 
+
+   \begin{tikzpicture} [xscale=2]
+     \tkzInit[xmin = 0, xmax = 5,ymin = -1, ymax = 5]
+     \tkzDrawXY[noticks] 
+     \tkzFct[domain = 0:5]{(-1)*x**4+10*x**3-35*x**2+50.5*x-23.5}   
+     \tkzfctset{tan style/.style={-,>=latex,blue}}  
+        \foreach \x/\n in {1.43579/c1,2.3992/c2,3.6650/c3} {%
+                    \tkzDrawTangentLine[kr=.5,kl=.5](\x) 
+                    \draw[dashed] (tkzPointResult)-|(\x,0) node[below right]{$\n$};
+                    \node[above=8pt] at (tkzPointResult){$f'(\n)=0$};
+                    \tkzDrawPoint(tkzPointResult)}  
+      \foreach \x/\n in {0.8746/a,4.2769/b} {%
+                       \tkzDefPointByFct[draw](\x)
+                       \node[below right] at (tkzPointResult){$\n$};}   
+      \end{tikzpicture}
+
+%\end{document}   

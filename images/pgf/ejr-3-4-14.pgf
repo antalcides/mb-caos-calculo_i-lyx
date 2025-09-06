@@ -1,0 +1,27 @@
+\begin{tikzpicture}[scale=2]
+\tkzInit[xmin=-6,xmax=4,ymin=-20,ymax=80,ystep=20]
+\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+%\tkzGrid
+\tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+\tkzLabelX[draw=fondpaille,orig=false]
+\tkzDrawY[label={\textit{f(x)}},below= -18pt,Maroon,ultra thick,color=Maroon]
+\tkzLabelY[draw=fondpaille]
+% \tkzVLine[color =blue,
+% style = dashed,
+% line width = 1pt]{2}
+\coordinate (A) at (2,0.6);
+\coordinate (B) at (2,0);
+\coordinate (C) at (0,0.6);
+\tkzVTick[mark=-,mark size=2pt,mark options={color=Maroon,line width=1pt}]{12}
+\tkzLabelPoint[left=5pt,green](C){$12$}
+\filldraw[green](A) circle (1pt);
+\tkzLabelPoint[below right,green ](A){$P$}
+\draw[gray,dotted, ultra thick] (A)--(B);
+\draw[gray,dotted, ultra thick] (A)--(C);
+\tkzText[draw,color= red,fill =red!20,draw=red](4,62.58){$f(x)=3x^2+5x-10$}
+\tkzText[draw,color= blue,fill = blue!20,draw=blue](4.5,50.25){$g(x)=17x-22$}
+
+%\tkzAxeXY[ultra thick]
+\tkzFct[color=red,ultra thick,domain=-6:4,latex-latex]{3*x**2+5*x-10}
+\tkzFct[color=blue,ultra thick,domain=0.22:4,latex-latex]{17*x-22}
+\end{tikzpicture}

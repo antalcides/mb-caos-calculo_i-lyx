@@ -1,0 +1,57 @@
+%
+% Style-option `Zahl-Mengen' to use with LaTeX v2.09
+% Copyright (C) Frank Mittelbach
+%
+% Fehlermeldungen bitte an F. Mittelbach
+%                          FB Mathematik JoGu Universit"at
+%                          D-6500 Mainz
+%
+% ACHTUNG: Diese Datei bitte nur "andern, wenn die Variante unter einem
+%          neuen Namen (nicht unter einer neuen Versionsnummer)
+%          abgespeichert wird. Fehlermeldungen bitte nach Mainz weiterleiten.
+%          Auf diese Weise bleiben die Versionen "uberschaubar.
+%
+%
+% Version:     Datum:    "Anderungen:
+%
+%  1.0a        19.1.88
+%  1.0b        1.3.88    lokales \makeatletter damit Datei auch mit
+%                        \input eingelesen werden kann. Wird von
+%                        EXAMEN.STY verwendet.
+%  1.1a        2.3.88    Bug fix: In \cz wurde irrt"umlich deep 0pt
+%                        vergessen.
+%                        Au"serdem wurde pt durch \p@ und 0pt durch \z@
+%                        ersetzt.
+%
+
+\typeout{Style-Option: `Zahl-Mengen' v1.1a \space\space
+         <2.3.88> (F.M.)}
+
+% Macros fuer die Zahlmengen R Z Q C etc.
+
+
+{\makeatletter   % dies ist lokal, damit man die Datei wahlweise
+                 % mit \input oder mit \documentstyle[...] einlesen kann.
+
+\gdef\rz{\relax\ifmmode I\hskip -3\p@ R\else
+    \hbox{$I\hskip -3\p@ R$}\fi} %reelle Zahlen
+\gdef\nz{\relax\ifmmode I\hskip -3\p@ N\else
+    \hbox{$I\hskip -3\p@ N$}\fi} %nat. Zahlen
+\gdef\gz{\relax\ifmmode Z\hskip -4.8\p@ Z\else
+    \hbox{$Z\hskip -4.8\p@ Z$}\fi} %ganze Zahlen
+\gdef\cz{\relax\ifmmode C\hskip-4.8\p@\vrule \@height 5.8\p@
+\@depth\z@
+    \hskip 6.3\p@\else
+    \hbox{$C\hskip-4.8\p@\vrule \@height 5.8\p@ \@depth\z@ \hskip 6.3\p@$}\fi}
+\gdef\qz{\relax\ifmmode Q\hskip-5.0\p@\vrule
+          \@height 6.0\p@ \@depth \z@ \hskip 6\p@\else
+    \hbox{$Q\hskip-5.0\p@\vrule \@height 6.0\p@ \@depth \z@ \hskip 6\p@$}\fi}
+\gdef\hz{\relax\ifmmode I\hskip -3\p@ H\else
+    \hbox{$I\hskip -3\p@ H$}\fi} % obere komplexe Halbebene
+\gdef\kz{\relax\ifmmode I\hskip -3\p@ K\else
+    \hbox{$I\hskip -3\p@ K$}\fi} % riemannsche Zahlenkugel
+\gdef\fz{\relax\ifmmode I\hskip -3\p@ F\else
+    \hbox{$I\hskip -3\p@ F$}\fi}
+\gdef\lz{\relax\ifmmode I\hskip -3\p@ L\else
+    \hbox{$I\hskip -3\p@ L$}\fi}
+}  %  @ ist wieder other (oder auch nicht.)

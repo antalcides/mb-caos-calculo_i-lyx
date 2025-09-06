@@ -1,0 +1,27 @@
+\usepackage[spanish,es-tabla]{babel} % colocarla para latex y pdflatex %%%%%%%%
+\usepackage[latin1]{inputenc} 
+\usepackage[utf8]{inputenc}
+%%%%%%%%%%%%%%% para usar pdflatex
+\usepackage{auto-pst-pdf}
+\ifpdf
+  \usepackage{tikz}
+\else
+  \usepackage{pst-plot}
+\fi
+%%%%%%%%%%%%%%%%%%%Escoger el fromato de la grafica adecuada%%%%%%%%%%%%%
+\ifpdf
+  \DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\else
+  \DeclareGraphicsExtensions{.eps, .ps}
+\fi
+%%%%%%%%%%%%%%%%%  Configura margenes de las paginas%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\geometry{
+  paper=letterpaper,
+  %showframe,
+  %landscape,
+  left=3cm,
+  right=5cm,
+  top=2.5cm,
+  bottom=2cm,
+  asymmetric% <- added
+}

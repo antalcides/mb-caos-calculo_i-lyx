@@ -1,0 +1,25 @@
+ \begin{tikzpicture}[scale=1]
+\tkzInit[xmin=-5, xmax=5,  ymin=-4, ymax=4]
+\tkzGrid
+ \draw[-latex] (-2.5,-2.5) -- (3.5,-2.5) node[right] {$x$};
+\tkzDefSetOfPoints{-2.5/-2.5,-2/-2.5,-1.5/-2.5,-1/-2.5,-0.5/-2.5,0/-2.5,%
+.5/-2.5,1/-2.5,1.5/-2.5,2/-2.5,2.5/-2.5,3/-2.5
+                                                                  }
+\tkzDrawSetOfPoints[mark=|, mark size=1.5pt]
+\tkzJoinSetOfPoints[thick, color=Maroon]
+\draw[-latex](-2.3,-3) -- (-2.3,4.5) node[above] {$f(x)$};
+\tkzDefSetOfPoints{-2.3/-3,-2.3/-2.5,-2.3/-2,-2.3/-1.5,-2.3/-1,%
+-2.3/-0.5,-2.3/0,-2.3/0.5,-2.3/1,-2.3/1.5,-2.3/2,-2.3/2.5,-2.3/3,-2.3/3.5,-2.3/4
+                                                                                                                 }
+\tkzDrawSetOfPoints[mark=-, mark size=1.5pt]
+\tkzJoinSetOfPoints[thick, color=Maroon]
+% \tkzDefPoint(0,0){O}
+% \tkzDefPoint(1.5,1.5){P}
+% \tkzDrawPoint[blue](O)
+ %\draw [red, thick](-2.5,4) .. controls (1,1) .. (-1,2);
+\draw[red, thick] (-2.5,4) .. controls (-2.5,1) and (-1,2.5) .. (0,2);
+\draw[red, thick] (0,2) .. controls (2.5,1) and (5,0) .. (0,-1.2);
+\draw[red, thick] (0,-1.2) .. controls (-1.5,-1.5) and (-0.5,-1.5) .. (-2.5,-3);
+
+
+\end{tikzpicture}

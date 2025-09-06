@@ -1,0 +1,12 @@
+\begin{tikzpicture}[decoration={
+markings,
+mark=at position .55 with \fill circle (2pt) node[above right] {$P$};}]
+\draw[->] (-.5,0)--(6,0) node[below] {$x$};
+\draw[->] (0,-.5)--(0,6) node[left] {$y$};
+\coordinate (1) at (.5,2.75);
+\coordinate (5) at (5.5,3.25);
+
+\draw[postaction={decorate}] (1) ..controls +(75:7) and +(-110:6)..(5);
+\draw[cyan,->] (1) -- +(75:7);
+\draw[cyan,<-] (5) -- +(-110:6);
+\end{tikzpicture}

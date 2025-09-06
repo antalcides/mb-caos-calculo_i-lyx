@@ -1,0 +1,66 @@
+ \newcommand*{\PhM}{\phantom{-}}%
+
+\newcommand{\pLabel}{%
+\color{blue}
+$f'(x) = \begin{cases}
+6x,  & \mbox{si} \PhM  x \leq -1  \\[0.8ex]
+N.D,  & \mbox{si} \PhM  x =1  \\[0.8ex]
+  6 ,  & \mbox{si} \PhM   x> 1
+ \end{cases}
+$
+}
+\begin{tikzpicture}[scale=1,xscale=1,yscale=0.7,
+    thick,
+   % >=stealth',
+dotf/.style = {xscale=1.5,yscale=1,
+      draw,
+      red,
+      fill = red,%blue!40!black,
+      circle,
+      inner sep = 0pt,
+      minimum size = 2pt
+    },
+    dot/.style = {xscale=1,yscale=1,
+      draw,
+      fill = white,
+      circle,
+      inner sep = 0pt,
+      minimum size = 4pt
+    }]
+\tkzInit[xmin=-4.55, xmax=5,  ymin=-32, ymax=32,ystep=5]
+\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+%\tkzGrid
+\tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelX[draw=fondpaille,orig=false]
+\tkzLabelX[text=blue,below = 8pt,orig=false]
+\tkzDrawY[label={\textit{f(x)}},below= -12pt,Maroon,ultra thick,color=Maroon]
+\tkzLabelY[draw=fondpaille,text=blue,orig=false]
+%  \draw[-latex] (-2.5,-2.5) -- (3.5,-2.5) node[right] {$x$};
+% \tkzDefSetOfPoints{-2.5/-2.5,-2/-2.5,-1.5/-2.5,-1/-2.5,-0.5/-2.5,0/-2.5,%
+% .5/-2.5,1/-2.5,1.5/-2.5,2/-2.5,2.5/-2.5,3/-2.5
+%                                                 }
+% \tkzDrawSetOfPoints[mark=|, mark size=1.5pt]
+% \tkzJoinSetOfPoints[thick, color=Maroon]
+% \draw[-latex](-2.3,-3) -- (-2.3,4.5) node[above] {$f(x)$};
+% \tkzDefSetOfPoints{-2.3/-3,-2.3/-2.5,-2.3/-2,-2.3/-1.5,-2.3/-1,%
+% -2.3/-0.5,-2.3/0,-2.3/0.5,-2.3/1,-2.3/1.5,-2.3/2,-2.3/2.5,-2.3/3,-2.3/3.5,-2.3/4
+%                                                                                                                  }
+% \tkzDrawSetOfPoints[mark=-, mark size=1.5pt]
+% \tkzJoinSetOfPoints[thick, color=Maroon]
+% \tkzDefPoint(0,0){O}
+% \tkzDefPoint(1.5,1.5){P}
+% \tkzDrawPoint[blue](O)
+ %\draw [red, thick](-2.5,4) .. controls (1,1) .. (-1,2);
+% \draw[red, thick] (-2.5,4) .. controls (-2.5,1) and (-1,2.5) .. (0,2);
+% \draw[red, thick] (0,2) .. controls (2.5,1) and (5,0) .. (0,-1.2);
+% \draw[red, thick] (0,-1.2) .. controls (-1.5,-1.5) and (-0.5,-1.5) .. (-2.5,-3);
+% \node [right,fill=red!20!,draw=blue] at ( 1,5) {$f(x)=5x^{\frac{2}{3}}-2x$};
+%\tkzFct[color=red,ultra thick,domain=-2.:10,latex-latex]{abs(8*x-x**2)**(2./3)}
+\tkzFct[color=red,ultra thick,domain=-4.2:0.934,latex-latex]{(3-x)/((x-1)*(x-2))}
+\tkzFct[color=red,ultra thick,domain=1.08:1.96,latex-latex]{(3-x)/((x-1)*(x-2))}
+\tkzFct[color=red,ultra thick,domain=2.033:5,latex-latex]{(3-x)/((x-1)*(x-2))}
+\tkzVLine[dashed,gray]{1}
+\tkzVLine[dashed,gray]{2}
+
+
+\end{tikzpicture}

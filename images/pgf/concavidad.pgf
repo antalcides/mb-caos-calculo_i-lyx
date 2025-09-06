@@ -1,0 +1,109 @@
+\usetkzobj{all}
+\tikzset{fontscale/.style = {font=\relsize{#1}}
+    }
+\tikzset{tan style/.style={-},ultra thick}
+\begin{tikzpicture}[scale=2,
+fontscale=1,
+         dot/.style = {
+     fill = blue,
+      circle,
+      inner sep =2pt,
+      minimum size = 4pt
+    }
+  ]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tkzInit[xmin=-1.6,xmax=6.3,ymin=-2.5,ymax=2]
+% \tkzGrid[color =gray,
+% sub,
+% subxstep = 0.1,
+% subystep = 0.1]
+% \tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+% %\tkzGrid
+% \tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+% %\tkzLabelX[draw=fondpaille,orig=false]
+% \tkzLabelX[text=blue,below = 8pt]
+% \tkzDrawY[label={\textit{f(x)}},below= -18pt,Maroon,ultra thick,color=Maroon]
+% \tkzLabelY[draw=fondpaille]
+\tkzDefPoint(0,0){O}
+\tkzDefPoint(0,-1.5){O1}
+\tkzDefPoint(-0.5,2){Y}
+\tkzDefPoint(-0.5,-2.5){Y1}
+\tkzDefPoint(6.4,-1.50){X}
+\tkzDefPoint(-1,-1.5){X1}
+\tkzDefPoint(0.75,1){P}
+\tkzDefPoint(0.75,-1){P1}
+\tkzDefPoint(3.73,0){D}
+\tkzDefPoint(2.3,-1){D1}
+\tkzDefPoint(2.3,-1.5){D2}
+\tkzDefPoint(0,1.7){C}
+\tkzDefPoint(pi,1.7){C1}
+\tkzDefPoint(2*pi,1.7){C2}
+\tkzDefPoint(3.07,-1.5){A}
+\tkzDefPoint(3.07,-1.5){A1}
+\tkzDefPoint(3.73,2){B}
+\tkzDefPoint(3.73,-2){B1}
+\tkzDefPoint(1.5,0.5){O2}
+\tkzDefPoint(1.8,0.5){O3}
+\tkzDefPoint(1.4,0.6){O4}
+\tkzDefPoint(1.6,0.6){O5}
+\tkzDefPoint(1.5,0.4){O6}
+\tkzDefPoint(4.7,-0.5){O7}
+\tkzDefPoint(5,-0.5){O8}
+\tkzDefPoint(4.8,-0.4){O9}
+\tkzDefPoint(4.6,-0.4){O10}
+\tkzDefPoint(4.7,-0.5){O11}
+\tkzSetUpPoint[shape = circle,color = green,%
+size = 4,fill = green!30]
+%%%%%%
+\tkzDrawPoints(O4,O5,O9,O10)
+\tkzDrawCircle[blue](O2,O3)
+\tkzDrawCircle[blue](O7,O8)
+\tkzDrawArc[R,color=red,double](O6,0.1cm)(0,180)
+%\tkzDrawArc[R, color=orange,double](O6,3cm)(270,360)
+\tkzDrawArc[R,color=red,double](O11,0.1cm)(180,360)
+%%%%%%%%%%%%%%ejes
+\tkzDefPoint[%shift={(-0.5,1.55)},%
+"$f(x)$" above ](-0.5,1.99){Y2}
+\tkzDefPoint[%shift={(-0.5,1.55)},%
+"$x$" above right](6.36,-1.5){X2}
+\tkzDrawSegments[color=red,%
+line width=1pt,ultra thick,latex-latex](Y,Y1)
+\tkzDrawSegments[color=red,%
+line width=1pt,ultra thick,latex-latex](X,X1)
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tkzFct[color=red,ultra thick,domain=0:6.3,latex-latex]{sin(x)}
+\tkzDrawTangentLine[color=blue,kr=0.35,kl=0.5,ultra thick](0.8)
+\tkzDrawTangentLine[color=blue,kr=0.5,kl=0.5,ultra thick](pi/2)
+\tkzDrawTangentLine[color=blue,kr=0.5,kl=0.4,ultra thick](2.4)
+\tkzDrawTangentLine[color=blue,kr=0.4,kl=0.4,ultra thick](3.85)
+\tkzDrawTangentLine[color=blue,kr=0.5,kl=0.5,ultra thick](3*pi/2)
+\tkzDrawTangentLine[color=blue,kr=0.4,kl=0.4,ultra thick](5.5)
+\tkzVLine[color = blue,
+style = dashed,
+line width = 1pt]{0}
+\tkzVLine[color = blue,
+style = dashed,
+line width = 1pt]{pi}
+\tkzVLine[color = blue,
+style = dashed,
+line width = 1pt]{2*pi}
+\tkzText[draw,color = red, fill = orange!20](1.5,1.5){C\'oncava hacia abajo}
+\tkzText[draw,color = red, fill = orange!20](4.7,1.5){C\'oncava hacia arriba}
+\tkzText[draw,color = red, fill = orange!20](1.5,-0.5){$f''(x)<0$}
+\tkzText[draw,color = red, fill = orange!20](4.7,0.5){$f''(x)>0$}
+\tkzDrawSegments[color=blue,%
+line width=1pt,ultra thick,latex-latex,dotted](C,C1)
+\tkzDrawSegments[color=blue,%
+line width=1pt,ultra thick,latex-latex,dotted](C1,C2)
+% \filldraw[dotf](P) circle (3pt);
+% \tkzLabelPoint[above ](P){}
+% \filldraw[dot](Q) circle (3pt);
+% \tkzLabelPoint[below ](Q){}
+% \filldraw[dotf](C) circle (3pt);
+% \tkzLabelPoint[above ](C){}
+% \filldraw[dotf](O) circle (3pt);
+% \tkzLabelPoint[above ](O){}
+% \filldraw[dot](A) circle (3pt);
+% \tkzLabelPoint[above ](A){}
+\end{tikzpicture}

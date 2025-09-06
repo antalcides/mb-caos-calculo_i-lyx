@@ -1,0 +1,75 @@
+%\usetikzlibrary{fixedpointarithmetic}
+\usetkzobj{all}
+\begin{tikzpicture}%[fixed point arithmetic]
+\tkzInit[xmin=0,xmax= 9.5,xstep=1,
+ymax=12,ymin=0,ystep=1]
+\tkzDrawX[label={\textit{x}},below= -18pt]
+%\tkzLabelX
+%\tkzAxeY
+\tkzDrawY[label={\textit{f(x)}},below= -18pt]
+%\tkzLabelY
+
+\coordinate(P) at (5.5,4.76);
+\coordinate(A) at (3,2.16);
+\coordinate(B) at (8,10.36);
+\coordinate(C) at (3,0);
+\coordinate(D) at (8,0);
+\coordinate(E) at (0,2.16);
+\coordinate(F) at (0,10.36);
+\coordinate(G) at (0,4.76);
+\coordinate(H) at (5.5,0);
+\coordinate(I) at (3,-1);
+\coordinate(J) at (8,-1);
+\coordinate(K) at (-1,10.36);
+\coordinate(L) at (-1,2.16);
+
+ \tkzFillPolygon[color =zanahoria!20!,opacity=.6](C,D,B,A)
+\tkzFillPolygon[color =zanahoria!20!,opacity=.6](E,A,B,F)
+
+ %\tkzFct[domain =0:9,green,samples=200, smooth, ultra thick]{1.7*(x-5.5)+4.76}
+
+\filldraw[black](P) circle (2pt);
+\tkzLabelPoint[below right](P){$P$}
+\filldraw[black](A) circle (2pt);
+\tkzLabelPoint[below right](A){$A$}
+\filldraw[black](D) circle (1.5pt);
+\tkzLabelPoint[below left = 1pt](D){$D$}
+\filldraw[black](B) circle (1.5pt);
+\tkzLabelPoint[above left = 1pt](B){$B$}
+\filldraw[black](E) circle (1.5pt);
+\tkzLabelPoint[left= 10pt](E){$E$}
+\filldraw[black](C) circle (1.5pt);
+\tkzLabelPoint[below left = 1pt](C){$C$}
+\filldraw[black](F) circle (1.5pt);
+\tkzLabelPoint[below left = 1pt](F){$F$}
+\filldraw[black](G) circle (1.5pt);
+\tkzLabelPoint[left = 5pt](G){$G$}
+\filldraw[black](H) circle (1.5pt);
+\tkzLabelPoint[below right= 1pt](H){$H$}
+\draw[gray!40!black,dotted,ultra thick] (A)--(C);
+\draw[gray!40!black,dotted,ultra thick] (B)--(D);
+\draw[gray!40!black,dotted,ultra thick] (F)--(B);
+\draw[gray!40!black,dotted,ultra thick] (P)--(H);
+\draw[gray!40!black,dotted,ultra thick] (G)--(P);
+\draw[gray!40!black,dotted,ultra thick] (E)--(A);
+% \draw[gray,dotted] (C)--(P);
+% \draw[gray,dotted] (D)--(Q);
+% \draw[gray,dotted] (D14)--(Q14);
+\draw[gray,zanahoria, ultra thick,latex-latex] (I)--(J)node[midway,below]{$\Delta x$};
+% \draw[gray,blue, ultra thick,latex-latex] (E)--(F14)node[midway,below]{$\Delta x_{14}$};
+% \tkzMarkSegment[pos=1,mark=|,color=red,ultra thick](E,F)
+% \tkzMarkSegment[pos=0,mark=|,color=red,ultra thick](E,F)
+% \tkzMarkSegment[pos=1,mark=|,color=blue,ultra thick](E,F14)
+\draw[gray,zanahoria, ultra thick,latex-latex] (K)--(L)node[midway,left]{$\Delta y$};
+% \draw[gray,blue, ultra thick,latex-latex] (G)--(H14)node[midway,left]{$\Delta y_{14}$};
+ \tkzMarkSegment[pos=1,mark=|,color=red,ultra thick](I,J)
+\tkzMarkSegment[pos=0,mark=|,color=red,ultra thick](I,J)
+ \tkzMarkSegment[pos=1,mark=|,color=zanahoria,ultra thick](K,L)
+ \tkzMarkSegment[pos=0,mark=|,color=zanahoria,ultra thick](K,L)
+\tkzFct[domain = 0:9.5,blue,samples=200, smooth,ultra  thick]{0.24*x**2-x+3}
+% \tkzFct[domain =0:9,green,samples=200, smooth, ultra thick]{1.12*x)}
+%  \tkzFct[domain =0:9,violet,samples=200, smooth, ultra thick]{0.65*x+0.94)}
+\tkzDrawLine[add = 0.27 and .2,zanahoria,ultra thick](A,B)
+\tkzFct[domain =0:9.5,green,samples=200, smooth, ultra thick]{1.64*x-4.26}
+ %\draw      (0.3,0.5) -- (6.7,4.7) node[pos=0.78, below right] {Recta Secante}; 
+\end{tikzpicture}

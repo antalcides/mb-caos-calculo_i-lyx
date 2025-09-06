@@ -1,0 +1,71 @@
+\newcommand*{\PhM}{\phantom{-}}%
+
+\newcommand{\pLabel}{%
+\color{blue}
+$f'(x) = \begin{cases}
+6x,  & \mbox{si} \PhM  x \leq -1  \\[0.8ex]
+N.D,  & \mbox{si} \PhM  x =1  \\[0.8ex]
+  6 ,  & \mbox{si} \PhM   x> 1
+ \end{cases}
+$
+}
+\begin{tikzpicture}[scale=1,xscale=1,yscale=1,
+    thick,
+   % >=stealth',
+dotf/.style = {xscale=1,yscale=1,
+      draw,
+      red,
+      fill = red,%blue!40!black,
+      circle,
+      inner sep = 0pt,
+      minimum size = 2pt
+    },
+    dot/.style = {xscale=1,yscale=1,
+      draw,
+      fill = white,
+      circle,
+      inner sep = 0pt,
+      minimum size = 4pt
+    }]
+\tkzInit[xmin=-0.03, xmax=2.5,  ymin=-0.05, ymax=2.5]
+%\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=1pt]
+%\tkzGrid
+\tkzDrawX[label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelX[draw=fondpaille,orig=false]
+%\tkzLabelX[text=blue,below = 8pt]
+\tkzDrawY[label={\textit{y}},below= -12pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelY[draw=fondpaille,text=blue]
+\tkzDefPoint(0,0){O}
+\tkzDefPoint(1,2){P}
+ \tkzDefPoint(2,1){Q}
+\tkzDefPoint(1,1){C}
+\tkzDefPoint(2,2){A}
+\tkzDefPoint(1,0){B}
+\tkzDefPoint(2,0){D}
+\tkzDefPoint(0,1){E}
+\tkzDefPoint(0,2){F}
+\tkzDefPoint(2.43,2.43){G}
+\tkzDefPoint(1.5,1.5){H}
+%\tkzText[draw,color= red,fill =red!20,draw=red](2,3.5){\plabel}
+% \node [right,fill=blue!20!,draw=blue,text=blue] at ( 2.54,3.) {$y=f(x)+k$};
+% \tkzFct[color=brown,ultra thick,domain=-2.5:2.5,latex-latex]{-2*sin(0.8*x)}
+\tkzMarkRightAngle[fill=red!20,size=.2](P,H,A)
+\tkzDrawSegments[dashed,ultra thick,gray](P,C C,Q Q,A P,A)
+\tkzDrawSegments[dashed,ultra thick,zanahoria](F,P B,C)
+\tkzDrawSegments[dashed,ultra thick,green](D,Q E,C)
+\tkzDrawSegment[ultra thick,blue](P,Q)
+\tkzDrawSegment[ultra thick,blue,-latex](O,G)
+\filldraw[dotf](P) circle (1.5pt);
+ \tkzLabelPoint[above ](P){\tiny$P:(x,f(x))$}
+\filldraw[dotf](Q) circle (1.5pt);
+ \tkzLabelPoint[right ](Q){\tiny$Q:(f(x),x)$}
+ \filldraw[dotf,gray](C) circle (1.5pt);
+ \tkzLabelPoint[below ](D){\tiny$f(x)$}
+ \filldraw[dotf,gray](O) circle (1.5pt);
+\filldraw[dotf,gray](A) circle (1.5pt);
+\tkzLabelPoint[below ](B){\tiny$x$}
+\tkzLabelPoint[left ](F){\tiny$f(x)$}
+\tkzLabelPoint[left ](E){\tiny$x$}
+
+
+\end{tikzpicture}

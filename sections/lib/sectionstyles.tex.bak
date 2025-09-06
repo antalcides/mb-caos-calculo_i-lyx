@@ -1,0 +1,120 @@
+%%%%%%%%%%%%% Título de la sección
+
+\renewcommand{\thesection}{\Roman{section}}
+\titleformat{\section}[block]
+{%
+	\bfseries\Large
+	\color{section@title@color}
+	\sectiontitle@font
+}
+{
+\raisebox{\decalnumsec}
+{%
+\begin{tikzpicture}
+\node (numsec) {\sectiontitle@font\thesection};
+\fill[rounded corners=2pt,fill=shadow@color] ($(numsec.north west)+(2pt,-2pt)$) -- ($(numsec.north east)+(1mm,0mm)+(2pt,-2pt)$) -- ($(numsec.south east)+(2pt,-2pt)$) -- ($(numsec.south west)+(-1mm,0)+(2pt,-2pt)$) -- cycle;
+\fill[rounded corners=2pt,fill=section@title@color] (numsec.north west) -- ($(numsec.north east)+(1mm,0mm)$) -- (numsec.south east) -- ($(numsec.south west)+(-1mm,0)$) -- cycle;
+\node[white] at (numsec) {\sectiontitle@font\thesection};
+\end{tikzpicture}
+}
+}
+{\spacetitlesec}
+{}
+
+%%%%%%%%%%%%% Título de la subsección
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\titleformat{\subsection}[block]
+{%
+	\hspace*{\decalxtitlesubsec}
+	\bfseries\large
+	\color{subsection@title@color}
+	\subsectiontitle@font
+}
+{
+	\raisebox{\decalnumsubsec}
+	{%
+	\begin{tikzpicture}
+	\node (numsec) {\subsectiontitle@font\thesubsection};
+	\fill[rounded corners=2pt,fill=shadow@color] ($(numsec.north west)+(2pt,-2pt)$) -- ($(numsec.north east)+(1mm,0mm)+(2pt,-2pt)$) -- ($(numsec.south east)+(2pt,-2pt)$) -- ($(numsec.south west)+(-1mm,0)+(2pt,-2pt)$) -- cycle;
+	\fill[rounded corners=2pt,fill=subsection@title@color] (numsec.north west) -- ($(numsec.north east)+(1mm,0mm)$) -- (numsec.south east) -- ($(numsec.south west)+(-1mm,0)$) -- cycle;
+	\node[white] at (numsec) {\subsectiontitle@font\thesubsection};
+	\end{tikzpicture}
+	}
+}
+{%
+	\spacetitlesubsec
+}
+{%
+	\itemclass{subsection@title@color}{\subsection@font}
+}
+
+%%%%%%%%%%%%% Título  de la subsubsección
+
+\renewcommand{\thesubsubsection}{\alph{subsubsection}}
+\titleformat{\subsubsection}[block]
+{%
+	\hspace*{\decalxtitlesubsubsec}
+	\bfseries
+	\color{subsubsection@title@color}
+	\subsubsectiontitle@font
+}
+{
+\raisebox{\decalnumsubsubsec}
+{%
+\begin{tikzpicture}
+\node (numsec) {\subsubsectiontitle@font\thesubsubsection};
+\fill[rounded corners=2pt,fill=shadow@color] ($(numsec.north west)+(2pt,-2pt)$) -- ($(numsec.north east)+(1mm,0mm)+(2pt,-2pt)$) -- ($(numsec.south east)+(2pt,-2pt)$) -- ($(numsec.south west)+(-1mm,0)+(2pt,-2pt)$) -- cycle;
+\fill[rounded corners=2pt,fill=subsubsection@title@color] (numsec.north west) -- ($(numsec.north east)+(1mm,0mm)$) -- (numsec.south east) -- ($(numsec.south west)+(-1mm,0)$) -- cycle;
+\node[white] at (numsec) {\subsubsectiontitle@font\thesubsubsection};
+\end{tikzpicture}
+}
+}
+{\spacetitlesubsubsec}
+{}
+
+%%%%%%%%%%%%% Título del parágrafo
+
+\titleformat{\paragraph}[runin]
+{%
+	\bfseries
+	\color{paragraph@title@color}
+	\paragraphtitle@font
+}
+{}{1em}{}
+
+%%%%%%%%%%%%% Título del subparágrafo
+
+\titleformat{\subparagraph}[runin]
+{%
+	\itshape
+	\color{subparagraph@title@color}
+	\subparagraphtitle@font
+}
+{}{1em}{}
+
+%%%%%% %TODO  Biliography  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewenvironment{thebibliography}[1]
+     {%\chapter*{\bibname}%
+      \begin{flushright}\begin{tikzpicture}
+	\node[fill=indextitle@bg@color,text=indextitle@color, xslant=0.2,rounded corners=2pt,inner xsep=1em,inner ysep=1ex] {\indextitle@font\bibname};
+	\end{tikzpicture}\end{flushright}
+	\pagecolor{white}
+	\thispagestyle{main}\parindent\z@
+      \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}

@@ -1,0 +1,94 @@
+
+%%%%%%%%%%%%%%%%%%%%%%  Def Colores %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\definecolor{bistre}{rgb}{.75,.50,.30}
+\definecolor{Maroon}{rgb}{0.5,0.0,0.0}%{.80,.80,.95}
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+\pagecolor{fondpaille} 
+%\color{Maroon}
+\tkzSetUpColors[background=fondpaille,text=Maroon]
+%%%%%%%%%%%%%%%%%%%%%%%%%---- Comandos adicionales-------------%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% ------- adornos ------------------%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newfont{\adornos}{fourier-orns}% ornamentos
+\newcommand{\volutaleft}{\adornos\mbox{\symbol{91}}} % adorno voluta
+\newcommand{\volutaright}{\adornos\mbox{\symbol{92}}} % adorno voluta
+\newcommand{\florleft}{\adornos\mbox{\symbol{98}}} % adorno flor
+\newcommand{\florright}{\adornos\mbox{\symbol{99}}} % adorno flor
+\newcommand{\manoright}{\adornos\mbox{\symbol{116}}} % adorno mano izquierda
+\newcommand{\manoleft}{\adornos\mbox{\symbol{117}}} % adorno mano derecha
+\newfont{\librotex}{manfnt}% figuras del libto de Knuth "The TeX Book"
+\newcommand{\curvasr}{\librotex\mbox{\textcolor{red!50!black}{\symbol{126}}}} % curvas peligrosas dcha
+\newcommand{\curvasl}{\librotex\mbox{\textcolor{red!50!black}{\symbol{127}}}} % curvas peligrosas dcha\symbol{127}}} % curvas peligrosas izqda
+\newfont{\noesta}{psyr}
+\renewcommand{\notin}{\noesta\mbox{\symbol{207}}}
+%\newfont{\implicadcha}{mtsyt}
+\renewcommand{\Longrightarrow}{\implicadcha\mbox{\symbol{144}}}
+\renewcommand{\funcreal}[2]{\,#1\!:#2\rightarrow \R\,}
+\newcommand{\func}[2]{\mbox{$\,#1:#2\rightarrow \R\,$}}
+\newcommand{\abs}[1]{\lvert{#1}\rvert}  % Valor absoluto
+\newcommand{\tl}{\mbox{$^{\mspace{2mu}\prime}$}}
+\newcommand{\tlo}{\mbox{$^{\prime}$}}
+\renewcommand{\baselinestretch}{1.1}% interlineado
+\newcommand{\en}{\!\in\!}
+\newcommand{\Fin}{\hfill \emph{(q.e.d)}\,\,\sqbox{red!50!black}}
+\newcommand{\epos}{\ensuremath{\varepsilon>0}}
+\newcommand{\eps}{\ensuremath{\varepsilon}}
+\newcommand{\infinity}{\mifuente\mbox{\symbol{49}}} %Símbolo infinito
+\newcommand{\sskip}{\vspace{2mm}}
+\newcommand{\ms}{\mspace}
+\renewcommand{\Lim}[3]{\mbox{$\displaystyle{\lim_{#2\to #3}#1}$}}
+\DeclareMathOperator{\e}{e}
+\newcommand{\setbig}[1]{\big\{ #1 \big\}}
+\newcommand{\nN}{\ensuremath{n\!\in\!\mathbb N}}
+\newcommand{\conj}[1]{\mbox{$\overline{\rule{0mm}{1.8mm}#1}$}}
+\newcommand{\set}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\Rp}{\ensuremath{{\mathbb R}^{+}}}
+\newcommand{\Rpo}{\ensuremath{{\mathbb R}^{+}_{\,\rm o}}}
+\newcommand{\Rm}{\ensuremath{{\mathbb R}^{-}}}
+\newcommand{\ff}{\ensuremath{\varphi}}
+\newcommand{\vx}{\ensuremath{\mathbf{x}}}
+\newcommand{\vy}{\ensuremath{\mathbf{y}}}
+\newcommand{\vz}{\ensuremath{\mathbf{z}}}
+\newcommand{\va}{\ensuremath{\mathbf{a}}}
+\newcommand{\vb}{\ensuremath{\mathbf{b}}}
+\newcommand{\vc}{\ensuremath{\mathbf{c}}}
+\newcommand{\vu}{\ensuremath{\mathbf{u}}}
+\newcommand{\vv}{\ensuremath{\mathbf{v}}}
+\newcommand{\vw}{\ensuremath{\mathbf{w}}}
+\newcommand{\vr}{\ensuremath{\mathbf{r}}}
+\newcommand{\vf}{\ensuremath{\mathbf{F}}}
+\newcommand{\vn}{\ensuremath{\mathbf{n}}}
+\newcommand{\vt}{\ensuremath{\mathbf{t}}}
+\newcommand{\norma}[1]{\left\|{#1}\right\|}
+\newcommand{\modulo}[1]{\left\lvert{#1}\right\rvert}
+\renewcommand{\le}{\leqslant}
+\newcounter{estrategia}[chapter]
+\newenvironment{estrategia}{\refstepcounter{estrategia}\textcolor{red!50!black}{Estrategia. \, \theestrategia\,}}{\\ \linea\medskip}
+\newcommand{\hecho}{\noindent{~\hfill\Large\color{red}{\Smiley{}} }}% usa marvosym
+ % Entorno y contador para ejercicios propuestos
+        \newcounter{propuesto}
+        \def\theejerciciobis{\arabic{propuesto}}
+        \newenvironment{ejercicios propuestos}{{\subsection{Ejercicios
+        propuestos}}%
+        \vspace{-5mm}\tikz \path[draw=orange,line width=3pt] (0,1) -- (10,1) ;\newline\begin{list}{\bfseries{\thepropuesto.}}{}}
+        {\end{list}\bigskip}
+        \def\propuesto{\refstepcounter{propuesto}\item}
+
+        % Entorno y contador para ejercicios resueltos
+        \newcounter{resuelto}
+        \def\theejercicio{\arabic{resuelto}}
+        \newenvironment{ejercicios resueltos}{{\subsection{Ejercicios
+        resueltos}}%
+        \vspace{-5mm}\tikz \path[draw=orange, line width=3pt] (0,1) -- (1,1) -- (10,1) ;\newline
+        \rule{0mm}{6mm}¡Antes de ver la soluci\'on de un ejercicio debes intentar resolverlo!\newline
+       %\indent \psline[linewidth=.75pt](-.5,0)(10,0)\newline
+        \begin{list}{{\bfseries Ejercicio resuelto\ {{\theresuelto}}}}{}}
+        {\end{list}\bigskip}
+        \def\resuelto{\refstepcounter{resuelto}\item}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \newcommand\MarginFig[4][width=\marginparwidth]{%
+\marginpar{\includegraphics[#1]{#2}
+\captionof{figure}{#3}
+\label{#4}}
+}
+\newcommandx{\notamargen}[2][1=]{\todo[linecolor=blue!50!black,backgroundcolor=yellow!20!white,bordercolor=blue,#1]{#2}}
+\reversemarginpar

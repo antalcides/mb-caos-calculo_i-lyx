@@ -1,0 +1,861 @@
+%%%%%%%%%%%%% \breakbox
+\def\plural@title{}
+\def\typebox#1{%
+\expandafter\def\csname spacebefore\endcsname{\expandafter\csname spacebefore#1\endcsname}%
+\expandafter\def\csname stylebox\endcsname{\expandafter\csname#1@box\endcsname}%
+\expandafter\def\csname titlefont\endcsname{\expandafter\csname#1title@font\endcsname}%
+\expandafter\def\csname plural\endcsname{\expandafter\csname plural@#1\endcsname}%
+\ifnum\thetype@box=0\setlength{\spacebottom}{\expandafter\csname spacebottom#1\endcsname}\fi
+\expandafter\def\csname fillbg\endcsname{#1@bg@color}
+\expandafter\def\csname titlecolor\endcsname{#1title@color}
+\expandafter\def\csname titlebgcolor\endcsname{#1title@bg@color}
+}
+\newcounter{break@box}
+\newcounter{type@box}
+\newcommand*{\breakbox}
+{%
+	
+		\ifnum\thetype@box=0 %TODO para "rem" o "meth" o "new"
+		\end{minipage}
+			\end{lrbox}
+			\vspace*{\spacebefore}
+			\stepcounter{break@box}
+			\begin{tikzpicture}
+			\node (texte) {\usebox{\stylebox}\vspace*{\spacebottom}};
+			\fill[fill=shadow@color] ($(texte.south west)+(1pt,-1pt)$) -- ($(texte.north west)+(1pt,-1pt)$) -- ($(texte.north east)+(1pt,-1pt)$) -- ($(texte.south east)+(0,6.5pt)+(1pt,-2pt)$) .. controls ($(texte.south east)+(-2pt,2pt)+(1pt,-1pt)$) and ($(texte.south east)+(-3pt,1pt)+(1pt,-1pt)$) .. ($(texte.south east)+(-6.5pt,0)+(1pt,-1pt)$) -- cycle;
+			\fill[fill=\fillbg] (texte.south west) -- (texte.north west) -- (texte.north east) -- ($(texte.south east)+(0,5pt)$) -- ($(texte.south east)+(-5pt,0)$) -- cycle;
+			\fill[fill=shadow@color!50!black] ($(texte.south east)+(0,5pt)$) .. controls ($(texte.south east)+(-2pt,2pt)$) and ($(texte.south east)+(-3pt,1pt)$) .. ($(texte.south east)+(-5pt,0)$) .. controls ($(texte.south east)+(-4.5pt,2.5pt)$) .. ($(texte.south east)+(-5pt,5pt)$) .. controls ($(texte.south east)+(-2.5pt,4.5pt)$) .. ($(texte.south east)+(0,5pt)$);
+			\node at(texte) {\usebox{\stylebox}};
+			\node[rounded corners=3pt,fill=\fillbg!75,draw=\titlecolor] at ($(texte.south east)-(1,0)$) {...};
+			\node[above right,fill=\titlebgcolor,text=\titlecolor] at (texte.north west) {\titlefont \titletext\plural};
+			\end{tikzpicture}\newline
+			\begin{lrbox}{\stylebox}
+			\begin{minipage}{\linewidth}
+		\fi
+		\ifnum\thetype@box=1 %TODO para "def" o "prop"
+			\end{minipage}
+			\end{lrbox}
+			\vspace*{\spacebefore}
+			\stepcounter{break@box}
+			\begin{tikzpicture}
+			\node[fill=\fillbg] (texte) {\usebox{\stylebox}};
+			%\draw[very thick,draw=\titlebgcolor] (texte.north west) -- (texte.south west);
+			\node[rounded corners=3pt,fill=\fillbg!75,draw=\titlebgcolor] at ($(texte.south east)-(1,0)$) {...};
+			%\node[fill=deftitle@bg@color,text=deftitle@color,below left,draw=deftitle@bg@color,very thick,text width={\dimexpr\marginleft-2mm},align=center] at (texte.north west) {\deftitle@font \titletext\plural@def \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+			\node[fill=\titlebgcolor,text=\titlecolor,below left,draw=\titlebgcolor,very thick,text width={\dimexpr\marginleft-2mm},align=center] at ($(texte.north west)+(1pt,0)$) {\titlefont \titletext\plural};
+			\end{tikzpicture}\newline
+			\begin{lrbox}{\stylebox}
+			\begin{minipage}{\dimexpr\linewidth-\marginleft}
+		\fi
+		\ifnum\thetype@box=2 %TODO para "dem" 
+			\vskip-1em\hfill{\demtitle@font(...)}
+			\end{minipage}
+			\end{lrbox}
+			\vspace*{\spacebefore}
+			\begin{tikzpicture}
+			\node[fill=dem@bg@color] (texte) {\usebox{\dem@box}};
+			\ifnum\indic=1
+				\draw[thick,draw=dem@border@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north west) -- (texte.south west);
+			\else
+				\ifnum\indic=2
+					\draw[thick,draw=dem@border@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north west) -- (texte.south west) -- (texte.south east);
+				\else
+					\ifnum\indic=3
+						\draw[thick,draw=dem@border@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north west) -- (texte.south west);
+						\draw[thick,draw=dem@border@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north east) -- (texte.south east);
+					\else
+						\ifnum\indic=4
+							\draw[thick,draw=dem@border@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north east) -- (texte.north west) -- (texte.south west);
+						\else
+							\ifnum\indic=5
+								\draw[thick,draw=dem@border@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north west) -- (texte.south west) -- (texte.south east) -- (texte.north east) -- cycle;
+							\fi
+						\fi
+					\fi
+				\fi
+			\fi
+			\node[below left,minimum width=0.5\marginleft] at (texte.north west) {\phantom{-}};
+			\end{tikzpicture}\newline
+			\begin{lrbox}{\dem@box}
+			\begin{minipage}{\dimexpr\linewidth-0.5\marginleft}
+			{\demtitle@font \titletext~(continuaci\'on)}\par\medskip%
+		\fi
+}
+
+%%%%%%%%%%%%% Definición de una nueva caja
+
+\newsavebox{\new@box}
+\newcommand{\DefineNewBoxLikeRem}[5] % #1 : nombre; #2 : título; #3 : color principal ; #4 : color del textot en los items ; #5 : fuente de los  items
+{%
+	\newenvironment{#1}
+	{%
+		\setcounter{break@box}{0}
+		\setcounter{type@box}{0}
+		% Redéfinition de \breakbox
+		\renewcommand*{\breakbox}
+		{%
+			\end{minipage}
+				\end{lrbox}
+				\vspace*{\spacebeforenew}
+				\stepcounter{break@box}
+				\begin{tikzpicture}
+				\node (texte) {\usebox{\new@box}\vspace*{\spacebottomnew}};
+				\fill[fill=shadow@color] ($(texte.south west)+(1pt,-1pt)$) -- ($(texte.north west)+(1pt,-1pt)$) -- ($(texte.north east)+(1pt,-1pt)$) -- ($(texte.south east)+(0,6.5pt)+(1pt,-2pt)$) .. controls ($(texte.south east)+(-2pt,2pt)+(1pt,-1pt)$) and ($(texte.south east)+(-3pt,1pt)+(1pt,-1pt)$) .. ($(texte.south east)+(-6.5pt,0)+(1pt,-1pt)$) -- cycle;
+				\fill[fill=#3!20] (texte.south west) -- (texte.north west) -- (texte.north east) -- ($(texte.south east)+(0,5pt)$) -- ($(texte.south east)+(-5pt,0)$) -- cycle;
+				\fill[fill=shadow@color!50!black] ($(texte.south east)+(0,5pt)$) .. controls ($(texte.south east)+(-2pt,2pt)$) and ($(texte.south east)+(-3pt,1pt)$) .. ($(texte.south east)+(-5pt,0)$) .. controls ($(texte.south east)+(-4.5pt,2.5pt)$) .. ($(texte.south east)+(-5pt,5pt)$) .. controls ($(texte.south east)+(-2.5pt,4.5pt)$) .. ($(texte.south east)+(0,5pt)$);
+				\node at(texte) {\usebox{\new@box}};
+				\node[rounded corners=3pt,fill=#3!20,draw=#3,text=#4] at ($(texte.south east)-(1,0)$) {...};
+				\node[above right,fill=#3,text=#4] at (texte.north west) {\fontfamily{#5}\selectfont#2};
+				\end{tikzpicture}\newline
+				\begin{lrbox}{\new@box}
+				\begin{minipage}{\linewidth}
+		}
+		\def\titletext{#2} % título de la caja
+		\itemclass{#3}{\fontfamily{#5}\selectfont}
+		\begin{lrbox}{\new@box}
+		\begin{minipage}{\linewidth}
+	}
+	{%
+		\end{minipage}
+		\end{lrbox}
+		\vspace*{\spacebeforenew}
+		\begin{tikzpicture}
+		\node (texte) {\usebox{\new@box}\vspace*{\spacebottomnew}};
+		\fill[fill=shadow@color] ($(texte.south west)+(1pt,-1pt)$) -- ($(texte.north west)+(1pt,-1pt)$) -- ($(texte.north east)+(1pt,-1pt)$) -- ($(texte.south east)+(0,6.5pt)+(1pt,-2pt)$) .. controls ($(texte.south east)+(-2pt,2pt)+(1pt,-1pt)$) and ($(texte.south east)+(-3pt,1pt)+(1pt,-1pt)$) .. ($(texte.south east)+(-6.5pt,0)+(1pt,-1pt)$) -- cycle;
+		\fill[fill=#3!20] (texte.south west) -- (texte.north west) -- (texte.north east) -- ($(texte.south east)+(0,5pt)$) -- ($(texte.south east)+(-5pt,0)$) -- cycle;
+		\fill[fill=shadow@color!50!black] ($(texte.south east)+(0,5pt)$) .. controls ($(texte.south east)+(-2pt,2pt)$) and ($(texte.south east)+(-3pt,1pt)$) .. ($(texte.south east)+(-5pt,0)$) .. controls ($(texte.south east)+(-4.5pt,2.5pt)$) .. ($(texte.south east)+(-5pt,5pt)$) .. controls ($(texte.south east)+(-2.5pt,4.5pt)$) .. ($(texte.south east)+(0,5pt)$);
+		\node at(texte) {\usebox{\new@box}};
+		\node[text width={\dimexpr\marginleft+2mm},above right,fill=#3,text=#4] at (texte.north west) {\fontfamily{#5}\selectfont#2\ifnum\thebreak@box>0 ~(Continuaci\'on)\fi};
+		\end{tikzpicture}
+	}
+%
+}	
+
+\newcommand{\DefineNewBoxLikeDef}[5] % #1 : nombre; #2 : título; #3 : color principal ; #4 : color del textot en los items ; #5 : fuente de los  items
+{%
+	\newenvironment{#1}
+	{%
+		\setcounter{break@box}{0}
+		\setcounter{type@box}{1}
+		\renewcommand*{\breakbox}
+		{%
+			\end{minipage}
+			\end{lrbox}
+			\vspace*{\spacebeforenew}
+			\stepcounter{break@box}
+			\begin{tikzpicture}
+			\node[fill=#3!20] (texte) {\usebox{\new@box}};
+			\node[rounded corners=3pt,fill=#3!20,draw=#3] at ($(texte.south east)-(1,0)$) {...};
+			\node[fill=#3,text=#4,below left,draw=#3,very thick,text width={\dimexpr\marginleft-2mm},align=center] at ($(texte.north west)+(1pt,0)$) {\fontfamily{#5}\selectfont#2};
+			\end{tikzpicture}\newline
+			\begin{lrbox}{\new@box}
+			\begin{minipage}{\dimexpr\linewidth-\marginleft}
+		}
+		\def\titletext{#2}
+		\itemclass{#3}{\fontfamily{#5}\selectfont}
+		\begin{lrbox}{\new@box}
+		\begin{minipage}{\dimexpr\linewidth-\marginleft}
+	}
+	{%
+		\end{minipage}
+		\end{lrbox}
+		\vspace*{\spacebeforenew}
+		\begin{tikzpicture}
+		\node[fill=#3!20] (texte) {\usebox{\new@box}};
+		\node[fill=#3,text=#4,below left,draw=#3,very thick,text width={\dimexpr\marginleft+2mm},align=center] at ($(texte.north west)+(1pt,0)$) {\fontfamily{#5}\selectfont#2\ifnum\thebreak@box>0\par(Continuaci\'on)\fi};
+		\end{tikzpicture}
+	}
+}
+%TODO %%%%%%%%%%%% Entorno "remark"
+
+\newsavebox{\rem@box}
+\newenvironment{remark}[1][\'on]
+{%
+\setcounter{break@box}{0}
+\setcounter{type@box}{0}
+\typebox{rem}
+\def\titletext{Observaci}
+\ifx#1\@empty\xdef\plural@rem{}\else\xdef\plural@rem{#1}\fi
+\itemclass{remtitle@bg@color}{\remtitle@font}
+\begin{lrbox}{\rem@box}
+\begin{minipage}{\linewidth}
+}
+{%
+\end{minipage}
+\end{lrbox}
+\vspace*{\spacebeforerem}
+\begin{tikzpicture}
+\node (texte) {\usebox{\rem@box}\vspace*{\spacebottomrem}};
+\fill[fill=shadow@color] ($(texte.south west)+(1pt,-1pt)$) -- ($(texte.north west)+(1pt,-1pt)$) -- ($(texte.north east)+(1pt,-1pt)$) -- ($(texte.south east)+(0,6.5pt)+(1pt,-2pt)$) .. controls ($(texte.south east)+(-2pt,2pt)+(1pt,-1pt)$) and ($(texte.south east)+(-3pt,1pt)+(1pt,-1pt)$) .. ($(texte.south east)+(-6.5pt,0)+(1pt,-1pt)$) -- cycle;
+\fill[fill=rem@bg@color] (texte.south west) -- (texte.north west) -- (texte.north east) -- ($(texte.south east)+(0,5pt)$) -- ($(texte.south east)+(-5pt,0)$) -- cycle;
+\fill[fill=shadow@color!50!black] ($(texte.south east)+(0,5pt)$) .. controls ($(texte.south east)+(-2pt,2pt)$) and ($(texte.south east)+(-3pt,1pt)$) .. ($(texte.south east)+(-5pt,0)$) .. controls ($(texte.south east)+(-4.5pt,2.5pt)$) .. ($(texte.south east)+(-5pt,5pt)$) .. controls ($(texte.south east)+(-2.5pt,4.5pt)$) .. ($(texte.south east)+(0,5pt)$);
+\node at(texte) {\usebox{\rem@box}};
+\node[above right,fill=remtitle@bg@color,text=remtitle@color] at (texte.north west) {\remtitle@font \titletext\plural@rem \ifnum\thebreak@box>0 ~(continuaci\'on)\fi};
+\end{tikzpicture}
+}
+
+%TODO %%%%%%%%%%%% Entorno"método"
+
+\newsavebox{\meth@box}
+\newenvironment{metodo}[1][]
+{%
+\setcounter{break@box}{0}
+\setcounter{type@box}{0}
+\typebox{meth}
+\def\titletext{M\'etodo}
+\ifx#1\@empty\xdef\plural@meth{}\else\xdef\plural@meth{#1}\fi
+\itemclass{methtitle@bg@color}{\methtitle@font}
+\begin{lrbox}{\meth@box}
+\begin{minipage}{\linewidth}
+}
+{%
+\end{minipage}
+\end{lrbox}
+\vspace*{\spacebeforemeth}
+\begin{tikzpicture}
+\node (texte) {\usebox{\meth@box}\vspace*{\spacebottommeth}};
+\fill[fill=shadow@color] ($(texte.south west)+(1pt,-1pt)$) -- ($(texte.north west)+(1pt,-1pt)$) -- ($(texte.north east)+(1pt,-1pt)$) -- ($(texte.south east)+(0,6.5pt)+(1pt,-2pt)$) .. controls ($(texte.south east)+(-2pt,2pt)+(1pt,-1pt)$) and ($(texte.south east)+(-3pt,1pt)+(1pt,-1pt)$) .. ($(texte.south east)+(-6.5pt,0)+(1pt,-1pt)$) -- cycle;
+\fill[fill=meth@bg@color] (texte.south west) -- (texte.north west) -- (texte.north east) -- ($(texte.south east)+(0,5pt)$) -- ($(texte.south east)+(-5pt,0)$) -- cycle;
+\fill[fill=shadow@color!50!black] ($(texte.south east)+(0,5pt)$) .. controls ($(texte.south east)+(-2pt,2pt)$) and ($(texte.south east)+(-3pt,1pt)$) .. ($(texte.south east)+(-5pt,0)$) .. controls ($(texte.south east)+(-4.5pt,2.5pt)$) .. ($(texte.south east)+(-5pt,5pt)$) .. controls ($(texte.south east)+(-2.5pt,4.5pt)$) .. ($(texte.south east)+(0,5pt)$);
+\node at(texte) {\usebox{\meth@box}};
+\node[above right,fill=methtitle@bg@color,text=methtitle@color] at (texte.north west) {\methtitle@font \titletext\plural@meth \ifnum\thebreak@box>0 ~(continuaci\'on)\fi};
+\end{tikzpicture}
+}
+
+%TODO %%%%%%%%%% Entorno "notación"
+
+\newsavebox{\nota@box}
+\newenvironment{notation}[1][\'on]
+{%
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{1}
+	\typebox{nota}
+	\def\titletext{Notaci}
+	\ifx#1\@empty\xdef\plural@nota{}\else\xdef\plural@nota{#1}\fi
+	\itemclass{deftitle@bg@color}{\deftitle@font}
+	\begin{lrbox}{\nota@box}
+	\begin{minipage}{\dimexpr\linewidth-\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforedef}
+	\begin{tikzpicture}
+	\node[fill=def@bg@color] (texte) {\usebox{\nota@box}};
+	\node[fill=deftitle@bg@color,text=deftitle@color,below left,draw=deftitle@bg@color,very thick,text width={\dimexpr\marginleft-2mm},align=center] at ($(texte.north west)+(1pt,0)$) {\deftitle@font \titletext\plural@nota \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+%TODO %%%%%%%%%% Entorno "definition"
+
+\newsavebox{\def@box}
+\newcounter{def}[chapter]
+\newenvironment{definition}[1][\'on]
+{%
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{1}
+	\stepcounter{def}
+	\typebox{def}
+	\def\titletext{Definici}
+	\ifx#1\@empty\xdef\plural@def{}\else\xdef\plural@def{#1}\fi
+	\itemclass{deftitle@bg@color}{\deftitle@font}
+	\begin{lrbox}{\def@box}
+	\begin{minipage}{\dimexpr\linewidth-1.4\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforedef}
+	\begin{tikzpicture}
+	\node[fill=def@bg@color] (texte) {\usebox{\def@box}};
+	\node[fill=deftitle@bg@color,text=deftitle@color,below left,draw=deftitle@bg@color,very thick,text width={\dimexpr\marginleft+5mm},align=center] at ($(texte.north west)+(1pt,0)$) {\deftitle@font\thechapter.\thedef\ \titletext\plural@def \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+%TODO %%%%%%%%%% Entorno "proposition"
+
+\newsavebox{\propo@box}
+\newcounter{propo}[chapter]
+\newenvironment{proposition}[1][\'on]
+{%
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{1}
+	\stepcounter{propo}
+	\typebox{propo}
+	\def\titletext{Proposici}
+	\ifx#1\@empty\xdef\plural@propo{}\else\xdef\plural@propo{#1}\fi
+	\itemclass{deftitle@bg@color}{\deftitle@font}
+	\begin{lrbox}{\propo@box}
+	\begin{minipage}{\dimexpr\linewidth-\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforedef}
+	\begin{tikzpicture}
+	\node[fill=def@bg@color] (texte) {\usebox{\propo@box}};
+	\node[fill=deftitle@bg@color,text=deftitle@color,below left,draw=deftitle@bg@color,very thick,text width={\dimexpr\marginleft-2mm},align=center] at ($(texte.north west)+(1pt,0)$) {\deftitle@font\thechapter.\thepropo\ \titletext\plural@prop \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+
+%TODO %%%%%%%%%% Entorno "propiedad"
+\newcounter{propi}[chapter]
+\newsavebox{\prop@box}
+\newenvironment{propiedad}[1][]
+{%
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{1}
+	\stepcounter{propi}
+	\typebox{prop}
+	\def\titletext{Propiedad}
+	\ifx#1\@empty\xdef\plural@prop{}\else\xdef\plural@prop{#1}\fi
+	\itemclass{proptitle@bg@color}{\proptitle@font}
+	\begin{lrbox}{\prop@box}
+	\begin{minipage}{\dimexpr\linewidth-\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforeprop}
+	\begin{tikzpicture}
+	\node[fill=prop@bg@color] (texte) {\usebox{\prop@box}};
+	\node[fill=proptitle@bg@color,text=proptitle@color,below left,draw=proptitle@bg@color,very thick,text width={\dimexpr\marginleft+3mm},align=center] at ($(texte.north west)+(1pt,0)$) {\proptitle@font\thechapter.\thepropi\ \titletext\plural@prop \ifnum\thebreak@box>0\par(Continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+
+%TODO %%%%%%%%%% Entorno "theorem"
+
+\newsavebox{\thm@box}
+\newcounter{thm}[chapter]
+\newenvironment{theorem}[1][]
+{%
+    \stepcounter{thm}
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{1}
+	\typebox{thm}
+	\def\titletext{Teorema}
+	\ifx#1\@empty\xdef\plural@thm{}\else\xdef\plural@thm{#1}\fi
+	\itemclass{thmtitle@bg@color}{\thmtitle@font}
+	\begin{lrbox}{\thm@box}
+	\begin{minipage}{\dimexpr\linewidth-1.3\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforethm}
+	\begin{tikzpicture}
+	\node[fill=thm@bg@color] (texte) {\usebox{\thm@box}};
+	\node[fill=thmtitle@bg@color,text=thmtitle@color,below left,draw=thmtitle@bg@color,very thick,text width={\dimexpr\marginleft+5mm}]%,align=center] 
+	at ($(texte.north west)+(-1pt,0)$) {\thmtitle@font\thechapter.\thethm.\  \titletext\plural@thm \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+
+%TODO %----------------------Lema---------------------------------------------
+
+\newsavebox{\lema@box}
+\newcounter{lema}[chapter]
+\newenvironment{lemma}[1][]
+{%
+	\setcounter{break@box}{0}
+	\stepcounter{lema}
+	\setcounter{type@box}{1}
+	\typebox{lema}
+	\def\titletext{Lema}
+	\ifx#1\@empty\xdef\plural@lema{}\else\xdef\plural@lema{#1}\fi
+	\itemclass{thmtitle@bg@color}{\thmtitle@font}
+	\begin{lrbox}{\lema@box}
+	\begin{minipage}{\dimexpr\linewidth-1.3\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforethm}
+	\begin{tikzpicture}
+	\node[fill=thm@bg@color] (texte) {\usebox{\lema@box}};
+	\node[fill=thmtitle@bg@color,text=thmtitle@color,below left,draw=thmtitle@bg@color,very thick,text width={\dimexpr\marginleft+5mm}] at ($(texte.north west)+(1pt,0)$) {\thmtitle@font\thechapter.\thelema.\ \titletext\plural@lema \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+
+%TODO %-----------------------Axioma ---------------------------------------------------
+
+\newsavebox{\axi@box}
+\newenvironment{axiom}[1][]
+{%
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{1}
+	\typebox{axi}
+	\def\titletext{Axioma}
+	\ifx#1\@empty\xdef\plural@axi{}\else\xdef\plural@axi{#1}\fi
+	\itemclass{thmtitle@bg@color}{\thmtitle@font}
+	\begin{lrbox}{\axi@box}
+	\begin{minipage}{\dimexpr\linewidth-1.3\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforethm}
+	\begin{tikzpicture}
+	\node[fill=thm@bg@color] (texte) {\usebox{\axi@box}};
+	\node[fill=thmtitle@bg@color,text=thmtitle@color,below left,draw=thmtitle@bg@color,very thick,text width={\dimexpr\marginleft+5mm}] at ($(texte.north west)+(1pt,0)$) {\thmtitle@font \titletext\plural@axi \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+
+%TODO %-------------------------- corolario ---------------------------------------------
+
+\newsavebox{\cor@box}
+\newcounter{coro}[chapter]
+\newenvironment{corollary}[1][]
+{%
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{1}
+	\stepcounter{coro}
+	\typebox{cor}
+	\def\titletext{Corolario}
+	\ifx#1\@empty\xdef\plural@cor{}\else\xdef\plural@cor{#1}\fi
+	\itemclass{thmtitle@bg@color}{\thmtitle@font}
+	\begin{lrbox}{\cor@box}
+	\begin{minipage}{\dimexpr\linewidth-1.3\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforethm}
+	\begin{tikzpicture}
+	\node[fill=thm@bg@color] (texte) {\usebox{\cor@box}};
+	\node[fill=thmtitle@bg@color,text=thmtitle@color,below left,draw=thmtitle@bg@color,very thick,text width={\dimexpr\marginleft+5mm}] at ($(texte.north west)+(1pt,0)$) {\thmtitle@font\thechapter.\thecoro.\ \titletext\plural@cor \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+
+%TODO %%%%%%%%%% Entorno "ejemplo"
+
+\newsavebox{\ex@box}
+\newcounter{exe}[chapter]
+\newenvironment{example}[1][]
+{%
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{1}
+	\stepcounter{exe}
+	\typebox{ex}
+	\def\titletext{Ejemplo}
+	\ifx#1\@empty\xdef\plural@ex{}\else\xdef\plural@ex{#1}\fi
+	\itemclass{ejtitle@bg@color}{\ejtitle@font}
+	\begin{lrbox}{\ex@box}
+	\begin{minipage}{\dimexpr\linewidth-\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforeex}
+	\begin{tikzpicture}
+	\node[fill=ej@bg@color] (texte) {\usebox{\ex@box}};
+	\node[fill=ejtitle@bg@color,text=ejtitle@color,below left,draw=ejtitle@bg@color,very thick,text width={\dimexpr\marginleft+2mm},align=center] at ($(texte.north west)+(1pt,0)$) {\ejtitle@font\thechapter.\theexe.\ \titletext\plural@ex \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+
+%TODO  %%%%%%%%%%%%%%%%%%%%%%%%%% entorno ejercicio %%%%%%%%%%%%%%%%%%%
+\newsavebox{\ej@box}
+\newcounter{eje}[chapter]
+\newenvironment{exercise}[1][]
+{%
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{1}
+	\stepcounter{eje}
+	\typebox{ej}
+	\def\titletext{Ejemplo}
+	\ifx#1\@empty\xdef\plural@ej{}\else\xdef\plural@ej{#1}\fi
+	\itemclass{ejtitle@bg@color}{\ejtitle@font}
+	\begin{lrbox}{\ej@box}
+	\begin{minipage}{\dimexpr\linewidth-\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforeex}
+	\begin{tikzpicture}
+	\node[fill=ej@bg@color] (texte) {\usebox{\ej@box}};
+	\node[fill=ejtitle@bg@color,text=ejtitle@color,below left,draw=ejtitle@bg@color,very thick,text width={\dimexpr\marginleft+2mm},align=center] at ($(texte.north west)+(1pt,0)$) {\ejtitle@font\thechapter\theeje.\ \titletext\plural@ej \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+
+%TODO  %%%%%%%%%%%%%%%%%%%%%%%%%% entorno problema %%%%%%%%%%%%%%%%%%%
+\newsavebox{\prob@box}
+\newcounter{prob}[chapter]
+\newenvironment{problem}[1][]
+{%
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{1}
+	\stepcounter{prob}
+	\typebox{prob}
+	\def\titletext{Problema}
+	\ifx#1\@empty\xdef\plural@prob{}\else\xdef\plural@prob{#1}\fi
+	\itemclass{ejtitle@bg@color}{\ejtitle@font}
+	\begin{lrbox}{\prob@box}
+	\begin{minipage}{\dimexpr\linewidth-\marginleft}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforeex}
+	\begin{tikzpicture}
+	\node[fill=ej@bg@color] (texte) {\usebox{\probbox}};
+	\node[fill=ejtitle@bg@color,text=ejtitle@color,below left,draw=ejtitle@bg@color,very thick,text width={\dimexpr\marginleft+2mm},align=center] at ($(texte.north west)+(1pt,0)$) {\ejtitle@font\thechapter\theprob.\ \titletext\plural@prob \ifnum\thebreak@box>0\par(continuaci\'on)\fi};
+	\end{tikzpicture}
+}
+
+%TODO %%%%%%%%%% Entorno "demostration"
+
+\newsavebox{\dem@box}
+\newenvironment{demostration}[1][1]
+{%
+	\setcounter{break@box}{0}
+	\setcounter{type@box}{2}
+	\typebox{dem}
+	\def\titletext{Demostraci\'on}
+	\ifx#1\@empty\xdef\indic{0}\else\xdef\indic{#1}\fi
+	\xdef\indic{#1}
+	\begin{lrbox}{\dem@box}
+	\begin{minipage}{\dimexpr\linewidth-0.5\marginleft}
+	{\demtitle@font\textcolor{dem@line@color}{ \titletext}}\par\medskip%
+}
+{%
+	\vskip-1em\hfill\rule{0.5em}{0.5em}
+	\end{minipage}
+	\end{lrbox}
+	\vspace*{\spacebeforedem}
+	\begin{tikzpicture}
+	\node[fill=dem@bg@color] (texte) {\usebox{\dem@box}};
+	\ifnum\indic=1
+		\draw[line width=0.5mm,draw=dem@line@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north west) -- (texte.south west);
+	\else
+		\ifnum\indic=2
+			\draw[line width=0.5mm,draw=dem@line@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north west) -- (texte.south west) -- (texte.south east);
+		\else
+			\ifnum\indic=3
+				\draw[line width=0.5mm,draw=dem@line@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north west) -- (texte.south west);
+				\draw[line width=0.5mm,draw=,color=dem@line@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north east) -- (texte.south east);
+			\else
+				\ifnum\indic=4
+					\draw[line width=0.5mm,draw=dem@line@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north east) -- (texte.north west) -- (texte.south west);
+				\else
+					\ifnum\indic=5
+						\draw[line width=0.5mm,draw=dem@line@color,decorate, decoration={random steps, segment length=3pt,amplitude=1pt}] (texte.north west) -- (texte.south west) -- (texte.south east) -- (texte.north east) -- cycle;
+					\fi
+				\fi
+			\fi
+		\fi
+	\fi
+	\node[below left,minimum width=0.5\marginleft] at (texte.north west) {\phantom{-}};
+	\end{tikzpicture}
+}
+
+%TODO %%%%%%%%%%% Actividad
+
+\newcounter{actividad}[chapter]
+
+\newcommand{\actividad}[1]
+{%
+	\refstepcounter{actividad}
+	\vspace*{\spacebeforeact}
+	\begin{tikzpicture}
+	\fill[shadow@color] (0.1,-.15) circle[x radius=1.5em,y radius=0.66em,rotate=10];
+	\fill[actividadtitle@color,rotate=30] (0,0) circle[x radius=1.5em,y radius=1em];
+	\node[text=actividadnum@color] at (0,0) {\actividad@font\theactividad};
+	\node[right,text=actividadtitle@color] at (0.75,0) {\actividad@font#1};
+	\end{tikzpicture}
+	\itemclass{actividadtitle@color}{\actividad@font}
+}
+
+%TODO %%%%%%%%%%%%%%%%% Estilos de itemize
+
+\newcommand{\itemclass}[2] % #1 = color ; #2 = fuente
+{
+	\setlist[itemize,1]{label={\color{#1}\textbullet}}
+	\setlist[itemize,2]{label={\color{#1}$\rightarrow$}}
+	\setlist[enumerate,1]
+	{%
+		label=\fcolorbox{#1}
+		{#1!20}
+		{\color{#1}#2\normalsize\arabic*}
+	}
+	\setlist[enumerate,2]{label=\textcolor{#1}{#2\normalsize\alph*.}}
+}
+\itemclass{black}{}
+
+%TODO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Exercicios
+
+% Declaración de la primera página de ejercicios
+
+\newcounter{indicCorr}
+\newcommand{\exostart}[1][0]
+{%
+	\newpage
+	\pagecolor{ejercicios@bg@color}
+	\begin{flushright}
+	\begin{tikzpicture}
+	\node[inner sep=1em] (titre) {\ejerciciotitle@font Ejercicios};
+	\fill[rounded corners=2pt,fill=shadow@color] ($(titre.north west)+(2pt,-2pt)$) -- ($(titre.north east)+(1mm,0mm)+(2pt,-2pt)$) -- ($(titre.south east)+(2pt,-2pt)$) -- ($(titre.south west)+(-1mm,0)+(2pt,-2pt)$) -- cycle;
+	\fill[rounded corners=2pt,fill=ejerciciotitle@bg@color] (titre.north west) -- ($(titre.north east)+(1mm,0mm)$) -- (titre.south east) -- ($(titre.south west)+(-1mm,0)$) -- cycle;
+	\node[inner sep=1em,text=ejerciciotitle@color] at (titre) {\ejerciciotitle@font Ejercicios};
+	\end{tikzpicture}
+	\end{flushright}
+	\ifnum#1=1
+		\setcounter{indicCorr}{1}
+	\else
+		\setcounter{indicCorr}{0}
+	\fi
+}
+
+%TODO  Entorno"ejercicio"
+
+\newcounter{ejercicio}[chapter]
+\newcounter{chapterant}
+
+\newsavebox{\exo@box}
+\newenvironment{ejercicio}[1][0]
+{%
+	\ifnum#1=0
+		\refstepcounter{ejercicio}
+		\expandafter\xdef\csname nbexos\thechapter\endcsname{\theejercicio}
+		\ifnum\theejercicio<10
+			\def\num@exo{0\theejercicio}
+		\else
+			\def\num@exo{\theejercicio}
+		\fi
+	\else
+		\xdef\num@exo{}
+	\fi
+	\itemclass{ejercicionum@bg@color}{\ejercicionum@font}
+	\begin{lrbox}{\exo@box}
+	\begin{minipage}{\dimexpr\linewidth-3em-10pt}
+}
+{%
+	\ifnum\theindicCorr=1
+	\begin{flushright}
+	\textcolor{corref@color}{\corref@font P\'agina con las correcciones \pageref{correcci\'on-\thechapter-\theejercicio}}
+	\end{flushright}	
+	\fi
+	\end{minipage}
+	\end{lrbox}
+	\ifnum\theejercicio>1
+		\ifx\num@exo\@empty
+		\else
+			\par\vspace*{\spacebeforeexo}
+		\fi
+	\fi
+	\begin{tikzpicture}
+	\node (texte) {\usebox{\exo@box}};
+	\ifx\num@exo\@empty
+		\node[below left,minimum width=2em] at ($(texte.north west)+(-0.5em,0)$) {\phantom{\ejercicionum@font\num@exo}};
+	\else
+		\node[below left,minimum width=2em] (num) at ($(texte.north west)+(-0.5em,0)$) {\ejercicionum@font\num@exo};
+		\fill[rounded corners=2pt,fill=ejercicionum@bg@color] (num.north west) -- ($(num.north east)+(1mm,0mm)$) -- (num.south east) -- ($(num.south west)+(-1mm,0)$) -- cycle;
+		\node[text=ejercicionum@color] at (num) {\ejercicionum@font\num@exo};
+	\fi
+	\end{tikzpicture}	
+}
+
+%TODO %%%%%%%%%%%%%% Corregido
+% Declaración de la 1ª página de correcciones
+
+\newcommand{\corrstart}
+{%
+	\newpage
+	\pagecolor{corriges@bg@color}
+	\begin{flushright}
+	\begin{tikzpicture}
+	\node[inner sep=1em] (titre) {\corrigetitle@font Correcci\'on de los ejercicios};
+	\fill[rounded corners=2pt,fill=shadow@color] ($(titre.north west)+(2pt,-2pt)$) -- ($(titre.north east)+(1mm,0mm)+(2pt,-2pt)$) -- ($(titre.south east)+(2pt,-2pt)$) -- ($(titre.south west)+(-1mm,0)+(2pt,-2pt)$) -- cycle;
+	\fill[rounded corners=2pt,fill=corrigetitle@bg@color] (titre.north west) -- ($(titre.north east)+(1mm,0mm)$) -- (titre.south east) -- ($(titre.south west)+(-1mm,0)$) -- cycle;
+	\node[inner sep=1em,text=corrigetitle@color] at (titre) {\corrigetitle@font Correcci\'on de los ejercicios};
+	\end{tikzpicture}
+	\end{flushright}
+}
+
+%TODO BreakCorr
+
+\newcommand{\BreakCorr}[1][\newpage]
+{%
+\end{corrige}
+#1
+\begin{corrige}[\thechapter]{\i}
+\bgroup\ejercicionum@font\textbf{(continuaci\'on)}\egroup~
+}
+%TODO ---------------------------------------------
+%\begin_layout Standard
+%\begin_inset CommandInset include
+%LatexCommand input
+%filename "ejercicios-lyx.tex"
+%\end_inset
+%\end_layout
+%%---------------------------------
+%\begin_layout Standard
+%\begin_inset CommandInset include
+%LatexCommand include
+%filename "ejercicios.lyx"
+%\end_inset
+%\end_layout
+%\InputIfFileExists{tipp.def}{}{}
+%---------------------------------------------------
+
+\newcommand{\PagCorregidos}[1][]
+	{%
+		\multido{\i=1+1}{\theejercicio}{%
+			\foreach\x/\macr in {#1}%
+			{%
+				\ifnum\x=\i\macr\fi%
+			}%
+%			\if@lyx
+%	           \InputIfFileExists{corregidos-lyx/\thechapter-\i .lyx}{}{}
+%	           \else
+%	           \InputIfFileExists{corregidos-tex/\thechapter-\i .tex}%
+%               \fi
+                \input{\thechapter-\i}
+					}
+	}
+
+%% Parte del código para escribir en un archivo %% Gracias pág....
+
+\newwrite{\output@stream@corrige}
+
+\newcommand{\OuvrirFlux}[1]
+{%flujo del archivo abierto
+  \immediate\openout\output@stream@corrige #1%
+}
+\newcommand{\FermerFlux}
+{% cerrar la secuencia de archivos
+  \immediate\closeout\output@stream@corrige%
+}
+\newcommand{\EcritureFlux}[1]
+{%escribir un texto breve en el archivo
+  \immediate\write\output@stream@corrige{\unexpanded{#1}}%
+}
+\newcommand{\CommencerExportFlux}
+{% comenzar la escritura extendida
+   \bgroup\@bsphack
+   \let\do\@makeother\dospecials
+   \catcode`\^^M\active
+   \def\verbatim@processline{%
+     \immediate\write\output@stream@corrige{\the\verbatim@line}}%
+   \verbatim@start}
+\ifdefined\ArreterExportFlux % detener la escritura prolongada
+  \newcommand{\ArreterExportFlux}{\@esphack\egroup}
+\else
+  \def\ArreterExportFlux{\@esphack\egroup}
+\fi
+%TODO ------------------------------------------------------
+\newenvironment{correction}
+  {
+%  \if@lyx
+%  \OuvrirFlux{corregidos-lyx/\thechapter-\theejercicio.lyx}
+%   \else
+%    
+%    \fi
+   %
+   \OuvrirFlux{\thechapter-\theejercicio.tex}
+   \EcritureFlux{\begin{corrige}[\thechapter]{\i}}%
+   \CommencerExportFlux}
+  {\ArreterExportFlux%
+   \EcritureFlux{\end{corrige}\par\vspace*{\spacebeforeexo}}%
+   \FermerFlux}
+
+\newsavebox{\corr@box}
+\newenvironment{corrige}[2][]
+{%
+	\label{corregido-#1-#2}%
+	\ifnum#2<10%
+		\def\num@exo{0#2}%
+	\else%
+		\def\num@exo{#2}%
+	\fi%
+	\itemclass{corrigenum@bg@color}{\ejercicionum@font}%
+	\begin{lrbox}{\corr@box}
+	\begin{minipage}{\dimexpr\linewidth-3em-10pt}
+}
+{%
+	\end{minipage}
+	\end{lrbox}
+	\begin{tikzpicture}
+	\node (texte) {\usebox{\corr@box}};
+	\ifx\num@exo\@empty
+		\node[below left,minimum width=2em] at ($(texte.north west)+(-0.5em,0)$) {\phantom{\ejercicionum@font\num@exo}};
+	\else
+		\node[below left,minimum width=2em] (num) at ($(texte.north west)+(-0.5em,0)$) {\ejercicionum@font\num@exo};
+		\fill[rounded corners=2pt,fill=corrigenum@bg@color] (num.north west) -- ($(num.north east)+(1mm,0mm)$) -- (num.south east) -- ($(num.south west)+(-1mm,0)$) -- cycle;
+		\node[text=corrigenum@color] at (num) {\ejercicionum@font\num@exo};
+	\fi
+	\end{tikzpicture}
+}
+
+%TODO %%%%%%%%%%%%%% INDEX
+
+\newcommand\printindex{%
+	\phantomsection\addcontentsline{toc}{chapter}{\indexname}
+	\@input@{\jobname.ind}
+}
+\def\nbcolindex{2}
+\renewenvironment{theindex}
+{%
+	\if@twocolumn
+		\@restonecolfalse
+	\else
+		\@restonecoltrue
+	\fi
+	\newpage
+	\begin{flushright}\begin{tikzpicture}
+	\node[fill=indextitle@bg@color,text=indextitle@color, xslant=0.2,rounded corners=2pt,inner xsep=1em,inner ysep=1ex] {\indextitle@font\indexname};
+	\end{tikzpicture}\end{flushright}
+	\pagecolor{white}
+	\thispagestyle{main}\parindent\z@
+	\let\item\@idxitem
+	\columnseprule \z@
+	\columnsep 35\p@
+	\ifnum\nbcolindex>1
+	\begin{multicols}{\nbcolindex}
+	\fi
+}
+{%
+	\ifnum\nbcolindex>1
+	\end{multicols}
+	\fi
+	\if@restonecol\onecolumn\else\clearpage\fi
+}
+
+%TODO %%%%%%%%%%%% TOC
+\def\micontour{\contour{contentstitleshadow@color}\contentsname}
+\def\figcontenido{%
+%  \AddToShipoutPicture
+%  	{%
+%  		\put(\LenToUnit{0mm},\LenToUnit{0mm})
+%  		{%
+			\begin{tikzpicture}
+	    		\clip (0,0) rectangle+(\paperwidth,-\paperheight);
+	    		\draw[decorate,decoration={ text effects along path,text along path,text, 
+text={|\contenidobgfont\color{contentstitleshadow@color}|\contentsname}}] (1.6,-8.1) .. controls ($(\controltoctitle,-\controltoctitle)+(0.1,-0.1)$) .. (20.1,-2.1);
+	    		\draw[decorate,decoration={text along path,
+text={|\contenidobgfont\color{contentstitle@color}|\contentsname}}] (1.5,-8) .. controls (\controltoctitle,-\controltoctitle) .. (20,-2);
+			\end{tikzpicture}
+%		}
+%	}
+                                                           }
+
+%\renewcommand{\contentsname}{Contenido}
+\addto\captionsspanish{% Replace "spanish" with the language you use
+  \renewcommand{\contentsname}%
+    {Contenido}%
+}
+\renewcommand\tableofcontents{
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=north west,inner sep=0pt] at ($(current page.north west)-(-0.1cm,-0.3cm)$){
+            \figcontenido
+             };
+\end{tikzpicture}
+		\if@twocolumn
+          \@restonecoltrue\onecolumn
+        \else
+          \@restonecolfalse
+        \fi
+        \@starttoc{toc}%
+        \if@restonecol\twocolumn\fi
+        }
+%%%------------------------------------------------------
+\newcommand{\chaptertoc}[1]{\addtocontents{toc}{#1\par}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

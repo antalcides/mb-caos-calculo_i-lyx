@@ -1,0 +1,62 @@
+
+\documentclass[border=3pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usetikzlibrary{calc}
+
+\newcommand*{\PhM}{\phantom{-}}%
+
+\newcommand{\pLabel}{%
+$F(t) = \begin{cases}
+  0                     & \PhM t < -1 \\[0.8ex]
+  \frac{1}{4}t+\frac{1}{4}  & -1\le t <0 \\[0.8ex]
+  \frac{1}{2}           & \PhM 0\le t <1\\[0.8ex]
+  \frac{1}{12}t+\frac{7}{12} & \PhM 1\le t <2\\[0.8ex]
+  1                     & \PhM t\ge 2
+\end{cases}
+$
+}
+
+\pgfmathdeclarefunction{PieceA}{1}{(0)}%
+\pgfmathdeclarefunction{PieceB}{1}{(#1/4 + 1/4)}%
+\pgfmathdeclarefunction{PieceC}{1}{(0.5)}%
+\pgfmathdeclarefunction{PieceD}{1}{(#1/12 + 7/12)}%
+\pgfmathdeclarefunction{PieceE}{1}{(1)}%
+
+
+\pgfmathdeclarefunction{MyFunction}{1}{%
+  \pgfmathparse{%
+    (and(   1,    #1<-1)*(0)            +%
+    (and(#1>=-1,  #1< 0)*(#1/4 + 1/4)   +%
+    (and(#1>= 0,  #1< 1)*(0.5)          +%
+    (and(#1>= 1,  #1< 2)*(#1/12 + 7/12) +%
+    (and(#1>= 2,    1  )*(1)%
+    }%
+}
+
+
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}
+    \addplot[domain=-5:5, blue, samples=100, ultra thick] {MyFunction(x)};
+    \node [right] at (axis cs: -5.5,0.7) {\tiny\pLabel};
+  \end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \begin{axis}
+    \foreach \xStart/\xEnd  in {-5/-1, -1/0, 0/1, 1/2, 2/5} {
+        \addplot[domain=\xStart:\xEnd, blue, samples=10, ultra thick] {MyFunction(x)};
+    }
+    \node [right] at (axis cs: -5.5,0.7) {\tiny\pLabel};% Labe graph
+
+    % Show discontinuty points
+    \draw [draw=blue, fill=white, thick] (axis cs: 0, 0.250) circle (2.0pt);
+    \draw [draw=blue, fill=blue,  thick] (axis cs: 0, 0.500) circle (2.0pt);
+    \draw [draw=blue, fill=white, thick] (axis cs: 1, 0.500) circle (2.0pt);
+    \draw [draw=blue, fill=blue, thick] (axis cs: 1, 0.666) circle (2.0pt);
+    \draw [draw=blue, fill=white, thick] (axis cs: 2, 0.750) circle (2.0pt);
+    \draw [draw=blue, fill=blue, thick] (axis cs: 2, 1.000) circle (2.0pt);
+  \end{axis}
+\end{tikzpicture}
+\end{document}

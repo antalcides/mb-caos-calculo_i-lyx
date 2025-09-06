@@ -1,0 +1,4083 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass mathbook-main
+\begin_preamble
+\batchmode
+\makeatletter
+\def\input@path{{lib}{styles/}{sections/}{pdf/}{chapters}}
+\makeatother
+\usepackage{listings}
+\usepackage{mathrsfs}
+\graphicspath{{fig-pdf/}{pdf/}{image/}{sections/figures/}{figures/}{images/}}
+\usepackage{float}
+\usepackage{subfigure}
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+%\let\checkmark\relax
+%\definecolor{bleu}{cmyk}{0.59,0.11,0,0.59}
+%\definecolor{vert}{cmyk}{0.78,0,0.74,0.45}
+%\definecolor{caper}{cmyk}{0.21,0.00,0.51,0.54}
+%\definecolor{doc}{cmyk}{1.00,0.45,0.00,0.57}
+%\definecolor{rhodo}{cmyk}{0.78,0,0.74,0.45}
+%\definecolor{azulrey}{cmyk}{0.91,0.34,0.00,0.55}
+%\definecolor{saddlebrown}{cmyk}{0.00,0.46,0.85,0.50}
+%\definecolor{milktea}{cmyk}{0.00,0.18,0.43,0.22}
+%\definecolor{naranja}{cmyk}{0,0.5,1,0}
+%\definecolor{olivegreen}{cmyk}{0.64,0,0.95,0.40}
+%\definecolor{bgpage}{cmyk}{.20,.30,.64,.19}
+%\definecolor{mesh}{cmyk}{0,0.04,0.17,0.03}
+\usepackage{pagecolor}
+\usepackage{zahlen}
+%\pagecolor{mesh}
+\pagecolor{fondpaille}  
+\lstset{
+	numbers=left, 
+	numberstyle=\tiny, 
+	stepnumber=1, 
+	numbersep=3pt, 
+	language=[LaTeX]TeX, 
+	backgroundcolor=\color{bleu!20},
+	frame=shadowbox,
+	rulesepcolor=\color{bleu},
+	rulecolor=\color{bleu},
+	framexleftmargin=10pt,
+	keywordstyle=\color{vert}\bfseries,
+	basicstyle=\listfont,
+    columns=flexible,
+    keepspaces=true,
+    upquote=true,
+    literate=
+    {á}{{\'a}}{1}
+    {é}{{\'e}}{1}
+    {í}{{\'i}}{1}
+    {ó}{{\'o}}{1}
+    {ú}{{\'u}}{1}
+    {Á}{{\'A}}{1}
+    {É}{{\'E}}{1}
+    {Í}{{\'I}}{1}
+    {Ó}{{\'O}}{1}
+    {Ú}{{\'U}}{1}
+    {ñ}{{\~n}}{1}
+    {Ñ}{{\~N}}{1}
+    {ü}{{\"e}}{1}
+    {Ü}{{\"U}}{1}%
+    %frances
+    {è}{{\`e}}{1}%
+    {à}{{\`a}}{1}%
+    {â}{{\^a}}{1}%%%
+    {ç}{{\c{c}}}{1}%
+    {?}{{\oe}}{1}%
+    {ù}{{\`u}}{1}%
+    {È}{{\`E}}{1}%
+    {À}{{\`A}}{1}%
+    {Ç}{{\c{C}}}{1}%
+    {?}{{\OE}}{1}%
+    {Ê}{{\^E}}{1}%
+    {ê}{{\^e}}{1}%
+    {î}{{\^i}}{1}%
+    {ï}{{\"i}}{1}%%%
+    {ô}{{\^o}}{1}%
+    {û}{{\^u}}{1}%
+    ,
+    commentstyle=\color{gray},
+    morekeywords={redefineColor,dfrac,setlength,cellspacetoplimit, cellspacebottomlimit,firstline,text,intro,introauthor,chapter, itemclass,exostart,corrstart,PagCorregidos,columnbreak,titlepic, nbcolindex,indexname,printindex,makeindex,activites, DefineNewBoxLikeRem,BreakCorr}
+}
+\usepackage{lipsum-es}
+\usepackage{wasysym}
+\makeatletter 
+\newenvironment{proof}[1][Prueba]{\textcolor{dem@line@color}{\textbf{#1.\phantom{--}} }}{\hfill\phantom{--}\hfill\ \ \textcolor{dem@line@color}{\rule{0.5em}{0.5em}}}
+\newenvironment{exam}[1][Ejercicio]{\textbf{#1.}\ }{\hfill\ \rule{0.5em}{0.5em}}
+\newenvironment{sol}[1][Soluci\'on]{\textcolor{dem@line@color}{\textbf{#1.\phantom{--}}}}{\hfill\phantom{--}\hfill\ \textcolor{dem@line@color}{\checked}}
+
+\RequirePackage[colorlinks=true,linkcolor=corref@color]{hyperref}
+\redefineColor{thmtitle@bg@color}{0.66,0.24,0.74,0.71}
+\redefineColor{thm@bg@color}{0.11,0,0.09,0.09}
+\redefineColor{proptitle@bg@color}{0.66,0.24,0.74,0.71}
+\redefineColor{prop@bg@color}{0.11,0,0.09,0.09}
+\redefineColor{firstpagebottom@bg@color}{1,1,0.00,0.55}
+\redefineColor{subsection@title@color}{.19,.74,.100,.68}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Vdots{\vbox{\baselineskip4\p@ \lineskiplimit\z@
+    \kern6\p@\hbox{.}\hbox{.}\hbox{.}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatother
+%\selectspanish
+\title{C\'alculo diferencial\\ \normalsize Con ejercicios resueltos.}
+\author{Antalcides Olivo}
+\titlepic[0.3]{image/puente1.jpg}
+\logopic[1]{image/logo-caos-1.png}
+%\titlepic[0.5]{fractal.jpg}
+\date{\dia}
+
+\makeindex
+\end_preamble
+\options ams,openany,11pt,presentation
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+# Standard textclass definition file for mathbook-caos. Taken from initial LyX source code
+# Author : Antalcides Olivo <antalcides@gmail.com>
+# 
+
+# This include files contains all layouts that handle the structure of
+# a document, like abstract, bibliography and also other environments such as:.
+# - Theorem
+# - Corollary
+# - Lemma
+# - Axiom
+# - Conjecture
+# - Definition
+# - demostration
+# - Example
+# - Problem
+# - Solution
+# - Exercise
+# - Remark
+# - Property
+# - método
+# - correction
+# - Multicols
+
+#----
+format 66
+#----
+
+#-----
+OutlinerName thm "Definitions & Theorems"
+Counter theorem
+End
+#-----
+
+#-------
+Counter		theorem
+End
+Style Theorem
+	Category	Reasoning
+	Margin		First_Dynamic
+	LatexType	Environment
+	LatexName	theorem
+	NextNoIndent	1
+	AddToToc              thm
+	IsTocCaption          1
+	Argument 1
+	  LabelString	"Name/Title"
+	  Tooltip	"Alternative optional name or title"
+	  IsTocCaption      1
+	EndArgument
+	LabelSep	xx
+	ParIndent	MMM
+	ParSkip		0.4
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		Block
+	AlignPossible	Left
+	LabelType	Static
+	LabelCounter	theorem
+	LabelString	"Theorem \thechapter.\thetheorem."
+	Font
+	  Shape		Italic
+	  Size		Normal
+	EndFont
+	LabelFont
+	  Shape		Up
+	  Series	Bold
+	EndFont
+	LangPreamble
+	  \providecommand{\theoremname}{_(Theorem)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\theoremname}{_(Theorem)}}
+	EndBabelPreamble
+End
+#------
+
+Counter		corollary
+End
+Style Corollary
+	CopyStyle	Theorem
+	LabelCounter	corollary
+	LatexName	corolario
+	LabelString	"Corollary \thechapter.\thecorollary."
+	LangPreamble
+	  \providecommand{\corollaryname}{_(Corollary)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\corollaryname}{_(Corollary)}}
+	EndBabelPreamble
+End
+#-----
+
+Counter		lemma
+End
+Style Lemma
+	CopyStyle	Theorem
+	LabelCounter	lemma
+	LatexName	lemma
+	LabelString	"Lemma \thechapter.\thelemma."
+	LangPreamble
+	  \providecommand{\lemmaname}{_(Lemma)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\lemmaname}{_(Lemma)}}
+	EndBabelPreamble
+End
+#-----
+
+Counter		proposition
+End
+Style Proposition
+	CopyStyle	Theorem
+	LabelCounter	proposition
+	LatexName	proposition
+	LabelString	"Proposition \thechapter.\theproposition."
+	LangPreamble
+	  \providecommand{\propositionname}{_(Proposition)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\propositionname}{_(Proposition)}}
+	EndBabelPreamble
+End
+#-----
+
+Counter		axi
+End
+Style Axioma
+	CopyStyle	Theorem
+	LabelCounter	axi
+	LatexName	axioma
+	LabelString	"Axioma. \thechapter.\theaxi."
+	Font
+	  Shape		Up
+	EndFont
+	LabelFont
+	  Series	Medium
+	EndFont
+End
+#------
+Counter		pos
+End
+Style Postulado
+	CopyStyle	Theorem
+	LabelCounter	pos
+	LatexName	axioma
+	LabelString	"Postulado. \thechapter.\thepos."
+	Font
+	  Shape		Up
+	EndFont
+	LabelFont
+	  Series	Medium
+	EndFont
+End
+#-----
+Counter		enun
+End
+
+
+Style Enunciado
+	CopyStyle	Theorem
+	LabelCounter	enun
+	LatexName	enunciado
+	LabelString	"Enunciado. \thechapter.\theenun."
+	Font
+	  Shape		Up
+	EndFont
+	LabelFont
+	  Series	Medium
+	EndFont
+End
+
+
+Counter		ley
+End
+
+Style Ley
+	CopyStyle	Theorem
+	LabelCounter	ley
+	LatexName	ley
+	LabelString	"Ley. \thechapter.\theley."
+	Font
+	  Shape		Up
+	EndFont
+	LabelFont
+	  Series	Medium
+	EndFont
+End
+
+
+Counter		conjecture
+End
+
+Style Conjecture
+	CopyStyle	Theorem
+	LabelCounter	conjecture
+	LatexName	conjecture
+	LabelString	"Conjecture \thechapter.\theconjecture."
+	Font
+	  Shape		Up
+	EndFont
+	LabelFont
+	  Series	Medium
+	  Shape		Italic
+	EndFont
+	LangPreamble
+	  \providecommand{\conjecturename}{_(Conjecture)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\conjecturename}{_(Conjecture)}}
+	EndBabelPreamble
+End
+
+
+Counter		fact
+End
+Style Fact
+	CopyStyle	Theorem
+	LabelCounter	fact
+	LatexName	fact
+	LabelString	"Fact \thechapter.\thefact."
+	LangPreamble
+	  \providecommand{\factname}{_(Fact)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\factname}{_(Fact)}}
+	EndBabelPreamble
+End
+
+#-----
+Counter		definition
+End
+Style Definition
+	CopyStyle	Theorem
+	LabelCounter	definition
+	LatexName	definition
+	LabelString	"Definition \thechapter.\thedefinition."
+	RefPrefix	def
+	Font
+	  Shape		Up
+	EndFont
+	LabelFont
+	  Shape		Up
+	  Series	Bold
+	EndFont
+	LangPreamble
+	  \providecommand{\definitionname}{_(Definition)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\definitionname}{_(Definition)}}
+	EndBabelPreamble
+End
+#------
+
+
+Style Claim
+	CopyStyle             Theorem
+	DependsOn             Theorem
+	LatexName             claim
+	LabelString           "Afirmación \thechapter.\thetheorem."
+	Font
+	  Shape               Up
+	  Size                Normal
+	EndFont
+	LabelFont
+	  Series              Medium
+	  Shape               Italic
+	EndFont
+	LangPreamble
+	  \providecommand{\claimname}{_(Claim)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\claimname}{_(Claim)}}
+	EndBabelPreamble
+End
+
+
+
+Counter		case
+End
+
+Style Case
+	CopyStyle	Claim
+	LabelCounter	case
+	LatexName	case
+	LabelString	"Case \thechapter.\thecase."
+	RefPrefix	case
+	LangPreamble
+	  \providecommand{\casename}{_(Case)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\casename}{_(Case)}}
+	EndBabelPreamble
+End
+
+
+#------
+Counter		property
+End
+
+Style Property
+	CopyStyle	Claim
+	LabelCounter	property
+	LatexName	property
+	LabelString	"Property \thechapter.\theproperty."
+	RefPrefix	prop
+	LangPreamble
+	  \providecommand{\propertyname}{_(Property)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\propertyname}{_(Property)}}
+	EndBabelPreamble
+End
+#------
+
+## Ejercicios ----------------
+
+
+#-----
+Counter		example
+End
+Style Example
+	CopyStyle	Conjecture
+    Category	Exercise
+	LabelCounter	example
+	LatexName	example
+	LabelString	"Example \thechapter.\theexample."
+	RefPrefix	exa
+	LangPreamble
+	  \providecommand{\examplename}{_(Example)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\examplename}{_(Example)}}
+	EndBabelPreamble
+End
+#-----
+
+Counter		problem
+End
+Style Problem
+	CopyStyle	Definition
+	Category	Exercise
+	LabelCounter	problem
+	LatexName	problem
+	LabelString	"Problem \thechapter.\theproblem."
+	RefPrefix	prob
+	LangPreamble
+	  \providecommand{\problemname}{_(Problem)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\problemname}{_(Problem)}}
+	EndBabelPreamble
+End
+#-----
+
+
+Counter		exercise
+End
+
+Style Exercise
+	CopyStyle	Problem
+    Category	Exercise
+	LabelCounter	exercise
+	LatexName	exercise
+	LabelString	"Exercise \thechapter.\theexercise."
+	RefPrefix	exer
+	LangPreamble
+	  \providecommand{\exercisename}{_(Exercise)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\exercisename}{_(Exercise)}}
+	EndBabelPreamble
+End
+#-----
+Counter		prob
+#  Within	chapter
+End
+# Prob does not copy a style to avoid preamble code
+Style Programming
+	Category	Exercise
+	LatexType	Environment
+	LatexName	programming
+	Margin		First_Dynamic
+	LabelType	Static
+	LabelCounter	prob
+	LabelString	"Ejercicio para programar. \thechapter.\theprob"
+	NextNoIndent	1
+	ResetArgs       1
+	LabelSep	xx
+	ParIndent	MMM
+	ParSkip		0.4
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		Block
+	AlignPossible	Left
+	LabelFont
+	  Series	Bold
+	EndFont
+	AddToToc	thm
+	IsTocCaption	true
+End
+
+
+## Soluciones y demostraciones -------------
+#-----
+Counter		solution
+End
+Style Solution
+	CopyStyle	Problem
+           Category	Solución
+	LabelCounter	solution
+	LatexName	solution
+	LabelString	"Solución"
+	RefPrefix	solu
+	LangPreamble
+	  \providecommand{\solutionname}{_(Solution)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\solutionname}{_(Solution)}}
+	EndBabelPreamble
+End
+#-----
+
+Style Proof
+	CopyStyle	Problem
+           Category	Solución
+	LatexName	proof
+	LabelType	Static
+	#LabelString	"# [number of Proof]"
+          LabelString	"Proof"
+	Argument 1
+	  Mandatory	1
+	  LabelString	"Label of proof"
+	  Tooltip	"Label of the corresponding proof"
+	  IsTocCaption true
+	EndArgument
+End
+
+
+
+
+## InFlex --------------------
+
+
+InsetLayout Flex:Portada
+        LyxType	custom
+       LabelString	"Portada"
+       Decoration	classic
+       BgColor	buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	false
+    LatexType	command
+    LatexName	tbook
+    Argument 1
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 2
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 3
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 4
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 5
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 6
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 7
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 8
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   	ResetsFont true
+End
+
+
+
+InsetLayout Flex:Chapter~Image
+       LyxType	custom
+       LabelString	"Imagen del capítulo"
+       Decoration	classic
+       BgColor	buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	false
+    LatexType	command
+    LatexName	chapterimage
+    Argument 1
+        Mandatory	          0	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+End
+
+
+InsetLayout Flex:Portada~Imagen
+       LyxType	custom
+       LabelString	"Imagen de la portada"
+       Decoration	classic
+       BgColor	buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	false
+    LatexType	command
+    LatexName	portadaimage
+    Argument 1
+        Mandatory	          0	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+End
+
+
+InsetLayout Flex:Sugerencia
+       LyxType	custom
+       LabelString	"Sugerencia"
+       Decoration	classic
+       BgColor	gray #buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	true
+    LatexType	Environment
+    LatexName	sugerencia
+    Argument 1
+        Mandatory	          0	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+End
+
+
+InsetLayout Flex:Observación
+       LyxType	custom
+       LabelString	"Observación"
+       Decoration	classic
+       BgColor	gray #buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	true
+    LatexType	Environment
+    LatexName	remark
+    Argument 1
+        Mandatory	          0	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+End
+
+
+
+InsetLayout Flex:AutorIntro
+       LyxType	custom
+       LabelString	"AutorFrase"
+       Decoration	classic
+       BgColor	gray #buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	true
+    LatexType	command
+    LatexName	introauthor
+    Argument 1
+        Mandatory	          0	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+End
+
+
+InsetLayout Flex:Intro
+       LyxType	custom
+       LabelString	"Intro"
+       Decoration	classic
+       BgColor	gray #buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	true
+    LatexType	command
+    LatexName	intro
+    Argument 1
+        Mandatory	          0	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+End
+\end_local_layout
+\language spanish-mexico
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 1
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "numbers=left,	numberstyle={\tiny},	stepnumber=1,	numbersep=3pt,	language={[LaTeX]TeX},	backgroundcolor={\color{bleu!20}},	frame=shadowbox,	rulesepcolor={\color{bleu}},	rulecolor={\color{bleu}},	framexleftmargin=10pt,	keywordstyle={\color{vert}\bfseries},	basicstyle={\small},columns=flexible,keepspaces=true,upquote=true,commentstyle={\color{gray}},morekeywords={redefineColor,dfrac,setlength,cellspacetoplimit, cellspacebottomlimit,firstline,text,intro,introauthor,chapter, itemclass,exostart,corrstart,PagCorregidos,columnbreak,titlepic, nbcolindex,indexname,printindex,makeindex,activites, DefineNewBoxLikeRem,BreakCorr}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Derivación
+\end_layout
+
+\begin_layout Section
+Definición de derivada
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función definida en el punto 
+\begin_inset Formula $c\in\left]a,b\right[$
+\end_inset
+
+.
+ Se define la derivada
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!Definición de –|textbf
+\end_layout
+
+\end_inset
+
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x=c$
+\end_inset
+
+ como
+\begin_inset Formula 
+\begin{equation}
+f^{\prime}\left(c\right):=\lim_{h\rightarrow0}\frac{f\left(c+h\right)-f\left(c\right)}{h}\label{d1}
+\end{equation}
+
+\end_inset
+
+si dicho límite existe.
+\end_layout
+
+\begin_layout Standard
+Precisando esta idea, ya que
+\begin_inset Formula 
+\[
+\begin{tabular}{lll}
+\ensuremath{\dfrac{f(c+h)-f(c)}{h}\rightarrow f^{\prime}(c)}  &  , cuando  &  \ensuremath{h\rightarrow0,}\end{tabular}
+\]
+
+\end_inset
+
+se tiene que para todo 
+\begin_inset Formula $r>0$
+\end_inset
+
+, existe 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ tal que 
+\begin_inset Formula 
+\[
+\left\vert \frac{f(c+h)-f(c)}{h}-f^{\prime}(c)\right\vert <r,\text{ si }|h|<\delta.
+\]
+
+\end_inset
+
+Para un tal 
+\begin_inset Formula $h$
+\end_inset
+
+ escribamos 
+\begin_inset Formula 
+\begin{equation}
+E_{c}(h):=f(c+h)-f(c)-hf^{\prime}(c).\label{funcerror}
+\end{equation}
+
+\end_inset
+
+De (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "funcerror"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) se tiene que
+\begin_inset Formula 
+\begin{equation}
+f(c+h)=f(c)+hf^{\prime}(c)+E_{c}(h),\label{diferencial}
+\end{equation}
+
+\end_inset
+
+y como 
+\begin_inset Formula 
+\begin{align*}
+\lim_{h\rightarrow0}\frac{E_{c}(h)}{h} & =\lim_{h\rightarrow0}\frac{f(c+h)-f(c)}{h}-f^{\prime}(c)\\
+ & =0,
+\end{align*}
+
+\end_inset
+
+se pone de presente que 
+\begin_inset Formula $f(c+h)\approx f(c)+hf^{\prime}(c),$
+\end_inset
+
+ si 
+\begin_inset Formula $h\approx0$
+\end_inset
+
+; por lo cual se acostumbra describir a 
+\begin_inset Formula $E_{c}$
+\end_inset
+
+ como una función 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– de error
+\end_layout
+
+\end_inset
+
+de error en la aproximación de 
+\begin_inset Formula $f(c+h)$
+\end_inset
+
+ por 
+\begin_inset Formula $f(c)+hf^{\prime}(c)$
+\end_inset
+
+.
+ La función lineal 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename images/derivada-sec-4.pdf
+	scale 80
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+protect
+\end_layout
+
+\end_inset
+
+ Aproximación lineal de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+g(x)=f(c)+(x-c)f^{\prime}(c)\label{aproxlinfvsc}
+\end{equation}
+
+\end_inset
+
+(cuya gráfica es la ecuación de la recta tangente en 
+\begin_inset Formula $(c,f(c))$
+\end_inset
+
+.
+ Ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "difeecni"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) es entonces una aproximación de 
+\begin_inset Formula $f$
+\end_inset
+
+ en las vecindades de 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ El incremento de 
+\begin_inset Formula $f$
+\end_inset
+
+ es dado por la 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Aplicación lineal|textbf
+\end_layout
+
+\end_inset
+
+aplicación lineal 
+\begin_inset Formula 
+\begin{equation}
+h\longmapsto f^{\prime}(c)h,\label{defdif}
+\end{equation}
+
+\end_inset
+
+la cual es usualmente denominada la 
+\series bold
+diferencial
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diferencial|textbf
+\end_layout
+
+\end_inset
+
+
+\series default
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ La existencia de una aplicación lineal y de una función de error como en
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diferencial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) caracteriza a funciones denominadas 
+\series bold
+diferenciables
+\series default
+.
+ 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Funciones!– diferenciables
+\end_layout
+
+\end_inset
+
+El concepto de diferenciabilidad, para funciones reales de variable real,
+ coincide así con el de derivabilidad.
+ Por lo tanto 
+\begin_inset Formula $f$
+\end_inset
+
+ con las condiciones indicadas en la definición de derivada, se denomina
+ 
+\series bold
+diferenciable
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– diferenciable
+\end_layout
+
+\end_inset
+
+
+\series default
+ en 
+\begin_inset Formula $c$
+\end_inset
+
+ si, y sólo si existen una aplicación lineal
+\begin_inset Formula 
+\[
+f_{c}^{\prime}:\rz\longrightarrow\rz,
+\]
+
+\end_inset
+
+y una función 
+\begin_inset Formula 
+\[
+E_{c}:\rz\longrightarrow\rz,
+\]
+
+\end_inset
+
+tales que 
+\begin_inset Formula 
+\begin{align}
+f(c+h) & =f(c)+f_{c}^{\prime}(h)+E_{c}(h),\label{diferenciabilidadc}\\
+\lim_{h\rightarrow0}\frac{E_{c}(h)}{h} & =0.\label{errordif}
+\end{align}
+
+\end_inset
+
+La ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diferenciabilidadc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) es denominada 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Fórmula de Taylor|textbf
+\end_layout
+
+\end_inset
+
+
+\series bold
+fórmula de Taylor
+\series default
+ de primer orden para 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ La función 
+\begin_inset Formula $f_{c}^{\prime}$
+\end_inset
+
+ es la 
+\series bold
+diferencial
+\series default
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $c$
+\end_inset
+
+ citada en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "defdif"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ De la discusión previa se tiene entonces que toda función derivable en
+ 
+\begin_inset Formula $x=c,$
+\end_inset
+
+ es también una función diferenciable en 
+\begin_inset Formula $x=c$
+\end_inset
+
+.
+ Recíprocamente, si se cumple (
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diferenciabilidadc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "errordif"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), entonces 
+\begin_inset Formula 
+\begin{align*}
+\lim_{h\rightarrow0}\frac{f(c+h)-f(c)}{h} & =\lim_{h\rightarrow0}\frac{f_{c}^{\prime}(h)+Ec(h)}{h}\\
+ & =\lim_{h\rightarrow0}\frac{f_{c}^{\prime}(h.1)+E_{c}(h)}{h}\\
+ & =\lim_{h\rightarrow0}\frac{hf_{c}^{\prime}(1)+E_{c}(h)}{h}\\
+ & =\lim_{h\rightarrow0}\left(f_{c}^{\prime}(1)+\frac{E_{c}(h)}{h}\right)\\
+ & =f_{c}^{\prime}(1),
+\end{align*}
+
+\end_inset
+
+lo cual demuestra que 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $c$
+\end_inset
+
+ y que 
+\begin_inset Formula 
+\[
+f^{\prime}(c)=f_{c}^{\prime}(1).
+\]
+
+\end_inset
+
+Si escribimos 
+\begin_inset Formula $h=x-c$
+\end_inset
+
+, la derivada puede escribirse también como 
+\begin_inset Formula 
+\begin{equation}
+f^{\prime}(c)=\lim_{x\rightarrow c}\frac{f(x)-f(c)}{x-c}.
+\end{equation}
+
+\end_inset
+
+Si suponemos 
+\begin_inset Formula $f$
+\end_inset
+
+ derivable en 
+\begin_inset Formula $x=c,$
+\end_inset
+
+ es inmediato que 
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\rightarrow c}f(x) & =\lim_{x\rightarrow c}\frac{f(x)-f(c)+f(c)}{x-c}(x-c)\\
+ & =\lim_{x\rightarrow c}\left(\frac{f(x)-f(c)}{x-c}(x-c)+f(c)\right)\\
+ & =f^{\prime}(c)(0)+f(c)\\
+ & =f(c)
+\end{align*}
+
+\end_inset
+
+y, por lo tanto se cumple el siguiente resultado
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "d15"
+
+\end_inset
+
+Si 
+\begin_inset Formula $f:\left]a,b\right[\rightarrow\rz$
+\end_inset
+
+ es diferenciable
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– continua
+\end_layout
+
+\end_inset
+
+ en 
+\begin_inset Formula $x=c\in\left]a,b\right[$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $x=c$
+\end_inset
+
+.
+  
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+El recíproco es falso en general, como ejemplo tomemeos la función valor
+ absoluto 
+\begin_inset Formula 
+\[
+f(x)=|x|,
+\]
+
+\end_inset
+
+la cual es continua en 
+\begin_inset Formula $x=0$
+\end_inset
+
+, pero no es diferenciable en el mismo.
+ En efecto: 
+\begin_inset Formula 
+\begin{align*}
+\lim_{h\rightarrow0^{+}}\frac{|h|}{h} & =1\\
+\lim_{h\rightarrow0^{-}}\frac{|h|}{h} & =-1,
+\end{align*}
+
+\end_inset
+
+por lo que 
+\begin_inset Formula $f^{\prime}(0)$
+\end_inset
+
+ no existe.
+\end_layout
+
+\begin_layout Standard
+Si consideramos los valores 
+\begin_inset Formula $x$
+\end_inset
+
+ para quienes exista el límite 
+\begin_inset Formula 
+\begin{equation}
+f^{\prime}\left(x\right)=\lim_{h\rightarrow0}\frac{f\left(x+h\right)-f\left(x\right)}{h}.\label{d2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+Entonces se puede asignar a cada 
+\begin_inset Formula $x$
+\end_inset
+
+ el número 
+\begin_inset Formula $f^{\prime}\left(x\right)$
+\end_inset
+
+.
+ De esta manera en 
+\begin_inset Formula $\left(\ref{d2}\right)$
+\end_inset
+
+ se define una nueva función llamada la derivada de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ es continua decimos que 
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– continuamente diferenciable
+\end_layout
+
+\end_inset
+
+continuamente diferenciable 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{notation}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+, la derivada de 
+\begin_inset Formula $f$
+\end_inset
+
+ respecto a 
+\begin_inset Formula $x$
+\end_inset
+
+ puede notarse de cualquiera de las siguientes maneras
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)\equiv y^{\prime}\equiv\dfrac{dy}{dx}\equiv\dfrac{d}{dx}f\left(x\right)\equiv Df\left(x\right)\equiv D_{x}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{notation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{definition}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Derivadas laterales
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivadas!laterales
+\end_layout
+
+\end_inset
+
+Se define la derivada a la derecha (derivada lateral derecha) de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x=c$
+\end_inset
+
+ como 
+\begin_inset Formula $f_{+}^{\prime}$
+\end_inset
+
+ donde 
+\begin_inset Formula 
+\[
+f_{+}^{\prime}\left(c\right)=\lim_{h\rightarrow0^{+}}\frac{f\left(c+h\right)-f\left(c\right)}{h}\,\,,
+\]
+
+\end_inset
+
+si este límite existe.
+ Análogamente, se define la derivada a la izquierda (derivada lateral izquierda)
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x=c$
+\end_inset
+
+ como 
+\begin_inset Formula $f_{-}^{\prime}$
+\end_inset
+
+ donde 
+\begin_inset Formula 
+\[
+f_{-}^{\prime}\left(x_{0}\right)=\lim_{h\rightarrow0^{+}}\frac{f\left(c+h\right)-f\left(c\right)}{h}\,\,,
+\]
+
+\end_inset
+
+si este límite existe.
+\begin_inset Newline newline
+\end_inset
+
+De la definición de derivada, se puede decir que una función 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $x=c$
+\end_inset
+
+ si, y solo si 
+\begin_inset Formula $f_{+}^{\prime}\left(c\right)=f_{-}^{\prime}\left(c\right).$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{definition}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{definition}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Diferenciabilidad en un intervalo
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivabilidad!– en un intervalo
+\end_layout
+
+\end_inset
+
+Se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en un intervalo abierto 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+, si 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en cada punto del intervalo 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{definition}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para intervalos de otro tipo, la exigencia de derivabilidad en los extremos
+ se puede debilitar, exigiendo simplemente derivabilidad lateral en dichos
+ puntos.
+ Por ejemplo, diremos que 
+\begin_inset Formula $f:[a,b]\rightarrow\rz$
+\end_inset
+
+ es diferenciable en el intervalo cerrado 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, si 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en el intervalo abierto 
+\begin_inset Formula $\left]a,b\right[,$
+\end_inset
+
+ y si además
+\begin_inset Formula $\ f_{+}^{\prime}\left(a\right)\ $
+\end_inset
+
+y 
+\begin_inset Formula $\ f_{-}^{\prime}\left(b\right)$
+\end_inset
+
+ existen.
+ 
+\end_layout
+
+\begin_layout Subsection
+Derivada de orden superior
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f:\left]a,b\right[\longrightarrow\rz$
+\end_inset
+
+ es 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivadas!– de orden superior
+\end_layout
+
+\end_inset
+
+una función, y si 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $c\in\left]a,b\right[$
+\end_inset
+
+, entonces el conjunto 
+\begin_inset Formula 
+\[
+U=\{x\in\left]a,b\right[\mid f^{\prime}(x)\ \mbox{ \ existe}\}
+\]
+
+\end_inset
+
+es no vacío.
+ Definimos 
+\begin_inset Formula 
+\begin{equation}
+\begin{tabular}{llll}
+\ensuremath{f^{\prime}:}  &  \ensuremath{U}  &  \ensuremath{\longrightarrow}  &  \ensuremath{\rz}\\
+  &  \ensuremath{x}  &  \ensuremath{\longmapsto}  &  \ensuremath{f^{\prime}\left(x\right).}
+\end{tabular}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ es la 
+\series bold
+función derivada
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– derivada
+\end_layout
+
+\end_inset
+
+
+\series default
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, si 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función diferenciable en un intervalo, su derivada 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ puede también ser diferenciable, en tal caso su derivada se denota por
+ 
+\begin_inset Formula $f^{\prime\prime}$
+\end_inset
+
+.
+ Es decir, la segunda derivada es la derivada de la derivada .
+ Y así sucesivamente podríamos continuar derivando para obtener 
+\begin_inset Formula $f^{\prime\prime\prime}=f^{(3)},$
+\end_inset
+
+ 
+\begin_inset Formula $f^{\prime\prime\prime\prime}=f^{(4)},\dots.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+En general, se puede denotar las derivadas de orden superior como
+\begin_inset Formula 
+\[
+f^{\left(n\right)}\left(x\right)=y^{\left(n\right)}=\frac{d^{n}y}{dx^{n}}=\frac{d}{dx}\left(\frac{d^{n-1}y}{dx^{n-1}}\right)\ \ ,si\ \ n\geq2
+\]
+
+\end_inset
+
+También es usual escribir 
+\begin_inset Formula $C^{n}\left]a,b\right[$
+\end_inset
+
+ para el conjunto de todas las funciones con derivadas hasta el orden 
+\begin_inset Formula $n$
+\end_inset
+
+, al menos, y con dichas derivadas continuas en el intervalo 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+, 
+\begin_inset Formula $a,b\in\rz$
+\end_inset
+
+.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+d@
+\begin_inset Formula $C^{\infty}\left]a,b\right[$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $C^{\infty}\left]a,b\right[$
+\end_inset
+
+ es el conjunto de todas las funciones con derivadas continuas de todos
+ los ordenes sobre 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Interpretación geométrica de la derivada
+\begin_inset CommandInset label
+LatexCommand label
+name "ingeodelader"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De la discusión previa se tiene que en el caso que 
+\begin_inset Formula $f$
+\end_inset
+
+ sea derivable en 
+\begin_inset Formula $x=c,$
+\end_inset
+
+ existe una aproximación lineal de 
+\begin_inset Formula $f$
+\end_inset
+
+ en las vecindades de 
+\begin_inset Formula $c$
+\end_inset
+
+ dada por (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "aproxlinfvsc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Lo interesante es que esta ecuación coincide con la ecuación de la recta
+ tangente a la gráfica de la función y la derivada con la pendiente de dicha
+ recta.
+ Para justificar lo anterior, consideremos la función 
+\begin_inset Formula $y=f\left(x\right),$
+\end_inset
+
+ con 
+\begin_inset Formula $f$
+\end_inset
+
+ diferenciable en 
+\begin_inset Formula $x=c$
+\end_inset
+
+.
+ Observemos que el cociente 
+\begin_inset Formula $\dfrac{f\left(c+h\right)-f\left(c\right)}{h}$
+\end_inset
+
+ representa la pendiente de la recta secante que pasa por los puntos 
+\begin_inset Formula $\left(c,f\left(c\right)\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(c+h,f\left(c+h\right)\right)$
+\end_inset
+
+ (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "recsec1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ )
+\begin_inset Formula $.$
+\end_inset
+
+ Al tomar límite cuando 
+\begin_inset Formula $h\rightarrow0$
+\end_inset
+
+, 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!Interpretación!geométrica|textit
+\end_layout
+
+\end_inset
+
+la pendiente de la recta secante tiende al valor de la 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Recta tangente|textbf
+\end_layout
+
+\end_inset
+
+pendiente de la recta tangente.
+\begin_inset space \space{}
+\end_inset
+
+Por lo tanto 
+\begin_inset Formula $f^{\prime}\left(c\right)$
+\end_inset
+
+ es la pendiente de la recta tangente a la curva 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $\left(c,f\left(c\right)\right)$
+\end_inset
+
+ y la ecuación de la recta tangente es
+\begin_inset Formula 
+\[
+y-f\left(c\right)=f^{\prime}\left(c\right)\left(x-c\right)
+\]
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename images/derivada-tan.pdf
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tangente a la gráfica de una función 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "recsec1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como consecuencia se considera, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{definition}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función derivable en 
+\begin_inset Formula $x=c.$
+\end_inset
+
+ La recta tangente a la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $\left(c,f\left(c\right)\right)$
+\end_inset
+
+ es aquella recta cuya pendiente está dada por 
+\begin_inset Formula $f^{\prime}\left(c\right)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{definition}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observe que esta definición en ningún momento excluye la posibilidad de
+ que la recta tangente corte a la gráfica de la función en varias ocasiones
+ .
+ 
+\end_layout
+
+\begin_layout Subsection
+Interpretación física de la derivada
+\end_layout
+
+\begin_layout Standard
+Consideremos una partícula que se mueve a lo largo de una recta durante
+ un intervalo de tiempo 
+\begin_inset Formula $t_{0}\leq t\leq t_{1}$
+\end_inset
+
+, con una ecuación de posición dada por 
+\begin_inset Formula $x=x\left(t\right)$
+\end_inset
+
+.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!Interpretación!física|textit
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– posición
+\end_layout
+
+\end_inset
+
+Se conoce como velocidad promedio o velocidad media de la partícula en 
+\begin_inset Formula $\left[t_{0},t_{1}\right],$
+\end_inset
+
+ al cociente
+\begin_inset Formula 
+\[
+\frac{\Delta x}{\Delta t}=\frac{x\left(t_{1}\right)-x\left(t_{0}\right)}{t_{1}-t_{0}}:=\overline{v}.
+\]
+
+\end_inset
+
+La velocidad media por lo general no brinda información sobre la velocidad
+ de la partícula en un punto cualesquiera 
+\begin_inset Formula $t_{2}\in\left[t_{0},t_{1}\right].$
+\end_inset
+
+ Si el movimiento es rectilineo uniforme, es claro que para todo punto en
+ 
+\begin_inset Formula $\left]t_{0},t_{1}\right[$
+\end_inset
+
+, la
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Velocidad!– promedio
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Velocidad!– instantanea
+\end_layout
+
+\end_inset
+
+ velocidad de la partícula estará dada por 
+\begin_inset Formula $\overline{v}.$
+\end_inset
+
+ Pero si el movimiento no es rectilineo uniforme, el problema debe abordarse
+ de otra forma.
+ Ahora, como el desplazamiento de la partícula en un intervalo 
+\begin_inset Formula $\left[t_{2},t_{2}+h\right]$
+\end_inset
+
+ viene dado por 
+\begin_inset Formula 
+\[
+\Delta x=x\left(t_{2}+h\right)-x\left(t_{2}\right).
+\]
+
+\end_inset
+
+Entonces, la velocidad media en dicho intervalo estará dada por
+\begin_inset Formula 
+\[
+\overline{v}=\frac{x\left(t_{2}+h\right)-x\left(t_{2}\right)}{h}=:\overline{v}_{h}\left(t_{2}\right).
+\]
+
+\end_inset
+
+A medida que consideramos 
+\begin_inset Formula $h\approx0,$
+\end_inset
+
+ es claro que se tendran valores de velocidades medias para instantes cada
+ vez mas cercanos a 
+\begin_inset Formula $t_{2}.$
+\end_inset
+
+ Extendiendo este hecho se define la velocidad instantanea de la partícula
+ en 
+\begin_inset Formula $t=t_{2}$
+\end_inset
+
+ al límite (en caso de existir): 
+\begin_inset Formula 
+\[
+v\left(t_{2}\right)=\lim_{h\rightarrow0}\overline{v}_{h}\left(t_{2}\right)=\lim_{h\rightarrow0}\frac{x\left(t_{2}+h\right)-x\left(t_{2}\right)}{h}.
+\]
+
+\end_inset
+
+Pero en caso de existir el límite anterior se tiene que 
+\begin_inset Formula $x^{\prime}\left(t_{2}\right)=\lim\limits _{h\rightarrow0}\dfrac{x\left(t_{2}+h\right)-x\left(t_{2}\right)}{h}.$
+\end_inset
+
+ Es decir,
+\begin_inset Formula 
+\[
+x^{\prime}\left(t_{2}\right)=v\left(t_{2}\right).
+\]
+
+\end_inset
+
+Por lo tanto, la derivada de la función posición en el instante 
+\begin_inset Formula $t=t_{2}$
+\end_inset
+
+ representa la velocidad instantánea de la partícula en dicho instante.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Aceleración!– media
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Aceleración!– instantanea
+\end_layout
+
+\end_inset
+
+En forma análoga se muestra que la aceleración instantanea de la partícula
+ en el instante 
+\begin_inset Formula $t=t_{2}$
+\end_inset
+
+ esta dado por
+\begin_inset Formula 
+\[
+a\left(t_{2}\right)=\lim_{h\rightarrow0}\overline{a}_{h}\left(t_{2}\right)=\lim_{h\rightarrow0}\frac{v\left(t_{2}+h\right)-v\left(t_{2}\right)}{h}.
+\]
+
+\end_inset
+
+Por lo cual 
+\begin_inset Formula 
+\[
+a\left(t_{2}\right)=v^{\prime}\left(t_{2}\right)=x^{\prime\prime}\left(t_{2}\right).
+\]
+
+\end_inset
+
+Si consideramos lo expuesto en 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ingeodelader"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, es claro que en la gráfica 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ vs.
+ 
+\begin_inset Formula $t,$
+\end_inset
+
+ la velocidad en el punto 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ viene dada por la pendiente de la recta tangente a la curva en 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+ Análogamente, si tenemos la gráfica 
+\begin_inset Formula $v\left(t\right)$
+\end_inset
+
+ vs.
+ 
+\begin_inset Formula $t,$
+\end_inset
+
+ la aceleración en 
+\begin_inset Formula $t_{0}\ $
+\end_inset
+
+es la pendiente de recta tangente a la curva en 
+\begin_inset Formula $t_{0}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/fig-3-4.pdf
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teoremas relativos a la derivada.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!Teorema relativos de la –
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta sección enunciamos sin demostración algunos teoremas importantes
+ para el cálculo de derivadas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "d3"
+
+\end_inset
+
+Si f y g son funciones diferenciables en 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+, entonces las funciones 
+\begin_inset Formula $f+g$
+\end_inset
+
+ ,
+\begin_inset Formula $f-g$
+\end_inset
+
+ , 
+\begin_inset Formula $fg$
+\end_inset
+
+ y 
+\begin_inset Formula $\dfrac{f}{g}$
+\end_inset
+
+ (con 
+\begin_inset Formula $g\left(x\right)\neq0$
+\end_inset
+
+ ) también son diferenciables en 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+ y 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+a.
+\end_layout
+
+\end_inset
+
+si 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)+g\left(x\right)$
+\end_inset
+
+ entonces 
+\begin_inset Formula $h^{\prime}\left(x\right)=f^{\prime}\left(x\right)+g^{\prime}\left(x\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+b.
+\end_layout
+
+\end_inset
+
+si 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)-g\left(x\right)$
+\end_inset
+
+ entonces 
+\begin_inset Formula $h^{\prime}\left(x\right)=f^{\prime}\left(x\right)-g^{\prime}\left(x\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+c.
+\end_layout
+
+\end_inset
+
+si 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)g\left(x\right)$
+\end_inset
+
+ entonces 
+\begin_inset Formula $h^{\prime}\left(x\right)=f^{\prime}\left(x\right)g\left(x\right)+f\left(x\right)g^{\prime}\left(x\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+d.
+\end_layout
+
+\end_inset
+
+si 
+\begin_inset Formula $h\left(x\right)=\dfrac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $h^{\prime}\left(x\right)=\dfrac{f^{\prime}\left(x\right)g\left(x\right)-f\left(x\right)g^{\prime}\left(x\right)}{[g\left(x\right)]^{2}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "d4"
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=cx^{n},\ \ $
+\end_inset
+
+donde 
+\begin_inset Formula $c$
+\end_inset
+
+ es una constante y 
+\begin_inset Formula $n\in\nz$
+\end_inset
+
+ .
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=ncx^{n-1}.$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "d5"
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=cx^{r}$
+\end_inset
+
+ donde 
+\begin_inset Formula $c$
+\end_inset
+
+ es una constante y 
+\begin_inset Formula $r\in\rz$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=rcx^{r-1}.$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "d6"
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=c\ \ \forall x\in\left]a,b\right[$
+\end_inset
+
+, donde c es una constante.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=0.$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "d376"
+
+\end_inset
+
+ Si 
+\begin_inset Formula $f\left(x\right)=\sum_{k=0}^{k=n}a_{k}x^{k}$
+\end_inset
+
+es una función polinomica, se tiene que 
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=\sum_{k=1}^{k=n}ka_{k}x^{k-1}.
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}[Derivada de las funciones trigonometricas]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!– de funciones!trigonométricas|textit
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "d7"
+
+\end_inset
+
+ 
+\color white
+.
+
+\color inherit
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+a.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\operatorname{sen}x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\cos x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+b.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\cos x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\operatorname{sen}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+c.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\tan x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\sec^{2}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+d.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\cot x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\csc^{2}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+e.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\sec x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\sec x\tan x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+f.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\csc x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\csc x\cot x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "d8"
+
+\end_inset
+
+ 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Regla de la cadena
+\end_layout
+
+\end_inset
+
+Supongamos que 
+\begin_inset Formula $g$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $x$
+\end_inset
+
+, y 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $g\left(x\right).$
+\end_inset
+
+ Entonces la función 
+\begin_inset Formula $h\left(x\right)=f\left(g\left(x\right)\right)$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $x$
+\end_inset
+
+ y 
+\begin_inset Formula 
+\begin{equation}
+h^{\prime}\left(x\right)=f^{\prime}\left(g\left(x\right)\right)\cdot g^{\prime}\left(x\right)\label{cadena}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cadena"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) es denominada usualmente 
+\series bold
+regla de la cadena
+\series default
+ para la derivada de funciones compuestas.
+ Si escribimos 
+\begin_inset Formula $u=f(g(x)),y=g(x)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $u=f(y)$
+\end_inset
+
+ y la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cadena"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) adopta la forma 
+\begin_inset Formula 
+\begin{equation}
+\frac{du}{dx}=\frac{du}{dy}\frac{dy}{dx}.\label{cadena2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}[Derivada de la funci
+\backslash
+'on exponencial y logar
+\backslash
+'
+\backslash
+itmica]
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "d9"
+
+\end_inset
+
+
+\color white
+.
+\color inherit
+
+\begin_inset CommandInset label
+LatexCommand label
+name "d7 copy(1)"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+a.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\ln x$
+\end_inset
+
+.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!– de funciones!trascendentes|textit
+\end_layout
+
+\end_inset
+
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{x}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+b.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\ln\left\vert g\left(x\right)\right\vert $
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{g^{\prime}\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+c.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\log_{a}x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{x\ln a}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+d.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=e^{x}$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula $\ \ f^{\prime}\left(x\right)=e^{x}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+e.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=e^{g\left(x\right)}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=g^{\prime}\left(x\right)e^{g\left(x\right)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+f.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=a^{x}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(a>0,\ a\neq1\right)$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=a^{x}\ln a$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}[Derivada de la funciones trigonometricas inversas]
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "d10"
+
+\end_inset
+
+ 
+\color white
+.
+\color inherit
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!– de funciones!trigonométricas inversas|textit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+a.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\arcsin x,\left\vert x\right\vert <1$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+b.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\arccos x,\left\vert x\right\vert <1$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{-1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+c.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\arctan x,x\in\left]-\infty,+\infty\right[$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{1+x^{2}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+d.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\operatorname*{arccot}x,x\in\left]-\infty,+\infty\right[$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\dfrac{1}{1+x^{2}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+e.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\operatorname*{arcsec}x,\left\vert x\right\vert >1$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{\left\vert x\right\vert \sqrt{x^{2}-1}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f\left(x\right)=\operatorname*{arccsc}x,\left\vert x\right\vert >1.$
+\end_inset
+
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\dfrac{1}{\left\vert x\right\vert \sqrt{x^{2}-1}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}[Regla de L'H
+\backslash
+^opital]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+e@Regla de L'Hôpital
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "d11"
+
+\end_inset
+
+ 
+\color white
+.
+
+\color inherit
+ Si f y g son funciones continuamente diferenciables en el intervalo 
+\begin_inset Formula $I=\left]a-\delta,a+\delta\right[,\delta>0$
+\end_inset
+
+, y supongamos que 
+\begin_inset Formula $f\left(a\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(a\right)=0$
+\end_inset
+
+ y 
+\begin_inset Formula $g^{\prime}\left(x\right)\neq0$
+\end_inset
+
+ para 
+\begin_inset Formula $x\neq a\ $
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula 
+\[
+\lim\limits _{x\rightarrow a}\dfrac{f\left(x\right)}{g\left(x\right)}=\lim\limits _{x\rightarrow a}\dfrac{f^{\prime}\left(x\right)}{g^{\prime}\left(x\right)}.
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Derivación implícita
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!– implícita
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si una ecuación en dos variables define implícitamente una variable como
+ función diferenciable de la otra, podemos entonces utilizar la regla de
+ la cadena para encontrar la derivada de dicha función.
+ Para ser más precisos supongamos 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F(x,y)=0$
+\end_inset
+
+ es una ecuación en las variables 
+\begin_inset Formula $x$
+\end_inset
+
+ y 
+\begin_inset Formula $y.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+ está definida implícitamente por 
+\begin_inset Formula $F(x,y)=0$
+\end_inset
+
+, y 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en algún abierto 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+De los tres items anteriores, tenemos la ecuación 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– definida implicitamente
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+g(x)=F(x,f(x))=0,
+\]
+
+\end_inset
+
+de donde se tiene que 
+\begin_inset Formula $g^{\prime}(x)=0$
+\end_inset
+
+.
+ Es decir, podemos diferenciar en ambos miembros y obtener así una ecuación
+ 
+\begin_inset Quotes eld
+\end_inset
+
+diferencial
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{d}{dx}(F(x,y))=G(x,y,y^{\prime})=0
+\]
+
+\end_inset
+
+la cual es satisfecha por 
+\begin_inset Formula $f$
+\end_inset
+
+ y su derivada 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+.
+ Consideremos, por ejemplo, la ecuación 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=1
+\]
+
+\end_inset
+
+la cual es la ecuación de la circunferencia unitaria centrada en 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ y, por lo tanto su conjunto solución no es una función.
+ Sin embargo, las ecuaciones: 
+\begin_inset Formula 
+\begin{align}
+y=f(x) & =\sqrt{1-x^{2}},\label{unafuncion}\\
+y=g(x) & =-\sqrt{1-x^{2}}\label{dosfuncion}
+\end{align}
+
+\end_inset
+
+definen funciones implícitas en la ecuación de la circunferencia.
+ Para 
+\begin_inset Formula $x\in\left]-1,1\right[$
+\end_inset
+
+, se tiene 
+\begin_inset Formula 
+\begin{align*}
+y^{\prime}=f^{\prime}(x) & =-\frac{x}{\sqrt{1-x^{2}}}\\
+ & =-\frac{x}{y}\\
+y^{\prime}=g^{\prime}(x) & =\frac{x}{\sqrt{1-x^{2}}}\\
+ & =-\frac{x}{y}
+\end{align*}
+
+\end_inset
+
+Nótese así que , en ambos casos se satisface la ecuación diferencial 
+\begin_inset Formula 
+\[
+y^{\prime}=-\frac{x}{y}.
+\]
+
+\end_inset
+
+Esta última ecuación se pudo obtener por derivación implícita; es decir,
+ directamente de la ecuación de la circunferencia, derivando, respecto a
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, término a término y miembro a miembro en dicha ecuación, como se muestra
+ a continuación, 
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}(x^{2}+y^{2}) & =\frac{d}{dx}(1)\\
+2x+2yy^{\prime} & =0\\
+y^{\prime} & =-\frac{x}{y}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Derivada de la función inversa
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!– de funciones!inversas|textit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f:\left]a,b\right[\in\rz$
+\end_inset
+
+ es una función invertible y diferenciable, con inversa 
+\begin_inset Formula $f^{-1}:\operatorname*{Ran}(f)\longrightarrow\left]a,b\right[$
+\end_inset
+
+, entonces 
+\begin_inset Formula 
+\[
+f\circ f^{-1}=Id_{\operatorname*{Ran}(f)}
+\]
+
+\end_inset
+
+es diferenciable.
+ Si 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ es diferenciable 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Puede demostrarse que funciones con derivada no nula en un punto son uno-a-uno
+ en alguna vecindad de dicho punto y que la inversa es diferenciable en
+ la imágen de dicho punto.
+\end_layout
+
+\end_inset
+
+ la regla de la cadena produce 
+\begin_inset Formula 
+\begin{align*}
+(f\circ f^{-1})^{\prime}(x) & =1\\
+f^{\prime}(f^{-1}(x))(f^{-1})^{\prime}(x) & =1
+\end{align*}
+
+\end_inset
+
+de donde se sigue que 
+\begin_inset Formula 
+\begin{equation}
+(f^{-1})^{\prime}(x)=\frac{1}{f^{\prime}(f^{-1}(x))}\label{derivadadeinversas}
+\end{equation}
+
+\end_inset
+
+En general, si escribimos 
+\begin_inset Formula $y=f^{-1}(x)$
+\end_inset
+
+, por definición de inversa se tiene que 
+\begin_inset Formula 
+\[
+x=f(y).
+\]
+
+\end_inset
+
+Derivando con relación a 
+\begin_inset Formula $x$
+\end_inset
+
+ y usando la regla de la cadena, tenemos: 
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}(x) & =\frac{d}{dx}(f(y))\\
+1 & =f^{\prime}(y)\frac{dy}{dx}\\
+\frac{dy}{dx} & =\frac{1}{f^{\prime}(y)}\\
+ & =\frac{1}{\frac{dx}{dy}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Derivación logarítmica
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivación!– logaritmica
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $x\in\rz$
+\end_inset
+
+, 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\ln(|x|)$
+\end_inset
+
+ está definido.
+ Si consideramos la función 
+\begin_inset Formula 
+\[
+g(x)=\ln(|x|)
+\]
+
+\end_inset
+
+con dominio 
+\begin_inset Formula $\rz-\{0\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $g$
+\end_inset
+
+ es una compuesta de funciones diferenciables en el dominio indicado.
+ Tenemos 
+\begin_inset Formula 
+\begin{align*}
+g^{\prime}(x) & =\frac{1}{|x|}\frac{d}{dx}\left(|x|\right)\\
+ & =\frac{1}{|x|}\frac{x}{|x|}\\
+ & =\frac{1}{x}
+\end{align*}
+
+\end_inset
+
+Si 
+\begin_inset Formula $r\in\qz$
+\end_inset
+
+, y 
+\begin_inset Formula $y=x^{r},x>0$
+\end_inset
+
+, tenemos entonces que 
+\begin_inset Formula 
+\begin{align*}
+\ln(y) & =\ln(x^{r})\\
+ & =r\ln(x)
+\end{align*}
+
+\end_inset
+
+de donde 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{y}y^{\prime} & =r\frac{1}{x}\\
+y^{\prime} & =ry\frac{1}{x}\\
+ & =rx^{r-1}
+\end{align*}
+
+\end_inset
+
+lo que muestra que la regla para la derivada de potencias enteras de 
+\begin_inset Formula $x$
+\end_inset
+
+ se extiende a potencias con exponentes racionales.
+ El proceso mostrado en el cálculo de la derivada 
+\begin_inset Formula $y^{\prime}$
+\end_inset
+
+ es a menudo conocido como derivación logarítmica.
+\end_layout
+
+\end_body
+\end_document

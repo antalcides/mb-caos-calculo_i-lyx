@@ -1,0 +1,299 @@
+%%%%%%%%%%%% Definición de los estilos de páginas
+
+\fancypagestyle{chapterstart}{% primera página del capítulo
+	\fancyhf{}%
+  	\fancyfoot[RO,RE]{%
+  	\vskip0.1pt
+  	\begin{tikzpicture}
+  	\node[rounded corners=3pt,fill=shadow@color,inner ysep=5pt, inner xsep=2ex,text=shadow@color] (shadow) {\pagenumber@font\thepage};
+  	\node[rounded corners=3pt,fill=pagenumber@bg@color,inner ysep=5pt, inner xsep=2ex,text=white] at ($(shadow)+(-2pt,2pt)$) {\pagenumber@font\thepage};
+  	\end{tikzpicture}
+  	}
+}
+
+\fancypagestyle{toc}{% Resumen
+	\fancyhf{}%
+  	\fancyfoot{}
+}
+
+\fancypagestyle{main}{% 
+	\fancyhf{}%
+  	\fancyfoot[RO]{% páginas impaires
+  	\ClearShipoutPicture
+  	\vskip0.1pt  	
+  	\begin{tikzpicture}
+  	\node[rounded corners=3pt,fill=shadow@color,inner ysep=5pt, inner xsep=2ex,text=shadow@color] (shadow) {\pagenumber@font\thepage};
+  	\node[rounded corners=3pt,fill=pagenumber@bg@color,inner ysep=5pt, inner xsep=2ex,text=white] at ($(shadow)+(-2pt,2pt)$) {\pagenumber@font\thepage};
+  	\end{tikzpicture}
+  	}
+  	\fancyfoot[LE]{% páginas paires	
+  		\ClearShipoutPicture
+  		\vskip0.1pt
+  		\begin{tikzpicture}
+  		\node[rounded corners=3pt,fill=shadow@color,inner ysep=5pt, inner xsep=2ex,text=shadow@color] (shadow) {\pagenumber@font\thepage};
+  		\node[rounded corners=3pt,fill=pagenumber@bg@color,inner ysep=5pt, inner xsep=2ex,text=white] at ($(shadow)+(2pt,2pt)$) {\pagenumber@font\thepage};
+  		\end{tikzpicture}
+  	}
+}
+
+%%%%%%%%%%%% Encabezado y pié de página
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\pagestyle{main}
+
+%%%%%%%%%%%% Definiciones predeterminadas
+\newcommand{\intro}[1]{\def\chapterintro{#1}}
+\newcommand{\introauthor}[1]{\def\chapterintroauthor{#1}}
+\introauthor{} % autor de la cita al comienzo del capítulo
+\intro{} % Cita al comienzo del capítulo; para declarar antes del comando \chapter{}
+
+
+%%%%%%%%%%%% Página de presentación
+
+%%%%%%%%%%%% Primera página de cada capítulo
+
+\titleformat{\chapter}
+{%
+    	\thispagestyle{chapterstart}
+	\pagecolor{mesh}
+	%\pagecolor{fondpaille}
+	\bfseries\Huge\raggedleft
+	\color{chapter@title@color}
+	\chaptertitle@font
+}
+{%
+  \AddToShipoutPicture
+  {%
+  	\put(\LenToUnit{0mm},\LenToUnit{0mm})
+  	{%
+	\begin{tikzpicture}
+	    \clip (0,0) rectangle+(\paperwidth,-\paperheight);
+	    % Rectángulo superior derecho
+		\fill[bottom color=chapterdegradado@color,top color=white] (0,0) rectangle+(\paperwidth,-3);
+		% Línea inclinada en el rectángulo en la parte superior derecha
+	    \draw[chapterline@color] (0,3) -- (\paperwidth,-3);
+	    % Pequeño círculo vacío en el rectángulo en la parte superior derecha
+	    \draw[chapterline@color,very thick,opacity=0.2,fill=gray] (.8\paperwidth,-2) circle (5mm);
+	    % Pequeño círculo relleno en la parte superior del rectángulo creado
+	    \fill[chaptertopcircle@color] ($(.8\paperwidth,-2)+(8mm,8mm)$) circle (2mm);
+	    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	    
+	    % Pequeña línea inclinada en el rectángulo en la parte superior derecha
+	    \draw[chapterline@color] (8,3) -- (\paperwidth,-0.5);
+	    % Pequeño círculo vacío en el rectángulo en la parte superior izquierda
+	    \draw[chapterline@color,very thick,opacity=0.2,fill=gray] (.6\paperwidth,-.6) circle (5mm);
+	    % Pequeño círculo relleno en la parte superior izquierda del rectángulo creado
+	    \fill[chaptertopcircle@color] (.57\paperwidth,-1.5) circle (2mm);
+	    % Posible cita
+	    \ifx\chapterintro\@empty
+	    \else
+	    	  \node[below left,text=chapterintro@color] (citation) at (21,-0.5) {" \emph{\chapterintro} "};
+	    	  \ifx\chapterintroauthor\@empty
+	    	  \else
+	    	     \node[below left,text=chapterintro@color] at (citation.south east) {(\chapterintroauthor)};
+	    	  \fi
+	    \fi
+	    % círculo vacío en la parte inferior izquierda
+%	    \fill[chapterbotcircle@color] (1,-27) circle (3cm);
+%	    \fill[white] (1,-27) circle (2.5cm);
+	    % Círculo pequeño casi centrado verticalmente
+%	    \fill[chaptermidcircle@color] (1.2,-17) circle (.7cm);
+%	    \fill[white] (1.2,-17) circle (0.6cm);
+%	     % Líneas verticales a la izquierda
+	    \draw[very thick,chapterrule@color] (1cm,0) -- (1cm,-\paperheight);
+	    \draw[very thick,chapterrule@color] (1.2cm,0) -- (1.2cm,-\paperheight);
+%	    % Elipse arriba a la izquierda
+%	    \fill[chapterelipse@bg@color] (0,0) circle(9cm);%ellipse[x radius=9cm,y radius=5cm];
+	    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	    % Sombra de la elipse
+%	    \foreach \rx/\ry/\c in { %
+%	    8.7/4.7/10,% 
+%	    8.66/4.66/30,%
+%	    8.62/4.62/50,%
+%	    8.58/4.58/70,%
+%	    8.54/4.54/90%
+%	    }
+%	    {
+%		\fill[fill=black!\c!chapterelipse@bg@color] (0,0) ellipse[x radius=\rx cm,y radius=\ry cm];
+%	    }
+%	    % elipse
+%	    \fill[chapterelipse@color] (0,0) ellipse[x radius=8.5cm,y radius=4.5cm];    
+%	    % En la elipse en la parte superior izquierda...
+%	    \clip (0,0) ellipse[x radius=8.5cm,y radius=4.5cm];
+	    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	    	 \fill[chapterelipse@bg@color] (0,0) circle(5cm);   
+	    	    % Sombra del circulo
+	    \foreach \rx/\c in { %
+	    4.7/10,% 
+	    4.66/30,%
+	    4.62/50,%
+	    4.58/70,%
+	    4.54/90%
+	    }
+	    {
+		\fill[fill=ejercicios@bg@color!\c!chapterelipse@bg@color] (0,0) circle(\rx cm);
+	    }
+	    	     \clip (0,0) circle(5cm);
+	    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	     % Líneas verticales a la izquierda
+	    \draw[very thick,chapterrule@color] (1cm,0) -- (1cm,-\paperheight);
+	    \draw[very thick,chapterrule@color] (1.2cm,0) -- (1.2cm,-\paperheight);
+	    \fill[chapter@bg@color] (0,-0.8) rectangle+(15,-1.3);
+	    \node[text=chaptertitlename@color,right] at (0.1,-1.5) {\huge\chaptertitlename@font\bfseries\chaptertitlename~\thechapter};
+  \end{tikzpicture}
+	\chaptertoc   }
+  }
+}
+{7ex}
+{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% Tabla de contenido %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\chaptertoccolor}{white}
+\newcommand{\sectiontoccolor}{section@title@color}
+\newcommand{\subsectiontoccolor}{subsection@title@color}
+\newcommand{\subsubsectiontoccolor}{subsubsection@title@color}
+
+\renewcommand*\l@chapter[2]
+{%
+  \ifnum\c@tocdepth>\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \bfseries \chaptertitle@font \large
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      \def\@linkcolor{\chaptertoccolor}%
+     \raisebox{-0.6em}{%
+      \begin{tikzpicture}%
+      \node[rounded corners=3pt,fill=chapter@title@color,text=white, xslant=0.2] {#1};
+      \end{tikzpicture}%
+      }
+      \color{chapter@title@color}
+      \nobreak\
+       \leaders\hbox{$\m@th
+        \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+        mu$}\hfil\nobreak\hb@xt@\@pnumwidth{\hss
+        \def\@linkcolor{chapter@title@color}%
+        \color{\chaptertoccolor}#2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi
+  \medskip
+}
+
+%\def\@dottedtocline#1#2#3#4#5
+%{%
+%    \vskip \z@ \@plus.2\p@
+%    {%
+%     \leftskip#2\relax\rightskip\@tocrmarg\parfillskip-\rightskip
+%     \parindent #2\relax\@afterindenttrue
+%     \interlinepenalty\@M
+%     \leavevmode
+%     \@tempdima #3\relax
+%     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+%     {%
+%     	\sectiontitle@font#4
+%     }
+%     \nobreak\sectiontitle@font
+%     \leaders\hbox{$\m@th
+%        \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+%        mu$}\hfill
+%     \nobreak
+%     \hb@xt@\@pnumwidth{\hfil #5}%
+%     \par}%
+%}
+  
+\renewcommand*\l@section{%
+\color{\sectiontoccolor}
+\def\@linkcolor{\sectiontoccolor}
+\@dottedtocline{1}{0em}{2em}
+}
+
+\renewcommand*\l@subsection{%
+\color{\subsectiontoccolor}
+\def\@linkcolor{\subsectiontoccolor}
+\@dottedtocline{1}{2em}{2em}
+}
+
+\renewcommand*\l@subsubsection{%
+\color{\subsubsectiontoccolor}
+\def\@linkcolor{\subsubsectiontoccolor}
+\@dottedtocline{1}{4em}{2em}
+}
+
+\def\contentsline#1#2#3#4{%
+  \ifx\\#4\\%
+    \csname l@#1\endcsname{#2}{#3}%
+  \else
+      \csname l@#1\endcsname{\hyper@linkstart{link}{#4}{#2}\hyper@linkend}{%
+        \hyper@linkstart{link}{#4}{#3}\hyper@linkend
+      }%
+  \fi
+}
+
+%%%%%%%%%%%%%%% Portada
+
+\def\coef@bg@pic{1.05}
+\def\coef@opacity@pic{0.2}
+\newcommand{\titlepic}[2][1]{%
+	\FPeval\newscale{\coef@bg@pic*#1}
+	\def\@titlepic{\includegraphics[scale=#1]{#2}}
+	\def\@titlepicbg{\includegraphics[scale=\newscale]{#2}}
+}
+\newcommand{\logopic}[2][1]{%
+	\FPeval\newscale{\coef@bg@pic*#1}
+	\def\@logopic{\includegraphics[scale=#1]{#2}}
+	\def\@logopicbg{\includegraphics[scale=\newscale]{#2}}
+}
+\renewcommand{\and}{\par}
+
+\renewcommand{\maketitle}
+{%
+	\newgeometry{margin=0pt}
+	\begin{tikzpicture}
+	\clip (current page.south west) rectangle (current page.north east);
+	% Fondo da la portada
+	\shade[top color=saddlebrown,bottom color=corref@color] (current page.south west) rectangle (current page.north east);
+	% Líneas horizontales y verticales
+	\foreach \y in {1,2,...,10}
+	{
+		\draw[color=firstpage@lines@color] ($(current page.north west)+(0,-\y*0.5)$) -- ($(current page.north east)+(-0.125*\y,-0.5*\y)$);
+		\draw[color=firstpage@lines@color] ($(current page.north west)+(\y*0.5,0)$) -- ($(current page.north west)+(0,-\y)$);
+	}
+	% Título
+	\node[below right,text=titledoc@color] at ($(current page.north west)+(\marginlefttitle,-\margintoptitle)$) {\begin{minipage}{\dimexpr\paperwidth-2\marginlefttitle}\titledoc@font\@title\end{minipage}};
+	% Autor(es)
+	\node[below left,text=titleauthor@color] at ($(current page.north east)+(-\marginlefttitle,-\margintopauthor)$) {%
+	\begin{minipage}{\dimexpr\paperwidth-2\marginlefttitle}
+	\raggedleft
+	\titleauthor@font\@author
+	\end{minipage}};
+	% Imagen (opcional)
+	\ifx\titlepic\@empty\else
+		\node[above left] (pic) at ($(current page.south east)+(-\marginrightpic,\marginbottompic)$) {\@titlepic};
+		\node[opacity=\coef@opacity@pic] at (pic.center) {\@titlepicbg};
+		\node[above left] (pic) at ($(current page.south east)+(-\marginrightpic,\marginbottompic)$) {\@titlepic};
+	\fi
+	% Date
+	\node[left,text=titledate@color] at ($0.5*(current page.north east)+0.5*(current page.south east)+(-\marginrightdate,\marginbottomdate)$) {\titledate@font\@date};
+	%logo (opcional)
+	%logo (opcional)
+	\ifx\logopic\@empty\else
+		\node[above right] (pic1) at ($(current page.south west)+(\marginrightpic,\marginbottompic)$) {\@logopic};
+		\node[opacity=\coef@opacity@pic] at (pic1.center) {\@titlepicbg};
+		\node[above right] (pic1) at ($(current page.south west)+(\marginrightpic,\marginbottompic)$) {\@logopic};
+	\fi
+	\end{tikzpicture}
+	\if@openany
+	\else
+		\cleardoublepage
+	\fi
+	\restoregeometry
+}

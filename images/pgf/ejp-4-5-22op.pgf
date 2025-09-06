@@ -1,0 +1,129 @@
+\usetkzobj{all}
+\begin{tikzpicture}[]
+\tkzInit[xmin=-0.5, xmax=20.5,  ymin=-0.03, ymax=7.5]
+\tkzDefPoint(0,3){A}
+\tkzDefPoint(-0.2,2.9){Ax}
+\tkzDefPoint(-0.1,3.2){Ay}
+\tkzDefPoint(3,0){B}
+\tkzDefPoint(2.8,-0.1){Bx}
+\tkzDefPoint(3.4,-0.4){By}
+\tkzDefPoint(6.3,3){C}
+\tkzDefPoint(6.8,2.8){Cy}
+\tkzDefPoint(8,7){D}
+\tkzDefPoint(8,7.2){Dx}
+\tkzDefPoint(7.9,7.2){Dy}
+\tkzDefPoint(14,7){E}
+\tkzDefPoint(14,7.2){Ex}
+\tkzDefPoint(11,4){F}
+\tkzDefPoint(10,5){G}
+\tkzDefPoint(1,2){H}
+\tkzDefPoint(5,2){I}
+\tkzDefPoint(9,6){J}
+\tkzDefPoint(13,6){K}
+\tkzDefPoint(10.5,5){L}
+\tkzDefPoint(14,6){M}
+\tkzDefPoint(14,6.3){Mx}
+\tkzDefPoint(13.8,5.8){My}
+\tkzDefPoint(20,6){N}
+\tkzDefPoint(20,6.3){Nx}
+\tkzDefPoint(20.4,5.7){Ny}
+\tkzDefPoint(17,3){O}
+\tkzDefPoint(17.4,2.74){Ox}
+\tkzDefPoint(16.8,2.8){Oy}
+\tkzDefPoint(15,5){P}
+\tkzDefPoint(19,5){Q}
+\tkzDefPoint(7,3){R}
+ \tkzDefPoint(12,6){S}
+ \tkzDefPoint(17,6){T}
+ \tkzDefPoint(17,5){U}
+\tkzDefPoint(3,3){V}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tkzFillPolygon[color =brown!20!black!50!,opacity=.6](M,P,Q,N)
+\tkzFillPolygon[color=Cyan!40!,opacity=.6](P,O,Q)
+\tkzFillPolygon[color =Cyan!40!,opacity=.6](V,C,S,J)
+\tkzFillPolygon[color =Cyan!5!,opacity=.6](B,I,K,F)
+\tkzFillPolygon[color =Cyan!5!,opacity=.6](H,I,B)
+\tkzFillPolygon[color =brown!20!black!50!,opacity=.6](A,B,C)
+\tkzFillPolygon[color =brown!20!black!50!,opacity=.6](D,G,E)
+\tkzFillPolygon[color =brown!20!black!50!,opacity=.6](B,F,E,C)
+\tkzFillPolygon[color =brown!20!black!50!,opacity=.6](A,C,G,D)
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \tkzFillAngle[size=1.5cm, fill=gray!50!](W,Ax,Dx)
+% \tkzLabelAngle[pos=-1,blue](Dx,Ax,W){$\theta$}
+% \tkzMarkRightAngle[fill=red!20,size=.5](Dx,W,Ax)
+% %%%%%%
+% \tkzFillAngle[size=1.5cm, fill=gray!50!](Cx,Bx,Z)
+% \tkzLabelAngle[pos=-1,blue](Z,Bx,Cx){$\theta$}
+% \tkzMarkRightAngle[fill=red!20,size=.5](Bx,Z,Cx)
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tkzDrawSegments[color=brown!20!black!50!,line width=1pt,ultra thick](A,B)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick](B,C)
+ \tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick](A,C)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick](C,E)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick](D,E)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick](G,D)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick,dotted](G,F)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick](I,H)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick](F,E)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick](J,S)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick,dotted](S,K)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick](B,F)
+\tkzDrawSegments[color=brown!20!black!50!, line width=1pt,ultra thick](D,A)
+\tkzDrawSegments[color=violet, line width=1pt,ultra thick](M,N)
+\tkzDrawSegments[color=violet, line width=1pt,ultra thick](P,Q)
+\tkzDrawSegments[color=violet, line width=1pt,ultra thick](O,M)
+\tkzDrawSegments[color=violet, line width=1pt,ultra thick](O,N)
+\tkzDrawSegments[color=violet, line width=1pt,ultra thick,dotted](H,V)
+\tkzDrawSegments[color=violet, line width=1pt,ultra thick,dotted](C,R)
+\tkzDrawSegments[color=red, line width=1pt,ultra thick,dotted](T,U)
+\tkzDrawSegments[color=blue, line width=1pt,ultra thick,dotted](O,U)
+ \tkzLabelSegment[right,pos=.5](O,U){$h$}
+% \tkzDrawMark[mark=|](A1)
+% \tkzDrawMark[mark=|](B1)
+% \tkzLabelSegment[below=10pt,pos=.5](A,B){$2$m}
+% \tkzDrawSegments[color=blue,%
+% line width=1pt,ultra thick,latex-latex](Q,R)
+% \tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](Q,R)
+% \tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](Q,R)
+% \tkzLabelSegment[left=10pt,pos=.5](Q,R){$20$m}
+% \tkzDrawSegments[color=blue,%
+% line width=1pt,ultra thick,latex-latex](S,V)
+% \tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](S,V)
+% \tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](S,V)
+% \tkzLabelSegment[below=15pt,pos=.65](S,V){$2$m}
+% 
+ \tkzDrawSegments[color=blue, line width=1pt,ultra thick,latex-latex](Ax,Bx)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](Ax,Bx)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](Ax,Bx)
+\tkzLabelSegment[left=2pt,pos=.5](Ax,Bx){$5$m}
+% 
+\tkzDrawSegments[color=blue, line width=1pt,ultra thick,latex-latex](Ay,Dy)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](Ay,Dy)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](Ay,Dy)
+\tkzLabelSegment[above=2pt,pos=.5](Ay,Dy){$20$m}
+%%%%%
+ \tkzDrawSegments[color=blue, line width=1pt,ultra thick,latex-latex](Cy,By)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](Cy,By)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](Cy,By)
+\tkzLabelSegment[right=5pt,pos=.5](Cy,By){$5$m}
+% %%%%%
+\tkzDrawSegments[color=blue, line width=1pt,ultra thick,latex-latex](Dx,Ex)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](Dx,Ex)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](Dx,Ex)
+\tkzLabelSegment[above=2pt,pos=.5](Dx,Ex){$8$m}
+% %%%%%
+\tkzDrawSegments[color=blue, line width=1pt,ultra thick,latex-latex](Mx,Nx)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](Mx,Nx)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](Mx,Nx)
+\tkzLabelSegment[above=2pt,pos=.5](Mx,Nx){$8$m}
+%%%%%%
+\tkzDrawSegments[color=blue, line width=1pt,ultra thick,latex-latex](My,Oy)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](My,Oy)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](My,Oy)
+\tkzLabelSegment[left=2pt,pos=.5](My,Oy){$5$m}
+% %%%%%
+\tkzDrawSegments[color=blue, line width=1pt,ultra thick,latex-latex](Ny,Ox)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](Ny,Ox)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](Ny,Ox)
+\tkzLabelSegment[right=2pt,pos=.5](Ny,Ox){$5$m}
+\end{tikzpicture}

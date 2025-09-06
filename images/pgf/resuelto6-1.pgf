@@ -1,0 +1,57 @@
+\tikzset{fontscale/.style = {font=\relsize{#1}}
+    }
+\begin{tikzpicture}[scale=1.5,
+%fontscale=1.5,
+       >=latex',
+    dot/.style = {
+      draw,
+      fill = blue,
+      circle,
+      inner sep = 0pt,
+      minimum size = 6pt
+    }
+  ]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %\draw [very thin, style=gray!50, step=0.5] (0,0) grid (9,9);
+ %\draw [thin, gray!60] (0,0) grid (9,9);
+\coordinate (O) at (0,0);
+\coordinate (A) at (5,0);
+\coordinate (B) at (0,5);
+\coordinate (P) at (2.12,2.85);
+\coordinate (E) at (2.12,5);
+\coordinate (F) at (5,2.85);
+\coordinate (C) at (0,2.85);
+\coordinate (D) at (2.12,0);
+\coordinate (Y) at (0,6);
+\coordinate (X) at (6,0);
+\draw[color=blue,ultra thick,-latex]           (O)node[
+                               label = {}]{}-- (X) node[
+                               label = {above:$x$}] {};
+\draw[color=blue,ultra thick,-latex]           (O)node[
+                               label = {}]{}-- (Y) node[
+                               label = {above:$y$}] {};
+\draw[color=red,ultra thick]           (B)node[
+                               label = {above right:$B=(0,b+y)$}]{}-- (O) node[
+                              midway,below right] {$b+y$};
+\draw[color=blue,ultra thick]           (A)node[
+                               label = {below right:$A=(a+x,0)$}] {} -- (B) node[
+                                 midway,below right] {$$};
+\draw[color=red,ultra thick]           (O)node[
+                               label = {}] {} -- (A) node[
+                               midway,below] {$a+x$};
+\draw[color=blue,ultra thick,dashed]           (C)node[
+                               label = {}] {} -- (P) node[
+                               midway,below left] {$a$};
+\draw[color=blue,ultra thick,dashed]           (P)node[
+                               label = {}] {} -- (D) node[
+                            midway,below] {};
+\draw[color=blue,ultra thick,-latex]           (P)node[dot,
+                               label = {above right:$P=(a,b)$}] {} -- (E) node[
+                            midway,below] {};
+\draw[color=blue,ultra thick,-latex]           (P)node[dot,
+                               label = {}] {} -- (F) node[
+                            midway,below] {};
+% \draw[color=red,ultra thick]           (P) -- (O) node[midway,below ] {$x$};
+ \pic [red,draw, -latex, "$\varphi$", angle eccentricity=1.5] {angle =B--A--O};
+ \pic [red,draw, -latex, "$\varphi$", angle eccentricity=1.5] {angle =B--P--C};
+  \end{tikzpicture}

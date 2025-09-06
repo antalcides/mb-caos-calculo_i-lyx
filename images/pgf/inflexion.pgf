@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=1]
+\draw[->] (-.5,0)--(6,0) node[below] {$x$};
+\draw[->] (0,-.5)--(0,6) node[left] {$y$};
+\coordinate (1) at (.5,2.75);
+\coordinate (2) at (1.5,4.5);
+\coordinate (3) at (3,3);
+\coordinate (4) at (4.5,1.5);
+\coordinate (5) at (5.5,3.25);
+\draw [red,thick,looseness=.8] (1) to[out=80,in=180] (2) 
+ to[out=0,in=120] (3) to[out=300,in=180] (4) to[out=0,in=260] (5);
+\draw[fill] (3,3) circle (2pt) node[above right] {$P$};
+\end{tikzpicture}

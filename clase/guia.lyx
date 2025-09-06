@@ -1,0 +1,13818 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 614
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+\batchmode
+\makeatletter
+\def\input@path{{styles/}{sections/}{pdf/}{chapters}}
+\makeatother
+\input{Paquetes}
+\input{newcomman}
+\input{Plantilla}
+\usepackage[document]{ragged2e}
+\usepackage{minted}
+\usepackage[frame,letter,center,dvips]{crop}%quiar al final 
+\RequirePackage{hyperref}
+\usepackage{lipsum-es}
+\usepackage{changepage}
+%\usepackage{threeparttable}% notas al pie de tabla
+\usepackage{tablefootnote}% notas al pie de tabla
+\usepackage{refcount}
+\usepackage{microtype}
+\usepackage{hologo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\clipbox\relax
+\usepackage[os=win]{menukeys}
+\makeatletter
+\def\setmenukeyswin{\def\tw@mk@os{win}}
+\def\setmenukeysmac{\def\tw@mk@os{mac}}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\raggedleft
+\sloppy
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+\pagecolor{fondpaille}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\newcommand{\FolderOpen}[1][.8\ht\strutbox]{%
+  \includegraphics[height=#1]{pdf/FolderOpen}%
+}
+%%%%%%%%%%%%
+\newcommand{\Folder}[1][.8\ht\strutbox]{%
+  \includegraphics[height=#1]{pdf/Folder}%
+}
+%%%%%%%%%%%%%%%5
+\newcommand{\File}[1][.8\ht\strutbox]{%
+  \includegraphics[height=#1]{pdf/file}%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\cfoot{De la Cruz - De Oro - DÃ­az - Grau - Vasquez}
+%\begin{minipage}[adjusting]{width of the minipage}
+ %Text ... \ \
+ %Images ... \ \
+ %Tables ... \ \
+%\end{minipage} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtcblisting{commandshell}{colback=black,colupper=white,colframe=yellow!75!black, listing only,listing options={style=tcblatex,language=sh}, every listing line={\textcolor{red}{\small\ttfamily\bfseries antalcides@usuario-PC:\raisebox{-0.5ex}{\~~}\$ }}}
+\end_preamble
+\options svgnames
+\use_default_options false
+\maintain_unincluded_children no
+\language spanish-mexico
+\language_package none
+\inputencoding auto-legacy
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_title "Title"
+\pdf_author "Author"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "linktoc=all,hidelinks,linkcolor=ptctitle,pagebackref=true,hyperindex=true,urlcolor=ocre,citecolor=ocre"
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 1
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tablestyle default
+\listings_params "frame=lines,autogobble=true,breaklines=true,breakanywhere=true,breakbytoken=true"
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+tableofcontents
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+LARGE{Gu
+\backslash
+'ia de la plantilla para los libros de Cálculo}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+versión 1.0 
+\backslash
+date
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+large{ Antalcides Olivo Burgos}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+large{Barranquilla - Colombia}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Introducción
+\end_layout
+
+\begin_layout Standard
+Esta guía se desarrollo para explicar el uso de la plantilla elegante que se diseño para compilar libros de cálculo,
+\end_layout
+
+\begin_layout Standard
+Especialmente se usa con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Hologo{pdfLaTeX}
+\end_layout
+
+\end_inset
+
+,
+ pero se puede usar también 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hologo{LaTeX}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Cualquier sugerencia par mejorarla pueden comunicarse escribiendo a :
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+antalcides@gmail.com
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Entornos
+\end_layout
+
+\begin_layout Section
+Entornos especiales
+\end_layout
+
+\begin_layout Standard
+Mostraremos los entornos que se usan para enmarcar observaciones,
+ resúmenes y preguntas.
+\end_layout
+
+\begin_layout Itemize
+El entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+questionbox
+\end_layout
+
+\end_inset
+
+ se usa para exaltar una pregunta.
+ De la siguiente manera
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{questionbox}
+\end_layout
+
+\begin_layout Plain Layout
+
+¿Qué es el cálculo Integral?
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{questionbox}
+\end_layout
+
+\end_inset
+
+nos queda de la siguiente forma
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{questionbox}
+\end_layout
+
+\begin_layout Plain Layout
+
+¿Qué es el cálculo Integral?
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{questionbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+El entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+ideabox
+\end_layout
+
+\end_inset
+
+ se usa generalmente para representar una idea importante que queremos plantear.
+ Se usa así
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{ideabox}
+\end_layout
+
+\begin_layout Plain Layout
+
+Será posible determinar aproximadamente el área de una entre una curva y el eje $x$ contruyendo rectángulos angostos entre la curva y el eje $x$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{ideabox}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{ideabox}
+\end_layout
+
+\begin_layout Plain Layout
+
+Será posible determinar aproximadamente el área de una entre una curva y el eje $x$ contruyendo rectángulos angostos entre la curva y el eje $x$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{ideabox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+El entorno para representar apuntes es 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+apunte
+\end_layout
+
+\end_inset
+
+ .
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{apunte}
+\end_layout
+
+\begin_layout Plain Layout
+
+Será posible determinar aproximadamente el área de una entre una curva y el eje $x$ contruyendo rectángulos angostos entre la curva y el eje $x$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{apunte}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{apunte}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{apunte}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+El entorno para mostrar el resumen de la sección usamos el entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+resumen
+\end_layout
+
+\end_inset
+
+ .
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{resumen}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[2]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{resumen}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{resumen}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[2]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{resumen}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+El entorno para poner a pensar al estudiante es 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+piensa
+\end_layout
+
+\end_inset
+
+,
+ este entorno es opcional,
+ ya que podemos usar 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+ideabox
+\end_layout
+
+\end_inset
+
+.
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{piensa}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{piensa}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{piensa}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{piensa}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+En este ítem mostraremos un entorno opcional,
+ como lo era el anterior y que nos puede servir para mostrar una idea de análisis al estudiante y este es 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+analiza
+\end_layout
+
+\end_inset
+
+ .
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{analiza }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{analiza}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{analiza}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{analiza}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+En este ítem mostraremos otro entorno opcional 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+notax
+\end_layout
+
+\end_inset
+
+ .
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{notax }{
+\end_layout
+
+\begin_layout Plain Layout
+
+Para terminar esta sección mostraremos un entorno opcional,
+ como lo era el anterior y que nos puede servir para mostrar una idea de análisis al estudiante y este es}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{notax}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{notax}{
+\end_layout
+
+\begin_layout Plain Layout
+
+Para terminar esta sección mostraremos un entorno opcional,
+ como lo era el anterior y que nos puede servir para mostrar una idea de análisis al estudiante y este es}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{notax}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+En este ítem mostraremos otro entorno opcional 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+nota
+\end_layout
+
+\end_inset
+
+ .
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{nota }{
+\end_layout
+
+\begin_layout Plain Layout
+
+Para terminar esta sección mostraremos un entorno opcional,
+ como lo era el anterior y que nos puede servir para mostrar una idea de análisis al estudiante y este es}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{nota}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{nota}
+\end_layout
+
+\begin_layout Plain Layout
+
+Para terminar esta sección mostraremos un entorno opcional,
+ como lo era el anterior y que nos puede servir para mostrar una idea de análisis al estudiante y este es
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{nota}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Entornos para Ejercicios y problemas
+\end_layout
+
+\begin_layout Itemize
+Para empezar la sección en este ítem mostraremos el entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+desafio
+\end_layout
+
+\end_inset
+
+ .
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{desafio }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[9] $F(x)=x^4-2x^3-3x^{-2}-6$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[10]$F(x)=
+\backslash
+dfrac{
+\backslash
+cos^2(x)}{
+\backslash
+sen^2(x)}$  
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[11] $F(x)=
+\backslash
+dfrac{
+\backslash
+sen(x)}{x}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[] $f(x)=4x^3-6x^2+x^{-3}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[]  $f(x)=
+\backslash
+dfrac{2
+\backslash
+sen(x)}{
+\backslash
+cos^3(x)}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[] $f(x)=
+\backslash
+dfrac{x
+\backslash
+cos(x)-
+\backslash
+sen(x)}{x^2}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{desafio}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{desafio}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate} 
+\backslash
+item[9] $F(x)=x^4-2x^3-3x^{-2}-6$ 
+\backslash
+
+\backslash
+ 
+\backslash
+item[10]$F(x)=
+\backslash
+dfrac{
+\backslash
+cos^2(x)}{
+\backslash
+sen^2(x)}$  
+\backslash
+
+\backslash
+ 
+\backslash
+item[11] $F(x)=
+\backslash
+dfrac{
+\backslash
+sen(x)}{x}$   
+\backslash
+item[] $f(x)=4x^3-6x^2+x^{-3}$  
+\backslash
+item[]  $f(x)=
+\backslash
+dfrac{2
+\backslash
+sen(x)}{
+\backslash
+cos^3(x)}$  
+\backslash
+item[] $f(x)=
+\backslash
+dfrac{x
+\backslash
+cos(x)-
+\backslash
+sen(x)}{x^2}$ 
+\backslash
+end{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{desafio}
+\end_layout
+
+\end_inset
+
+Si quiere que los problemas de desafío tenga los mismos margenes que la sección de 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+ejercicios
+\end_layout
+
+\end_inset
+
+ use el entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}
+\end_layout
+
+\end_inset
+
+ con las opciones que se indican a continuación 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-1cm}{-4cm}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Este entorno,
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+praproblem
+\end_layout
+
+\end_inset
+
+,
+ es opcional .
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{praproblem }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[9] $F(x)=x^4-2x^3-3x^{-2}-6$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[10]$F(x)=
+\backslash
+dfrac{
+\backslash
+cos^2(x)}{
+\backslash
+sen^2(x)}$  
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[11] $F(x)=
+\backslash
+dfrac{
+\backslash
+sen(x)}{x}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[1] $f(x)=4x^3-6x^2+x^{-3}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[2]  $f(x)=
+\backslash
+dfrac{2
+\backslash
+sen(x)}{
+\backslash
+cos^3(x)}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[3] $f(x)=
+\backslash
+dfrac{x
+\backslash
+cos(x)-
+\backslash
+sen(x)}{x^2}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{praproblem}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{praproblem}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[9] $F(x)=x^4-2x^3-3x^{-2}-6$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[10]$F(x)=
+\backslash
+dfrac{
+\backslash
+cos^2(x)}{
+\backslash
+sen^2(x)}$  
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[11] $F(x)=
+\backslash
+dfrac{
+\backslash
+sen(x)}{x}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[1] $f(x)=4x^3-6x^2+x^{-3}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[2]  $f(x)=
+\backslash
+dfrac{2
+\backslash
+sen(x)}{
+\backslash
+cos^3(x)}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[3] $f(x)=
+\backslash
+dfrac{x
+\backslash
+cos(x)-
+\backslash
+sen(x)}{x^2}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{praproblem}
+\end_layout
+
+\end_inset
+
+Si quiere que los problemas de desafío tenga los mismos margenes que la sección de 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+ejercicios
+\end_layout
+
+\end_inset
+
+ use el entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}
+\end_layout
+
+\end_inset
+
+ con las opciones que se indican a continuación 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-1cm}{-4cm}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+El comando,
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+problemas
+\end_layout
+
+\end_inset
+
+,
+ amplia el margen de la hoja y se usa para enunciar los ejercicios de final de sección o de capítulo
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+problemas{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent Realizar las siguientes integrales aplicando las reglas b
+\backslash
+'asicas 
+\backslash
+begin{multicols}{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int (2t-3)^3 dt$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+dfrac{
+\backslash
+sin(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+,dx$ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int  e^{
+\backslash
+ln (x^2)}dx$ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int (2e^x+10^{x})
+\backslash
+,dx$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+frac{1+
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+,dx$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int  
+\backslash
+sqrt{1-
+\backslash
+sen^{2} (x)} 
+\backslash
+ dx$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent Calcular 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[7] $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+sqrt{1+
+\backslash
+left(2x
+\backslash
+sqrt{x^2+1}
+\backslash
+right)^{2}}
+\backslash
+,dx$ 
+\backslash
+
+\backslash
+   
+\backslash
+item[8] $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+sqrt{1+
+\backslash
+left(
+\backslash
+frac{x^2}{2}-
+\backslash
+frac{1}{2x^{2}}
+\backslash
+right)^{2}}
+\backslash
+,dx$ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent Comprueba que la funci
+\backslash
+'on $F$ es una antiderivada de $f$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[9] $F(x)=x^4-2x^3-3x^{-2}-6$ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[10]$F(x)=
+\backslash
+dfrac{
+\backslash
+cos^2(x)}{
+\backslash
+sen^2(x)}$  
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[11] $F(x)=
+\backslash
+dfrac{
+\backslash
+sen(x)}{x}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[] $f(x)=4x^3-6x^2+x^{-3}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[]  $f(x)=
+\backslash
+dfrac{2
+\backslash
+sen(x)}{
+\backslash
+cos^3(x)}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[] $f(x)=
+\backslash
+dfrac{x
+\backslash
+cos(x)-
+\backslash
+sen(x)}{x^2}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent Encuentre las antiderivadas.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+                     }
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+problemas{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent Realizar las siguientes integrales aplicando las reglas b
+\backslash
+'asicas 
+\backslash
+begin{multicols}{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int (2t-3)^3 dt$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+dfrac{
+\backslash
+sin(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+,dx$ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int  e^{
+\backslash
+ln (x^2)}dx$ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+columnbreak
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int (2e^x+10^{x})
+\backslash
+,dx$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+frac{1+
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+,dx$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int  
+\backslash
+sqrt{1-
+\backslash
+sen^{2} (x)} 
+\backslash
+ dx +
+\backslash
+sqrt{1-
+\backslash
+sen^{2} (x)} 
+\backslash
+ dx+
+\backslash
+sqrt{1-
+\backslash
+sen^{2} (x)} 
+\backslash
+ dx$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent Calcular 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[7] $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+sqrt{1+
+\backslash
+left(2x
+\backslash
+sqrt{x^2+1}
+\backslash
+right)^{2}}
+\backslash
+,dx$ 
+\backslash
+
+\backslash
+   
+\backslash
+item[8] $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+sqrt{1+
+\backslash
+left(
+\backslash
+frac{x^2}{2}-
+\backslash
+frac{1}{2x^{2}}
+\backslash
+right)^{2}}
+\backslash
+,dx$ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent Comprueba que la funci
+\backslash
+'on $F$ es una antiderivada de $f$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[9] $F(x)=x^4-2x^3-3x^{-2}-6$ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[10]$F(x)=
+\backslash
+dfrac{
+\backslash
+cos^2(x)}{
+\backslash
+sen^2(x)}$  
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[11] $F(x)=
+\backslash
+dfrac{
+\backslash
+sen(x)}{x}$  
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+columnbreak 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[] $f(x)=4x^3-6x^2+x^{-3}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[]  $f(x)=
+\backslash
+dfrac{2
+\backslash
+sen(x)}{
+\backslash
+cos^3(x)}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[] $f(x)=
+\backslash
+dfrac{x
+\backslash
+cos(x)-
+\backslash
+sen(x)}{x^2}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[] $f(x)=4x^3-6x^2+x^{-3}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[]  $f(x)=
+\backslash
+dfrac{2
+\backslash
+sen(x)}{
+\backslash
+cos^3(x)}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[] $f(x)=
+\backslash
+dfrac{x
+\backslash
+cos(x)-
+\backslash
+sen(x)}{x^2}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[] $f(x)=4x^3-6x^2+x^{-3}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[]  $f(x)=
+\backslash
+dfrac{2
+\backslash
+sen(x)}{
+\backslash
+cos^3(x)}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item[] $f(x)=
+\backslash
+dfrac{x
+\backslash
+cos(x)-
+\backslash
+sen(x)}{x^2}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols} 
+\end_layout
+
+\begin_layout Plain Layout
+
+                     }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+Si por alguna razón los márgenes al cambiar de sección no se restauran use el comando 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+ de la siguiente manera.
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Entornos para demostraciones,
+ soluciones y pruebas
+\end_layout
+
+\begin_layout Itemize
+El primer entorno que mostraremos es 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+probar
+\end_layout
+
+\end_inset
+
+ que se usa de la siguiente manera
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{probar}
+\end_layout
+
+\begin_layout Plain Layout
+
+tenemos que 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x)&= 
+\backslash
+frac{
+\backslash
+sen^{2}(x)+
+\backslash
+cos^{4}(x)+
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+
+\backslash
+ &=
+\backslash
+frac{
+\backslash
+sen^{2}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+cos^{4}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)} 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+
+\backslash
+cos^{2}(x)+
+\backslash
+sen^{2}(x) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&=
+\backslash
+tan^{2}(x)+1 
+\backslash
+
+\backslash
+ &=
+\backslash
+sec^{2}(x).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+De donde se concluye que $F(x)=
+\backslash
+tan(x)+C$ es antiderivada de $f(x)$.
+ 
+\backslash
+end{probar}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y se obtiene
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{probar} tenemos que 
+\backslash
+begin{align*} f(x)&= 
+\backslash
+frac{
+\backslash
+sen^{2}(x)+
+\backslash
+cos^{4}(x)+
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+
+\backslash
+ &=
+\backslash
+frac{
+\backslash
+sen^{2}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+cos^{4}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)} 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+
+\backslash
+cos^{2}(x)+
+\backslash
+sen^{2}(x) 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+1 
+\backslash
+
+\backslash
+ &=
+\backslash
+sec^{2}(x).
+ 
+\backslash
+end{align*} De donde se concluye que $F(x)=
+\backslash
+tan(x)+C$ es antiderivada de $f(x)$.
+ 
+\backslash
+end{probar}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+El entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+solver
+\end_layout
+
+\end_inset
+
+ que se usa de la siguiente para mostrar la solución de un ejercicio 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{solver}
+\end_layout
+
+\begin_layout Plain Layout
+
+tenemos que 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x)&= 
+\backslash
+frac{
+\backslash
+sen^{2}(x)+
+\backslash
+cos^{4}(x)+
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+
+\backslash
+ &=
+\backslash
+frac{
+\backslash
+sen^{2}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+cos^{4}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)} 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+
+\backslash
+cos^{2}(x)+
+\backslash
+sen^{2}(x) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&=
+\backslash
+tan^{2}(x)+1 
+\backslash
+
+\backslash
+ &=
+\backslash
+sec^{2}(x).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+De donde se concluye que $F(x)=
+\backslash
+tan(x)+C$ es antiderivada de $f(x)$.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{solver}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y se obtiene
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{10pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{solver}
+\end_layout
+
+\begin_layout Plain Layout
+
+tenemos que 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x)&= 
+\backslash
+frac{
+\backslash
+sen^{2}(x)+
+\backslash
+cos^{4}(x)+
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+
+\backslash
+ &=
+\backslash
+frac{
+\backslash
+sen^{2}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+cos^{4}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)} 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+
+\backslash
+cos^{2}(x)+
+\backslash
+sen^{2}(x) 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+1 
+\backslash
+
+\backslash
+ &=
+\backslash
+sec^{2}(x).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+De donde se concluye que $F(x)=
+\backslash
+tan(x)+C$ es antiderivada de $f(x)$.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{solver}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+El entorno,
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+dems
+\end_layout
+
+\end_inset
+
+,
+ que mostraremos es opcional y se usa de la siguiente manera
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{dems}
+\end_layout
+
+\begin_layout Plain Layout
+
+tenemos que 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x)&= 
+\backslash
+frac{
+\backslash
+sen^{2}(x)+
+\backslash
+cos^{4}(x)+
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+
+\backslash
+ &=
+\backslash
+frac{
+\backslash
+sen^{2}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+cos^{4}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)} 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+
+\backslash
+cos^{2}(x)+
+\backslash
+sen^{2}(x) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&=
+\backslash
+tan^{2}(x)+1 
+\backslash
+
+\backslash
+ &=
+\backslash
+sec^{2}(x).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+De donde se concluye que $F(x)=
+\backslash
+tan(x)+C$ es antiderivada de $f(x)$.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{dems} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{figure}[H] y se obtiene 
+\backslash
+end{figure}
+\backslash
+vspace*{5pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{dems} tenemos que 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*} f(x)&= 
+\backslash
+frac{
+\backslash
+sen^{2}(x)+
+\backslash
+cos^{4}(x)+
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+
+\backslash
+ &=
+\backslash
+frac{
+\backslash
+sen^{2}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+cos^{4}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)} 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+
+\backslash
+cos^{2}(x)+
+\backslash
+sen^{2}(x) 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+1 
+\backslash
+
+\backslash
+ &=
+\backslash
+sec^{2}(x).
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+De donde se concluye que $F(x)=
+\backslash
+tan(x)+C$ es antiderivada de $f(x)$.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{dems}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Entornos theorems.
+\end_layout
+
+\begin_layout Standard
+Estos entornos se usan para enunciar teoremas,
+ lemas,
+ definiciones,
+ etc.
+\end_layout
+
+\begin_layout Itemize
+Teorema 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+teorema
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{teorema}
+\end_layout
+
+\begin_layout Plain Layout
+
+Sea $f$ una función continua en $[a,c]$ se tiene 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+int^{a}_{b} f(x)dx + 
+\backslash
+int^{b}_{c} f(x)dx =
+\backslash
+int^{a}_{c} f(x)dx$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{teorema}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y se obtiene
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{teorema}{}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+Si $f$ es una función continua en $[a,c]$,
+ se tiene que
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+int^{a}_{b} f(x)dx + 
+\backslash
+int^{b}_{c} f(x)dx =
+\backslash
+int^{a}_{c} f(x)dx 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{teorema}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Teorema con título.
+\begin_inset VSpace defskip
+\end_inset
+
+Estos entornos tiene dos opciones obligatorias y por eso tiene dos parejas de llaves,
+ al comienzo del entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{teorema}{}{}
+\end_layout
+
+\end_inset
+
+,
+ la primera es para el título y segunda para la referencia,
+ por ejemplo
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{teorema}{Integración por partes para integrales definidas}{th}
+\end_layout
+
+\begin_layout Plain Layout
+
+Si $f$ y $g$ son dos funciones que admiten derivadas continuas sobre el intervalo $[a,b]$,
+ se verifica
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+int^{a}_{b} f(x)dx + 
+\backslash
+int^{b}_{c} f(x)dx =
+\backslash
+int^{a}_{c} f(x)dx 
+\backslash
+label{th:ippd} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{teorema}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{teorema}{Integración por partes para integrales definidas}{th}
+\end_layout
+
+\begin_layout Plain Layout
+
+Si $f$ y $g$ son dos funciones que admiten derivadas continuas sobre el intervalo $[a,b]$,
+ se verifica
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+int^{a}_{b} f(x)dx + 
+\backslash
+int^{b}_{c} f(x)dx =
+\backslash
+int^{a}_{c} f(x)dx 
+\backslash
+label{th:ippd} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{teorema}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Ejemplo}{}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resuelva la siguiente integral 
+\begin_inset Formula 
+\[
+\int_{0}^{\frac{\pi}{4}}x\cos(x)\,dx
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Ejemplo}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{solver}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aplicando el teorema 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{th:ippd}
+\end_layout
+
+\end_inset
+
+,
+ resulta
+\begin_inset Formula 
+\[
+\int_{0}^{\frac{\pi}{4}}x\cos(x)\,dx=\int_{0}^{\frac{\pi}{4}}x\sin'(x)\,dx=[x\sin(x)]_{0}^{\frac{\pi}{4}}-\int_{0}^{\frac{\pi}{4}}1\cdot\sin(x)\,dx\,\cdots
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{solver}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Los entornos relacionados en la siguiente tabla se utilizan de la misma forma
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Entornos theorem
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entorno
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando Inicio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando Final
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definición
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{definicion}{}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{definicion}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lema
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lema}{}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lema}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Corolario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{corolario}{}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{corolario}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Observación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{observacion}{}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{observacion}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Notación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{notacion}{}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{natacion}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ejemplo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{Ejemplo}{}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{Ejemplo}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ejercicio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Teorema
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{teorema}{}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{teorema}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Entorno para probar en enunciado,
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+proof
+\end_layout
+
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int  x^{2} 
+\backslash
+,dx =   
+\backslash
+displaystyle
+\backslash
+int x^{2} 
+\backslash
+,dx  = 
+\backslash
+frac{ x^3}{3}+C$ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item  $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+sqrt{x}
+\backslash
+,dx =
+\backslash
+displaystyle
+\backslash
+int x^{1/2}
+\backslash
+,dx = 
+\backslash
+frac{2}{3} x^{3/2} +C $ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item   $
+\backslash
+displaystyle
+\backslash
+int x^{-1/3}
+\backslash
+,dx= 
+\backslash
+frac{x^{2/3} }{2/3} +C = 
+\backslash
+frac{3}{2} x^{2/3}  +C $
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+frac{dx}{x^3}  = 
+\backslash
+displaystyle
+\backslash
+int x^{-3}
+\backslash
+,dx =  -
+\backslash
+frac{x^{-2} }{2} +C = -
+\backslash
+frac{1}{2x^2} +C  $   %  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+frac{1}{x^4}
+\backslash
+,dx$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int  x^{2} 
+\backslash
+,dx =   
+\backslash
+displaystyle
+\backslash
+int x^{2} 
+\backslash
+,dx  = 
+\backslash
+frac{ x^3}{3}+C$ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item  $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+sqrt{x}
+\backslash
+,dx =
+\backslash
+displaystyle
+\backslash
+int x^{1/2}
+\backslash
+,dx = 
+\backslash
+frac{2}{3} x^{3/2} +C $ 
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item   $
+\backslash
+displaystyle
+\backslash
+int x^{-1/3}
+\backslash
+,dx= 
+\backslash
+frac{x^{2/3} }{2/3} +C = 
+\backslash
+frac{3}{2} x^{2/3}  +C $
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+frac{dx}{x^3}  = 
+\backslash
+displaystyle
+\backslash
+int x^{-3}
+\backslash
+,dx =  -
+\backslash
+frac{x^{-2} }{2} +C = -
+\backslash
+frac{1}{2x^2} +C  $   %  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item $
+\backslash
+displaystyle
+\backslash
+int 
+\backslash
+frac{1}{x^4}
+\backslash
+,dx$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{enumerate} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+ejer
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX,float=h,breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{ejer}
+\end_layout
+
+\begin_layout Plain Layout
+
+Resuelva la siguiente integral 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+int_{0}^{
+\backslash
+frac{
+\backslash
+pi}{4}}x
+\backslash
+cos(x)
+\backslash
+,dx
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{ejer}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{ejer}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resuelva la siguiente integral 
+\begin_inset Formula 
+\[
+\int_{0}^{\frac{\pi}{4}}x\cos(x)\,dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{ejer}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Entornos para ampliar el margen
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+sqbox{yellow!50!black}
+\backslash
+,
+\end_layout
+
+\end_inset
+
+ El primer entorno que presentaremos para cambiar los margenes es 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+cmargen
+\end_layout
+
+\end_inset
+
+,
+ el cual se utiliza usando la instrucción 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{cmargen}{porcentaje}
+\end_layout
+
+\end_inset
+
+,
+ donde entre llaves se coloca el porcentaje que queremos cambiar el comando 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+linewidth
+\end_layout
+
+\end_inset
+
+ en el ejemplo se amplio un 130% esta longitud
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{cmargen}{1.3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{cmargen}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqbox{blue!50!black}
+\backslash
+,
+\end_layout
+
+\end_inset
+
+ El código nos muestra un párrafo con un margen menor,
+ al ampliar la longitud del texto formateado.
+\begin_inset VSpace defskip
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{cmargen}{1.3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[2]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{cmargen}
+\backslash
+vspace{20pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqbox{blue!50!black}
+\backslash
+,
+\end_layout
+
+\end_inset
+
+ El siguiente código nos muestra el mismo párrafo con los margenes normales.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{10pt}
+\backslash
+lipsum[2]
+\backslash
+vspace{20pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+sqbox{yellow!50!black}
+\backslash
+,
+\end_layout
+
+\end_inset
+
+ El segundo entorno que presentaremos es 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+adjustwidth
+\end_layout
+
+\end_inset
+
+,
+ del paquete 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+changepage
+\end_layout
+
+\end_inset
+
+ este entorno tiene 2 opciones obligatorias,
+ que modifican las respectivas longitudes
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+oddsidemargin
+\end_layout
+
+\end_inset
+
+ recorta la longitud del margen izquierdo de la página impar
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+marginparwidth
+\end_layout
+
+\end_inset
+
+ recorta la longitud del margen derecho de la página impar.
+\end_layout
+
+\begin_layout Standard
+Para que tengan una mejor idea mostraremos el diagrama de las dimensiones de esta plantilla.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Layout de la plantilla
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:layout"
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pdf/layout-1.pdf
+	lyxscale 40
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Layout de la plantilla
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:layout-2"
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pdf/layout-2.pdf
+	lyxscale 40
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ademas tenemos que 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+1pt equivale a 0.0376cm 
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Debemos tomar siempre la pagina de numero impar como referencia,
+ así el 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+marginparwidth
+\end_layout
+
+\end_inset
+
+ mide 4.3616cm ,
+ por lo que le recortaremos 3cm,
+ y como el 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+oddsidemargin
+\end_layout
+
+\end_inset
+
+ tiene una dimensión de -0.0376cm,
+ le recortaremos a la pulgada de encuadernación 1cm más.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+color{blue!50!black}{
+\backslash
+circulo}}
+\backslash
+,
+\end_layout
+
+\end_inset
+
+ 
+\family sans
+\series bold
+!Ojo!
+
+\family default
+\series default
+ Se pueden usar longitudes negativas.
+\end_layout
+
+\begin_layout Standard
+Entonces después de todo la anterior en el comando queda 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-1cm}{-3cm}
+\end_layout
+
+\end_inset
+
+,
+ estamos generando un párrafo con dimensiones.
+\end_layout
+
+\begin_layout Enumerate
+El margen izquierdo da la página impar tiene 1pulgada -1.0376cm de ancho.
+\end_layout
+
+\begin_layout Enumerate
+El margen derecho da la página impar tiene 4.3616cm -3cm de ancho.
+\end_layout
+
+\begin_layout Standard
+Mostremos un ejemplo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+setlength{
+\backslash
+parindent}{0mm}
+\backslash
+color{blue!50!black}
+\backslash
+rule{
+\backslash
+linewidth}{1mm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-1cm}{-3cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[3]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+setlength{
+\backslash
+parindent}{0mm}
+\backslash
+color{blue!50!black}
+\backslash
+rule{
+\backslash
+linewidth}{1mm}}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqbox{blue!50!black}
+\backslash
+,
+\end_layout
+
+\end_inset
+
+ El siguiente código representa el ejemplo anterior
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+setlength{
+\backslash
+parindent}{0mm}
+\backslash
+color{blue!50!black}
+\backslash
+rule{
+\backslash
+linewidth}{1mm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-1cm}{-3cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[3]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+setlength{
+\backslash
+parindent}{0mm}
+\backslash
+color{blue!50!black}
+\backslash
+rule{
+\backslash
+linewidth}{1mm}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Comandos
+\end_layout
+
+\begin_layout Standard
+En este capítulo mostraremos el uso de los comandos definidos para la platilla.
+\end_layout
+
+\begin_layout Section
+Comandos para representar títulos
+\end_layout
+
+\begin_layout Standard
+Estos comandos se pueden usar para formatear títulos que no representen secciones,
+ sino párrafos que se quieran resaltar dada la importancia de la información.
+ 
+\end_layout
+
+\begin_layout Standard
+Por ejemplo si queremos desarrollar la solución de un ejercicio y no queremos usar el entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+solver
+\end_layout
+
+\end_inset
+
+,
+ podemos desarrollarlo de siguiente forma
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+tenemos que 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x)&= 
+\backslash
+frac{
+\backslash
+sen^{2}(x)+
+\backslash
+cos^{4}(x)+
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+
+\backslash
+ &=
+\backslash
+frac{
+\backslash
+sen^{2}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+cos^{4}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)} 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+
+\backslash
+cos^{2}(x)+
+\backslash
+sen^{2}(x) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&=
+\backslash
+tan^{2}(x)+1 
+\backslash
+
+\backslash
+ &=
+\backslash
+sec^{2}(x).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+De donde se concluye que $F(x)=
+\backslash
+tan(x)+C$ es antiderivada de $f(x)$.
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+Obteniendo la salida
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+setlength{
+\backslash
+parindent}{0mm}
+\backslash
+color{blue!50!black}
+\backslash
+rule{
+\backslash
+linewidth}{1mm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+solucion
+\backslash
+,
+ tenemos que 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x)&= 
+\backslash
+frac{
+\backslash
+sen^{2}(x)+
+\backslash
+cos^{4}(x)+
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)}
+\backslash
+
+\backslash
+ &=
+\backslash
+frac{
+\backslash
+sen^{2}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+cos^{4}(x)}{
+\backslash
+cos^{2}(x)}+
+\backslash
+frac{
+\backslash
+sen^{2}(x)
+\backslash
+cos^{2}(x)}{
+\backslash
+cos^{2}(x)} 
+\backslash
+
+\backslash
+ &=
+\backslash
+tan^{2}(x)+
+\backslash
+cos^{2}(x)+
+\backslash
+sen^{2}(x) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&=
+\backslash
+tan^{2}(x)+1 
+\backslash
+
+\backslash
+ &=
+\backslash
+sec^{2}(x).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+De donde se concluye que $F(x)=
+\backslash
+tan(x)+C$ es antiderivada de $f(x)$.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+setlength{
+\backslash
+parindent}{0mm}
+\backslash
+color{blue!50!black}
+\backslash
+rule{
+\backslash
+linewidth}{1mm}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+Todos los comandos de esta sección se utilizan de la misma forma,
+ pero explicaremos el uso de 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+cuadro{color}{título}
+\end_layout
+
+\end_inset
+
+,
+ que tiene dos opciones obligatorias,
+ que son 
+\family sans
+\series bold
+color:
+
+\family default
+\series default
+ que es el color del cuadro y 
+\family sans
+\series bold
+título:
+
+\family default
+\series default
+ que es la expresión que queremos enmarcar.
+ Por ejemplo 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cuadro{yelow!30!black}{Título}
+\end_layout
+
+\end_inset
+
+ que obtendremos 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cuadro{blue!30!black}{Título}.
+\backslash
+vspace*{30pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todos los comandos de títulos se muestran en la tabla (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tab:titulos}
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{table}[H]
+\backslash
+centering
+\backslash
+caption{Comandos para títulos
+\backslash
+label{tab:titulos}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{0.8}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+solucion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+solucion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+prop
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+prop
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+expli
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+expli
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acc{Título}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acc{Título}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+dem
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+dem
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tcuenta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tcuenta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+notacionn
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+notacionn
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+general
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+general
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partname
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partname
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sol
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sol
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+obs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+obs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+remark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+remark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ej
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ej
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+intro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+intro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+conclu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+conclu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cuadro{color}{título}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cuadro{red}{título}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{table}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Comandos para conjuntos numéricos
+\end_layout
+
+\begin_layout Standard
+Los conjuntos numéricos generalmente se representan con un tipo de letras especial,
+ las cuales se pueden construir con un comando corto,
+ como los representados en la tabla (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tab:cnumericos}
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Estos símbolos deben incluirse en modo matemático,
+ es decir debe incluirse entre el símbolo peso 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+ o entre el entorno 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+equation
+\end_layout
+
+\end_inset
+
+ u otro equivalente.
+ Por ejemplo 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linea
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $a,b\in\R,$
+\end_inset
+
+ entonces se tiene que 
+\begin_inset Formula $a\cdot b=b\cdot a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linea
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+en código sería 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Sea $a,b 
+\backslash
+in
+\backslash
+,
+ 
+\backslash
+R$ entonces se tiene que $a
+\backslash
+cdot b = b
+\backslash
+cdot a$ .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todos los otros símbolos se generan de la misma forma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conjuntos numéricos
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:cnumericos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Co
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Co$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Ro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Ro$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+F
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+F$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+R
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+R$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+J
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+J$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Z
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Z$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+N
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+N$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Po
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Po$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Q
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Q$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+No
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+No$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Rd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Rd$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Rt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Rt$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+vspace*{30pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Límites 
+\end_layout
+
+\begin_layout Standard
+Digitar la simbología de límites no es tan fácil,
+ por lo que es mejor definir comandos apropiados para agilizar el trabajo y no cometer errores,
+ en la tabla (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tab:limites}
+\end_layout
+
+\end_inset
+
+) le mostramos los comandos definidos para esa tarea.
+\end_layout
+
+\begin_layout Standard
+Estos comandos se deben colocar en modo matemático como por ejemplo.
+\end_layout
+
+\begin_layout Standard
+si colocamos el código 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Lim{f}{x}{a}$
+\end_layout
+
+\end_inset
+
+ obtenemos 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Lim{f}{x}{a}$
+\end_layout
+
+\end_inset
+
+ como se muestra en la tabla (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tab:limites}
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Límites
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:limites}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+funcreal{f}{A
+\backslash
+subseteq
+\backslash
+R}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+funcreal{f}{A
+\backslash
+subseteq
+\backslash
+R}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tlim
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tlim$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cfunc{f}{A}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+cfunc{f}{A}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+jlim
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+jlim$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Lim{f}{x}{a}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Lim{f}{x}{a}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+klim
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+klim$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+limlft{f}{x}{a}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+limlft{f}{x}{a}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+limin{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+klim$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+limrgt{f}{x}{a}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+limrgt{f}{x}{a}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+limmin{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mlim$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nlim
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+nlim$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rlim
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+rlim$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Limd{f}{x}{a}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Limd{f}{x}{a}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Limi{f}{x}{a}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Limi{f}{x}{a}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Derivadas
+\end_layout
+
+\begin_layout Standard
+En la tabla (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tab:derivadas}
+\end_layout
+
+\end_inset
+
+) mostramos los comandos definidos para las diferentes formas en las que podemos denotar la derivada de una función.
+ 
+\end_layout
+
+\begin_layout Standard
+Por ejemplo podemos utilizar la siguiente redacción
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{nota}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cuadro{blue!40!black}{Ejemplo} Sea $f(x)= 
+\backslash
+dfrac{x^2-3x+8}{3x^4-6x^2+8}$ halle $
+\backslash
+Der{f}{x}$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{nota}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+obteniendo,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{nota}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cuadro{blue!40!black}{Ejemplo} Sea $f(x)= 
+\backslash
+dfrac{x^2-3x+8}{3x^4-6x^2+8}$ halle $
+\backslash
+Der{f}{x}$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{nota}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Derivadas
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:derivadas}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+derive{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+derive{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+derivada{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+derivada{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+derivee{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+derivee{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fder{f}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+fder{f}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+deriven{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+deriven{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Derdos{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Derdos{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Dfa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Dfa$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+derivadatres{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+derivadatres{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Dfka
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Dfka$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+derivadan{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+derivadan{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Dfna
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Dfna$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Der{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Der{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+derivadados{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+derivadados{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+scd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+scd
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la tabla (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tab:derivadasp}
+\end_layout
+
+\end_inset
+
+) presentamos los comandos para denotar las derivadas parciales.
+ recuerde que se deben utilizar en modo matemático.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Derivadas parciales
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:derivadasp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+derparcial{g}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+derparcial{g}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partyx{f}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+partyx{f}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partx{f}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+partx{f}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partone{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+partone{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+party{f}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+party{f}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partwo{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+partwo{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partz{f}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+partz{f}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partonetwo{f}{x}{y}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+partonetwo{f}{x}{y}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partxx{f}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+partxx{f}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Dpd{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Dpd{f}{x}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partxy{f}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+partxy{f}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Dpxy{f}{x}{y}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Dpxy{f}{x}{y}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+partyy{f}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+partyy{f}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Dp{j}{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Dp{j}{f}{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mostraremos un ejemplo a continuación
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{nota}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cuadro{blue!40!black}{Ejemplo} Sea $f(x,y)= 
+\backslash
+dfrac{x^{2}y^3-3xy+8}{3x^{4}y^3-6x^{2}y+8}$ halle $
+\backslash
+partyy{f}$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{nota}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+obteniendo,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{nota}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cuadro{blue!40!black}{Ejemplo} Sea $f(x,y)= 
+\backslash
+dfrac{x^{2}y^3-3xy+8}{3x^{4}y^3-6x^{2}y+8}$ halle $
+\backslash
+partyy{f}$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{nota}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sumatorias y series
+\end_layout
+
+\begin_layout Standard
+Como en el caso de la notación de límites,
+ la notación de series y sumatorias es tediosa,
+ por lo que es mejor definir macros para facilitar su redacción,
+ en la tabla(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tab:sumatoria}
+\end_layout
+
+\end_inset
+
+) se muestran estas macros
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sumatorias y series
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:sumatoria}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sumai
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Sumai$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sumai
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sumai$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sumaj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Sumaj$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Suman
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Suman$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+jSuma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+jSuma$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+jsuma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+jsuma$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+suman
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+suman$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sumak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Sumak$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sumak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sumak$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+suma{r=2}{
+\backslash
+infty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+suma{r=2}{
+\backslash
+infty}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recuerde que toda los símbolos matemáticos se deben escribir en modo matemático.
+\end_layout
+
+\begin_layout Section
+Flechas
+\end_layout
+
+\begin_layout Standard
+Aunque los comandos para flechas no son tan complicados no está demás construir macros para los casos más usados,
+ donde se usen nombres mas fácil de recordar que los originales,
+ estas macros se presentan en la tabla (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tab:flechas}
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flechas
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:flechas}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+infinitot
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+infinitot$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+infiniton
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+infiniton$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hacia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+hacia$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Ssi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Ssi$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ssi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+ssi$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+xtoa{x}{b}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+xtoa{x}{b}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+implica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+implica$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+reciproca
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+reciproca$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Funciones trascendentes
+\end_layout
+
+\begin_layout Standard
+Los nombres de los comandos en los lenguajes de programación están en Inglés,
+ como por ejemplo la función 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+seno
+\end_layout
+
+\end_inset
+
+ que se llama en Inglés 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+sine
+\end_layout
+
+\end_inset
+
+ por lo que la macro 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hologo{LaTeX}
+\end_layout
+
+\end_inset
+
+ es 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sin
+\end_layout
+
+\end_inset
+
+ y nos muestra 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sin$
+\end_layout
+
+\end_inset
+
+,
+ en Español debe ser 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sen
+\end_layout
+
+\end_inset
+
+,
+ por lo que debemos definir una macro para este caso y otros más,
+ por eso en la tabla (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tab:transcendentes}
+\end_layout
+
+\end_inset
+
+) mostramos las macros para cada caso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Funciones trigonométricas directas e inversas,
+ y funciones hiperbólicas
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:transcendentes}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sen$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arcsen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+arcsen$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+senh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+senh$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+cos$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arccos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+arccos$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cosh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+cosh$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tan$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arctan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+arctan$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tanh$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+csc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+csc$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arccsc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+arccsc$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cosecanteh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+cosecanteh$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+csc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sec$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+arcsec
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+arcsec$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+secanteh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+secanteh$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Otros comandos
+\end_layout
+
+\begin_layout Standard
+Para terminar mostraremos unos comandos que se definieron internamente para construir la plantilla,
+ pero que se pueden usar en caso de que nos parezca pertinente.
+\end_layout
+
+\begin_layout Standard
+Estos comandos no se tienen que escribir en modo matemático,
+ a excepción del macro 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+dis
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comandos especiales
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comando
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+dis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+displaymath
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqbox{yellow}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqbox{yellow}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqboxf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqboxf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqboxEmpty{blue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqboxEmpty{blue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+circulo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+QEDmark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+QEDmark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El comando 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+circulo
+\end_layout
+
+\end_inset
+
+ coloca el símbolo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+circledS$
+\end_layout
+
+\end_inset
+
+ al margen en el comienzo de un párrafo,
+ como se ve en éste.
+\end_layout
+
+\begin_layout Chapter
+Instalación y uso
+\end_layout
+
+\begin_layout Section
+Estructura de archivos y carpetas
+\end_layout
+
+\begin_layout Standard
+La plantilla 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+libro-calculo
+\end_layout
+
+\end_inset
+
+ se puede conseguir en las siguientes direcciones 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/antalcides/libro-calculo"
+literal "false"
+
+\end_inset
+
+ o 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://es.overleaf.com/project/5dca428eb8941b0001d256b0"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El contenido de los archivos y su distribución se representa en la figura (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:archivos"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+)
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contenido de la plantilla
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:archivos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pdf/tree-of-folders-and-files.pdf
+	lyxscale 40
+	width 6cm
+	special height=12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 30pt
+\end_inset
+
+Para trabajar con la plantilla hay tres formas de hacerlo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+sqbox{red!60!black}
+\end_layout
+
+\end_inset
+
+ Copiando el proyecto en 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+https://www.overleaf.com/project/new/template/
+\end_layout
+
+\end_inset
+
+ y trabajando en linea.
+\begin_inset VSpace 30pt
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{10pt} 
+\backslash
+noindent
+\backslash
+sqbox{red!60!black}
+\end_layout
+
+\end_inset
+
+ Descargando el source de 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Overleaf
+\end_layout
+
+\end_inset
+
+ o 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Git-Hub
+\end_layout
+
+\end_inset
+
+ y luego de descomprimirlo,
+ trabaje dentro de la carpeta 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+plantilla-libro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 30pt
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{10pt} 
+\backslash
+noindent
+\backslash
+sqbox{red!60!black}
+\end_layout
+
+\end_inset
+
+ Instalándolo localmente en su 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Pc
+\end_layout
+
+\end_inset
+
+ portátil o de escritorio.
+\end_layout
+
+\begin_layout Section
+Organización
+\end_layout
+
+\begin_layout Standard
+En la figura (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:archivos"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+) vemos la distribución de las carpetas y archivos contenidos en la plantilla,
+ explicaremos a continuación su contenido.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Folder
+\end_layout
+
+\end_inset
+
+ La carpeta principal se llama 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+plantilla-libro
+\end_layout
+
+\end_inset
+
+ es decir es la capeta raíz del proyecto y contiene todo lo necesario para empezar el proyecto de compilar el libro.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Folder
+\end_layout
+
+\end_inset
+
+ En la carpeta 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+back
+\end_layout
+
+\end_inset
+
+ se colocan los archivos de respaldo,
+ generados por el editor,
+ si usted lo tiene configurado.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Folder
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+image
+\end_layout
+
+\end_inset
+
+ es la carpeta donde debe colocar las imágenes con formato 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+png,
+ jpg,
+ pdf
+\end_layout
+
+\end_inset
+
+ si compila con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Hologo{pdfLaTeX},
+\backslash
+ 
+\backslash
+hologo{XeLaTeX}
+\backslash
+ o 
+\backslash
+hologo{LuaLaTeX} 
+\end_layout
+
+\end_inset
+
+.
+ También se guardan las imágenes en formato 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+ps
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+eps
+\end_layout
+
+\end_inset
+
+ para cuando se compila con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hologo{LaTeX}
+\backslash
+
+\end_layout
+
+\end_inset
+
+ además por defecto trae las imágenes mostradas en la figura (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:archivos"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Folder
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pdf
+\end_layout
+
+\end_inset
+
+ en esta carpeta se guardan las imágenes en formato 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pdf
+\end_layout
+
+\end_inset
+
+ y una copia del archivo maestro compilado por 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Hologo{pdfLaTeX},
+\backslash
+ 
+\backslash
+hologo{XeLaTeX}
+\backslash
+ o 
+\backslash
+hologo{LuaLaTeX} 
+\end_layout
+
+\end_inset
+
+,
+ además se encuentra una copia de esta guía.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Folder
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+sections
+\end_layout
+
+\end_inset
+
+ aquí es donde se guarda todo el cuerpo de nuestro trabajo,
+ los archivos que conforman los capítulos,
+ introducción,
+ prólogo,
+ secciones,
+ apéndices,
+ bibliografía,
+ título y portada.
+ puede eliminar los archivos que se encuentran en ella al descomprimir el proyecto,
+ si no los necesita.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Folder 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+styles
+\end_layout
+
+\end_inset
+
+ es la carpeta donde el compilador busca los archivos locales de estilo (paquetes),
+ por lo que si utiliza un archivo de estilo,
+ por ejemplo:
+ 
+\family sans
+estilo.sty
+\family default
+,
+ debe colocarlo aquí.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+obs
+\end_layout
+
+\end_inset
+
+ los archivos que se encuentran en esta carpeta no pueden ser eliminados y sólo los puede modificar si sabe exactamente lo que hace.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+File
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+guía.lyx
+\end_layout
+
+\end_inset
+
+ archivo fuente de la guía tipeado con editor 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hologo{LaTeX}
+\end_layout
+
+\end_inset
+
+,
+ llamado 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hologo{LyX}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+File
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Plantilla.tex
+\end_layout
+
+\end_inset
+
+,
+ este el el archivo maestro,
+ es decir el que se compila,
+ puede cambiarle el nombre si lo desea.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+File
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+limpieza.bat
+\end_layout
+
+\end_inset
+
+ Archivo para usar en 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Ms Windows
+\end_layout
+
+\end_inset
+
+.
+ Al hacer clic sobre el se borraran casi todos los archivos auxiliares que se crean al compilar el documento maestro.
+ la mayoría de los editores tiene esta función,
+ pero este archivo trabaja mejor.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+File
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+limpieza.sh
+\end_layout
+
+\end_inset
+
+ Archivo para realizar el mismo trabajo que 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+limpieza.bat
+\end_layout
+
+\end_inset
+
+,
+ pero en sistemas 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Poxis
+\end_layout
+
+\end_inset
+
+,
+ como las distribuciones 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Linux
+\end_layout
+
+\end_inset
+
+ y sistemas 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Mac Ox
+\end_layout
+
+\end_inset
+
+.
+\begin_inset VSpace defskip
+\end_inset
+
+Para utilizar el archivo 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+limpieza.sh
+\end_layout
+
+\end_inset
+
+ debemos configurar el sistema lanzando la 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+terminal Shell
+\end_layout
+
+\end_inset
+
+,
+ por ejemplo en 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Linux Mint
+\end_layout
+
+\end_inset
+
+ o 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Ubuntu
+\end_layout
+
+\end_inset
+
+ usamos los comandos 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setmenukeyswin 
+\backslash
+keys{
+\backslash
+ctrl + 
+\backslash
+Alt + t}
+\end_layout
+
+\end_inset
+
+ y tipea en ella lo siguiente
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{commandshell} cd /home/usuario/Escritorio/plantilla-calculo/ 
+\backslash
+end{commandshell}
+\end_layout
+
+\end_inset
+
+ahora debemos habilitar el permiso de ejecución con el siguiente comando
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{commandshell}  sudo chmod +x limpieza.sh 
+\backslash
+end{commandshell}
+\end_layout
+
+\end_inset
+
+introduce luego su 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pasward
+\end_layout
+
+\end_inset
+
+ (clave de usuario) y de esta manera puede ejecutarlo sin problema.
+\begin_inset VSpace defskip
+\end_inset
+
+En algunos casos,
+ puede ejecutar el archivo desde el menú contextual,
+ pero por seguridad la mayoría de las distribuciones lo tiene deshabilitado por seguridad.
+ En caso de que no pueda hacerlo desde el menú contextual,
+ entonces desde la 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+terminal
+\end_layout
+
+\end_inset
+
+ de la siguiente manera.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{commandshell}  sh limpieza.sh 
+\backslash
+end{commandshell}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+En 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Mac Ox
+\end_layout
+
+\end_inset
+
+ la forma más lógica de acceder al 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Terminal
+\end_layout
+
+\end_inset
+
+ es a través del 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Finder
+\end_layout
+
+\end_inset
+
+ o del 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+LaunchPad
+\end_layout
+
+\end_inset
+
+.
+ Para acceder desde el 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Finder
+\end_layout
+
+\end_inset
+
+ solo tienes que pulsar en el menú superior del 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Finder
+\end_layout
+
+\end_inset
+
+ en 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Archivo > Nueva
+\end_layout
+
+\end_inset
+
+ ventana del 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Finder
+\end_layout
+
+\end_inset
+
+(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setmenukeysmac 
+\backslash
+keys{
+\backslash
+cmd}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+N
+\end_layout
+
+\end_inset
+
+) y posteriormente,
+ en la barra lateral izquierda buscar el ítem de Aplicaciones,
+ pulsarlo y buscar 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Carpeta Utilidades > Terminal 
+\end_layout
+
+\end_inset
+
+ entre las aplicaciones que se nos muestran en la parte derecha de la ventana.
+\begin_inset VSpace defskip
+\end_inset
+
+Luego que tenga la 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Terminal
+\end_layout
+
+\end_inset
+
+ abierta sigue los mismos pasos que en 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Linux
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+limpieza.sh
+\end_layout
+
+\end_inset
+
+ además de realizar una limpieza organiza los archivos y los coloca en las carpeta correspondientes.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+File
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Makefile
+\end_layout
+
+\end_inset
+
+ también se puede usar en 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Linux
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Mac Ox
+\end_layout
+
+\end_inset
+
+.
+ Este archivo ejecuta la compilación completa con 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+latex
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+latex
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+dvips
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pspdf
+\end_layout
+
+\end_inset
+
+ y abre 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+evince
+\end_layout
+
+\end_inset
+
+ para visualizar el documento final.
+ 
+\begin_inset VSpace defskip
+\end_inset
+
+Este archivo se usa también desde la terminal así
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{commandshell}  make all 
+\backslash
+end{commandshell}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+para realizar una limpieza 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{commandshell}  make clean 
+\backslash
+end{commandshell}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Compilación
+\end_layout
+
+\begin_layout Standard
+La plantilla se usa con 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pdflatex
+\end_layout
+
+\end_inset
+
+,
+ no se aconseja usar 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+latex
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+latex
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+dvips
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pspdf
+\end_layout
+
+\end_inset
+
+,
+ si trabaja con los entornos especiales.
+\end_layout
+
+\begin_layout Standard
+En la próxima versión (
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+1.01
+\end_layout
+
+\end_inset
+
+),
+ también se podrá usar con 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+xelatex
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+luatex
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Para poder hacerlo crearemos una clase básica que no cargue los paquetes problemáticos,
+ como los motores gráficos,
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Pstricks
+\end_layout
+
+\end_inset
+
+ ,
+ fuentes y lenguajes.
+ 
+\end_layout
+
+\begin_layout Standard
+Crearemos unas macros para cada caso,
+ y para evitar errores facilitaremos unas plantillas para cada caso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{apunte}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para usar el proceso 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+latex
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+dvips
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pspdf
+\end_layout
+
+\end_inset
+
+ al compilar el documento no hay que configurar su editor,
+ en el caso de 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pdflatex
+\end_layout
+
+\end_inset
+
+ lo debe configurar así 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pdflatex -interaction=nonstopmode -shell-escape
+\end_layout
+
+\end_inset
+
+,
+ ya que esta plantilla esta diseñada para que pueda usar 
+\begin_inset listings
+lstparams "language=TeX"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+pstricks
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{apunte}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

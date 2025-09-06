@@ -1,0 +1,50 @@
+\usetkzobj{all}
+\begin{tikzpicture}[]
+\tkzInit[xmin=0, xmax=12,  ymin=0, ymax=6]
+ \tkzDefPoint(1,1){A}
+ \tkzDefPoint(7.28,1){B}
+ \tkzDefPoint(11.28,1){C}
+ \tkzDefPoint(5,4){D}
+% % \tkzDefPoint[shift={(0,0)}](30:3){A3}
+  \tkzDefPoint(1,5){E}
+ \tkzDefPoint(3,5){F}
+  \tkzDefPoint(1,3){G}
+  \tkzDefPoint(3,3){H}
+% %\tkzDefPoint[shift={(5,0)}](30:3){B5}
+ \tkzDefPoint(1,0.8){A1}
+ \tkzDefPoint(7.28,0.8){B1}
+ \tkzDefPoint(11.28,0.8){C1}
+ \tkzDefPoint(5.72,3.3){I}
+
+
+\tkzDrawCircle[blue,ultra thick](D,I)
+
+% 
+\tkzDrawSegments[color=red, line width=1pt,ultra thick](D,I)
+\tkzLabelSegment[above=2pt,pos=.6](D,I){$r$}
+\tkzDefSquare(B,A)
+\tkzDefSquare(G,H)
+ \tkzDrawPolygon[color=blue,ultra thick](G,H,tkzFirstPointResult,%
+ tkzSecondPointResult)
+\tkzDrawSegments[color=red, line width=1pt,ultra thick](G,E)
+
+\tkzLabelSegment[left=2pt,pos=.5](F,H){$l$}
+
+\tkzDrawSegments[color=blue, line width=1pt,line width=1.5pt](A,C)
+
+ \tkzMarkSegment[color=blue,pos=1,mark=ball,size=1.5pt,ultra thick](A,C)
+ \tkzMarkSegment[color=blue,pos=0,mark=ball,size=1.5pt,ultra thick](A,C)
+% 
+\tkzDrawSegments[color=red,line width=1pt,ultra thick,latex-latex](A1,B1)
+\tkzMarkSegment[color=red,pos=0,mark=|,size=4pt,ultra thick](A1,B1)
+\tkzMarkSegment[color=red,pos=1,mark=|,size=4pt,ultra thick](A1,B1)
+\tkzLabelSegment[below=2pt,pos=.5](A1,B1){$2\pi r$}
+\tkzDrawSegments[color=red,line width=1pt,ultra thick,latex-latex](C1,B1)
+\tkzMarkSegment[color=red,pos=0,mark=|,size=4pt,ultra thick](C1,B1)
+\tkzMarkSegment[color=red,pos=1,mark=|,size=4pt,ultra thick](C1,B1)
+\tkzMarkSegment[color=red,pos=1,mark=|,size=4pt,ultra thick](C,B)
+\tkzLabelSegment[below=2pt,pos=.5](C1,B1){$4l$}
+\tkzLabelSegment[above=2pt,pos=.5](C,B){$100-x$}
+\tkzLabelSegment[above=2pt,pos=.5](A,B){$x$}
+% % \tkzLabelSegment[right=2pt,pos=.5](M1,J2){$h$}
+\end{tikzpicture}

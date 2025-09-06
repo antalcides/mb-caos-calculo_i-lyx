@@ -1,0 +1,53 @@
+\begin{tikzpicture}[font = \sansmath,scale=4]
+  \coordinate (O) at (0,0);
+
+  % ball background color
+%  \shade[ball color = blue, opacity = 0.2] (0,0) circle [radius = 2cm];
+
+  % cone
+\draw [white,fill=gray!30,opacity=1] (-1.33,1.33) -- (1.33,1.33) -- (0,0) -- cycle;
+  \draw[white,fill = gray!30, densely dashed] (0,1.43) ellipse ({1.375} and {0.315});
+  \begin{scope}
+    \def\rx{0.71}% horizontal radius of the ellipse
+    \def\ry{0.15}% vertical radius of the ellipse
+    \def\z{0.725}% distance from center of ellipse to origin
+
+    \path [name path = ellipse]    (0,\z) ellipse ({\rx} and {\ry});
+    \path [name path = horizontal] (-\rx,\z-\ry*\ry/\z)
+                                -- (\rx,\z-\ry*\ry/\z);
+    \path [name intersections = {of = ellipse and horizontal}];
+
+    % radius to base of cone in ball
+    \draw[fill = gray!50, gray!50] (intersection-1) -- (0,0)
+      -- (intersection-2) -- cycle;
+    % base of cone in ball
+    \draw[fill = gray!30, densely dashed] (0,\z) ellipse ({\rx} and {\ry});
+  \end{scope}
+
+  % label of cone
+   % ball
+ % \draw (O) circle [radius=2cm];
+  % label of ball center point
+%  \filldraw (O) circle (1pt) node[below] {$P$};
+
+  % radius
+  \draw[densely dashed] (O)--(-1.33,1.33);
+  \draw[densely dashed] (O) -- (1.33,1.33);
+ \draw[densely dashed] (O) -- (0,1.43);
+\draw[densely dashed,red,line width=1pt,latex-latex] (0,1.43) to [edge label = $2.5$m]  (1.38,1.43);
+\draw[densely dashed,blue,line width=1pt] (0,0.725) --(0.725,0.725)node at (0.3,0.78) {$r$};
+  \draw[densely dashed] (O) -- (1.4,0);
+\draw[densely dashed,red,line width=1pt,latex-latex] (1.38,0) -- (1.38,1.45)node at (1.5,0.7) {$10$m};
+\draw[densely dashed,line width=1pt,blue](O)-- (0,0.725)node at (-0.1,0.4) {$h$};
+  % cut of ball surface
+%  \draw[red] (-1.35,1.47) arc [start angle = 140, end angle = 40,
+    x radius = 17.6mm, y radius = 14.75mm];
+  \draw[red, densely dashed] (-1.36,1.46) arc [start angle = 170, end angle = 10,
+    x radius = 13.8mm, y radius = 3.6mm];
+
+  \draw[red,line width=1pt] (-1.29,1.52) arc [start angle=-200, end angle = 20,
+    x radius = 13.75mm, y radius = 3.15mm];
+
+  % label of cut of ball surface
+ % \draw (-1.2,2.2) -- (-0.53,1.83) node at (-1.37,2.37) {$A$};
+\end{tikzpicture}

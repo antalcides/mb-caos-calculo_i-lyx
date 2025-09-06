@@ -1,0 +1,300 @@
+#-----Enunciado
+Counter		enun
+End
+
+
+Style Enunciado
+	CopyStyle	Theorem
+	LabelCounter	enun
+	LatexName	enunciado
+	LabelString	"Enunciado. \thechapter.\theenun."
+	Font
+	  Shape		Up
+	EndFont
+	LabelFont
+	  Series	Medium
+	EndFont
+End
+
+
+Counter		ley
+End
+
+Style Ley
+	CopyStyle	Theorem
+	LabelCounter	ley
+	LatexName	ley
+	LabelString	"Ley. \thechapter.\theley."
+	Font
+	  Shape		Up
+	EndFont
+	LabelFont
+	  Series	Medium
+	EndFont
+End
+
+
+Counter		conjecture
+End
+
+Style Conjecture
+	CopyStyle	Theorem
+	LabelCounter	conjecture
+	LatexName	conjecture
+	LabelString	"Conjecture \thechapter.\theconjecture."
+	Font
+	  Shape		Up
+	EndFont
+	LabelFont
+	  Series	Medium
+	  Shape		Italic
+	EndFont
+	LangPreamble
+	  \providecommand{\conjecturename}{_(Conjecture)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\conjecturename}{_(Conjecture)}}
+	EndBabelPreamble
+End
+
+
+Counter		fact
+End
+Style Fact
+	CopyStyle	Theorem
+	LabelCounter	fact
+	LatexName	fact
+	LabelString	"Fact \thechapter.\thefact."
+	LangPreamble
+	  \providecommand{\factname}{_(Fact)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\factname}{_(Fact)}}
+	EndBabelPreamble
+End
+
+#------
+
+
+Style Claim
+	CopyStyle             Theorem
+	DependsOn             Theorem
+	LatexName             claim
+	LabelString           "Afirmación \thechapter.\thetheorem."
+	Font
+	  Shape               Up
+	  Size                Normal
+	EndFont
+	LabelFont
+	  Series              Medium
+	  Shape               Italic
+	EndFont
+	LangPreamble
+	  \providecommand{\claimname}{_(Claim)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\claimname}{_(Claim)}}
+	EndBabelPreamble
+End
+
+
+
+Counter		case
+End
+
+Style Case
+	CopyStyle	Claim
+	LabelCounter	case
+	LatexName	case
+	LabelString	"Case \thechapter.\thecase."
+	RefPrefix	case
+	LangPreamble
+	  \providecommand{\casename}{_(Case)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\casename}{_(Case)}}
+	EndBabelPreamble
+End
+
+#-----
+Counter		prob
+#  Within	chapter
+End
+# Prob does not copy a style to avoid preamble code
+Style Programming
+	Category	Exercise
+	LatexType	Environment
+	LatexName	programming
+	Margin		First_Dynamic
+	LabelType	Static
+	LabelCounter	prob
+	LabelString	"Ejercicio para programar. \thechapter.\theprob"
+	NextNoIndent	1
+	ResetArgs       1
+	LabelSep	xx
+	ParIndent	MMM
+	ParSkip		0.4
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		Block
+	AlignPossible	Left
+	LabelFont
+	  Series	Bold
+	EndFont
+	AddToToc	thm
+	IsTocCaption	true
+End
+
+
+## InFlex --------------------
+
+InsetLayout Flex:Portada
+        LyxType	custom
+       LabelString	"Portada"
+       Decoration	classic
+       BgColor	buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	false
+    LatexType	command
+    LatexName	tbook
+    Argument 1
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 2
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 3
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 4
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 5
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 6
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 7
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   Argument 8
+        Mandatory	          1	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+   	ResetsFont true
+End
+
+
+
+InsetLayout Flex:Chapter~Image
+       LyxType	custom
+       LabelString	"Imagen del capítulo"
+       Decoration	classic
+       BgColor	buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	false
+    LatexType	command
+    LatexName	chapterimage
+    Argument 1
+        Mandatory	          0	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+End
+
+
+InsetLayout Flex:Portada~Imagen
+       LyxType	custom
+       LabelString	"Imagen de la portada"
+       Decoration	classic
+       BgColor	buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	false
+    LatexType	command
+    LatexName	portadaimage
+    Argument 1
+        Mandatory	          0	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+End
+
+
+InsetLayout Flex:Sugerencia
+       LyxType	custom
+       LabelString	"Sugerencia"
+       Decoration	classic
+       BgColor	gray #buttonbg
+       Font
+        Color	black
+        Family	Typewriter
+      EndFont
+      LabelFont
+       Color	blue
+        Family	Sans
+        Size	Small
+     EndFont
+    MultiPar	true
+    LatexType	Environment
+    LatexName	sugerencia
+    Argument 1
+        Mandatory	          0	
+         LabelString	"Options"
+         MenuString	"cajas|s"
+        Tooltip	"See the Lipsum manual for possible          options"
+   EndArgument
+End
+
+

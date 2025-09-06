@@ -1,0 +1,47 @@
+\tikzset{fontscale/.style = {font=\relsize{#1}}
+    }
+\begin{tikzpicture}[scale=1.5,
+fontscale=3,
+       >=latex',
+    dot/.style = {
+      draw,
+      fill = red,
+      circle,
+      inner sep = 0pt,
+      minimum size = 6pt
+    }
+  ]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \draw [very thin, style=gray!50, step=0.5] (-4,-4) grid (4,4);
+ %\draw [thin, gray!60] (0,0) grid (9,9);
+\coordinate (O) at (0,0);
+\coordinate (A) at (1.5,0);
+\coordinate (B) at (2,1.5);
+\coordinate (P) at (60:3);
+\coordinate (Y) at (0,4);
+\coordinate (Y1) at (0,-4);
+\coordinate (X) at (4,0);
+\coordinate (X1) at (-4,0);
+\coordinate (E1) at (3,0);
+\coordinate (E2) at (0,2);
+ \filldraw (O) circle (1pt) node[above left] {$O$};
+ \draw[blue, ultra thick] (0,0)circle (3cm );
+ \draw[ultra thick,latex-latex ] (3.2,0) arc (0:60:3.2cm)node[midway,pos=.5, above, sloped]{\normalsize Longitud de $x$};
+\draw[color=blue,ultra thick,latex-latex]           (X1)node[
+                               label = {}]{}-- (X) node[
+                               label = {above:$x$}] {};
+\draw[color=blue,ultra thick,latex-latex]           (Y1)node[
+                               label = {}]{}-- (Y) node[
+                               label = {above:$y$}] {};
+\draw[color=red,ultra thick]           (O)node[dot,
+                                label = {above right:}]{}-- (P) node[dot,
+                              label = {above right :$P_x$}  ] {};
+\draw[color=red,ultra thick]           (P)node[dot,
+                               label = {}] {} -- (A) node[
+                                 midway,below right] {$$};
+
+ \filldraw[red] (P) circle (2pt) node[above left] {};
+\filldraw[red] (E1) circle (2pt) node[below right=2pt] {$U$};
+\node (foo) at (0.7,-0.2) {$a$};
+\node (foo) at (1.7,1.38) {$b$};
+  \end{tikzpicture}

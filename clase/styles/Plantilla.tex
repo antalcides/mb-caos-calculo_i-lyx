@@ -1,0 +1,227 @@
+\colorlet{colexam}{blue!50!black}
+ %\pagecolor{yellow!10}
+\definecolor{miazul}{HTML}{0033b2}
+\definecolor{yourcolor}{HTML}{008bb2}
+%%%%encajonado %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setlength{\marginparwidth}{4cm} \setlength{\marginparsep}{0.5cm}
+%\setlength{\textheight}{22 cm} \setlength{\textwidth}{13cm}
+%\oddsidemargin 0cm
+%\evensidemargin 3cm
+%\headsep+22pt
+%\headheight 9pt
+%\topmargin-1.0 cm
+%%\hoffset -0.8cm
+%%\voffset -3cm
+%%\footskip 1cm
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ENCABEZADO Y PIE %%%%%%%%%%
+%
+% Length to control the \fancyheadoffset and the calculation of \headline
+% simultaneously
+\newlength\FHoffset
+\setlength\FHoffset{1cm}
+
+\addtolength\headwidth{2\FHoffset}
+
+%\fancyheadoffset{\FHoffset}
+
+% these lengths will control the headrule trimming to the left and right 
+\newlength\FHleft
+\newlength\FHright
+
+% here the trimmings are controlled by the user
+\setlength\FHleft{1cm}
+\setlength\FHright{1cm}
+\setlength\FHoffset{1cm}
+% The new definition of headrule that will take into acount the trimming(s)
+\newbox\FHline
+\setbox\FHline=\hbox{\hsize=\paperwidth%
+  \hspace*{\FHleft}%
+  \rule{\dimexpr\headwidth-\FHleft-\FHright\relax}{\headrulewidth}\hspace*{\FHright}%
+}
+\renewcommand\headrule{\vskip-.7\baselineskip\copy\FHline}
+%\renewcommand{\headrule}{\color{white}{\vbox to 0pt{\hbox to\headwidth{\hrulefill}\vss}}}
+%\renewcommand{\footrule}{\color{white}{\vbox to 0pt{\hbox to\headwidth{\hrulefill}\vss}}}
+\newcommand{\helv}{\fontfamily{phv}\fontsize{8}{11}\selectfont}
+\newcommand{\helvi}{\fontfamily{phv}\fontseries{b}\fontsize{9}{11}\selectfont}
+
+\fancyhf{}
+%\fancyhead[LE,RO]{{\textcolor[rgb]{0.00,0.00,0.00}{\helv \thepage}}}
+\fancyhead[LO]{\textcolor[rgb]{0.00,0.00,0.00}{\helv \nouppercase{\rightmark}}\, \,\bfseries\thepage}
+\fancyhead[RE]{\textcolor[rgb]{0.00,0.00,0.00}{\helv \nouppercase{\leftmark}}\, \, \bfseries\thepage}
+\fancyfoot[LE,RO]{}
+\fancyfoot[RO,LE]{}
+
+\pagestyle{fancy}
+
+% \fancyheadoffset[loh,reh]{1.5\FHoffset}%
+% \fancyheadoffset[leh,roh]{1.5\FHoffset}
+ \fancyheadoffset[L]{10mm}
+ \fancyheadoffset[RE]{40mm}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FIN DE ENCABEZADO Y PIE %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Español%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%capitulos y secciones%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----------------------------------------------------------------------------%
+%   SECTION NUMBERING IN THE MARGIN
+%-----------------------------------------------------------------------------%
+%
+\makeatletter
+\renewcommand{\subsection}{\@startsection {subsection}{2}{\z@}
+{-3ex \@plus -0.1ex \@minus -.4ex}
+{0.5ex \@plus.2ex }
+{\color{blue!50!black}\normalfont\sffamily\bfseries}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{\z@}
+{-2ex \@plus -0.1ex \@minus -.2ex}
+{.2ex \@plus.2ex }
+{\color{blue!50!black}\normalfont\small\sffamily\bfseries}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}
+{-2ex \@plus-.2ex \@minus .2ex}
+{.1ex}
+{\color{blue!50!black}\normalfont\small\sffamily\bfseries}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\subparagraph{\@startsection{paragraph}{4}{\z@}
+{-2ex \@plus-.2ex \@minus .2ex}
+{.1ex}
+{\color{blue!50!black}\normalfont\small\sffamily\bfseries}}
+%%
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Definion de cap\'itulo%%%%%%%%%%%%%%%%%%%%
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Huge\bfseries\scshape}
+  {\gdef\chapterlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+      \node[yshift=-3cm,xshift=-3cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[blue!8!white,fill=yourcolor] (2,0) rectangle
+          (1.3\paperwidth,3cm);
+        \node[anchor=east,xshift=\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=blue!50!black]
+              {\color{white}{\large}\chapterlabel\hspace{-10pt}. #1};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% capítulo sin enumerar %%%%%%%%%%%%%%%%%%%%%%%%
+  \titleformat{name=\chapter,numberless}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Huge\bfseries\scshape}
+  {\gdef\chapterlabel{\WritingHand\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+      \node[yshift=-3cm,xshift=-3cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[blue!8!white,fill=yourcolor] (2,0) rectangle
+          (1.3\paperwidth,3cm);
+        \node[anchor=east,xshift=\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=blue!50!black]
+              {\color{white}{\large}\chapterlabel\hspace{-10pt} #1};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titlespacing*{\chapter}{0pt}{50pt}{-10pt}
+ %%%%%%%%%%%%%%%%%%%%%%%%%Nombres o etiquetas en español %%%%%%%%%%%%%%%%%%%%%%
+\def\chaptername{Cap\'{\i}tulo}
+\def\contentsname{Contenido}
+\def\bibname{Bibliograf\'{\i}a \& Referencias}
+\def\partname{Parte}
+\def\tablename{Tabla}
+\def\figurename{Figura}
+\def\indexname{\'{I}ndice}
+\def\seename{ver}
+\def\appendixname{}
+\def\mtctitle{Contenido}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% definici\'on de las secciones
+\newcommand\ChapterFont{\usefont{T1}{qhv}{b}{n}\selectfont\huge}
+\newcommand\SectionFont{\usefont{T1}{qhv}{b}{n}\selectfont}
+\titleformat{\section}
+  {\normalfont\small\sffamily\SectionFont\color{blue!50!black}}
+  {\colorbox{blue!50!black}{%
+    \parbox[c][16pt][c]{40pt}{%
+      \centering\textcolor{white}{\SectionFont\Large\rmfamily\thesection}%
+      }%
+    }%
+  }
+  {1em}
+  {#1}
+  [ \vspace*{-1.2\baselineskip}%
+    \color{blue!50!black}\hspace*{\dimexpr40pt+2\fboxsep\relax}%
+    \rule{\dimexpr\textwidth-40pt-2\fboxsep\relax}{1pt} \vspace*{10pt}]
+  %%%%%%%%%%%% secci\'on sin enumerar
+   \titleformat{name=\section,numberless}[block]%
+    {\vspace*{8pt}\normalfont\small\sffamily\SectionFont\color{blue!50!black}}
+  {\colorbox{blue!50!black}{%
+    \parbox[c][16pt][c]{40pt}{%
+      \centering\textcolor{white}{\SectionFont\Large\rmfamily\PointingHand}%
+      }%
+    }%
+  }
+  {1em}
+  {#1}
+  [\vspace*{-1.2\baselineskip}%
+    \color{blue!50!black}\hspace*{\dimexpr40pt+2\fboxsep\relax}%
+    \rule{\dimexpr\textwidth-40pt-2\fboxsep\relax}{1pt}\vspace*{10pt}  ]
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%%% ------- minitoc ---------- %%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %
+% \definecolor{yourcolor}{HTML}{008bb2}
+% %command to print the acutal minitoc
+%\newcommand{\printmyminitoc}{%
+%\hypersetup{linkcolor = white,}
+%\noindent
+%\hspace{2cm}
+% \color{white}%
+%\begin{tikzpicture}
+%    \node(minitoc)[rounded corners,
+%         align=left,
+%         fill=yourcolor, 
+%         blur shadow={shadow blur steps=5}, 
+%         inner sep=5mm]{%
+%       \begin{minipage}{10cm}%minipage trick
+%        \printcontents[chapters]{}{1}{}
+%        \end{minipage}};
+%        \node[draw=yourcolor,fill=yourcolor,thick,rounded 
+%       corners,text=blue] at (minitoc.north east) {\bfseries\large\textcolor{white}{ Subtemas}};
+%    \end{tikzpicture}
+%    \color{black}
+%    \hypersetup{linkcolor = colexam,}}
+    %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \definecolor{yourcolor}{HTML}{008bb2}
+ %command to print the acutal minitoc
+\newcommand{\printmyminitoc}{%
+\hypersetup{linkcolor = white,}
+\noindent
+\hspace{2cm}
+ \color{white}%
+\begin{tikzpicture}
+    \node(minitoc)[rounded corners,
+         align=left,
+         fill=yourcolor, 
+         blur shadow={shadow blur steps=5}, 
+         inner sep=5mm]{%
+       \begin{minipage}{10cm}%minipage trick
+        \printcontents[chapters]{}{1}{}
+        \end{minipage}};
+        \node[draw=yourcolor,fill=yourcolor,thick,rounded 
+       corners,text=blue] at (minitoc.north east) {\bfseries\large\textcolor{white}{ Subtemas}};
+    \end{tikzpicture}
+    \color{black}
+    \hypersetup{linkcolor = colexam,}}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %

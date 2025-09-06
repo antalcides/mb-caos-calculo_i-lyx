@@ -1,0 +1,56 @@
+\usetkzobj{all}
+ \begin{tikzpicture}
+    \pgfmathsetmacro\y{9.5}
+    \pgfmathsetmacro\l{8.5}
+    \pgfmathsetmacro\h{11}
+    \pgfmathsetmacro\a{sqrt(\y*\y-\l*\l)}
+    \pgfmathsetmacro\b{\y-\a}
+    \pgfmathsetmacro\x{\y*(\y-\a)/\l}
+    \pgfmathsetmacro\z{\l-\x}
+
+
+\coordinate (A) at (0,0);
+\coordinate (Ax) at (-0.4,0);
+\coordinate (B) at (\l,0);
+\coordinate (C) at (\l,0);
+\coordinate (Cx) at (\l,-0.4);
+\coordinate (D) at (\l,\h);
+\coordinate (Dx) at (\l,\h+0.4);
+\coordinate (E) at (0,\h);
+\coordinate (Ex) at (-0.4,\h);
+\coordinate (Ey) at (0,\h+0.4);
+\coordinate (F) at (\z,0);
+\coordinate (Fx) at (\z,-0.4);
+\coordinate (G) at (\l,\y);
+\coordinate (H) at (0,\b);
+
+
+    \draw[blue,fill=Cyan!20!] (\l-\x,0)--(0,0)--(0,\h)--(\l,\h)--(\l,\y)--cycle;
+    \draw[dotted,blue,line width=1.2pt] (\l,\y)--(\l,0)--(\l-\x,0);
+    \draw[blue,fill=yellow!20!Cyan!20!white] (\l-\x,0)--(0,\b)--(\l,\y)--cycle;
+     %\tkzDrawPoints[](F,G,H)
+
+\tkzDrawSegments[color=blue, line width=1pt,ultra thick,latex-latex](Cx,Fx)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](Cx,Fx)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](Cx,Fx)
+\tkzLabelSegment[below=2pt,pos=.5](Cx,Fx){$x$}
+
+
+\tkzDrawSegments[color=blue, line width=1pt,ultra thick,latex-latex](Ax,Ex)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](Ax,Ex)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](Ax,Ex)
+\tkzLabelSegment[left=2pt,pos=.5](Ax,Ex){$12''$}
+
+\tkzDrawSegments[color=blue, line width=1pt,ultra thick,latex-latex](Dx,Ey)
+\tkzMarkSegment[color=blue,pos=0,mark=|,size=4pt,ultra thick](Dx,Ey)
+\tkzMarkSegment[color=blue,pos=1,mark=|,size=4pt,ultra thick](Dx,Ey)
+\tkzLabelSegment[above=2pt,pos=.5](Dx,Ey){$8''$}
+
+\tkzLabelSegment[left=2pt,pos=.5](F,G){$y$}
+
+\tkzMarkRightAngle[fill=red!20,size=.3](G,H,F)
+%      \node[below] at(\l/2,0){$\l$};
+%      \node[above] at(\l/2,\h){$\l$};
+%     \node[left] at(0,\h/2){$\h$};
+%      \node[right] at(\l,\h/2){$\h$};
+    \end{tikzpicture}

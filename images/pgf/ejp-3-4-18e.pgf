@@ -1,0 +1,20 @@
+\begin{tikzpicture}[scale=2]
+\tkzInit[xmin=-3,xmax=5,ymin=-25,ymax=30,ystep=10]
+\tkzSetUpAxis[line width=1pt,tickwd=1pt,ticka=1pt, tickb=3pt]
+%\tkzGrid
+\tkzDrawX[,label={\textit{x}},below= -11pt,Maroon,ultra thick,color=Maroon]
+%\tkzLabelX[draw=fondpaille,orig=false]
+\tkzLabelX[text=blue,below = 8pt]
+\tkzDrawY[label={\textit{f(x)}},below= -18pt,Maroon,ultra thick,color=Maroon]
+\tkzLabelY[draw=fondpaille]
+% \tkzVLine[color =blue,
+% style = dashed,
+% line width = 1pt]{2}
+\tkzText[draw,color= red,fill =red!20,draw=red](1.5,26){$f(x)=3x^3+2x^2+5x+1$}
+%\tkzText[draw,color= blue,fill = blue!20,draw=blue](2,2.25){$x= 2$}
+
+%\tkzAxeXY[ultra thick]
+\tkzFct[color=red,ultra thick,domain=-3:0.965,latex-latex]{2+1/(x-1)}
+\tkzFct[color=red,ultra thick,domain=1.037:5,latex-latex]{2+1/(x-1)}
+\tkzVLine[style=dotted,color=green, ultra thick]{1}
+\end{tikzpicture}

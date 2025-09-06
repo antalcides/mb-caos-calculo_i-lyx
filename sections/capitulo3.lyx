@@ -1,0 +1,7930 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass mbcaos
+\begin_preamble
+\batchmode
+\makeatletter
+\def\input@path{{lib}{styles/}{sections/}{pdf/}{chapters}}
+\makeatother
+\usepackage{listings}
+\usepackage{mathrsfs}
+\graphicspath{{fig-pdf/}{pdf/}{image/}{sections/figures/}{figures/}{images/}}
+\usepackage{float}
+\usepackage{subfigure}
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+%\let\checkmark\relax
+%\definecolor{bleu}{cmyk}{0.59,0.11,0,0.59}
+%\definecolor{vert}{cmyk}{0.78,0,0.74,0.45}
+%\definecolor{caper}{cmyk}{0.21,0.00,0.51,0.54}
+%\definecolor{doc}{cmyk}{1.00,0.45,0.00,0.57}
+%\definecolor{rhodo}{cmyk}{0.78,0,0.74,0.45}
+%\definecolor{azulrey}{cmyk}{0.91,0.34,0.00,0.55}
+%\definecolor{saddlebrown}{cmyk}{0.00,0.46,0.85,0.50}
+%\definecolor{milktea}{cmyk}{0.00,0.18,0.43,0.22}
+%\definecolor{naranja}{cmyk}{0,0.5,1,0}
+%\definecolor{olivegreen}{cmyk}{0.64,0,0.95,0.40}
+%\definecolor{bgpage}{cmyk}{.20,.30,.64,.19}
+%\definecolor{mesh}{cmyk}{0,0.04,0.17,0.03}
+\usepackage{pagecolor}
+\usepackage{zahlen}
+%\pagecolor{mesh}
+\pagecolor{fondpaille}  
+\lstset{
+	numbers=left, 
+	numberstyle=\tiny, 
+	stepnumber=1, 
+	numbersep=3pt, 
+	language=[LaTeX]TeX, 
+	backgroundcolor=\color{bleu!20},
+	frame=shadowbox,
+	rulesepcolor=\color{bleu},
+	rulecolor=\color{bleu},
+	framexleftmargin=10pt,
+	keywordstyle=\color{vert}\bfseries,
+	basicstyle=\listfont,
+    columns=flexible,
+    keepspaces=true,
+    upquote=true,
+    literate=
+    {á}{{\'a}}{1}
+    {é}{{\'e}}{1}
+    {í}{{\'i}}{1}
+    {ó}{{\'o}}{1}
+    {ú}{{\'u}}{1}
+    {Á}{{\'A}}{1}
+    {É}{{\'E}}{1}
+    {Í}{{\'I}}{1}
+    {Ó}{{\'O}}{1}
+    {Ú}{{\'U}}{1}
+    {ñ}{{\~n}}{1}
+    {Ñ}{{\~N}}{1}
+    {ü}{{\"e}}{1}
+    {Ü}{{\"U}}{1}%
+    %frances
+    {è}{{\`e}}{1}%
+    {à}{{\`a}}{1}%
+    {â}{{\^a}}{1}%%%
+    {ç}{{\c{c}}}{1}%
+    {?}{{\oe}}{1}%
+    {ù}{{\`u}}{1}%
+    {È}{{\`E}}{1}%
+    {À}{{\`A}}{1}%
+    {Ç}{{\c{C}}}{1}%
+    {?}{{\OE}}{1}%
+    {Ê}{{\^E}}{1}%
+    {ê}{{\^e}}{1}%
+    {î}{{\^i}}{1}%
+    {ï}{{\"i}}{1}%%%
+    {ô}{{\^o}}{1}%
+    {û}{{\^u}}{1}%
+    ,
+    commentstyle=\color{gray},
+    morekeywords={redefineColor,dfrac,setlength,cellspacetoplimit, cellspacebottomlimit,firstline,text,intro,introauthor,chapter, itemclass,exostart,corrstart,PagCorregidos,columnbreak,titlepic, nbcolindex,indexname,printindex,makeindex,activites, DefineNewBoxLikeRem,BreakCorr}
+}
+\usepackage{lipsum-es}
+\usepackage{wasysym}
+\makeatletter 
+\newenvironment{proof}[1][Prueba]{\textcolor{dem@line@color}{\textbf{#1.\phantom{--}} }}{\hfill\phantom{--}\hfill\ \ \textcolor{dem@line@color}{\rule{0.5em}{0.5em}}}
+\newenvironment{exam}[1][Ejercicio]{\textbf{#1.}\ }{\hfill\ \rule{0.5em}{0.5em}}
+\newenvironment{sol}[1][Soluci\'on]{\textcolor{dem@line@color}{\textbf{#1.\phantom{--}}}}{\hfill\phantom{--}\hfill\ \textcolor{dem@line@color}{\checked}}
+
+\RequirePackage[colorlinks=true,linkcolor=corref@color]{hyperref}
+\redefineColor{thmtitle@bg@color}{0.66,0.24,0.74,0.71}
+\redefineColor{thm@bg@color}{0.11,0,0.09,0.09}
+\redefineColor{proptitle@bg@color}{0.66,0.24,0.74,0.71}
+\redefineColor{prop@bg@color}{0.11,0,0.09,0.09}
+\redefineColor{firstpagebottom@bg@color}{1,1,0.00,0.55}
+\redefineColor{subsection@title@color}{.19,.74,.100,.68}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Vdots{\vbox{\baselineskip4\p@ \lineskiplimit\z@
+    \kern6\p@\hbox{.}\hbox{.}\hbox{.}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatother
+%\selectspanish
+\title{C\'alculo diferencial\\ \normalsize Con ejercicios resueltos.}
+\author{Antalcides Olivo}
+\titlepic[0.3]{image/puente1.jpg}
+\logopic[1]{image/logo-caos-1.png}
+%\titlepic[0.5]{fractal.jpg}
+\date{\dia}
+
+\makeindex
+\end_preamble
+\use_default_options true
+\master ../calculod-mbcaos.lyx
+\maintain_unincluded_children false
+\language spanish-mexico
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 1
+\bibtex_command bibtex
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Derivación
+\end_layout
+
+\begin_layout Section
+Definición de derivada
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función definida en el punto 
+\begin_inset Formula $c\in\left]a,b\right[$
+\end_inset
+
+.
+ Se define la derivada
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!Definición de –|textbf
+\end_layout
+
+\end_inset
+
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x=c$
+\end_inset
+
+ como
+\begin_inset Formula 
+\begin{equation}
+f^{\prime}\left(c\right):=\lim_{h\rightarrow0}\frac{f\left(c+h\right)-f\left(c\right)}{h}\label{d1}
+\end{equation}
+
+\end_inset
+
+si dicho límite existe.
+\end_layout
+
+\begin_layout Standard
+Precisando esta idea, ya que
+\begin_inset Formula 
+\[
+\begin{tabular}{lll}
+ \ensuremath{\dfrac{f(c+h)-f(c)}{h}\rightarrow f^{\prime}(c)}  &  , cuando  &  \ensuremath{h\rightarrow0,}\end{tabular}
+\]
+
+\end_inset
+
+se tiene que para todo 
+\begin_inset Formula $r>0$
+\end_inset
+
+, existe 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ tal que 
+\begin_inset Formula 
+\[
+\left\vert \frac{f(c+h)-f(c)}{h}-f^{\prime}(c)\right\vert <r,\text{ si }|h|<\delta.
+\]
+
+\end_inset
+
+Para un tal 
+\begin_inset Formula $h$
+\end_inset
+
+ escribamos 
+\begin_inset Formula 
+\begin{equation}
+E_{c}(h):=f(c+h)-f(c)-hf^{\prime}(c).\label{funcerror}
+\end{equation}
+
+\end_inset
+
+De (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "funcerror"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) se tiene que
+\begin_inset Formula 
+\begin{equation}
+f(c+h)=f(c)+hf^{\prime}(c)+E_{c}(h),\label{diferencial}
+\end{equation}
+
+\end_inset
+
+y como 
+\begin_inset Formula 
+\begin{align*}
+\lim_{h\rightarrow0}\frac{E_{c}(h)}{h} & =\lim_{h\rightarrow0}\frac{f(c+h)-f(c)}{h}-f^{\prime}(c)\\
+ & =0,
+\end{align*}
+
+\end_inset
+
+se pone de presente que 
+\begin_inset Formula $f(c+h)\approx f(c)+hf^{\prime}(c),$
+\end_inset
+
+ si 
+\begin_inset Formula $h\approx0$
+\end_inset
+
+; por lo cual se acostumbra describir a 
+\begin_inset Formula $E_{c}$
+\end_inset
+
+ como una función 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– de error
+\end_layout
+
+\end_inset
+
+de error en la aproximación de 
+\begin_inset Formula $f(c+h)$
+\end_inset
+
+ por 
+\begin_inset Formula $f(c)+hf^{\prime}(c)$
+\end_inset
+
+.
+ La función lineal 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/derivada-sec-4.pdf
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+protect
+\end_layout
+
+\end_inset
+
+ Aproximación lineal de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+g(x)=f(c)+(x-c)f^{\prime}(c)\label{aproxlinfvsc}
+\end{equation}
+
+\end_inset
+
+(cuya gráfica es la ecuación de la recta tangente en 
+\begin_inset Formula $(c,f(c))$
+\end_inset
+
+.
+ Ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "difeecni"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) es entonces una aproximación de 
+\begin_inset Formula $f$
+\end_inset
+
+ en las vecindades de 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ El incremento de 
+\begin_inset Formula $f$
+\end_inset
+
+ es dado por la 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Aplicación lineal|textbf
+\end_layout
+
+\end_inset
+
+aplicación lineal 
+\begin_inset Formula 
+\begin{equation}
+h\longmapsto f^{\prime}(c)h,\label{defdif}
+\end{equation}
+
+\end_inset
+
+la cual es usualmente denominada la 
+\series bold
+diferencial
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diferencial|textbf
+\end_layout
+
+\end_inset
+
+
+\series default
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ La existencia de una aplicación lineal y de una función de error como en
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diferencial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) caracteriza a funciones denominadas 
+\series bold
+diferenciables
+\series default
+.
+ 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Funciones!– diferenciables
+\end_layout
+
+\end_inset
+
+El concepto de diferenciabilidad, para funciones reales de variable real,
+ coincide así con el de derivabilidad.
+ Por lo tanto 
+\begin_inset Formula $f$
+\end_inset
+
+ con las condiciones indicadas en la definición de derivada, se denomina
+ 
+\series bold
+diferenciable
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– diferenciable
+\end_layout
+
+\end_inset
+
+
+\series default
+ en 
+\begin_inset Formula $c$
+\end_inset
+
+ si, y sólo si existen una aplicación lineal
+\begin_inset Formula 
+\[
+f_{c}^{\prime}:\rz\longrightarrow\rz,
+\]
+
+\end_inset
+
+y una función 
+\begin_inset Formula 
+\[
+E_{c}:\rz\longrightarrow\rz,
+\]
+
+\end_inset
+
+tales que 
+\begin_inset Formula 
+\begin{align}
+f(c+h) & =f(c)+f_{c}^{\prime}(h)+E_{c}(h),\label{diferenciabilidadc}\\
+\lim_{h\rightarrow0}\frac{E_{c}(h)}{h} & =0.\label{errordif}
+\end{align}
+
+\end_inset
+
+La ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diferenciabilidadc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) es denominada 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Fórmula de Taylor|textbf
+\end_layout
+
+\end_inset
+
+
+\series bold
+fórmula de Taylor
+\series default
+ de primer orden para 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ La función 
+\begin_inset Formula $f_{c}^{\prime}$
+\end_inset
+
+ es la 
+\series bold
+diferencial
+\series default
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $c$
+\end_inset
+
+ citada en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "defdif"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ De la discusión previa se tiene entonces que toda función derivable en
+ 
+\begin_inset Formula $x=c,$
+\end_inset
+
+ es también una función diferenciable en 
+\begin_inset Formula $x=c$
+\end_inset
+
+.
+ Recíprocamente, si se cumple (
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "diferenciabilidadc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "errordif"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), entonces 
+\begin_inset Formula 
+\begin{align*}
+\lim_{h\rightarrow0}\frac{f(c+h)-f(c)}{h} & =\lim_{h\rightarrow0}\frac{f_{c}^{\prime}(h)+Ec(h)}{h}\\
+ & =\lim_{h\rightarrow0}\frac{f_{c}^{\prime}(h.1)+E_{c}(h)}{h}\\
+ & =\lim_{h\rightarrow0}\frac{hf_{c}^{\prime}(1)+E_{c}(h)}{h}\\
+ & =\lim_{h\rightarrow0}\left(f_{c}^{\prime}(1)+\frac{E_{c}(h)}{h}\right)\\
+ & =f_{c}^{\prime}(1),
+\end{align*}
+
+\end_inset
+
+lo cual demuestra que 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $c$
+\end_inset
+
+ y que 
+\begin_inset Formula 
+\[
+f^{\prime}(c)=f_{c}^{\prime}(1).
+\]
+
+\end_inset
+
+Si escribimos 
+\begin_inset Formula $h=x-c$
+\end_inset
+
+, la derivada puede escribirse también como 
+\begin_inset Formula 
+\begin{equation}
+f^{\prime}(c)=\lim_{x\rightarrow c}\frac{f(x)-f(c)}{x-c}.
+\end{equation}
+
+\end_inset
+
+Si suponemos 
+\begin_inset Formula $f$
+\end_inset
+
+ derivable en 
+\begin_inset Formula $x=c,$
+\end_inset
+
+ es inmediato que 
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\rightarrow c}f(x) & =\lim_{x\rightarrow c}\frac{f(x)-f(c)+f(c)}{x-c}(x-c)\\
+ & =\lim_{x\rightarrow c}\left(\frac{f(x)-f(c)}{x-c}(x-c)+f(c)\right)\\
+ & =f^{\prime}(c)(0)+f(c)\\
+ & =f(c)
+\end{align*}
+
+\end_inset
+
+y, por lo tanto se cumple el siguiente resultado
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "d15"
+
+\end_inset
+
+Si 
+\begin_inset Formula $f:\left]a,b\right[\rightarrow\rz$
+\end_inset
+
+ es diferenciable
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– continua
+\end_layout
+
+\end_inset
+
+ en 
+\begin_inset Formula $x=c\in\left]a,b\right[$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $x=c$
+\end_inset
+
+.
+  
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+El recíproco es falso en general, como ejemplo tomemeos la función valor
+ absoluto 
+\begin_inset Formula 
+\[
+f(x)=|x|,
+\]
+
+\end_inset
+
+la cual es continua en 
+\begin_inset Formula $x=0$
+\end_inset
+
+, pero no es diferenciable en el mismo.
+ En efecto: 
+\begin_inset Formula 
+\begin{align*}
+\lim_{h\rightarrow0^{+}}\frac{|h|}{h} & =1\\
+\lim_{h\rightarrow0^{-}}\frac{|h|}{h} & =-1,
+\end{align*}
+
+\end_inset
+
+por lo que 
+\begin_inset Formula $f^{\prime}(0)$
+\end_inset
+
+ no existe.
+\end_layout
+
+\begin_layout Standard
+Si consideramos los valores 
+\begin_inset Formula $x$
+\end_inset
+
+ para quienes exista el límite 
+\begin_inset Formula 
+\begin{equation}
+f^{\prime}\left(x\right)=\lim_{h\rightarrow0}\frac{f\left(x+h\right)-f\left(x\right)}{h}.\label{d2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+Entonces se puede asignar a cada 
+\begin_inset Formula $x$
+\end_inset
+
+ el número 
+\begin_inset Formula $f^{\prime}\left(x\right)$
+\end_inset
+
+.
+ De esta manera en 
+\begin_inset Formula $\left(\ref{d2}\right)$
+\end_inset
+
+ se define una nueva función llamada la derivada de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ es continua decimos que 
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– continuamente diferenciable
+\end_layout
+
+\end_inset
+
+continuamente diferenciable 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Notation
+Si 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+, la derivada de 
+\begin_inset Formula $f$
+\end_inset
+
+ respecto a 
+\begin_inset Formula $x$
+\end_inset
+
+ puede notarse de cualquiera de las siguientes maneras
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)\equiv y^{\prime}\equiv\dfrac{dy}{dx}\equiv\dfrac{d}{dx}f\left(x\right)\equiv Df\left(x\right)\equiv D_{x}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Derivadas laterales
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivadas!laterales
+\end_layout
+
+\end_inset
+
+Se define la derivada a la derecha (derivada lateral derecha) de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x=c$
+\end_inset
+
+ como 
+\begin_inset Formula $f_{+}^{\prime}$
+\end_inset
+
+ donde 
+\begin_inset Formula 
+\[
+f_{+}^{\prime}\left(c\right)=\lim_{h\rightarrow0^{+}}\frac{f\left(c+h\right)-f\left(c\right)}{h}\,\,,
+\]
+
+\end_inset
+
+si este límite existe.
+ Análogamente, se define la derivada a la izquierda (derivada lateral izquierda)
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x=c$
+\end_inset
+
+ como 
+\begin_inset Formula $f_{-}^{\prime}$
+\end_inset
+
+ donde 
+\begin_inset Formula 
+\[
+f_{-}^{\prime}\left(x_{0}\right)=\lim_{h\rightarrow0^{+}}\frac{f\left(c+h\right)-f\left(c\right)}{h}\,\,,
+\]
+
+\end_inset
+
+si este límite existe.
+\begin_inset Newline newline
+\end_inset
+
+De la definición de derivada, se puede decir que una función 
+\begin_inset Formula $f$
+\end_inset
+
+ es derivable en 
+\begin_inset Formula $x=c$
+\end_inset
+
+ si, y solo si 
+\begin_inset Formula $f_{+}^{\prime}\left(c\right)=f_{-}^{\prime}\left(c\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Diferenciabilidad en un intervalo
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivabilidad!– en un intervalo
+\end_layout
+
+\end_inset
+
+Se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en un intervalo abierto 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+, si 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en cada punto del intervalo 
+\begin_inset Formula $\left]a,b\right[.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para intervalos de otro tipo, la exigencia de derivabilidad en los extremos
+ se puede debilitar, exigiendo simplemente derivabilidad lateral en dichos
+ puntos.
+ Por ejemplo, diremos que 
+\begin_inset Formula $f:[a,b]\rightarrow\rz$
+\end_inset
+
+ es diferenciable en el intervalo cerrado 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, si 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en el intervalo abierto 
+\begin_inset Formula $\left]a,b\right[,$
+\end_inset
+
+ y si además
+\begin_inset Formula $\ f_{+}^{\prime}\left(a\right)\ $
+\end_inset
+
+y 
+\begin_inset Formula $\ f_{-}^{\prime}\left(b\right)$
+\end_inset
+
+ existen.
+ 
+\end_layout
+
+\begin_layout Subsection
+Derivada de orden superior
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f:\left]a,b\right[\longrightarrow\rz$
+\end_inset
+
+ es 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivadas!– de orden superior
+\end_layout
+
+\end_inset
+
+una función, y si 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $c\in\left]a,b\right[$
+\end_inset
+
+, entonces el conjunto 
+\begin_inset Formula 
+\[
+U=\{x\in\left]a,b\right[\mid f^{\prime}(x)\ \mbox{ \ existe}\}
+\]
+
+\end_inset
+
+es no vacío.
+ Definimos 
+\begin_inset Formula 
+\begin{equation}
+\begin{tabular}{llll}
+ \ensuremath{f^{\prime}:}  &  \ensuremath{U}  &  \ensuremath{\longrightarrow}  &  \ensuremath{\rz}\\
+  &  \ensuremath{x}  &  \ensuremath{\longmapsto}  &  \ensuremath{f^{\prime}\left(x\right).} 
+\end{tabular}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ es la 
+\series bold
+función derivada
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– derivada
+\end_layout
+
+\end_inset
+
+
+\series default
+ de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, si 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función diferenciable en un intervalo, su derivada 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ puede también ser diferenciable, en tal caso su derivada se denota por
+ 
+\begin_inset Formula $f^{\prime\prime}$
+\end_inset
+
+.
+ Es decir, la segunda derivada es la derivada de la derivada .
+ Y así sucesivamente podríamos continuar derivando para obtener 
+\begin_inset Formula $f^{\prime\prime\prime}=f^{(3)},$
+\end_inset
+
+ 
+\begin_inset Formula $f^{\prime\prime\prime\prime}=f^{(4)},\dots.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+En general, se puede denotar las derivadas de orden superior como
+\begin_inset Formula 
+\[
+f^{\left(n\right)}\left(x\right)=y^{\left(n\right)}=\frac{d^{n}y}{dx^{n}}=\frac{d}{dx}\left(\frac{d^{n-1}y}{dx^{n-1}}\right)\ \ ,si\ \ n\geq2
+\]
+
+\end_inset
+
+También es usual escribir 
+\begin_inset Formula $C^{n}\left]a,b\right[$
+\end_inset
+
+ para el conjunto de todas las funciones con derivadas hasta el orden 
+\begin_inset Formula $n$
+\end_inset
+
+, al menos, y con dichas derivadas continuas en el intervalo 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+, 
+\begin_inset Formula $a,b\in\rz$
+\end_inset
+
+.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+d@
+\begin_inset Formula $C^{\infty}\left]a,b\right[$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $C^{\infty}\left]a,b\right[$
+\end_inset
+
+ es el conjunto de todas las funciones con derivadas continuas de todos
+ los ordenes sobre 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Interpretación geométrica de la derivada
+\begin_inset CommandInset label
+LatexCommand label
+name "ingeodelader"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De la discusión previa se tiene que en el caso que 
+\begin_inset Formula $f$
+\end_inset
+
+ sea derivable en 
+\begin_inset Formula $x=c,$
+\end_inset
+
+ existe una aproximación lineal de 
+\begin_inset Formula $f$
+\end_inset
+
+ en las vecindades de 
+\begin_inset Formula $c$
+\end_inset
+
+ dada por (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "aproxlinfvsc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Lo interesante es que esta ecuación coincide con la ecuación de la recta
+ tangente a la gráfica de la función y la derivada con la pendiente de dicha
+ recta.
+ Para justificar lo anterior, consideremos la función 
+\begin_inset Formula $y=f\left(x\right),$
+\end_inset
+
+ con 
+\begin_inset Formula $f$
+\end_inset
+
+ diferenciable en 
+\begin_inset Formula $x=c$
+\end_inset
+
+.
+ Observemos que el cociente 
+\begin_inset Formula $\dfrac{f\left(c+h\right)-f\left(c\right)}{h}$
+\end_inset
+
+ representa la pendiente de la recta secante que pasa por los puntos 
+\begin_inset Formula $\left(c,f\left(c\right)\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(c+h,f\left(c+h\right)\right)$
+\end_inset
+
+ (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "recsec1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ )
+\begin_inset Formula $.$
+\end_inset
+
+ Al tomar límite cuando 
+\begin_inset Formula $h\rightarrow0$
+\end_inset
+
+, 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!Interpretación!geométrica|textit
+\end_layout
+
+\end_inset
+
+la pendiente de la recta secante tiende al valor de la 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Recta tangente|textbf
+\end_layout
+
+\end_inset
+
+pendiente de la recta tangente.
+\begin_inset space \space{}
+\end_inset
+
+Por lo tanto 
+\begin_inset Formula $f^{\prime}\left(c\right)$
+\end_inset
+
+ es la pendiente de la recta tangente a la curva 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $\left(c,f\left(c\right)\right)$
+\end_inset
+
+ y la ecuación de la recta tangente es
+\begin_inset Formula 
+\[
+y-f\left(c\right)=f^{\prime}\left(c\right)\left(x-c\right)
+\]
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/derivada-tan.pdf
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tangente a la gráfica de una función
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "recsec1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como consecuencia se considera, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ una función derivable en 
+\begin_inset Formula $x=c.$
+\end_inset
+
+ La recta tangente a la gráfica de 
+\begin_inset Formula $f$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $\left(c,f\left(c\right)\right)$
+\end_inset
+
+ es aquella recta cuya pendiente está dada por 
+\begin_inset Formula $f^{\prime}\left(c\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observe que esta definición en ningún momento excluye la posibilidad de
+ que la recta tangente corte a la gráfica de la función en varias ocasiones
+ .
+ 
+\end_layout
+
+\begin_layout Subsection
+Interpretación física de la derivada
+\end_layout
+
+\begin_layout Standard
+Consideremos una partícula que se mueve a lo largo de una recta durante
+ un intervalo de tiempo 
+\begin_inset Formula $t_{0}\leq t\leq t_{1}$
+\end_inset
+
+, con una ecuación de posición dada por 
+\begin_inset Formula $x=x\left(t\right)$
+\end_inset
+
+.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!Interpretación!física|textit
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– posición
+\end_layout
+
+\end_inset
+
+Se conoce como velocidad promedio o velocidad media de la partícula en 
+\begin_inset Formula $\left[t_{0},t_{1}\right],$
+\end_inset
+
+ al cociente
+\begin_inset Formula 
+\[
+\frac{\Delta x}{\Delta t}=\frac{x\left(t_{1}\right)-x\left(t_{0}\right)}{t_{1}-t_{0}}:=\overline{v}.
+\]
+
+\end_inset
+
+La velocidad media por lo general no brinda información sobre la velocidad
+ de la partícula en un punto cualesquiera 
+\begin_inset Formula $t_{2}\in\left[t_{0},t_{1}\right].$
+\end_inset
+
+ Si el movimiento es rectilineo uniforme, es claro que para todo punto en
+ 
+\begin_inset Formula $\left]t_{0},t_{1}\right[$
+\end_inset
+
+, la
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Velocidad!– promedio
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Velocidad!– instantanea
+\end_layout
+
+\end_inset
+
+ velocidad de la partícula estará dada por 
+\begin_inset Formula $\overline{v}.$
+\end_inset
+
+ Pero si el movimiento no es rectilineo uniforme, el problema debe abordarse
+ de otra forma.
+ Ahora, como el desplazamiento de la partícula en un intervalo 
+\begin_inset Formula $\left[t_{2},t_{2}+h\right]$
+\end_inset
+
+ viene dado por 
+\begin_inset Formula 
+\[
+\Delta x=x\left(t_{2}+h\right)-x\left(t_{2}\right).
+\]
+
+\end_inset
+
+Entonces, la velocidad media en dicho intervalo estará dada por
+\begin_inset Formula 
+\[
+\overline{v}=\frac{x\left(t_{2}+h\right)-x\left(t_{2}\right)}{h}=:\overline{v}_{h}\left(t_{2}\right).
+\]
+
+\end_inset
+
+A medida que consideramos 
+\begin_inset Formula $h\approx0,$
+\end_inset
+
+ es claro que se tendran valores de velocidades medias para instantes cada
+ vez mas cercanos a 
+\begin_inset Formula $t_{2}.$
+\end_inset
+
+ Extendiendo este hecho se define la velocidad instantanea de la partícula
+ en 
+\begin_inset Formula $t=t_{2}$
+\end_inset
+
+ al límite (en caso de existir): 
+\begin_inset Formula 
+\[
+v\left(t_{2}\right)=\lim_{h\rightarrow0}\overline{v}_{h}\left(t_{2}\right)=\lim_{h\rightarrow0}\frac{x\left(t_{2}+h\right)-x\left(t_{2}\right)}{h}.
+\]
+
+\end_inset
+
+Pero en caso de existir el límite anterior se tiene que 
+\begin_inset Formula $x^{\prime}\left(t_{2}\right)=\lim\limits _{h\rightarrow0}\dfrac{x\left(t_{2}+h\right)-x\left(t_{2}\right)}{h}.$
+\end_inset
+
+ Es decir,
+\begin_inset Formula 
+\[
+x^{\prime}\left(t_{2}\right)=v\left(t_{2}\right).
+\]
+
+\end_inset
+
+Por lo tanto, la derivada de la función posición en el instante 
+\begin_inset Formula $t=t_{2}$
+\end_inset
+
+ representa la velocidad instantánea de la partícula en dicho instante.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Aceleración!– media
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Aceleración!– instantanea
+\end_layout
+
+\end_inset
+
+En forma análoga se muestra que la aceleración instantanea de la partícula
+ en el instante 
+\begin_inset Formula $t=t_{2}$
+\end_inset
+
+ esta dado por
+\begin_inset Formula 
+\[
+a\left(t_{2}\right)=\lim_{h\rightarrow0}\overline{a}_{h}\left(t_{2}\right)=\lim_{h\rightarrow0}\frac{v\left(t_{2}+h\right)-v\left(t_{2}\right)}{h}.
+\]
+
+\end_inset
+
+Por lo cual 
+\begin_inset Formula 
+\[
+a\left(t_{2}\right)=v^{\prime}\left(t_{2}\right)=x^{\prime\prime}\left(t_{2}\right).
+\]
+
+\end_inset
+
+Si consideramos lo expuesto en 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ingeodelader"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, es claro que en la gráfica 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ vs.
+ 
+\begin_inset Formula $t,$
+\end_inset
+
+ la velocidad en el punto 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ viene dada por la pendiente de la recta tangente a la curva en 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+ Análogamente, si tenemos la gráfica 
+\begin_inset Formula $v\left(t\right)$
+\end_inset
+
+ vs.
+ 
+\begin_inset Formula $t,$
+\end_inset
+
+ la aceleración en 
+\begin_inset Formula $t_{0}\ $
+\end_inset
+
+es la pendiente de recta tangente a la curva en 
+\begin_inset Formula $t_{0}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/fig-3-4.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teoremas relativos a la derivada.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!Teorema relativos de la –
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En esta sección enunciamos sin demostración algunos teoremas importantes
+ para el cálculo de derivadas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "d3"
+
+\end_inset
+
+Si f y g son funciones diferenciables en 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+, entonces las funciones 
+\begin_inset Formula $f+g$
+\end_inset
+
+ ,
+\begin_inset Formula $f-g$
+\end_inset
+
+ , 
+\begin_inset Formula $fg$
+\end_inset
+
+ y 
+\begin_inset Formula $\dfrac{f}{g}$
+\end_inset
+
+ (con 
+\begin_inset Formula $g\left(x\right)\neq0$
+\end_inset
+
+ ) también son diferenciables en 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+ y 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+a.
+\end_layout
+
+\end_inset
+
+si 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)+g\left(x\right)$
+\end_inset
+
+ entonces 
+\begin_inset Formula $h^{\prime}\left(x\right)=f^{\prime}\left(x\right)+g^{\prime}\left(x\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+b.
+\end_layout
+
+\end_inset
+
+si 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)-g\left(x\right)$
+\end_inset
+
+ entonces 
+\begin_inset Formula $h^{\prime}\left(x\right)=f^{\prime}\left(x\right)-g^{\prime}\left(x\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+c.
+\end_layout
+
+\end_inset
+
+si 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)g\left(x\right)$
+\end_inset
+
+ entonces 
+\begin_inset Formula $h^{\prime}\left(x\right)=f^{\prime}\left(x\right)g\left(x\right)+f\left(x\right)g^{\prime}\left(x\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+d.
+\end_layout
+
+\end_inset
+
+si 
+\begin_inset Formula $h\left(x\right)=\dfrac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $h^{\prime}\left(x\right)=\dfrac{f^{\prime}\left(x\right)g\left(x\right)-f\left(x\right)g^{\prime}\left(x\right)}{[g\left(x\right)]^{2}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "d4"
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=cx^{n},\ \ $
+\end_inset
+
+donde 
+\begin_inset Formula $c$
+\end_inset
+
+ es una constante y 
+\begin_inset Formula $n\in\nz$
+\end_inset
+
+ .
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=ncx^{n-1}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "d5"
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=cx^{r}$
+\end_inset
+
+ donde 
+\begin_inset Formula $c$
+\end_inset
+
+ es una constante y 
+\begin_inset Formula $r\in\rz$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=rcx^{r-1}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "d6"
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=c\ \ \forall x\in\left]a,b\right[$
+\end_inset
+
+, donde c es una constante.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "d376"
+
+\end_inset
+
+ Si 
+\begin_inset Formula $f\left(x\right)=\sum_{k=0}^{k=n}a_{k}x^{k}$
+\end_inset
+
+es una función polinomica, se tiene que 
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=\sum_{k=1}^{k=n}ka_{k}x^{k-1}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!– de funciones!trigonométricas|textit
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "d7"
+
+\end_inset
+
+ 
+\color white
+.
+
+\color inherit
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+a.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\operatorname{sen}x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\cos x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+b.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\cos x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\operatorname{sen}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+c.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\tan x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\sec^{2}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+d.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\cot x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\csc^{2}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+e.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\sec x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\sec x\tan x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+f.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\csc x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\csc x\cot x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "d8"
+
+\end_inset
+
+ 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Regla de la cadena
+\end_layout
+
+\end_inset
+
+Supongamos que 
+\begin_inset Formula $g$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $x$
+\end_inset
+
+, y 
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $g\left(x\right).$
+\end_inset
+
+ Entonces la función 
+\begin_inset Formula $h\left(x\right)=f\left(g\left(x\right)\right)$
+\end_inset
+
+ es diferenciable en 
+\begin_inset Formula $x$
+\end_inset
+
+ y 
+\begin_inset Formula 
+\begin{equation}
+h^{\prime}\left(x\right)=f^{\prime}\left(g\left(x\right)\right)\cdot g^{\prime}\left(x\right)\label{cadena}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cadena"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) es denominada usualmente 
+\series bold
+regla de la cadena
+\series default
+ para la derivada de funciones compuestas.
+ Si escribimos 
+\begin_inset Formula $u=f(g(x)),y=g(x)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $u=f(y)$
+\end_inset
+
+ y la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cadena"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) adopta la forma 
+\begin_inset Formula 
+\begin{equation}
+\frac{du}{dx}=\frac{du}{dy}\frac{dy}{dx}.\label{cadena2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "d9"
+
+\end_inset
+
+
+\color white
+.
+\color inherit
+
+\begin_inset CommandInset label
+LatexCommand label
+name "d7 copy(1)"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+a.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\ln x$
+\end_inset
+
+.
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!– de funciones!trascendentes|textit
+\end_layout
+
+\end_inset
+
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{x}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+b.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\ln\left\vert g\left(x\right)\right\vert $
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{g^{\prime}\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+c.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\log_{a}x$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{x\ln a}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+d.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=e^{x}$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula $\ \ f^{\prime}\left(x\right)=e^{x}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+e.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=e^{g\left(x\right)}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=g^{\prime}\left(x\right)e^{g\left(x\right)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+f.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=a^{x}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(a>0,\ a\neq1\right)$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=a^{x}\ln a$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "d10"
+
+\end_inset
+
+ 
+\color white
+.
+\color inherit
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!– de funciones!trigonométricas inversas|textit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+a.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\arcsin x,\left\vert x\right\vert <1$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+b.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\arccos x,\left\vert x\right\vert <1$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{-1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+c.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\arctan x,x\in\left]-\infty,+\infty\right[$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{1+x^{2}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+d.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\operatorname*{arccot}x,x\in\left]-\infty,+\infty\right[$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\dfrac{1}{1+x^{2}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+e.
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\left(x\right)=\operatorname*{arcsec}x,\left\vert x\right\vert >1$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{\left\vert x\right\vert \sqrt{x^{2}-1}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f\left(x\right)=\operatorname*{arccsc}x,\left\vert x\right\vert >1.$
+\end_inset
+
+ Entonces 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\dfrac{1}{\left\vert x\right\vert \sqrt{x^{2}-1}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+e@Regla de L'Hôpital
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "d11"
+
+\end_inset
+
+ 
+\color white
+.
+
+\color inherit
+ Si f y g son funciones continuamente diferenciables en el intervalo 
+\begin_inset Formula $I=\left]a-\delta,a+\delta\right[,\delta>0$
+\end_inset
+
+, y supongamos que 
+\begin_inset Formula $f\left(a\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(a\right)=0$
+\end_inset
+
+ y 
+\begin_inset Formula $g^{\prime}\left(x\right)\neq0$
+\end_inset
+
+ para 
+\begin_inset Formula $x\neq a\ $
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula 
+\[
+\lim\limits _{x\rightarrow a}\dfrac{f\left(x\right)}{g\left(x\right)}=\lim\limits _{x\rightarrow a}\dfrac{f^{\prime}\left(x\right)}{g^{\prime}\left(x\right)}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Derivación implícita
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!– implícita
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si una ecuación en dos variables define implícitamente una variable como
+ función diferenciable de la otra, podemos entonces utilizar la regla de
+ la cadena para encontrar la derivada de dicha función.
+ Para ser más precisos supongamos 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F(x,y)=0$
+\end_inset
+
+ es una ecuación en las variables 
+\begin_inset Formula $x$
+\end_inset
+
+ y 
+\begin_inset Formula $y.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+ está definida implícitamente por 
+\begin_inset Formula $F(x,y)=0$
+\end_inset
+
+, y 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ es diferenciable en algún abierto 
+\begin_inset Formula $\left]a,b\right[$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+De los tres items anteriores, tenemos la ecuación 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Función!– definida implicitamente
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+g(x)=F(x,f(x))=0,
+\]
+
+\end_inset
+
+de donde se tiene que 
+\begin_inset Formula $g^{\prime}(x)=0$
+\end_inset
+
+.
+ Es decir, podemos diferenciar en ambos miembros y obtener así una ecuación
+ 
+\begin_inset Quotes eld
+\end_inset
+
+diferencial
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{d}{dx}(F(x,y))=G(x,y,y^{\prime})=0
+\]
+
+\end_inset
+
+la cual es satisfecha por 
+\begin_inset Formula $f$
+\end_inset
+
+ y su derivada 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+.
+ Consideremos, por ejemplo, la ecuación 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=1
+\]
+
+\end_inset
+
+la cual es la ecuación de la circunferencia unitaria centrada en 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ y, por lo tanto su conjunto solución no es una función.
+ Sin embargo, las ecuaciones: 
+\begin_inset Formula 
+\begin{align}
+y=f(x) & =\sqrt{1-x^{2}},\label{unafuncion}\\
+y=g(x) & =-\sqrt{1-x^{2}}\label{dosfuncion}
+\end{align}
+
+\end_inset
+
+definen funciones implícitas en la ecuación de la circunferencia.
+ Para 
+\begin_inset Formula $x\in\left]-1,1\right[$
+\end_inset
+
+, se tiene 
+\begin_inset Formula 
+\begin{align*}
+y^{\prime}=f^{\prime}(x) & =-\frac{x}{\sqrt{1-x^{2}}}\\
+ & =-\frac{x}{y}\\
+y^{\prime}=g^{\prime}(x) & =\frac{x}{\sqrt{1-x^{2}}}\\
+ & =-\frac{x}{y}
+\end{align*}
+
+\end_inset
+
+Nótese así que , en ambos casos se satisface la ecuación diferencial 
+\begin_inset Formula 
+\[
+y^{\prime}=-\frac{x}{y}.
+\]
+
+\end_inset
+
+Esta última ecuación se pudo obtener por derivación implícita; es decir,
+ directamente de la ecuación de la circunferencia, derivando, respecto a
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, término a término y miembro a miembro en dicha ecuación, como se muestra
+ a continuación, 
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}(x^{2}+y^{2}) & =\frac{d}{dx}(1)\\
+2x+2yy^{\prime} & =0\\
+y^{\prime} & =-\frac{x}{y}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Derivada de la función inversa
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivada!– de funciones!inversas|textit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f:\left]a,b\right[\in\rz$
+\end_inset
+
+ es una función invertible y diferenciable, con inversa 
+\begin_inset Formula $f^{-1}:\operatorname*{Ran}(f)\longrightarrow\left]a,b\right[$
+\end_inset
+
+, entonces 
+\begin_inset Formula 
+\[
+f\circ f^{-1}=Id_{\operatorname*{Ran}(f)}
+\]
+
+\end_inset
+
+es diferenciable.
+ Si 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ es diferenciable 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Puede demostrarse que funciones con derivada no nula en un punto son uno-a-uno
+ en alguna vecindad de dicho punto y que la inversa es diferenciable en
+ la imágen de dicho punto.
+\end_layout
+
+\end_inset
+
+ la regla de la cadena produce 
+\begin_inset Formula 
+\begin{align*}
+(f\circ f^{-1})^{\prime}(x) & =1\\
+f^{\prime}(f^{-1}(x))(f^{-1})^{\prime}(x) & =1
+\end{align*}
+
+\end_inset
+
+de donde se sigue que 
+\begin_inset Formula 
+\begin{equation}
+(f^{-1})^{\prime}(x)=\frac{1}{f^{\prime}(f^{-1}(x))}\label{derivadadeinversas}
+\end{equation}
+
+\end_inset
+
+En general, si escribimos 
+\begin_inset Formula $y=f^{-1}(x)$
+\end_inset
+
+, por definición de inversa se tiene que 
+\begin_inset Formula 
+\[
+x=f(y).
+\]
+
+\end_inset
+
+Derivando con relación a 
+\begin_inset Formula $x$
+\end_inset
+
+ y usando la regla de la cadena, tenemos: 
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}(x) & =\frac{d}{dx}(f(y))\\
+1 & =f^{\prime}(y)\frac{dy}{dx}\\
+\frac{dy}{dx} & =\frac{1}{f^{\prime}(y)}\\
+ & =\frac{1}{\frac{dx}{dy}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Derivación logarítmica
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivación!– logaritmica
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $x\in\rz$
+\end_inset
+
+, 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\ln(|x|)$
+\end_inset
+
+ está definido.
+ Si consideramos la función 
+\begin_inset Formula 
+\[
+g(x)=\ln(|x|)
+\]
+
+\end_inset
+
+con dominio 
+\begin_inset Formula $\rz-\{0\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $g$
+\end_inset
+
+ es una compuesta de funciones diferenciables en el dominio indicado.
+ Tenemos 
+\begin_inset Formula 
+\begin{align*}
+g^{\prime}(x) & =\frac{1}{|x|}\frac{d}{dx}\left(|x|\right)\\
+ & =\frac{1}{|x|}\frac{x}{|x|}\\
+ & =\frac{1}{x}
+\end{align*}
+
+\end_inset
+
+Si 
+\begin_inset Formula $r\in\qz$
+\end_inset
+
+, y 
+\begin_inset Formula $y=x^{r},x>0$
+\end_inset
+
+, tenemos entonces que 
+\begin_inset Formula 
+\begin{align*}
+\ln(y) & =\ln(x^{r})\\
+ & =r\ln(x)
+\end{align*}
+
+\end_inset
+
+de donde 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{y}y^{\prime} & =r\frac{1}{x}\\
+y^{\prime} & =ry\frac{1}{x}\\
+ & =rx^{r-1}
+\end{align*}
+
+\end_inset
+
+lo que muestra que la regla para la derivada de potencias enteras de 
+\begin_inset Formula $x$
+\end_inset
+
+ se extiende a potencias con exponentes racionales.
+ El proceso mostrado en el cálculo de la derivada 
+\begin_inset Formula $y^{\prime}$
+\end_inset
+
+ es a menudo conocido como derivación logarítmica.
+\end_layout
+
+\begin_layout Section
+Ejercicios resueltos.
+\end_layout
+
+\begin_layout Standard
+En esta sección se presentan una serie de ejemplo resueltos de cálculo de
+ derivadas de funciones elementales.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcule la derivada de la función 
+\begin_inset Formula $y=3x^{2}$
+\end_inset
+
+ utilizando la definición.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Tomando 
+\begin_inset Formula $f\left(x\right)=3x^{2}$
+\end_inset
+
+, es claro que 
+\begin_inset Formula $f\left(x+h\right)=3(x+h)^{2}$
+\end_inset
+
+ por lo cual
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}(x)=\lim_{h\rightarrow0}\frac{f\left(x+h\right)-f\left(x\right)}{h} & =\lim_{h\rightarrow0}\frac{3\left(x+h\right)^{2}-3x^{2}}{h}\\
+ & =\lim_{h\rightarrow0}\frac{3x^{2}+6xh+h^{2}-3x^{2}}{h}\\
+ & =\lim_{h\rightarrow0}\frac{6xh+h^{2}}{h}=\lim_{h\rightarrow0}\frac{h\left(6x+h\right)}{h}\\
+ & =\lim_{h\rightarrow0}\left(6x+h\right)=6x.
+\end{align*}
+
+\end_inset
+
+Entonces, la derivada de 
+\begin_inset Formula $f\left(x\right)=3x^{2}$
+\end_inset
+
+ es 
+\begin_inset Formula $f^{\prime}\left(x\right)=6x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función 
+\begin_inset Formula $y=\sqrt{x}$
+\end_inset
+
+ utilizando la definición de derivada 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Como 
+\begin_inset Formula $f\left(x\right)=\sqrt{x}$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula $f\left(x+h\right)=\sqrt{x+h}.$
+\end_inset
+
+ Entonces
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}\left(x\right) & =\lim_{h\rightarrow0}\frac{f\left(x+h\right)-f\left(x\right)}{h}=\lim_{h\rightarrow0}\frac{\sqrt{\left(x+h\right)}-\sqrt{x}}{h}\\
+ & =\lim_{h\rightarrow0}\frac{\sqrt{\left(x+h\right)}-\sqrt{x}}{h}\cdot\frac{\sqrt{\left(x+h\right)}+\sqrt{x}}{\sqrt{\left(x+h\right)}+\sqrt{x}}\\
+ & =\lim_{h\rightarrow0}\frac{\left(x+h\right)-x}{h\left(\sqrt{\left(x+h\right)}+\sqrt{x}\right)}=\lim_{h\rightarrow0}\frac{h}{h\left(\sqrt{\left(x+h\right)}+\sqrt{x}\right)}\\
+ & =\lim_{h\rightarrow0}\frac{1}{\sqrt{\left(x+h\right)}+\sqrt{x}}=\frac{1}{2\sqrt{x}}.
+\end{align*}
+
+\end_inset
+
+Por lo tanto, la derivada de 
+\begin_inset Formula $f\left(x\right)=\sqrt{x}$
+\end_inset
+
+ esta dada por 
+\begin_inset Formula $f^{\prime}\left(x\right)=\dfrac{1}{2\sqrt{x}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función 
+\begin_inset Formula $y=\dfrac{1}{x}$
+\end_inset
+
+ utilizando la definición de derivada.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+En forma similar a los problemas anteriores, calculemos 
+\begin_inset Formula $\lim\limits _{h\rightarrow0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}.$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim\limits _{h\rightarrow0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h} & =\lim\limits _{h\rightarrow0}\dfrac{\dfrac{1}{x+h}-\dfrac{1}{x}}{h}\\
+ & =\lim\limits _{h\rightarrow0}\dfrac{\dfrac{x-\left(x+h\right)}{\left(x+h\right)x}}{h}=\lim\limits _{h\rightarrow0}\dfrac{-h}{hx\left(x+h\right)}\\
+ & =\lim\limits _{h\rightarrow0}\frac{-1}{x\left(x+h\right)}=\frac{-1}{x^{2}}.
+\end{align*}
+
+\end_inset
+
+Es decir, la derivada de 
+\begin_inset Formula $f\left(x\right)=\dfrac{1}{x}$
+\end_inset
+
+ es 
+\begin_inset Formula $f^{\prime}\left(x\right)=-\dfrac{1}{x^{2}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función
+\begin_inset Formula 
+\[
+f\left(x\right)=20x^{4}-5x^{3}+2x^{2}-5.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Usando el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d376"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se tiene que
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=80x^{3}-15x^{2}+4x
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función 
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(6x^{2}+5\right)\left(x^{3}-3x\right)^{9}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Derivando como un producto y aplicando la regla de la cadena para derivar
+ el segundo factor se tiene que
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}\left(x\right) & =(6x^{2}+5)^{\prime}\cdot\left(x^{3}-3x\right)^{9}+(6x^{2}+5)\cdot\left(\left(x^{3}-3x\right)^{9}\right)^{\prime}\\
+f^{\prime}\left(x\right) & =\left(12x\right)\left(x^{3}-3x\right)^{9}+\left(6x^{2}+5\right)9\left(x^{3}-3x\right)^{8}\underset{\frac{d}{dx}\left(x^{3}-3x\right)}{\underbrace{\left(3x^{2}-3\right)}}\\
+ & =3x^{8}\left(58x^{4}-21x^{2}-45\right)\left(x^{2}-3\right)^{8}.
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función 
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{6x^{3}+1}{5x^{2}+3x-4}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Ya que la función es racional, usando los teoremas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se tiene que
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}\left(x\right) & =\frac{18x^{2}\left(5x^{2}+3x-4\right)-\left(6x^{3}+1\right)\left(10x+3\right)}{\left(5x^{2}+3x-4\right)^{2}}\\
+ & =\frac{30x^{4}+36x^{3}-72x^{2}-10x-3}{\left(5x^{2}+3x-4\right)^{2}}.
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función 
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{x\operatorname{sen}x}{\operatorname{sen}x+\cos x}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Los teoremas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ implican que
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}\left(x\right) & =\frac{\left(\operatorname{sen}x+x\cos x\right)\left(\operatorname{sen}x+\cos x\right)-\left(x\operatorname{sen}x\right)\left(\cos x-\operatorname{sen}x\right)}{\left(\operatorname{sen}x+\cos x\right)^{2}}\\
+ & =\frac{\operatorname{sen}x\cos x+1+x-\cos^{2}x}{\left(\operatorname{sen}x+\cos x\right)^{2}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Sea
+\begin_inset Formula 
+\[
+f\left(x\right)=\tan\left(x^{2}\right)+\cot\left(2x\right)+x^{2}
+\]
+
+\end_inset
+
+Hallar 
+\begin_inset Formula $f^{\prime}\left(1\right)\ y$
+\end_inset
+
+ 
+\begin_inset Formula $f^{\prime}\left(3\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Calculemos 
+\begin_inset Formula $f^{\prime}\left(x\right).$
+\end_inset
+
+ Utilizando los teoremas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se tiene que
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=2x\sec^{2}\left(x^{2}\right)-2\csc^{2}\left(2x\right)+2x.
+\]
+
+\end_inset
+
+Por lo tanto
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}\left(1\right) & =2\sec^{2}\left(1\right)-2\csc^{2}\left(2\right)+2\approx6.432\\
+f^{\prime}\left(3\right) & =6\sec^{2}\left(9\right)-2\csc^{2}\left(6\right)+6\approx-12.389.
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función 
+\begin_inset Formula 
+\[
+f\left(x\right)=\sqrt{x^{2}+5x+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Como 
+\begin_inset Formula $f\left(x\right)=\left(x^{2}+5x+1\right)^{%TCIMACRO{\U{bd}}%
+%BeginExpansion
+\frac{1}{2}%EndExpansion
+}$
+\end_inset
+
+ los teoremas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ implican que
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}\left(x\right) & =\frac{1}{2}\left(x^{2}+5x+1\right)^{-%TCIMACRO{\U{bd}}%
+%BeginExpansion
+\frac{1}{2}%EndExpansion
+}\left(2x+5\right)\\
+ & =\frac{2x+5}{2\sqrt{x^{2}+5x+1}}
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Hallar la segunda derivada de la función
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{x^{2}+4x-1}{x^{2}+x-4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Calculemos 
+\begin_inset Formula $f^{\prime}\left(x\right)$
+\end_inset
+
+ y seguidamente 
+\begin_inset Formula $f^{\prime\prime}\left(x\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}\left(x\right) & =\frac{\left(2x+4\right)\left(x^{2}+x-4\right)-\left(x^{2}+4x-1\right)\left(2x+1\right)}{\left(x^{2}+x-4\right)^{2}}\\
+ & =\frac{-3\left(x^{2}+2x+5\right)}{\left(x^{2}+x-4\right)^{2}}
+\end{align*}
+
+\end_inset
+
+y como 
+\begin_inset Formula $f^{\prime\prime}=\left(f^{\prime}\right)^{\prime}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+f^{\prime\prime}\left(x\right) & =\frac{-3\left(2x+2\right)\left(x^{2}+x-4\right)^{2}+\left(3x^{2}+6x+15\right)2\left(x^{2}+x-4\right)\left(2x+1\right)}{\left(x^{2}+x-4\right)^{4}}\\
+ & =\frac{6\left(x^{2}+x-4\right)\left(x^{3}+3x^{2}+15x+9\right)}{\left(x^{2}+x-4\right)^{4}}=\frac{6\left(x^{3}+3x^{2}+15x+9\right)}{\left(x^{2}+x-4\right)^{3}}
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Existencia de tangentes verticales.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Recta tangente!– vertical
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $f\left(x\right)=\left(x-2\right)^{\frac{1}{3}}.$
+\end_inset
+
+ Pruebe que la función es continua en 
+\begin_inset Formula $x=2,$
+\end_inset
+
+ pero no diferenciable en dicho punto.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+La continuidad de 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x=2$
+\end_inset
+
+ es inmediata, debido a que 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow2^{-}}\left(x-2\right)^{\frac{1}{3}}=\lim_{x\rightarrow2^{+}}\left(x-2\right)^{\frac{1}{3}}=0=f\left(2\right).
+\]
+
+\end_inset
+
+Veamos que 
+\begin_inset Formula $f$
+\end_inset
+
+ no es derivable en 
+\begin_inset Formula $x=2.$
+\end_inset
+
+ En efecto, se tiene que 
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}\left(2\right) & =\lim_{x\rightarrow2}\frac{f\left(x\right)-f\left(2\right)}{x-2}\\
+ & =\lim_{x\rightarrow2}\frac{\left(x-2\right)^{\frac{1}{3}}-0}{x-2}=\lim_{x\rightarrow2}\frac{1}{\left(x-2\right)^{\frac{2}{3}}}=+\infty.
+\end{align*}
+
+\end_inset
+
+Se observa que la gráfica de 
+\begin_inset Formula $f\left(x\right)=\left(x-2\right)^{\frac{1}{3}},$
+\end_inset
+
+ posee una tangente vertical en 
+\begin_inset Formula $x=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-3-4-11.pdf
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Existencia de puntos angulosos I
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Puntos angulosos|textbf
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{ccc}
+1-x^{2} & \text{\emph{, si}} & x\leq1\\
+x-1 & \text{\emph{, si}} & x>1
+\end{array}\right.
+\]
+
+\end_inset
+
+Pruebe que la función es continua en 
+\begin_inset Formula $x=1,$
+\end_inset
+
+ pero no diferenciable en dicho punto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Como 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow1^{-}}f\left(x\right)=\lim_{x\rightarrow1^{-}}\left(1-x^{2}\right)=0=f\left(1\right),
+\]
+
+\end_inset
+
+y 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow1^{+}}f\left(x\right)=\lim_{x\rightarrow1^{+}}\left(x-1\right)=0=f\left(1\right).
+\]
+
+\end_inset
+
+Entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $x=1.$
+\end_inset
+
+ Pero 
+\begin_inset Formula 
+\begin{align*}
+f_{-}^{\prime}\left(1\right) & =\lim_{x\rightarrow1^{-}}\frac{f\left(x\right)-f\left(1\right)}{x-1}\\
+ & =\lim_{x\rightarrow1^{-}}\frac{\left(1-x^{2}\right)-0}{x-1}\\
+ & =-2
+\end{align*}
+
+\end_inset
+
+y
+\begin_inset Formula 
+\begin{align*}
+f_{+}^{\prime}\left(1\right) & =\lim_{x\rightarrow1^{+}}\frac{f\left(x\right)-f\left(1\right)}{x-1}\\
+ & =\lim_{x\rightarrow1^{+}}\frac{x-1-0}{x-1}\\
+ & =1.
+\end{align*}
+
+\end_inset
+
+Por lo anterior, 
+\begin_inset Formula 
+\[
+f_{-}^{\prime}\left(1\right)\neq f_{+}^{\prime}\left(1\right)
+\]
+
+\end_inset
+
+es decir 
+\begin_inset Formula $\ f$
+\end_inset
+
+ no es derivable.
+ Observe que en 
+\begin_inset Formula $x=1$
+\end_inset
+
+, la función presenta una esquina o un ángulo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-3-4-12.pdf
+	lyxscale 40
+	width 50text%
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Existencia de puntos angulosos II
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula 
+\[
+f\left(x\right)=\sqrt{\left\vert x\right\vert }
+\]
+
+\end_inset
+
+Pruebe que la función es continua en 
+\begin_inset Formula $x=0,$
+\end_inset
+
+ pero no diferenciable en dicho punto.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Como 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0^{-}}f\left(x\right)=\lim_{x\rightarrow0^{-}}\sqrt{-x}=0=f\left(0\right),
+\]
+
+\end_inset
+
+y 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0^{+}}f\left(x\right)=\lim_{x\rightarrow0^{+}}\sqrt{x}=0=f\left(0\right).
+\]
+
+\end_inset
+
+Entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es continua en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ Pero 
+\begin_inset Formula 
+\begin{align*}
+f_{-}^{\prime}\left(0\right) & =\lim_{x\rightarrow0^{-}}\frac{f\left(x\right)-f\left(0\right)}{x-0}\\
+ & =\lim_{x\rightarrow0^{-}}\frac{\sqrt{-x}}{x}=\lim_{x\rightarrow0^{-}}-\left(\frac{\sqrt{-x}}{-x}\right)\\
+ & =-\lim_{x\rightarrow0^{-}}\left(\frac{1}{\sqrt{-x}}\right)=-\infty.
+\end{align*}
+
+\end_inset
+
+y
+\begin_inset Formula 
+\begin{align*}
+f_{+}^{\prime}\left(0\right) & =\lim_{x\rightarrow0^{+}}\frac{f\left(x\right)-f\left(0\right)}{x-0}\\
+ & =\lim_{x\rightarrow0^{+}}\frac{\sqrt{x}}{x}\\
+ & =\lim_{x\rightarrow0^{+}}\left(\frac{1}{\sqrt{x}}\right)=+\infty.
+\end{align*}
+
+\end_inset
+
+Por lo anterior, ninguna de las dos derivadas parciales exiten, lo que trivialme
+nte implica la no derivabilidad de la función en 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ Observe que en 
+\begin_inset Formula $x=0$
+\end_inset
+
+, la función presenta una cúspide.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-3-4-13.pdf
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Hallar la ecuación de la recta tangente a la curva 
+\begin_inset Formula $f\left(x\right)=3x^{2}+5x-10$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $x=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+La pendiente 
+\begin_inset Formula $m$
+\end_inset
+
+ de la recta tangente es la derivada de la función en el punto 
+\begin_inset Formula $x=2$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Como 
+\begin_inset Formula $f^{\prime}\left(x\right)=6x+5$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula $f^{\prime}\left(2\right)=17,$
+\end_inset
+
+ y ya que 
+\begin_inset Formula $f\left(2\right)=3\left(2\right)^{2}+5\left(2\right)-10=12$
+\end_inset
+
+, se tiene que la ecuación de la recta tangente, viene dada por
+\begin_inset Formula 
+\begin{align*}
+y-f\left(2\right) & =m\left(x-2\right)\\
+y-12 & =17\left(x-2\right)\\
+y & =17x-22
+\end{align*}
+
+\end_inset
+
+Este resultado lo podemos confirmar observado las gráficas de las funciones
+ 
+\begin_inset Formula $f\left(x\right)=3x^{2}+5x-10$
+\end_inset
+
+ y de 
+\begin_inset Formula $g\left(x\right)=17x-22$
+\end_inset
+
+ que se presentan a continuación
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-3-4-14.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Hallar la ecuación de las rectas tangentes a la circunferencia
+\begin_inset Formula 
+\begin{equation}
+x^{2}+y^{2}-2x-4y-20=0\label{d12}
+\end{equation}
+
+\end_inset
+
+en el punto 
+\begin_inset Formula $x=4$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Para calcular la derivada 
+\begin_inset Formula $y\prime$
+\end_inset
+
+, utilicemos el método de la derivación implícita.
+\begin_inset Formula 
+\begin{align*}
+2x+2yy^{\prime}-2-4y^{\prime} & =0\\
+2yy^{\prime}-4y^{\prime} & =2-2x\\
+y^{\prime} & =\frac{2-2x}{2y-4}
+\end{align*}
+
+\end_inset
+
+Como el valor de la pendiente de la recta tangente en un punto está dado
+ por el valor de la derivada en dicho punto, necesitamos encontrar el valor
+ de 
+\begin_inset Formula $y$
+\end_inset
+
+ cuando 
+\begin_inset Formula $x=4;$
+\end_inset
+
+ para ello reemplazando en (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d12"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) se obtiene que
+\begin_inset Formula 
+\begin{align*}
+16+y^{2}-8-4y-20 & =0\implies y^{2}-4y-12=0\\
+\left(y+2\right)\left(y-6\right) & =0\implies y=-2\vee\text{ }y=6
+\end{align*}
+
+\end_inset
+
+entonces el valor de las pendientes de las rectas tangentes a la circunferencia
+ en los puntos 
+\begin_inset Formula $\left(4,6\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(4,-2\right)$
+\end_inset
+
+ estan dadas por: 
+\begin_inset Formula 
+\[
+m_{1}=y\prime\left(4,6\right)=\dfrac{2-2\left(4\right)}{2\left(6\right)-4}=-\dfrac{3}{4}\ \ \ \text{y}\ \ \ m_{2}=y\prime\left(4,-2\right)=\dfrac{2-2\left(4\right)}{2\left(-2\right)-4}=\dfrac{3}{4}
+\]
+
+\end_inset
+
+Por lo tanto, las ecuaciones de la recta tangentes en los puntos 
+\begin_inset Formula $\left(4,6\right)\ y\ \left(4,-2\right)$
+\end_inset
+
+ son
+\begin_inset Formula 
+\[
+y=-\frac{3}{4}\left(x-4\right)+6\ \ \ \ \ \ \ \text{y}\ \ \ \ \ \ \ \ y=\frac{3}{4}\left(x-4\right)-2
+\]
+
+\end_inset
+
+Este resultado lo podemos confirmar observando las graficas de las funciones
+ 
+\begin_inset Formula $x^{2}+y^{2}-2x-4y-20=0,\ \ y=-\frac{3}{4}\left(x-4\right)+6,\ $
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $y=\frac{3}{4}\left(x-4\right)-2$
+\end_inset
+
+ dadas en la figura siguiente.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejr-3-4-15.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función
+\begin_inset Formula 
+\[
+f\left(x\right)=\ln\left(\cos2x+\operatorname{sen}2x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Aplicando el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d9"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se tiene
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=\frac{-2\operatorname{sen}2x+2\cos x}{\cos2x+\operatorname{sen}2x}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función
+\begin_inset Formula 
+\[
+f\left(x\right)=\ln\frac{x^{2}+1}{x^{2}-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Ya que para 
+\begin_inset Formula $a,b\in\rz^{+},\ln\frac{a}{b}=\ln a-\ln b$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula 
+\[
+f\left(x\right)=\ln\frac{x^{2}+1}{x^{2}-1}=\ln\left(x^{2}+1\right)-\ln\left(x^{2}-1\right).
+\]
+
+\end_inset
+
+Al derivar se obtiene que: 
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=\frac{2x}{x^{2}+1}-\frac{2x}{x^{2}-1}=\frac{-4x}{\left(x^{2}+1\right)\left(x^{2}-1\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función
+\begin_inset Formula 
+\[
+f\left(x\right)=\ln\sqrt[3]{\frac{x+1}{x-1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Aplicando las propiedades del logaritmo y derivando se tiene
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\frac{1}{3}\ln\frac{x+1}{x-1}=\frac{1}{3}\ln\left(x+1\right)-\frac{1}{3}\ln\left(x-1\right)\\
+f^{\prime}\left(x\right) & =\frac{1}{3\left(x+1\right)}-\frac{1}{3\left(x-1\right)}=-\frac{2}{3\left(x+1\right)\left(x-1\right)}.
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función
+\begin_inset Formula 
+\[
+f\left(x\right)=e^{x}\operatorname{sen}\left(e^{x}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Aplicando el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (derivada de un producto) se tiene que
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}\left(x\right) & =e^{x}\operatorname{sen}\left(e^{x}\right)+e^{x}\cos\left(e^{x}\right)e^{x}\\
+ & =e^{x}\operatorname{sen}\left(e^{x}\right)+e^{2x}\cos\left(e^{x}\right)
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Aplicando derivación logaritmica
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Derivación!– logaritmica
+\end_layout
+
+\end_inset
+
+, determine la derivada de la función 
+\begin_inset Formula 
+\[
+f\left(x\right)=(3x+2)^{x+1},\ x>\frac{-2}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Aplicando derivación logaritmica se tiene que,
+\begin_inset Formula 
+\begin{align*}
+\ln(|y|) & =(x+1)\ln(|3x+2|)\\
+\frac{1}{y}y^{\prime} & =(x+1)\frac{3}{3x+2}+\ln(3x+2)\\
+y^{\prime} & =(3x+2)^{x+1}\left(\frac{3(x+1)}{3x+2}+\ln(3x+2)\right)\\
+ & =3(x+1)(3x+2)^{x}+(3x+2)^{x+1}\ln(3x+2)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{x}+xe^{\operatorname{sen}x}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Aplicando derivación logaritmica al primer sumando del miembro derecho se
+ tiene que 
+\begin_inset Formula 
+\begin{align*}
+y & =x^{x}\\
+\ln y & =x\ln x
+\end{align*}
+
+\end_inset
+
+derivando a ambos lados la última ecuación, se obtiene 
+\begin_inset Formula $\dfrac{y^{\prime}}{y}=\ln x+1$
+\end_inset
+
+.
+ Por lo tanto,
+\begin_inset Formula 
+\[
+y^{\prime}=x^{x}\left(\ln x+1\right)
+\]
+
+\end_inset
+
+entonces 
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =x^{x}+xe^{\operatorname{sen}x}\\
+f^{\prime}\left(x\right) & =\left(1+\ln x\right)x^{x}+e^{\operatorname{sen}x}+x\left(\cos x\right)e^{\operatorname{sen}x}\\
+ & =\left(1+\ln x\right)x^{x}+e^{\operatorname{sen}x}+x\left(\cos x\right)e^{\operatorname{sen}x}.
+\end{align*}
+
+\end_inset
+
+De igual forma, observe que: 
+\begin_inset Formula 
+\[
+y=x^{x}\implies\ln y=x\ln x\implies y=e^{x\ln x},
+\]
+
+\end_inset
+
+de donde,
+\begin_inset Formula 
+\[
+x^{x}=e^{x\ln x}
+\]
+
+\end_inset
+
+entonces 
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =e^{x\ln x}+xe^{\sin x}\\
+f^{\prime}\left(x\right) & =\left(1+\ln x\right)e^{x\ln x}+e^{\sin x}+x\left(\cos x\right)e^{\sin x}\\
+ & =\left(1+\ln x\right)x^{x}+e^{\sin x}+x\left(\cos x\right)e^{\sin x}
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular la derivada de la función
+\begin_inset Formula 
+\[
+f\left(x\right)=\ln\left(\frac{e^{4x}-1}{e^{4x}+1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Aplicando la propiedades del logaritmo y derivando se tiene
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\ln\left(e^{4x}-1\right)-\ln\left(e^{4x}+1\right)\\
+f^{\prime}\left(x\right) & =\frac{4e^{4x}}{e^{4x}-1}-\frac{4e^{4x}}{e^{4x}+1}=\frac{8e^{4x}}{\left(e^{4x}-1\right)\left(e^{4x}+1\right)}
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Dada la ecuación 
+\begin_inset Formula 
+\[
+x^{2}y^{2}=x^{2}+y^{2}.
+\]
+
+\end_inset
+
+Aplicar el método de la derivación implícita para hallar la derivada 
+\begin_inset Formula $y\prime$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Como 
+\begin_inset Formula $x^{2}y^{2}=x^{2}+y^{2}$
+\end_inset
+
+ se tiene que
+\begin_inset Formula 
+\begin{align*}
+(x^{2}y^{2})^{\prime} & =(x^{2}+y^{2})^{\prime}\\
+2xy^{2}+x^{2}\left(2yy^{\prime}\right) & =2x+2yy^{\prime}\\
+2x^{2}yy^{\prime}-2yy^{\prime} & =2x-2xy^{2}\\
+2yy^{\prime}\left(x^{2}-1\right) & =2x\left(1-y^{2}\right)\\
+y^{\prime} & =\frac{x\left(1-y^{2}\right)}{y\left(x^{2}-1\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Dada la ecuación 
+\begin_inset Formula 
+\[
+x\operatorname{sen}y+y\cos x=1.
+\]
+
+\end_inset
+
+halle la derivada 
+\begin_inset Formula $y\prime$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Aplicando el método de la derivación implícita se tiene:
+\begin_inset Formula 
+\begin{align*}
+(x\operatorname{sen}y+y\cos x)^{\prime} & =(1)^{\prime}\\
+\operatorname{sen}y+x\left(\cos y\right)y^{\prime}+y^{\prime}\cos x-y\operatorname{sen}x & =0\\
+xy^{\prime}\cos y+y^{\prime}\cos x & =-\operatorname{sen}y+y\operatorname{sen}x\\
+y^{\prime}\left(x\cos y+\cos x\right) & =-\operatorname{sen}y+y\operatorname{sen}x\\
+y^{\prime} & =\frac{-\operatorname{sen}y+y\operatorname{sen}x}{x\cos y+\cos x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Dada la ecuación 
+\begin_inset Formula 
+\[
+3x^{2}+4y^{2}=12
+\]
+
+\end_inset
+
+Aplicar el método de la derivación implícita para hallar 
+\begin_inset Formula $y^{\prime\prime}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Derivando implícitamente se tiene que,
+\begin_inset Formula 
+\[
+6x+8yy^{\prime}=0.\,\,\hbox{Esdecir,}\,\,y^{\prime}=\frac{-3x}{4y}.
+\]
+
+\end_inset
+
+Derivando nuevamente obtenemos: 
+\begin_inset Formula 
+\[
+6+8\left(y^{\prime}\right)^{2}+8yy^{\prime\prime}=0.\,\,\hbox{Porlotanto,}\,\,y^{\prime\prime}=\frac{-6-8\left(y^{\prime}\right)^{2}}{8y}.
+\]
+
+\end_inset
+
+Reemplazando 
+\begin_inset Formula $y^{\prime}$
+\end_inset
+
+ en la ecuación anterior, esta toma la forma 
+\begin_inset Formula 
+\[
+y^{\prime\prime}=\frac{-6-8\left(\frac{-3x}{4y}\right)^{2}}{8y}=-\frac{3}{16}\frac{\left(3x^{2}+4y^{2}\right)}{y^{3}}.
+\]
+
+\end_inset
+
+Es decir, 
+\begin_inset Formula 
+\[
+y^{\prime\prime}=\frac{-9}{4y^{3}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow1}\frac{x^{4}-5x^{3}+2x^{2}-7x+9}{x^{3}+x^{2}-x-1}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Observe que el límite dado presenta la forma indeterminada 
+\begin_inset Formula $\frac{0}{0}$
+\end_inset
+
+, por lo tanto aplicamos la regla del L'Hôpital, teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d11"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, con la cual se tiene que,
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\rightarrow1}\frac{x^{4}-5x^{3}+2x^{2}-7x+9}{x^{3}+x^{2}-x-1} & =\lim_{x\rightarrow1}\frac{(x^{4}-5x^{3}+2x^{2}-7x+9)^{\prime}}{(x^{3}+x^{2}-x-1)^{\prime}}\\
+ & =\lim_{x\rightarrow1}\frac{4x^{3}-15x^{2}+4x-7}{3x^{2}+2x-1}\\
+ & =\frac{-7}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular el límite.
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\frac{x-\operatorname{sen}x}{x^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+El límite dado presenta la forma indeterminada 
+\begin_inset Formula $\frac{0}{0}$
+\end_inset
+
+, por lo tanto aplicando la regla del L'Hôpital se obtiene que:
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\frac{x-\operatorname{sen}x}{x^{3}}=\lim_{x\rightarrow0}\frac{(x-\operatorname{sen}x)^{\prime}}{(x^{3})^{\prime}}=\lim_{x\rightarrow0}\frac{1-\cos x}{3x^{2}}.
+\]
+
+\end_inset
+
+Observe que el límite obtenido por la aplicación de la regla de L'Hôpital
+ presenta nuevamente la forma indeterminada 
+\begin_inset Formula $\frac{0}{0}$
+\end_inset
+
+, por lo que permite aplicar otra vez la regla, con lo cual, 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\frac{x-\operatorname{sen}x}{x^{3}}=\lim_{x\rightarrow0}\frac{\operatorname{sen}x}{6x}=\lim_{x\rightarrow0}\frac{\cos x}{6}=\frac{1}{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular el límite.
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\dfrac{x-\operatorname{sen}x}{\left(x\operatorname{sen}x\right)^{\frac{3}{2}}}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+En el problema anterior se obtuvo que 
+\begin_inset Formula $\lim\limits _{x\rightarrow0}\dfrac{x-\operatorname{sen}x}{x^{3}}=\frac{1}{6}$
+\end_inset
+
+ y del capítulo anterior se tiene que 
+\begin_inset Formula $\lim\limits _{x\rightarrow0}\left(\dfrac{\operatorname{sen}x}{x}\right)^{\frac{3}{2}}=1$
+\end_inset
+
+ entonces
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\rightarrow0}\dfrac{x-\operatorname{sen}x}{\left(x\operatorname{sen}x\right)^{\frac{3}{2}}} & =\lim_{x\rightarrow0}\left[\dfrac{x-\operatorname{sen}x}{x^{3}}\cdot\left(\dfrac{\operatorname{sen}x}{x}\right)^{\frac{3}{2}}\right]\\
+ & =\left(\lim_{x\rightarrow0}\dfrac{x-\operatorname{sen}x}{x^{3}}\right)\cdot\left(\lim\limits _{x\rightarrow0}\left(\dfrac{\operatorname{sen}x}{x}\right)^{\frac{3}{2}}\right)\\
+ & =\frac{1}{6}\cdot1=\frac{1}{6}.
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular 
+\begin_inset Formula 
+\[
+\lim\limits _{x\rightarrow2}\dfrac{5-\sqrt{x^{2}+21}}{\sqrt{x+7}-3}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Aplicando la regla del L'Hôpital se tiene
+\begin_inset Formula 
+\[
+\lim\limits _{x\rightarrow2}\dfrac{5-\sqrt{x^{2}+21}}{\sqrt{x+7}-3}=\lim\limits _{x\rightarrow2}\dfrac{-\dfrac{x}{\sqrt{x^{2}+21}}}{\dfrac{1}{2\sqrt{x+7}}}=-\frac{12}{5}.
+\]
+
+\end_inset
+
+Compare esta solución con la presentada en el ejemplo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ejemplorelcap3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Calcular 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\frac{\left(2-x\right)e^{x}-x-2}{x^{3}}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Como el límite dado es de la forma indeterminada 
+\begin_inset Formula $\frac{0}{0}$
+\end_inset
+
+, se puede aplicar la regla de L'Hôpital, con lo que se obtiene 
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\rightarrow0}\frac{\left(2-x\right)e^{x}-x-2}{x^{3}} & =\lim_{x\rightarrow0}\frac{e^{x}-xe^{x}-1}{3x^{2}}\\
+ & =\lim_{x\rightarrow0}\frac{-xe^{x}}{6x}\\
+ & =\lim_{x\rightarrow0}\frac{-e^{x}-xe^{x}}{6}=-\frac{1}{6}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Una partícula se mueve a lo largo de una línea horizontal de acuerdo con
+ la ecuación
+\begin_inset Formula 
+\[
+x(t)=\frac{2}{3}t^{3}+\frac{3}{2}t^{2}-2t+4
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $x$
+\end_inset
+
+, en metros, representa la posición 
+\begin_inset Formula $t$
+\end_inset
+
+ segundos despues de partir de un punto inicial 
+\begin_inset Formula $O$
+\end_inset
+
+ .
+ Determine 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+a.
+\end_layout
+
+\end_inset
+
+la velocidad y la aceleración en 
+\begin_inset Formula $t=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+b.
+\end_layout
+
+\end_inset
+
+los intervalos de tiempo donde la partícula se mueve a la derecha.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+Soluci
+\backslash
+'{o}n 
+\backslash
+textit{a.}
+\end_layout
+
+\end_inset
+
+ La velocidad y la aceleración de la partícula en el tiempo 
+\begin_inset Formula $t$
+\end_inset
+
+ están dadas respectivamente por 
+\begin_inset Formula $v\left(t\right)=x^{\prime}\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $a\left(t\right)=x^{\prime\prime}\left(t\right)$
+\end_inset
+
+.
+ Por lo tanto, 
+\begin_inset Formula $v\left(t\right)=s^{\prime}\left(t\right)=2t^{2}+3t-2$
+\end_inset
+
+.
+ Por lo cual, 
+\begin_inset Formula $v\left(2\right)=8+6-2=12.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Además, 
+\begin_inset Formula $a\left(t\right)=x^{\prime\prime}\left(t\right)=4t+3$
+\end_inset
+
+, entonces 
+\begin_inset Formula $a\left(2\right)=11.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+Soluci
+\backslash
+'{o}n 
+\backslash
+textit{b.}
+\end_layout
+
+\end_inset
+
+ La partícula se mueve a la derecha para valores en el conjunto 
+\begin_inset Formula $\{t\mid x^{\prime}(t)=v(t)>0\}\cap\rz^{+}\cup\{0\}.$
+\end_inset
+
+ Pero como, 
+\begin_inset Formula 
+\[
+\{t\mid x^{\prime}(t)>0\}=\{t\mid2t^{2}+3t-2>0\}=\{t\mid\left(t+2\right)\left(2t-1\right)>0\},
+\]
+
+\end_inset
+
+la partícula se mueve a la derecha en el intervalo 
+\begin_inset Formula $\left]\frac{1}{2},\infty\right[$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Una partícula se mueve a lo largo de una línea horizontal de acuerdo con
+ la ecuación
+\begin_inset Formula 
+\[
+s(t)=3\operatorname{sen}2t+5\cos2t
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $x$
+\end_inset
+
+, en metros, representa la posición 
+\begin_inset Formula $t$
+\end_inset
+
+ segundos despues de partir de un punto inicial 
+\begin_inset Formula $O$
+\end_inset
+
+ .
+ Calcule la velocidad y la aceleración en 
+\begin_inset Formula $t=\dfrac{\pi}{4}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+la velocidad y la aceleración de la partícula en el tiempo t estan dadas
+ respectivamente por 
+\begin_inset Formula $v\left(t\right)=x^{\prime}\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $a\left(t\right)=x^{\prime\prime}\left(t\right)$
+\end_inset
+
+.
+ Por lo tanto
+\begin_inset Formula 
+\begin{align*}
+v\left(t\right) & =x^{\prime}\left(t\right)=6\cos2t-10\operatorname{sen}2t\,\,\,\,\,\,\hbox{,y}\\
+\\
+a\left(t\right) & =x^{\prime\prime}\left(t\right)=-12\operatorname{sen}2t-20\cos2t.
+\end{align*}
+
+\end_inset
+
+Entonces, 
+\begin_inset Formula 
+\begin{align*}
+v\left(\dfrac{\pi}{4}\right) & =6\cos\left(\dfrac{\pi}{2}\right)-10\operatorname{sen}\left(\dfrac{\pi}{2}\right)=-10\,\,\,\,\,\,\hbox{,y}\\
+\\
+a\left(\dfrac{\pi}{4}\right) & =-12\operatorname{sen}\left(\dfrac{\pi}{2}\right)-20\cos\left(\dfrac{\pi}{2}\right)=-12
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Dada la función
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{tabular}{cc}
+ \ensuremath{x^{2}}  &  \emph{, si} \ensuremath{\ x\leq5}\\
+ \ensuremath{ax+b}  &  \emph{, si} \ensuremath{\ x>5,} 
+\end{tabular}\ \right.
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ son constantes.
+ Hallar los valores de 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ tal que la función sea diferenciable en 
+\begin_inset Formula $x=5.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Para que la función sea diferenciable en 
+\begin_inset Formula $x=5$
+\end_inset
+
+, esta debe ser continua en el punto (teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d15"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ En consecuencia se debe cumplir 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(5^{-}\right)=f\left(5^{+}\right)$
+\end_inset
+
+, y 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ f_{+}^{\prime}\left(5\right)=f_{-}^{\prime}\left(5\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Discutiendo la condición de continuidad, obtnemos que
+\begin_inset Formula 
+\begin{align*}
+f\left(5^{-}\right) & =\lim_{x\rightarrow5^{-}}f\left(x\right)=\lim_{x\rightarrow5^{-}}x^{2}=25\\
+f\left(5^{+}\right) & =\lim_{x\rightarrow5^{+}}f\left(x\right)=\lim_{x\rightarrow5^{-}}\left(ax+b\right)=5a+b
+\end{align*}
+
+\end_inset
+
+Es decir
+\begin_inset Formula 
+\begin{equation}
+5a+b=25.\label{cap3contderi}
+\end{equation}
+
+\end_inset
+
+Para analizar la derivabilidad, se tiene 
+\begin_inset Formula 
+\begin{align*}
+f_{+}^{\prime}\left(5\right) & =\lim_{x\rightarrow5^{+}}\frac{f(x)-f(5)}{x-5}\\
+ & =\lim_{x\rightarrow5^{+}}\frac{(ax+b)-25}{x-5}\\
+ & =\lim_{x\rightarrow5^{+}}\frac{(ax+25-5a)-25}{x-5}\\
+ & =\lim_{x\rightarrow5^{+}}\frac{a(x-5)}{x-5}=a.
+\end{align*}
+
+\end_inset
+
+, y
+\begin_inset Formula 
+\begin{align*}
+f_{-}^{\prime}\left(5\right) & =\lim_{x\rightarrow5^{-}}\frac{f(x)-f(5)}{x-5}\\
+ & =\lim_{x\rightarrow5^{-}}\frac{x^{2}-25}{x-5}\\
+ & =\lim_{x\rightarrow5^{-}}\frac{(x-5)(x+5)}{x-5}=10.
+\end{align*}
+
+\end_inset
+
+de donde 
+\begin_inset Formula $a=10$
+\end_inset
+
+, y como 
+\begin_inset Formula $5a+b=25$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula $b=-25,$
+\end_inset
+
+por lo tanto la función 
+\begin_inset Formula $f$
+\end_inset
+
+ viene dada por
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{ccc}
+x^{2} & \text{, si} & x\leq5\text{ }\\
+10x-25 & \text{, si} & x>5.
+\end{array}\right.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Dada la función 
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{tabular}{cc}
+ \ensuremath{x^{2}\operatorname{sen}\left(\frac{1}{x}\right)}  &  , si \ensuremath{x\neq0}\\
+ \ensuremath{0}  &  , si \ensuremath{x=0} 
+\end{tabular}\ \right.
+\]
+
+\end_inset
+
+calcular 
+\begin_inset Formula $f^{\prime}\left(0\right).$
+\end_inset
+
+ ¿
+\begin_inset Formula $f$
+\end_inset
+
+ es continuamente diferenciable?
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Observe que si 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{\prime}\left(x\right)=2x\operatorname{sen}\left(\frac{1}{x}\right)-\cos\left(\frac{1}{x}\right)
+\]
+
+\end_inset
+
+no podemos calcular 
+\begin_inset Formula $f^{\prime}\left(0\right)$
+\end_inset
+
+ remplazando directamente 
+\begin_inset Formula $x$
+\end_inset
+
+ por 
+\begin_inset Formula $0$
+\end_inset
+
+ por lo cual debemos utilizar la definición.
+ Así,
+\begin_inset Formula 
+\begin{align*}
+f^{\prime}\left(0\right) & =\lim_{h\rightarrow0}\frac{f\left(h\right)-f\left(0\right)}{h}=\lim_{h\rightarrow0}\frac{h^{2}\operatorname{sen}\left(\frac{1}{h}\right)}{h}\\
+ & =\lim_{h\rightarrow0}\left(h\operatorname{sen}\frac{1}{h}\right)=0
+\end{align*}
+
+\end_inset
+
+por lo tanto 
+\begin_inset Formula $f^{\prime}\left(0\right)=0,$
+\end_inset
+
+ también tenemos que
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}f^{\prime}\left(x\right)=\lim_{x\rightarrow0}\left(2x\operatorname{sen}\frac{1}{x}-\cos\frac{1}{x}\right).
+\]
+
+\end_inset
+
+Este límite no existe, por lo cual implica que la derivada no es continua
+ en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejercicios propuestos
+\end_layout
+
+\begin_layout Enumerate
+Demuestre el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d15"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Demuestre el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Demuestre el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Demuestre el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d9"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Demuestre el teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "d10"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+En los siguientes ejercicios calcular la derivada de las siguientes funciones
+ utilizando la definición.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{3}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{1}{x^{2}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sqrt{x+2}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\cos x.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{1}{\sqrt{x}}.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "prob2"
+
+\end_inset
+
+Determine si la función es derivable en el punto dado.
+ Determine además si la función es continua.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{ccc}
+\dfrac{\operatorname{sen}x-x}{\frac{1}{6}x^{2}} & \text{, si} & x\neq0\\
+0 & \text{, si} & x=0
+\end{array}\right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{ccc}
+\dfrac{x^{2}e^{x}}{1-e^{x}} & \text{, si} & x\neq0\\
+0 & \text{, si} & x=0
+\end{array}\right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(3-x\right)^{\frac{2}{3}}
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=3.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{tabular}{ccc}
+ \ensuremath{x^{2}}  &  , si  &  \ensuremath{x\leq0}\\
+ \ensuremath{x}  &  ,si  &  \ensuremath{x>0} 
+\end{tabular}\ \ \right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{tabular}{ccc}
+ \ensuremath{x^{2}+3x-2}  &  , si  &  \ensuremath{x\leq1}\\
+ \ensuremath{5x-3}  &  , si  &  \ensuremath{x>1} 
+\end{tabular}\ \ \right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=1.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{xe^{x}}{1-x+x^{2}}
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{lll}
+5\operatorname{sen}x-2 & \text{, si} & x\leq\tfrac{\pi}{2}\\
+3\cos x+3 & \text{, si} & x>\tfrac{\pi}{2}
+\end{array}\right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=\dfrac{\pi}{2}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+h\left(x\right)=\left\{ \begin{array}{ccc}
+x^{2}-1 & \text{, si} & x<-1\\
+10-10x^{2} & \text{, si} & -1\leq x\leq1\\
+x^{2}-1 & \text{, si} & 1<x
+\end{array}\right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ y en 
+\begin_inset Formula $x=1.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{ccc}
+6-x & \text{, si} & x\leq2\\
+x^{3}-2x & \text{, si} & x>2
+\end{array}\right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=2.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{lll}
+\dfrac{1-\cos x^{2}}{x^{3}} & \text{, si} & x<0\\
+2\cos\left(x+\frac{\pi}{3}\right)-1 & \text{, si} & x\geq0
+\end{array}\right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{lll}
+x^{3}-1 & \text{, si} & x\leq1\\
+3x-3 & \text{, si} & x>1
+\end{array}\right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=1.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{ccc}
+\frac{1}{2}x & \text{, si} & x\leq0\medskip\\
+\dfrac{1}{x}-\dfrac{1}{x\sec x} & \text{, si} & x>0
+\end{array}\right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{ccc}
+1 & \text{, si} & x\leq0\medskip\\
+\dfrac{1}{x}-\dfrac{1}{e^{x}-1} & \text{, si} & x>0
+\end{array}\right.
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcule 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ para cada una de las funciones presentadas en el problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Verifique que al derivar 
+\begin_inset Formula $y$
+\end_inset
+
+, dada por la expresión: 
+\begin_inset Formula 
+\[
+y=\dfrac{x^{2}-1}{\sqrt{2x+1}}
+\]
+
+\end_inset
+
+se obtiene: 
+\begin_inset Formula 
+\[
+\dfrac{dy}{dx}=\frac{3x^{2}+2x+1}{\left(2x+1\right)^{\frac{3}{2}}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calcule la primera derivada a las siguientes funciones y escriba que reglas
+ de derivación se usan.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{3}-x^{-\tfrac{3}{2}}+\left(x+1\right)^{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+g\left(x\right)=\left(2-\operatorname{sen}x\right)^{2}\cos x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+h\left(x\right)=\dfrac{x^{3}-3x^{2}+4}{x^{2}\tan x^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=5x^{3}\left(1-\dfrac{x^{3}+3x+2}{x^{2}-1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+h\left(y\right)=\csc y-\cos y\tan y.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+g\left(z\right)=\left(3z^{3}+4z\right)\left(z-5\right)\left(z+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+h\left(y\right)=3\csc\left(\operatorname{sen}y\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\dfrac{\left(2-3x^{2}\right)^{4}}{\sqrt{1-3x^{3}}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+g\left(z\right)=\tan\left(z^{2}+1\right)\cos\left(2z^{3}-1\right)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=xe^{\cos x^{2}}+\cot\left(\dfrac{e^{3x^{2}}}{1+x}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{tabular}{ccc}
+ \ensuremath{1-x}  &  , si  &  \ensuremath{x\leq0}\\
+ \ensuremath{e^{-x}}  &  , si  &  \ensuremath{x>0} 
+\end{tabular}\ \ \ \right..
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcular la derivada de las siguientes funciones.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=6x^{3}+2x^{2}-x-2.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\cos\left(\ln\left(3+x^{2}\right)\right)+\left(2x^{4}-1\right)^{3}e^{-\cos x^{2}}-\frac{x^{2}+3x-2}{x^{2}+1}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{3x^{2}+4}{x^{2}-5x+3}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=2\arctan\sqrt{x}-\frac{1}{3}\cos\left(6\arctan\sqrt{x}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\operatorname{sen}x\cos x-\tan x+\sec x.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\left(2x^{3}+4x\right)\left(6x^{3}-x^{2}+4x+5\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\operatorname{sen}^{2}\left(x^{2}-1\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\operatorname{sen}^{2}\left(\dfrac{x+1}{x^{2}+2}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\sqrt[5]{x^{2}+\sqrt{x^{3}+2}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\cos^{2}\left(\sqrt{x^{2}+1}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\operatorname{sen}^{2}\left(\sqrt{x^{2}+3}\right)\cos^{2}\left(\sqrt{x^{2}+3}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=xe^{x}+x^{3}\left(e^{x^{2}}+2e^{x}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\ln\left(x^{2}+2\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\ln\left(x+1\right)\operatorname{sen}\left(5x^{2}+3\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{\ln\left(x+e^{x}\right)}{x+2\operatorname{sen}x}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{e^{x}-e^{-x}}{e^{x}+e^{-x}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\ln\sqrt[5]{\dfrac{x^{3}+\operatorname{sen}x+e^{\tan x}}{x\operatorname{sen}x+e^{\cos x}}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=x^{x}+e^{-x^{2}}-x^{\tan x}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=x^{4}\left(1-2x^{3}\right)^{2}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=\tan^{2}\left(\sec x^{3}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=3\operatorname{sen}x^{2}\cos^{2}x^{2}+\operatorname{sen}^{3}x^{2}.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine en cada caso la derivada de la función dada.
+ Indique también el dominio de la función derivada.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sqrt{x^{2}+3x+2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\exp(2x)+\exp(x^{3})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=(3x+2)^{10}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=(3x-1)^{3}(2-x)^{5}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\ln\left(\sqrt{x^{2}+1}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=|3x^{2}+x+1|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\dfrac{(2x^{2}+3x-2)^{3}}{(3x+5)^{2}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=2^{3x+5}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=(x^{2}+1)^{3x-2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\exp(x^{2}+x)+2x\exp(3x)-\exp\left((3x^{3}+5x^{2}-1)^{5}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcular la segunda derivada 
+\begin_inset Formula $f^{\prime\prime}\ $
+\end_inset
+
+de las siguientes funciones.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\ln\sqrt{\dfrac{x^{2}+2x}{x+3}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{x^{2}+4x-1}{x^{2}+x-4}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\operatorname{sen}2x+\cos2x.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{e^{x}-e^{-x}}{e^{x}+e^{-x}}.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Demuestre que la derivada de toda función par (respectivamente, impar) diferenci
+able es una función impar (resp.
+ par).
+ 
+\end_layout
+
+\begin_layout Enumerate
+UtiliZar el método de la derivación implícita para obtener la derivada 
+\begin_inset Formula $y\prime$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x^{3}+y^{2}=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}y^{2}=\left(3x^{2}+\cos y^{3}\right)^{2}\left(4-xy^{2}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}y+y^{3}+xy=5x.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\operatorname{sen}\left(xy\right)+3\cos\left(y^{2}\right)=x\operatorname{sen}y.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ln\left(\dfrac{xy^{2}}{x+y}\right)-xe^{xy}=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $e^{y}=\ln\left(x^{3}+3y\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dfrac{x^{2}}{25}+\dfrac{y^{2}}{9}=1.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sqrt[3]{x^{2}}+\sqrt[3]{y^{2}}=\sqrt[3]{a^{2}},a\in\rz.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y^{3}=\dfrac{x-y}{x+y}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $5\cos^{2}\left(x+y\right)=x.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ye^{xy}=e^{x+y}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2y=\operatorname{sen}\left(1+xy^{3}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $xy=\left(y^{2}-1\right)\left(x^{3}+1\right)\cos x.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcular los siguientes límites 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{x\rightarrow0}\dfrac{x-\operatorname{sen}x}{x\operatorname{sen}x}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{x\rightarrow0}\dfrac{x^{2}}{1-\cos x}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{x\rightarrow0}\dfrac{x^{2}\operatorname{sen}^{2}(x^{2}+1)}{1-\cos x}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{x\rightarrow0}\dfrac{x\cot x-1}{x^{2}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{x\rightarrow a^{+}}\dfrac{\sqrt{a}-\sqrt{x}-\sqrt{x-a}}{\sqrt{x^{2}-a^{2}}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{x\rightarrow1}\dfrac{5-\sqrt{x^{2}+24}}{\sqrt{x+8}-3}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\rightarrow\infty}\dfrac{\tan\left(\dfrac{2}{x^{2}}\right)}{\dfrac{1}{x^{2}}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\limits _{x\rightarrow\frac{\pi}{6}}\frac{\sqrt{3}}{2}\left(\dfrac{2\operatorname{sen}x-1}{x-\frac{\pi}{6}}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcular los siguientes límites 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\frac{e^{x}+e^{-x}-x^{2}-2}{\operatorname{sen}{}^{2}x-x^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\dfrac{\tan x-\operatorname{sen}x}{x-\operatorname{sen}x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\dfrac{1-\cos\dfrac{\pi x}{2}}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\left(\dfrac{1}{\operatorname{sen}^{2}x}-\dfrac{1}{x^{2}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\left(1-\cos x\right)\cot x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow\infty}x\operatorname{sen}\dfrac{a}{x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow\tfrac{\pi}{2}}\left(\dfrac{x}{\cot x}-\dfrac{\pi}{2\cos x}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow1}\left(\dfrac{1}{2\left(1-\sqrt{x}\right)}-\dfrac{1}{3\left(1-\sqrt[3]{x}\right)}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow\tfrac{\pi}{4}}\dfrac{\sec^{2}x-2\tan x}{1+\cos4x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\dfrac{\tan8x}{\tan5x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\dfrac{\cot5x}{\cot8x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow-2^{+}}\dfrac{3x^{4}+11x^{2}+12x^{3}-4x-4}{5x^{4}+34x^{3}+84x^{2}+88x+32}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\left(\dfrac{\cos x-1}{x^{2}}-\dfrac{x^{2}+x}{2\operatorname{sen}x}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\dfrac{xe^{x}}{1-e^{x}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\left(\dfrac{4}{x^{2}}-\dfrac{2}{1-\cos x}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}e^{-\tan x}\sec^{2}x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}x^{4}\left(\cos\dfrac{1}{x}-1+\dfrac{1}{2x^{2}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Hallar la ecuación de la recta tangente a la curva en el punto que se indica.
+ En cada caso, determine si la tangente corta a la función en otro punto
+ distinto al punto dado (Si es necesario utilice un software para resolver
+ las ecuaciones).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}+y^{2}-2x-4y-4=0$
+\end_inset
+
+ en 
+\begin_inset Formula $x=1.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=4x^{2}-3x+5$
+\end_inset
+
+ en 
+\begin_inset Formula $x=-2.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=3\operatorname{sen}\left(2x\right)$
+\end_inset
+
+ en 
+\begin_inset Formula $x=\dfrac{\pi}{4}.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-3-4-18c.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\dfrac{\cos x}{2+\operatorname{sen}x},$
+\end_inset
+
+ en 
+\begin_inset Formula $x=\dfrac{\pi}{2}.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-3-4-18d.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=3x^{3}+2x^{2}+5x-1,$
+\end_inset
+
+ en 
+\begin_inset Formula $x=1.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-3-4-18e.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $2\left(x^{2}+y^{2}\right)^{2}=25\left(x^{2}-y^{2}\right)$
+\end_inset
+
+ en 
+\begin_inset Formula $\left(3,1\right).$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-3-4-18f.pdf
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(x-1\right)\left(y-2\right)=1$
+\end_inset
+
+ en 
+\begin_inset Formula $x=0.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/loliv/OneDrive/Documentos/qtikx-templates/mb-caos-calculo-lyx/images/ejp-3-4-18g.pdf
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+En cada caso encuentre la ecuación de la recta tangente, en el punto indicado,
+ a la curva cuya ecuación se da.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+La circunferencia de ecuación 
+\begin_inset Formula $x^{2}+y^{2}=1,$
+\end_inset
+
+ en 
+\begin_inset Formula $P(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+La circunferencia de centro en 
+\begin_inset Formula $C(1,2)$
+\end_inset
+
+ y radio 
+\begin_inset Formula $2,$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $P(1,0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+La circunferencia del ejercicio anterior en cada uno de los puntos 
+\begin_inset Formula $P(x,y)$
+\end_inset
+
+ para los cuales 
+\begin_inset Formula $x=\frac{3}{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+La hipérbola de ecuación 
+\begin_inset Formula $x^{2}-y^{2}=4$
+\end_inset
+
+, en el punto 
+\begin_inset Formula $P(3,\sqrt{5})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+La elipse de ecuación 
+\begin_inset Formula $x^{2}+4y^{2}=4$
+\end_inset
+
+, en el punto 
+\begin_inset Formula $P(-1,-\frac{\sqrt{3}}{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+La parábola de ecuación 
+\begin_inset Formula $x-y^{2}+y-2=0,$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $P(4,2)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Encuentre la ecuación de la normal a la curva de ecuación 
+\begin_inset Formula $y=\exp(x^{2})$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $P(2,e^{4})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+La recta normal a la curva de ecuación 
+\begin_inset Formula $y=\frac{1}{3}(x-2)^{3}$
+\end_inset
+
+ en un cierto punto de abscisa positiva tiene pendiente 
+\begin_inset Formula $-\frac{1}{4}$
+\end_inset
+
+.
+ Encuentre la ecuación de la recta tangente a la curva en dicho punto.
+ Demuestre además que ninguna recta tangente a la curva tiene pendiente
+ negativa.
+ 
+\end_layout
+
+\begin_layout Enumerate
+¿Para cuáles puntos de la curva de ecuación 
+\begin_inset Formula $x^{2}+y^{2}-2x=0$
+\end_inset
+
+, la recta tangente es: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Paralela a la recta de ecuación 
+\begin_inset Formula $2x+3y=6$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+Perpendicular a la recta de ecuación 
+\begin_inset Formula $2x+3y=6$
+\end_inset
+
+?.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+En que puntos de la curva 
+\begin_inset Formula $x^{2}+y^{2}=7xy$
+\end_inset
+
+ la recta tangente es horizontal.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Halla valores de las constantes 
+\begin_inset Formula $a,b$
+\end_inset
+
+ y 
+\begin_inset Formula $c$
+\end_inset
+
+ para los cuales las gráficas de los dos polinomios 
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{2}+ax+b
+\]
+
+\end_inset
+
+y
+\begin_inset Formula 
+\[
+g\left(x\right)=x^{3}-c
+\]
+
+\end_inset
+
+se corten en el punto 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+ y tengan la misma tangente en dicho punto.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Calcule la ecuación de la recta que pasa por 
+\begin_inset Formula $\left(0,2\right)$
+\end_inset
+
+ y es paralela a la recta normal de
+\begin_inset Formula 
+\[
+x^{4}+6x^{2}y^{2}+9y^{4}=x^{2}-6xy+9y^{2}
+\]
+
+\end_inset
+
+en el punto 
+\begin_inset Formula $\left(-1,0\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Hallar las ecuaciones de las tangentes a 
+\begin_inset Formula 
+\[
+9x^{2}+16y^{2}=52
+\]
+
+\end_inset
+
+que sean paralelas a la recta 
+\begin_inset Formula $9x-8y=1.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+¿En que puntos de la curva 
+\begin_inset Formula 
+\[
+y=2x^{3}+13x^{2}+5x+9
+\]
+
+\end_inset
+
+pasa su tangente por el origen?.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Hallar la tangente y la normal a la curva 
+\begin_inset Formula 
+\[
+x^{2}+4y^{2}+6x-40y=-93
+\]
+
+\end_inset
+
+en los puntos donde 
+\begin_inset Formula $x=-2.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Halle una ecuación de la recta tangente a la curva 
+\begin_inset Formula $y=x^{4}-6x,$
+\end_inset
+
+y perpendicular a la recta 
+\begin_inset Formula $x-2y+6=0.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Obtenga las ecuaciones de las rectas tangentes y normal a la curva 
+\begin_inset Formula $2x^{3}+2y^{3}-9xy=0$
+\end_inset
+
+, en el punto 
+\begin_inset Formula $\left(2,1\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+¿Existen puntos sobre la curva 
+\begin_inset Formula 
+\[
+y=\dfrac{x}{2}+\dfrac{1}{2x-4}
+\]
+
+\end_inset
+
+donde la tangente sea paralela a
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y=-\dfrac{3}{2}x+1$
+\end_inset
+
+?.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Halle los puntos sobre la curva 
+\begin_inset Formula $y=2x^{3}-3x^{2}-12x+20$
+\end_inset
+
+ donde la tangente sea horizontal.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Hallar la tangente y la normal
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Recta normal|textbf
+\end_layout
+
+\end_inset
+
+ a la curva 
+\begin_inset Formula 
+\[
+x^{2}-xy+y^{2}=7
+\]
+
+\end_inset
+
+en el punto 
+\begin_inset Formula $\left(1,-2\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Verificar que la recta normal a 
+\begin_inset Formula 
+\[
+y=\sqrt{1-x^{2}}
+\]
+
+\end_inset
+
+siempre pasa por el origen.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Halle las intersecciones con los ejes de la recta que es tangente a la curva
+ 
+\begin_inset Formula $y=x^{3}$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $\left(-2,-8\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Hallar valores 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ tales que 
+\begin_inset Formula 
+\[
+y=x^{2}+bx+a
+\]
+
+\end_inset
+
+sea tangente a la recta 
+\begin_inset Formula $y=x$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $\left(1,1\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Escribir las ecuaciones de la tangente y de la normal a la curva 
+\begin_inset Formula 
+\[
+y=x^{3}+2x^{2}-4x-3
+\]
+
+\end_inset
+
+en el punto 
+\begin_inset Formula $\left(-2,5\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Obtenga los puntos donde la tangente a la gráfica de la función dada es
+ paralela al eje 
+\begin_inset Formula $x.$
+\end_inset
+
+ Obtenga por lo menos una de las ecuaciones de dichas rectas 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{1}{4}x^{4}+x^{3}-4x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{1}{5}x^{5}-5x^{3}-16x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=xe^{-x^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f\left(x\right)=2x+\cos2x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Una partícula se mueve a lo largo de una línea horizontal de acuerdo con
+ la ecuación
+\begin_inset Formula 
+\[
+s(t)=a\operatorname{sen}\omega t+b\cos\omega t
+\]
+
+\end_inset
+
+donde a,b y 
+\begin_inset Formula $\omega$
+\end_inset
+
+ son constantes.
+ Hallar la velocidad y aceleración cuando el tiempo 
+\begin_inset Formula $t=\dfrac{\pi}{3\omega}.$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "prob28"
+
+\end_inset
+
+(Asuma unidades S.I.) Una partícula se dezplaza a lo largo de una recta horizontal
+ de acuerdo con la ecuación de posición 
+\begin_inset Formula 
+\[
+x\left(t\right)=t-\frac{24}{t+1}-10\ln\left(t+1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula $t>0,$
+\end_inset
+
+ determine (en caso de exitir) 
+\begin_inset Formula $:$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Los intervalos de tiempo en los cuales la partícula se desplaza a la izquierda.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Los intervalos de tiempo en los cuales la partícula se desplaza a la derecha.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Los intervalos de tiempo en los cuales la aceleración de la partícula es
+ positiva.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Los intervalos de tiempo en los cuales la aceleración de la partícula es
+ negativa.
+ 
+\end_layout
+
+\begin_layout Enumerate
+En que instante (o instantes) la partícula se detuvo.
+ 
+\end_layout
+
+\begin_layout Enumerate
+La posición, velocidad y aceleración en 
+\begin_inset Formula $t=1s$
+\end_inset
+
+ y en 
+\begin_inset Formula $t=3s.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Con ayuda de un software adecuado, grafique simultaneamente 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $v\left(t\right)$
+\end_inset
+
+.
+ Analice el comportamiento de las gráficas de las funciones y explique sus
+ afirmaciones.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Con ayuda de un software adecuado, grafique simultaneamente 
+\begin_inset Formula $x\left(t\right),v\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $a\left(t\right)$
+\end_inset
+
+.
+ Analice el comportamiento de las gráficas de las funciones y explique sus
+ afirmaciones.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Resuelva el problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob28"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ considerando 
+\begin_inset Formula 
+\[
+x\left(t\right)=3t^{4}-44t^{3}+144t^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Resuelva el problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob28"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ considerando
+\begin_inset Formula 
+\[
+x\left(t\right)=\frac{9}{4\left(2t+1\right)}+\frac{9}{4}\ln\left(2t+1\right)-2\ln\left(t+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Resuelva el problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob28"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ considerando
+\begin_inset Formula 
+\[
+x\left(t\right)=\dfrac{5t+20}{t+1}+2t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Resuelva el problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob28"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ considerando
+\begin_inset Formula 
+\[
+x\left(t\right)=t-\frac{3}{2}\ln\left(t^{2}+4\right)-\arctan\left(\frac{1}{2}t\right)+\frac{1}{2}\ln2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Resuelva el problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob28"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ considerando
+\begin_inset Formula 
+\[
+x\left(t\right)=\frac{1}{2}t^{2}-\frac{37}{6}t-\frac{5}{2}\ln\left(t+1\right)+\frac{77}{3}\ln\left(t+3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Resuelva el problema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob28"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ considerando
+\begin_inset Formula 
+\[
+x\left(t\right)=t-\frac{24}{t+1}-10\ln\left(t+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "prob4"
+
+\end_inset
+
+Una partícula se mueve a lo largo de una línea recta, siendo su posición
+ 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ para 
+\begin_inset Formula $t\in\left[0,\pi\right]$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+x\left(t\right)=t+3\cos2t.
+\]
+
+\end_inset
+
+Hallar 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+El instante (o instantes) en el que la partícula se detuvo.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Los intervalos de tiempo en los cuales la partícula se desplaza a la izquierda.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Los intervalos de tiempo en los cuales la partícula se desplaza a la derecha.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Halle un polinomio de segundo grado de la forma 
+\begin_inset Formula $ax^{2}+bx+c$
+\end_inset
+
+ tal que 
+\begin_inset Formula 
+\[
+\begin{tabular}{p{2cm}p{2cm}p{2cm}cccccccccccccccccc}
+ \ensuremath{f\left(0\right)=-2}  &  \ensuremath{f^{\prime}\left(0\right)=2}  &  \ensuremath{f^{\prime\prime}\left(0\right)=3}\end{tabular}\ \ \ 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Existe un polinomio 
+\begin_inset Formula 
+\[
+P\left(x\right)=ax^{3}+bx^{2}+cx+d
+\]
+
+\end_inset
+
+tal que: 
+\begin_inset Formula 
+\begin{align*}
+P\left(0\right) & =P\left(1\right)=-3\\
+P^{\prime}\left(0\right) & =-1\\
+P^{\prime\prime}\left(0\right) & =4
+\end{align*}
+
+\end_inset
+
+Calcular 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ y 
+\begin_inset Formula $d.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Demuestre que la función
+\begin_inset Formula 
+\[
+y=ae^{4x}+be^{-3x}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ son constantes es una solución de la ecuación diferencial 
+\begin_inset Formula 
+\[
+y^{\prime\prime}-y^{\prime}-12y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Una función 
+\begin_inset Formula $f$
+\end_inset
+
+ está definida como sigue: 
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{lll}
+7\operatorname{sen}x-5 &  & \text{, si }x\leq\dfrac{\pi}{2}\\
+2ax-b &  & \text{, si }\dfrac{\pi}{2}<x<\pi
+\end{array}\right.
+\]
+
+\end_inset
+
+siendo 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ constantes.
+ Determine valores de las constantes 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+, para que la función sea diferenciable.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $f$
+\end_inset
+
+ definida de la siguiente manera:
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{tabular}{ccc}
+ \ensuremath{mx+b}  &  , si  &  \ensuremath{x>1}\\
+ \ensuremath{1+x^{2}}  &  , si  &  \ensuremath{-1\leq x\leq1}\\
+ \ensuremath{c+c_{1}x-x^{2}}  &  , si  &  \ensuremath{x<-1} 
+\end{tabular}\ \ \ \right.
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $m,$
+\end_inset
+
+ 
+\begin_inset Formula $b,c$
+\end_inset
+
+ y 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ son constantes.
+ Hallar los valores de 
+\begin_inset Formula $m,$
+\end_inset
+
+ 
+\begin_inset Formula $b,c$
+\end_inset
+
+ y 
+\begin_inset Formula $c_{1}\ $
+\end_inset
+
+tal que la función sea diferenciable en 
+\begin_inset Formula $x=1$
+\end_inset
+
+ y en 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Una función 
+\begin_inset Formula $f$
+\end_inset
+
+ está definida como sigue: 
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ \begin{array}{lll}
+7ax^{3}-5x+2 &  & \text{, si }x\leq1\\
+2x-b &  & \text{, si }1<x<2
+\end{array}\right.
+\]
+
+\end_inset
+
+siendo 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ constantes.
+ Determine valores de las constantes 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+, para que la función sea diferenciable.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Pruebe que si 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=a^{2}
+\]
+
+\end_inset
+
+se obtiene que 
+\begin_inset Formula 
+\[
+\frac{\left\vert y^{\prime\prime}\right\vert }{\left(1+\left(y^{\prime}\right)^{2}\right)^{\frac{3}{2}}}=\frac{1}{a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
